@@ -23,6 +23,22 @@ Digital cryptocurrency.
 * Crypto - secured by cryptography
 * Currency - can be used as a medium of exchange, i.e. money.
 
+Who runs it?
+------------
+
+We do.
+
+* Not a company. 
+* Not a security. 
+* Not a product.
+
+Who develops it?
+----------------
+
+* Team of ~12 developers
+* Gavin Andresen - lead developer
+* Satoshi Nakamoto - author
+
 Two Key Aspects to Technology
 -------------------------------
 
