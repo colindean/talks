@@ -1,21 +1,23 @@
 Bitcoin: digital cryptocurrency for the masses
 ==============================================
 
-Colin Dean
+author
+:   Colin Dean -> @colindean
 
-@colindean
+institution
+: \#ytaets
 
-\#ytaets
+subtitle
+:   August 28, 2013 - YourTalentAgents Emerging Technology Series
 
-August 28, 2013 - YourTalentAgents Emerging Technology Series
+theme
+: Nari
 
-Introduction
-------------
+# Introduction
 
-![Bitcoin logo](bitcoin_logo.png)
+![](bitcoin_logo.png){:width='500' height='104'}
 
-Introduction
------------
+# Introduction
 
 Digital cryptocurrency.
 
@@ -23,8 +25,14 @@ Digital cryptocurrency.
 * Crypto - secured by cryptography
 * Currency - can be used as a medium of exchange, i.e. money.
 
-Who runs it?
-------------
+# Pedantics of Terminology
+
+* Bitcoin = protocol
+* bitcoin = money
+* BTC = abbr
+* XBT = proposed ISO 4217 code
+
+# Who runs it?
 
 We do.
 
@@ -32,35 +40,31 @@ We do.
 * Not a security. 
 * Not a product.
 
-Who develops it?
-----------------
+# Who develops it?
 
 * Team of ~12 developers
 * Gavin Andresen - lead developer
-* Satoshi Nakamoto - author
+* Satoshi Nakamoto - author, absent
 
-Two Key Aspects to Technology
--------------------------------
+# Two Key Aspects to Technology
 
-1. **Mining** - Generation of Bitcoin
-2. **Transacting** - Exchange of Bitcoin
+* **Mining** - Generation of Bitcoin
+* **Transacting** - Exchange of Bitcoin
 
-Mining Overview
-------------------
+# Mining Overview
 
 Two purposes:
 
-1. Inflate supply, gradually decreasing
-2. Verify transaction validity
+* Inflate supply, gradually decreasing
+* Verify transaction validity
 
-Mining Algorithm
-----------------
+# Mining Algorithm
 
 * Double SHA256 hashing of previous block information
-* Continue until result of `sha256(sha256($input))` begins with 12 zeros
+* Continue until result of **sha256(sha256($input))** begins with 12 zeros
+* Other things factored in (difficulty, etc.)
 
-Inflating Supply
----------------------
+# Inflating Supply
 
 * 12 zeros = block
 * Block = block reward
@@ -68,39 +72,89 @@ Inflating Supply
 
 ![Make it RAIN!](raining_bitcoins.png)
 
-Gradually decreasing
-----------------------------
+# Continue inflating
 
-January 2009 - 50 BTC per block
-November 2012 - 25 BTC per block
-August 2016? - 12.5 BTC per block
+* Block found every ~10 minutes
+* Sometimes more
+* Sometimes less
 
-Continues 32 halvings, circa 2140.
+# Gradually decreasing
 
-Or not
----------
+January 2009
+:   50 BTC per block
+
+November 2012
+:   25 BTC per block
+
+August 2016?
+:   12.5 BTC per block
+
+# Adjusting for advances
+
+* Difficulty aids consistency
+  * Quarters in a boom
+  * Quadruples in a bust
+* Factored into hashing
+
+# Until it stops
+
+* Continues 32 halvings
+* Stop at **21,000,000 BTC**
+
+# When? 
+
+* circa 2140
+
+# Or not
 
 Much sooner?
 
-Also, fees
-------------
+# Total Bitcoin to Exist
+
+21,000,000.00000000 BTC
+
+# Actually actually
+
+* 2,100,000,000,000,000 units
+* 2.1 quadrillion
+* 1 unit = **satoshi**
+
+# Comparison
+
+* 10.5 trillion USD in M2: Federal Reserve 
+  * M2 = money markets + savings + CDs < $100k PLUS
+  * M1 = checking accounts PLUS
+  * M0 = currency in circulation
+  * M3 = larger deposits, institutional money
+
+# Mapped to USD
+
+* $1 -> $200,000
+* Worldwide M3 in circulation = ~$75 trillion (2010)
+
+
+# Coins in circulation
+
+11.5 million
+
+*(as of 8 August 2013)*
+
+# Also, fees
 
 Block reward + transaction fees
 
 2013: 25 BTC + < .5 BTC
 2140: 0 BTC + ??? BTC
 
-Mining programs
--------------------
+# Mining programs
 
 * Automation
 * Work distribution, via pooled mining
 * Alternative processors (GPU, FPGA, ASIC)
 
 
-Coins in circulation
---------------------------
 
-11.5 million
+# References
 
-*(as of 8 August 2013)*
+* [Federal Reserve Money Stock Measures](http://www.federalreserve.gov/releases/h6/20130711/)
+* [Quantative Easing is Nothing New](http://dollardaze.org/blog/?post_id=00762&cat_id=20) by Mike Hewitt
