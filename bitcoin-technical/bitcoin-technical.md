@@ -152,7 +152,54 @@ Block reward + transaction fees
 * Work distribution, via pooled mining
 * Alternative processors (GPU, FPGA, ASIC)
 
+# Questions about mining?
 
+* End user not expected to care
+* End user expected to *be able to care*
+
+# Transacting Overview
+
+* Generating addresses
+* Interconnecting
+* Receiving
+* Sending
+
+# Generating addresses
+
+* Public key cryptography
+  * Private key
+  * Public key
+* HASH160
+
+# Address composition
+
+* 34 characters
+* First character
+  * 1 = Bitcoin public key string or **address**
+  * 5 = Bitcoin private key string
+* Base58 ensures readability
+* Checksum
+
+# Interconnecting
+
+* Lookups
+  * DNS
+  * IRC
+* P2P
+* Negotiation
+
+# Receiving
+
+* Inputs -> Outputs
+* Ledger vs reality
+* Verification
+
+# Sending
+
+* Transaction creation
+* Spending outputs
+* Fees
+* Broadcast
 
 # References
 
