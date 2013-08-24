@@ -17,6 +17,11 @@ theme
 
 ![](bitcoin_logo.png){:width='500' height='104'}
 
+# Knowledge Assumptions
+
+* Public key cryptography
+* Basic networking fundamentals
+
 # Introduction
 
 Digital cryptocurrency.
