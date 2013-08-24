@@ -92,8 +92,8 @@ August 2016?
 # Adjusting for advances
 
 * Difficulty aids consistency
-  * Quarters in a boom
-  * Quadruples in a bust
+  * Up to quarters in a bust (16 decreases)
+  * Up to quadruples in a boom (3K% inc since '12)
 * Factored into hashing
 
 # Until it stops
@@ -205,3 +205,4 @@ Block reward + transaction fees
 
 * [Federal Reserve Money Stock Measures](http://www.federalreserve.gov/releases/h6/20130711/)
 * [Quantative Easing is Nothing New](http://dollardaze.org/blog/?post_id=00762&cat_id=20) by Mike Hewitt
+* [Difficulty Adjustment History](https://docs.google.com/spreadsheet/ccc?key=0AmcTCtjBoRWUdHVRMHpqWUJValI1RlZiaEtCT1RrQmc#gid=0)
