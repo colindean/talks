@@ -10,9 +10,6 @@ institution
 subtitle
 :   August 28, 2013 - YourTalentAgents Emerging Technology Series
 
-theme
-: Nari
-
 # Introduction
 
 ![](bitcoin_logo.png){:width='500' height='104'}
