@@ -14,6 +14,12 @@ subtitle
 
 ![](bitcoin_logo.png){:width='500' height='104'}
 
+# Agenda
+
+* Meta
+* Technology overview
+* Real world usage
+
 # Knowledge Assumptions
 
 * Public key cryptography
@@ -50,8 +56,8 @@ We do.
 
 # Two Key Aspects to Technology
 
-* **Mining** - Generation of Bitcoin
-* **Transacting** - Exchange of Bitcoin
+* **Mining** - Generation of Bitcoin, proof of work
+* **Transacting** - Exchange of Bitcoin, proof of authorization
 
 # Mining Overview
 
@@ -60,19 +66,33 @@ Two purposes:
 * Inflate supply, gradually decreasing
 * Verify transaction validity
 
+# Concerns
+
+* End user not expected to care
+* End user expected to *be able to care*
+* All can be peers
+
+# Basic objects
+
+* Block: series of hashes and values
+* Transaction: transfer of value
+
 # Mining Algorithm
 
-* Double SHA256 hashing of previous block information
-* Continue until result of **sha256(sha256($input))** begins with 12 zeros
-* Other things factored in (difficulty, etc.)
+* in = previous block information plus nonce
+* Block found when **sha256(sha256(in)).to_int** > difficulty
+* Difficulty increases over time
+
+# Receive transactions
+
+* Check mempool
+* Validate transactions
+* Include with block broadcast
 
 # Inflating Supply
 
-* 12 zeros = block
-* Block = block reward
-* Block reward = BTC
-
-![Make it RAIN!](raining_bitcoins.png)
+* Block = claim block reward
+* Block reward = BTC to miner
 
 # Continue inflating
 
@@ -131,9 +151,8 @@ Much sooner?
 
 # Mapped to USD
 
-* $1 -> $200,000
+* $200,000 = 1 BTC
 * Worldwide M3 in circulation = ~$75 trillion (2010)
-
 
 # Coins in circulation
 
@@ -145,8 +164,9 @@ Much sooner?
 
 Block reward + transaction fees
 
-2013: 25 BTC + < .5 BTC
-2140: 0 BTC + ??? BTC
+* 2013: 25 BTC + < .5 BTC
+* 2140: 0 BTC + ??? BTC
+* Fees > reward in 2070s or sooner
 
 # Mining programs
 
@@ -156,8 +176,7 @@ Block reward + transaction fees
 
 # Questions about mining?
 
-* End user not expected to care
-* End user expected to *be able to care*
+* Unprofitable without investment now
 
 # Transacting Overview
 
@@ -186,7 +205,7 @@ Block reward + transaction fees
 
 * Lookups
   * DNS
-  * IRC
+  * IRC (going away)
 * P2P
 * Negotiation
 
@@ -202,6 +221,11 @@ Block reward + transaction fees
 * Spending outputs
 * Fees
 * Broadcast
+
+# Resources
+
+* [Bitcoin Wiki](https://en.bitcoin.it)
+* [Bitcoin StackExchange](http://bitcoin.stackexchange.com/)
 
 # References
 
