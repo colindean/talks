@@ -88,7 +88,7 @@ Two purposes:
 
 * in = previous block information plus nonce
 * Block found when **sha256(sha256(in)).to_int** > difficulty
-* Difficulty increases over time
+* Difficulty changes every 2016 blocks
 
 # Receive transactions
 
@@ -118,14 +118,14 @@ November 2012
 August 2016?
 :   12.5 BTC per block - 1800/day
 
-# Adjusting for advances
+# Adjusting biweekly for advances 
 
 * Difficulty aids consistency
   * Up to quarters in a bust 
-    * 16 decreases
+    * 16 decreases so far
   * Up to quadruples in a boom 
     * +3,000% since 2012
-* Factored into hashing
+* Compared against hash output
 
 # Until it stops
 
