@@ -54,8 +54,11 @@ Beware of misrepresentation.
 # Who develops it?
 
 * Team of ~12 developers
-* Gavin Andresen - lead developer
-* Satoshi Nakamoto - author, absent
+* Gavin Andresen
+  * Lead developer
+* Satoshi Nakamoto
+  * Anonymous author, absent
+
 
 # Two Key Aspects to Technology
 
@@ -106,19 +109,21 @@ Two purposes:
 # Gradually decreasing
 
 January 2009
-:   50 BTC per block
+:   50 BTC per block - 7200/day
 
 November 2012
-:   25 BTC per block
+:   25 BTC per block - 3600/day
 
 August 2016?
-:   12.5 BTC per block
+:   12.5 BTC per block - 1800/day
 
 # Adjusting for advances
 
 * Difficulty aids consistency
-  * Up to quarters in a bust (16 decreases)
-  * Up to quadruples in a boom (3K% inc since 2012)
+  * Up to quarters in a bust 
+    * 16 decreases
+  * Up to quadruples in a boom 
+    * +3,000% since 2012
 * Factored into hashing
 
 # Until it stops
@@ -138,7 +143,7 @@ Much sooner?
 
 21,000,000.00000000 BTC
 
-# Actually actually
+# Actually
 
 * 2,100,000,000,000,000 units
 * 2.1 quadrillion
@@ -159,9 +164,9 @@ Much sooner?
 
 # Coins in circulation
 
-11.5 million
+**11.5 million**
 
-*(as of 8 August 2013)*
+(as of 8 August 2013)
 
 # Also, fees
 
@@ -232,7 +237,7 @@ Block reward + transaction fees
 
 # Getting Bitcoin (hard way)
 
-* Exchange ([Mt.Gox](https://mtgox.com), [CampBX](https://campbx.com)
+* Exchange ([Mt.Gox](https://mtgox.com), [CampBX](https://campbx.com))
 * Seller ([Coinbase](https://coinbase.com))
 * OTC ([LocalBitcoins](https://localbitcoins))
 
@@ -241,14 +246,24 @@ Block reward + transaction fees
 * Earn!
   * Work
   * Comment - [/r/bitcointip](http://reddit.com/r/bitcointip)
+* Beg
+  * Faucets
 
 # Fiat <-> Bitcoin is hard
 
 * Government regulations
 * Bank interference
 * Emerging businesses
+  * Intent
+  * Security
+  * Trust
 
 # Spending Bitcoin
+
+* Type an address
+* Scan a QRcode
+
+# Where to spend
 
 * [Wiki/Trade](https://en.bitcoin.it/wiki/Trade) - huge list 
 * [BitcoinStore](https://www.bitcoinstore.com/) - online CE store
@@ -259,6 +274,31 @@ Block reward + transaction fees
 # Demo
 
 Multibit to Android
+
+# Advantages versus others
+
+* Quick transfer for asynchronous payments
+* Theoretically anonymous
+* No external control
+
+# Disadvantages against others
+
+* Long transfer for synchronous payments
+* Balances public (but difficult to trace)
+* Requires electronics and Internet
+  * Innovations diminishing this
+
+# Warning
+
+This is beta technology.
+
+It can break. 
+
+You can lose money. 
+
+No one can save you from yourself.
+
+Backup frequently and *securely*.
 
 # Resources
 
