@@ -23,6 +23,7 @@ subtitle
 # Knowledge Assumptions
 
 * Public key cryptography
+* Hashing
 * Basic networking fundamentals
 * Mobile phone or computer
 
