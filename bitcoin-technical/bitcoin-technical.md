@@ -24,12 +24,13 @@ subtitle
 
 * Public key cryptography
 * Basic networking fundamentals
+* Mobile phone or computer
 
 # Introduction
 
 Digital cryptocurrency.
 
-* Digital - not a physical object (although physical manifestations exist)
+* Digital - not a physical object
 * Crypto - secured by cryptography
 * Currency - can be used as a medium of exchange, i.e. money.
 
@@ -47,6 +48,8 @@ We do.
 * Not a company. 
 * Not a security. 
 * Not a product.
+
+Beware of misrepresentation.
 
 # Who develops it?
 
@@ -115,7 +118,7 @@ August 2016?
 
 * Difficulty aids consistency
   * Up to quarters in a bust (16 decreases)
-  * Up to quadruples in a boom (3K% inc since '12)
+  * Up to quadruples in a boom (3K% inc since 2012)
 * Factored into hashing
 
 # Until it stops
@@ -221,6 +224,41 @@ Block reward + transaction fees
 * Spending outputs
 * Fees
 * Broadcast
+
+# Real World Usage
+
+* Official client: [bitcoin.org](https://bitcoin.org)
+* Several other popular clients (SPV! Electrum!)
+
+# Getting Bitcoin (hard way)
+
+* Exchange ([Mt.Gox](https://mtgox.com), [CampBX](https://campbx.com)
+* Seller ([Coinbase](https://coinbase.com))
+* OTC ([LocalBitcoins](https://localbitcoins))
+
+# Getting Bitcoin (easy way)
+
+* Earn!
+  * Work
+  * Comment - [/r/bitcointip](http://reddit.com/r/bitcointip)
+
+# Fiat <-> Bitcoin is hard
+
+* Government regulations
+* Bank interference
+* Emerging businesses
+
+# Spending Bitcoin
+
+* [Wiki/Trade](https://en.bitcoin.it/wiki/Trade) - huge list 
+* [BitcoinStore](https://www.bitcoinstore.com/) - online CE store
+* In Pittsburgh
+  * [Oh Yeah!](http://www.theohyeah.com/) - Highland Ave, Shadyside
+  * [Waffalonia](http://www.waffallonia.com/) - Murray Ave, Squirrel Hill
+
+# Demo
+
+Multibit to Android
 
 # Resources
 
