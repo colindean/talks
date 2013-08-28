@@ -1,0 +1,79 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    atk (2.0.2)
+      glib2 (= 2.0.2)
+    cairo (1.12.6)
+      pkg-config
+    coderay (1.0.9)
+    eventmachine (1.0.3)
+    faraday (0.8.8)
+      multipart-post (~> 1.2.0)
+    gdk_pixbuf2 (2.0.2)
+      glib2 (= 2.0.2)
+    gettext (2.3.9)
+      locale
+      text
+    gio2 (2.0.2)
+      glib2 (= 2.0.2)
+    glib2 (2.0.2)
+      pkg-config
+    gtk2 (2.0.2)
+      atk (= 2.0.2)
+      gdk_pixbuf2 (= 2.0.2)
+      pango (= 2.0.2)
+    hikidoc (0.0.6)
+    http_parser.rb (0.5.3)
+    json (1.8.0)
+    kramdown (1.1.0)
+    locale (2.0.8)
+    mime-types (1.24)
+    mini_portile (0.5.1)
+    multipart-post (1.2.0)
+    nokogiri (1.6.0)
+      mini_portile (~> 0.5.0)
+    oauth (0.4.7)
+    pango (2.0.2)
+      cairo (>= 1.12.5)
+      glib2 (= 2.0.2)
+    pkg-config (1.1.4)
+    poppler (2.0.2)
+    rabbit (2.1.1)
+      coderay (>= 1.0.0)
+      faraday
+      gettext
+      gtk2
+      hikidoc
+      kramdown
+      nokogiri
+      poppler
+      rdtool
+      rsvg2
+      rttool
+    rabbiter (2.0.0)
+      gio2 (>= 1.1.4)
+      rabbit (>= 2.0.0)
+      twitter-stream (>= 0.1.16)
+      twitter_oauth
+    rdtool (0.6.38)
+    rsvg2 (2.0.2)
+      cairo (>= 1.10.0)
+      gdk_pixbuf2 (= 2.0.2)
+    rttool (1.0.3.0)
+    simple_oauth (0.1.9)
+    text (1.2.1)
+    twitter-stream (0.1.16)
+      eventmachine (>= 0.12.8)
+      http_parser.rb (~> 0.5.1)
+      simple_oauth (~> 0.1.4)
+    twitter_oauth (0.4.94)
+      json (>= 1.8.0)
+      mime-types (>= 1.16)
+      oauth (>= 0.4.7)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rabbit
+  rabbiter
