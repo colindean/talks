@@ -96,8 +96,9 @@ Two purposes:
 
 # Basic objects
 
-* Block: series of hashes and values
+* Block: a collection of hashes and values
 * Transaction: transfer of value
+* Blockchain: a series blocks and transactions forming a public ledger
 
 # Mining Algorithm
 
