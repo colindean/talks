@@ -42,6 +42,12 @@ Digital cryptocurrency.
 * BTC = abbr
 * XBT = proposed ISO 4217 code
 
+# Beginnings
+  
+* Began in 2008 or earlier 
+  * bitcoin.org registered Aug 2008
+* [Genesis block](https://en.bitcoin.it/wiki/Genesis_block): 3 Jan 2009
+
 # Who runs it?
 
 We do.
@@ -86,7 +92,7 @@ Two purposes:
 
 # Mining Algorithm
 
-* in = previous block information plus nonce
+* in = previous block information plus [nonce](https://en.bitcoin.it/wiki/Nonce)
 * Block found when **sha256(sha256(in)).to_int** > difficulty
 * Difficulty changes every 2016 blocks
 
@@ -306,8 +312,27 @@ Backup frequently and *securely*.
 * [Bitcoin Wiki](https://en.bitcoin.it)
 * [Bitcoin StackExchange](http://bitcoin.stackexchange.com/)
 
+# [Altcoins](http://altcoins.com/)
+
+* Clones that change components and variables
+* [Litecoin](http://litecoin.org) - scrypt, 2.5 min conf
+* [PPCoin](http://www.ppcoin.org/) - proof-of-stake
+* [Feathercoin](http://feathercoin.com/) - scrypt, 2.5 min conf, checkpointing
+* NameCoin, DevCoin, Primecoin, Ripple
+* Garzik's Law
+
+# Prior Art
+
+* [Hashcash](https://en.wikipedia.org/wiki/Hashcash) - Adam Back (1997)
+  * Spam countermeasure
+* [bmoney](http://www.weidai.com/bmoney.txt) - Wei Dei (1998)
+* [bitgold](https://en.bitcoin.it/wiki/Bit_Gold_proposal) - Nick Szabo (1998)
+* "Proofs of Work and Bread Pudding Protocols" - Jakobsson & Juels (1999)
+* [RPOW](http://www.finney.org/~hal/rpow/) - Hal Finney, 2004
+
 # References
 
 * [Federal Reserve Money Stock Measures](http://www.federalreserve.gov/releases/h6/20130711/)
 * [Quantative Easing is Nothing New](http://dollardaze.org/blog/?post_id=00762&cat_id=20) by Mike Hewitt
 * [Difficulty Adjustment History](https://docs.google.com/spreadsheet/ccc?key=0AmcTCtjBoRWUdHVRMHpqWUJValI1RlZiaEtCT1RrQmc#gid=0)
+* [Bitcoin is Worse is Better](http://www.gwern.net/Bitcoin%20is%20Worse%20is%20Better)
