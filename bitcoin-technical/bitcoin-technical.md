@@ -325,8 +325,14 @@ Questions? Demandoj?
 * Clones that change components and variables
 * [Litecoin](http://litecoin.org) - scrypt, 2.5 min conf
 * [Feathercoin](http://feathercoin.com/) - scrypt, 2.5 min conf, checkpointing
-* NameCoin, DevCoin, Primecoin, PPCoin, Ripple
+* DevCoin, Primecoin, PPCoin, Ripple
 * Garzik's Law
+
+# Branch projects
+
+* [NameCoin](http://dot-bit.org/) - distributed domain name system
+* [BitMessage](https://bitmessage.org) - expiring messaging
+
 
 # Prior Art
 
