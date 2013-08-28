@@ -74,7 +74,6 @@ Beware of misrepresentation.
 * Satoshi Nakamoto
   * Anonymous author, absent
 
-
 # Two Key Aspects to Technology
 
 * **Mining** - Generation of Bitcoin, proof of work
@@ -264,15 +263,6 @@ Block reward + transaction fees
 * Beg
   * Faucets
 
-# Fiat <-> Bitcoin is hard
-
-* Government regulations
-* Bank interference
-* Emerging businesses
-  * Intent
-  * Security
-  * Trust
-
 # Spending Bitcoin
 
 * Type an address
@@ -337,6 +327,34 @@ Backup frequently and *securely*.
 * [bitgold](https://en.bitcoin.it/wiki/Bit_Gold_proposal) - Nick Szabo (1998)
 * "Proofs of Work and Bread Pudding Protocols" - Jakobsson & Juels (1999)
 * [RPOW](http://www.finney.org/~hal/rpow/) - Hal Finney, 2004
+
+# Challenges
+
+* Reliance on connectivity
+* Software learning curve
+* Regulatory burden
+
+# Under the banyan tree
+
+* Offline transactions added to Android client
+* Physical bitcoin
+* Brainwallet
+
+# New wallet for new paradigm
+
+* Hard to teach security
+* Hard to earn trust, seconds to lose it forever
+* Storage requirements for first-class node
+* Mobility
+
+# Fiat <-> Bitcoin is hard
+
+* Government regulations
+* Bank interference
+* Emerging businesses
+  * Intent
+  * Security
+  * Trust
 
 # References
 
