@@ -27,8 +27,9 @@ test
 * Meta
 * Technology overview
 * Real world usage
-* Thoughts
 * Q&A
+* Thoughts (time permitting)
+
 
 # Knowledge Assumptions
 
@@ -308,10 +309,16 @@ No one can save you from yourself.
 
 Backup frequently and *securely*.
 
+# Q&A
+
+Questions? Demandoj?
+
 # Resources
 
 * [Bitcoin Wiki](https://en.bitcoin.it)
-* [Bitcoin StackExchange](http://bitcoin.stackexchange.com/)
+* [Bitcoin StackExchange](https://bitcoin.stackexchange.com/)
+* [Bitcoin Foundation](https://bitcoinfoundation.org)
+* [BitcoinTalk](https://bitcointalk.org)
 
 # [Altcoins](http://altcoins.com/)
 
@@ -364,10 +371,6 @@ Backup frequently and *securely*.
 * [Quantative Easing is Nothing New](http://dollardaze.org/blog/?post_id=00762&cat_id=20) by Mike Hewitt
 * [Difficulty Adjustment History](https://docs.google.com/spreadsheet/ccc?key=0AmcTCtjBoRWUdHVRMHpqWUJValI1RlZiaEtCT1RrQmc#gid=0)
 * [Bitcoin is Worse is Better](http://www.gwern.net/Bitcoin%20is%20Worse%20is%20Better)
-
-# Q&A
-
-Questions? Demandoj?
 
 # Thanks!
 
