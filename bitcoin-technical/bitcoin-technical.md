@@ -27,6 +27,8 @@ test
 * Meta
 * Technology overview
 * Real world usage
+* Thoughts
+* Q&A
 
 # Knowledge Assumptions
 
@@ -314,9 +316,8 @@ Backup frequently and *securely*.
 
 * Clones that change components and variables
 * [Litecoin](http://litecoin.org) - scrypt, 2.5 min conf
-* [PPCoin](http://www.ppcoin.org/) - proof-of-stake
 * [Feathercoin](http://feathercoin.com/) - scrypt, 2.5 min conf, checkpointing
-* NameCoin, DevCoin, Primecoin, Ripple
+* NameCoin, DevCoin, Primecoin, PPCoin, Ripple
 * Garzik's Law
 
 # Prior Art
@@ -326,7 +327,7 @@ Backup frequently and *securely*.
 * [bmoney](http://www.weidai.com/bmoney.txt) - Wei Dei (1998)
 * [bitgold](https://en.bitcoin.it/wiki/Bit_Gold_proposal) - Nick Szabo (1998)
 * "Proofs of Work and Bread Pudding Protocols" - Jakobsson & Juels (1999)
-* [RPOW](http://www.finney.org/~hal/rpow/) - Hal Finney, 2004
+* [RPOW](http://www.finney.org/~hal/rpow/) - Hal Finney (2004)
 
 # Challenges
 
@@ -362,3 +363,14 @@ Backup frequently and *securely*.
 * [Quantative Easing is Nothing New](http://dollardaze.org/blog/?post_id=00762&cat_id=20) by Mike Hewitt
 * [Difficulty Adjustment History](https://docs.google.com/spreadsheet/ccc?key=0AmcTCtjBoRWUdHVRMHpqWUJValI1RlZiaEtCT1RrQmc#gid=0)
 * [Bitcoin is Worse is Better](http://www.gwern.net/Bitcoin%20is%20Worse%20is%20Better)
+
+# Q&A
+
+Questions? Demandoj?
+
+# Thanks!
+
+Colin Dean
+@colindean
+
+![1mjWPZFxVxRgUr4vHBzNnbssAPoGwuDZp](qrcode.svg){:width="200" height="200"}
