@@ -1,3 +1,30 @@
+GIT
+  remote: https://github.com/rabbit-shocker/rabbit.git
+  revision: a514925a7724c96867b04c8bfd29fcc52edd7b53
+  specs:
+    rabbit (2.1.2)
+      coderay (>= 1.0.0)
+      faraday
+      gettext
+      gtk2
+      hikidoc
+      kramdown
+      nokogiri
+      poppler
+      rdtool
+      rsvg2
+      rttool
+
+GIT
+  remote: https://github.com/rabbit-shocker/rabbiter.git
+  revision: 8800c1f3f1d6c45c54471b2b20b2657317bde532
+  specs:
+    rabbiter (2.0.1)
+      gio2 (>= 1.1.4)
+      rabbit (>= 2.0.0)
+      twitter-stream (>= 0.1.16)
+      twitter_oauth
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -38,30 +65,13 @@ GEM
       glib2 (= 2.0.2)
     pkg-config (1.1.4)
     poppler (2.0.2)
-    rabbit (2.1.1)
-      coderay (>= 1.0.0)
-      faraday
-      gettext
-      gtk2
-      hikidoc
-      kramdown
-      nokogiri
-      poppler
-      rdtool
-      rsvg2
-      rttool
-    rabbiter (2.0.0)
-      gio2 (>= 1.1.4)
-      rabbit (>= 2.0.0)
-      twitter-stream (>= 0.1.16)
-      twitter_oauth
     rdtool (0.6.38)
     rsvg2 (2.0.2)
       cairo (>= 1.10.0)
       gdk_pixbuf2 (= 2.0.2)
     rttool (1.0.3.0)
     simple_oauth (0.1.9)
-    text (1.2.1)
+    text (1.2.3)
     twitter-stream (0.1.16)
       eventmachine (>= 0.12.8)
       http_parser.rb (~> 0.5.1)
@@ -75,5 +85,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  rabbit
-  rabbiter
+  rabbit!
+  rabbiter (= 2.0.1)!
