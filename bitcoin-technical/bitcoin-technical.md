@@ -51,7 +51,9 @@ Digital cryptocurrency.
 * XBT = proposed ISO 4217 code
 
 # Beginnings
-  
+
+* Satoshi Nakamoto
+  * Anonymous author, absent
 * Began in 2008 or earlier 
   * bitcoin.org registered Aug 2008
 * [Genesis block](https://en.bitcoin.it/wiki/Genesis_block): 3 Jan 2009
@@ -71,8 +73,6 @@ Beware of misrepresentation.
 * Team of ~12 developers
 * Gavin Andresen
   * Lead developer
-* Satoshi Nakamoto
-  * Anonymous author, absent
 
 # Two Key Aspects to Technology
 
