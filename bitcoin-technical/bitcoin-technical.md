@@ -278,7 +278,6 @@ Block reward + transaction fees
 * [BitcoinStore](https://www.bitcoinstore.com/) - online CE store
 * In Pittsburgh
   * [Oh Yeah!](http://www.theohyeah.com/) - Highland Ave, Shadyside
-  * [Waffalonia](http://www.waffallonia.com/) - Murray Ave, Squirrel Hill
 
 # Demo
 
