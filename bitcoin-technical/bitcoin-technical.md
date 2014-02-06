@@ -18,8 +18,6 @@ allotted-time
 
 # Introduction
 
-test
-
 ![](bitcoin_logo.png){:width='500' height='104'}
 
 # Agenda
