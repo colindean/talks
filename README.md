@@ -65,3 +65,9 @@ a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
 Any code examples included in the directory for a talk, but not embedded in the
 talk itself, are licensed under the terms of the 
 [MIT License](http://opensource.org/licenses/MIT).
+
+Special Note
+------------
+
+The opinions and recommendations presented in these talks are my own, and do not
+necessarily reflect the beliefs or recommendations of my employer(s).
