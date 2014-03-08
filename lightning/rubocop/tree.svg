@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" id="svg2" viewBox="0 0 555.38 795.71" version="1.1">
+  <g id="layer1" transform="translate(14 -10.069)">
+    <g id="g3694">
+      <path id="path2853" stroke="#be9f52" stroke-width="22.222" fill="#d4bf8c" d="m127.93 794.67h271.52c-77.912-116.2-46.689-262.65-81.203-387.98-7.6028-27.608-44.096-34.171-70.405-34.374-23.425-0.18012-51.001 6.1947-55.018 31.943-22.954 130.59-7.1087 279.58-64.895 390.41z"/>
+      <path id="path3675" fill="#c9af6f" d="m206.92 460.42c22.437 57.561-16.254 119.85 5.8525 176.33 18.721 47.827-71.425 120.26-9.6646 127.56 40.939 4.8367 140.07 5.7151 131.15-45.052-10.137-57.745-43.181-117.6-31.613-178.63 12.216-64.444-35.621-123.45-95.729-80.202z"/>
+      <path id="path3686" fill="#be9f52" d="m235.11 478.24c-11.651 28.329 10.039 67.625 10.888 102.86 0.97578 40.492-0.6221 79.67-12.216 117.85-10.694 35.216 37.727 50.648 54.488 21.452 16.899-29.435-1.1302-61.794-9.5901-90.691-10.089-34.46 7.8346-69.043 9.3513-103.67 1.0299-23.515-40.6-77.756-52.922-47.796z"/>
+      <path id="path2885" d="m505.08 367.48c0 112.69-125.73 204.05-280.82 204.05s-280.82-91.357-280.82-204.05 125.73-204.05 280.82-204.05 280.82 91.357 280.82 204.05z" transform="matrix(.95324 0 0 1.1832 49.923 -173.29)" stroke="#3b8d4e" stroke-width="18.832" fill="#8cd49c"/>
+      <path id="path3659" fill-opacity=".98807" fill="#46a85e" d="m248.5 66.453c31.535 2.5946 63.951-4.2153 93.68 12.416 41.978 23.483 44.201 48.589 86.296 73.095 37.732 21.965 62.199 86.232 51.243 129.32-11.005 43.286-14.202 120.23-64.741 125.51-55.406 5.7803-104.26 27.577-157.79 38.68-68.62 14.24-106.38-59.26-163.89-77.28-68.835-21.56-50.279-96.74-19-143.03 30.747-45.502 35.098-104.7 81.018-141.41 28.085-22.452 60.851-19.955 93.18-17.295z"/>
+      <path id="path3666" fill="#3b8d4f" d="m266.68 145.25c47.73 6.5228 46.007 63.164 88.043 82.643 49.232 22.814 24.443 88.374-17.22 113.03-43.275 25.608-88.182 7.1192-131.13-5.6006-40.135-11.887-83.207-28.088-61.871-81.811 16.567-41.714 45.204-59.024 76.068-84.321 14.281-11.706 23.946-26.968 46.109-23.939z"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Simple tree</dc:title>
+        <dc:date>2010-06-10T07:22:04</dc:date>
+        <dc:description>A very simple tree.</dc:description>
+        <dc:source>http://openclipart.org/detail/65479/simple-tree-by-laobc</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>laobc</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>nature</rdf:li>
+            <rdf:li>tree</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

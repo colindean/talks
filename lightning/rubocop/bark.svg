@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   version="1.1"
+   width="100%"
+   height="100%"
+   viewBox="0 0 293.743 444.57968"
+   id="svg2">
+  <defs
+     id="defs3083" />
+  <g
+     id="g3112">
+    <path
+       d="m 11.112,433.46867 h 271.52 c -77.912,-116.2 -46.689,-262.65 -81.203,-387.979998 -7.6028,-27.608 -44.096,-34.171 -70.405,-34.374 -23.425,-0.18012 -51.001,6.1947 -55.018,31.943 C 53.052,173.64767 68.8973,322.63767 11.111,433.46767 z"
+       id="path2853"
+       style="fill:#d4bf8c;stroke:#be9f52;stroke-width:22.22200012" />
+    <path
+       d="m 90.102,99.218672 c 22.437,57.560998 -16.254,119.849998 5.8525,176.329998 18.721,47.827 -71.425,120.26 -9.6646,127.56 40.939,4.8367 140.07,5.7151 131.15,-45.052 -10.137,-57.745 -43.181,-117.6 -31.613,-178.63 12.216,-64.444 -35.621,-123.449998 -95.729,-80.201998 z"
+       id="path3675"
+       style="fill:#c9af6f" />
+    <path
+       d="m 118.292,117.03867 c -11.651,28.329 10.039,67.625 10.888,102.86 0.97578,40.492 -0.6221,79.67 -12.216,117.85 -10.694,35.216 37.727,50.648 54.488,21.452 16.899,-29.435 -1.1302,-61.794 -9.5901,-90.691 -10.089,-34.46 7.8346,-69.043 9.3513,-103.67 1.0299,-23.515 -40.6,-77.755998 -52.922,-47.796 z"
+       id="path3686"
+       style="fill:#be9f52" />
+  </g>
+  <metadata
+     id="metadata3079">
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/publicdomain/" />
+        <dc:publisher>
+          <cc:Agent
+             rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title></dc:title>
+        <dc:date>2010-06-10T07:22:04</dc:date>
+        <dc:description>A very simple tree.</dc:description>
+        <dc:source>http://openclipart.org/detail/65479/simple-tree-by-laobc</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>laobc</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>clip art</rdf:li>
+            <rdf:li>clipart</rdf:li>
+            <rdf:li>nature</rdf:li>
+            <rdf:li>tree</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>

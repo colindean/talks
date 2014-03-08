@@ -1,0 +1,166 @@
+Rubocop
+=======
+
+author
+: Colin Dean -> @colindean
+
+subtitle
+: Lightning Talks!
+
+theme
+: nari
+
+allotted-time
+: 300
+
+# Notices.
+
+My words are not necessarily my employers'. Duh.
+
+Tweet with *#rubocop* and it'll display up here.
+
+# Introduction
+
+Rubocop is a Ruby static code analyzer, based on the community Ruby style guide. 
+
+# Rubocop finds style errors.
+
+It can even automatically correct simple ones.
+
+# Run it.
+
+    gem install rubocop
+    rubocop -D
+
+# Read it.
+
+    Inspecting 2924 files
+    WCCC.C.C.W
+
+    Offences:
+     
+    Library/brew.rb:4:17: C: StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
+    std_trap = trap("INT") { exit! 130 } # no backtrace thanks
+                    ^^^^^
+    Library/brew.rb:15:1: C: SpecialGlobalVars: Prefer $LOAD_PATH over $:.
+    $:.unshift(HOMEBREW_LIBRARY_PATH + '/vendor')
+    ^^ 
+
+# Checks = "cops"
+
+You can write them yourself!
+                                                                           
+# Output formats
+
+Regular output is good enough for regular, daily use.
+
+# JSON for analytics
+
+Dashboards.
+
+# Offenses List
+
+    rubocop -f offenses
+
+    15664  StringLiterals
+    3805   LineLength
+    3039   Documentation
+    2363   AlignParameters
+
+**taken from Homebrew rev cfc7042**
+
+# Many more
+
+
+    -f, --format FORMATTER   Choose an output formatter. This option
+                                 can be specified multiple times to enable
+                                 multiple formatters at the same time.
+                                   [p]rogress (default)
+                                   [s]imple
+                                   [c]lang
+                                   [e]macs
+                                   [j]son
+                                   [f]iles
+                                   [o]ffences
+
+# Automatically generated configuration
+
+* Analyzes and builds config from least number of violations to greatest
+* Disables everything it finds
+* Uses sane defaults for others
+
+# TODO workflow
+
+* Re-enable one cop
+* Fix
+* Commit
+* Repeat
+
+# Guard
+
+    group :development do
+      gem 'guard-rubocop'
+    end
+
+    guard init rubocop
+{: lang="ruby"}
+
+# Rake
+
+    require 'rubocop/rake_task'
+
+    Rubocop::RakeTask.new
+{: lang="ruby"}
+
+# New sheriff in town
+
+* Cleanup is hard
+* Focus on one area
+
+# *Cui bono?*
+
+* Give new contributors a TODO list guide
+* TODO list is in logical order of least work to most work. 
+
+Small wins to big, low-hanging fruit to orchards.
+
+# What's the benefit of this effort?
+
+# At the bark level,
+
+![](bark.svg){:relative_width="30" align="right" relative_margin_right="-5"}
+
+Little style violations are removed. 
+
+This isn't much more than bragging rights, but it's something to feel good about.
+
+# At the tree level, 
+
+![](tree.svg){:relative_width="30" align="right" relative_margin_right="-5"}
+
+Code may become *more readable* because of trivial **refactoring** necessary to satisfy some of the easier validations.
+
+# At the grove level,
+
+![](grove.svg){:relative_width="30" align="right" relative_margin_right="-5"}
+
+Code may *execute more efficiently* because of **refactoring** necessary to satisfy some of the harder validations.
+
+# At the forest level,
+
+![](forest.svg){:relative_width="30" align="right" relative_margin_right="-5"}
+
+* higher quality code
+* guide for better contributions
+
+# gem install rubocop
+
+# rubocop
+
+# Thanks.
+
+@colindean
+
+cad.cx
+
+github.com/colindean/talks
