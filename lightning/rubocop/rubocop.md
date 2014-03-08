@@ -30,7 +30,8 @@ It can even automatically correct simple ones.
 # Run it.
 
     gem install rubocop
-    rubocop -D
+
+    rubocop
 
 # Read it.
 
