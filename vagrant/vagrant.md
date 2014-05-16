@@ -113,6 +113,7 @@ General helpers:
 * vagrant-cachier
 * vagrant-pristine
 * vagrant-vbguest
+* vagrant-rdp
 
 Plugins
 -------
