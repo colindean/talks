@@ -74,13 +74,25 @@ Installing Vagrant
 Vagrantfile is Ruby
 ---------------------
 
-	Vagrant.configure("2") do |config|
+    Vagrant.configure("2") do |config|
       config.vm.guest = :linux
       config.vm.box = "precise64"
       config.vm.box_url = "http://files.vagrantup.com/precise64.box"
       config.vm.network :forwarded_port, guest: 80, host: 8080
       config.vm.network :forwarded_port, guest: 3306, host: 3307
       config.vm.provision :shell, :inline => $script
+    end
+
+Multiple machines, too!
+-----------------------
+
+    Vagrant.configure("2") do |config|
+      config.vm.define "web" do |web|
+        web.vm.box = "apache"
+      end
+      config.vm.define "db" do |db|
+        db.vm.box = "mysql"
+      end
     end
     
 Provisioning
