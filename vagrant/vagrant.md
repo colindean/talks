@@ -147,3 +147,8 @@ rackspace softlayer vsphere
 
 Usage in the real world
 -----------------------
+
+Resources
+---------
+
+* [Vagrant docs](https://docs.vagrantup.com/v2)
