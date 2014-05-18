@@ -2,7 +2,7 @@ Vagrant
 =======
 
 Agenda
-------
+======
 
 * Introduction
 * What is Vagrant?
@@ -14,7 +14,7 @@ Agenda
 * Real world usage
 
 Introduction
-------------
+============
 
 Colin Dean
 
@@ -25,7 +25,7 @@ Software Engineer @ IBM (formerly Vivísimo)
 Advisor @ YourTalentAgents
 
 Credentials
------------
+===========
 
 Using Vagrant since 1.0
 
@@ -36,27 +36,28 @@ when it was just a Ruby gem
 (now a full program)
 
 What is Vagrant?
-----------------
+================
 
 Vagrant makes development environments easy.
 
 > Create and configure lightweight, reproducible, and portable development environments.
 
 The value of Vagrant
---------------------
+====================
+
     vagrant up
-    
+
 A wild development environment appears!
     
 That's it.
-----------
+==========
 * No more "works on my machine"
 * No more rebuilding a shared dev server
 * Everyone gets their own dev environment
 
 
 Under the hood
---------------
+==============
 
 * Ruby
 * Your choice of virtualization system
@@ -65,14 +66,14 @@ Under the hood
   * Many others via plugins
     
 Installing Vagrant
-------------------
+==================
 
 * [vagrantup.com](http://vagrantup.com)
 * Native packages
 * Don't install via Rubygems
 
 Vagrantfile is Ruby
----------------------
+=====================
 
     Vagrant.configure("2") do |config|
       config.vm.guest = :linux
@@ -84,7 +85,7 @@ Vagrantfile is Ruby
     end
 
 Multiple machines, too!
------------------------
+=======================
 
     Vagrant.configure("2") do |config|
       config.vm.define "web" do |web|
@@ -96,7 +97,7 @@ Multiple machines, too!
     end
     
 Provisioning
-------------
+============
 
 ### Shell scripts, inline or in a file
 
@@ -118,7 +119,7 @@ Provisioning
 	end
 	
 Plugins
--------
+=======
 
 General helpers:
 
@@ -128,7 +129,7 @@ General helpers:
 * vagrant-rdp
 
 Plugins
--------
+=======
 
 Useful for Chef provisioning:
 
@@ -137,7 +138,7 @@ Useful for Chef provisioning:
 * vagrant-ohai
 
 Providers
----------
+=========
 
 Run Vagrant VMs anywhere!
 
@@ -146,9 +147,10 @@ kvm libvirt lxc openstack parallels
 rackspace softlayer vsphere
 
 Usage in the real world
------------------------
+=======================
 
 Resources
----------
+=========
 
 * [Vagrant docs](https://docs.vagrantup.com/v2)
+
