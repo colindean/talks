@@ -24,7 +24,7 @@ Principles of Authorship and Delivery
 
 * If there is a sentence on a slide, it is the only sentence on the slide.
 * No numbered lists greater than 10 items, exceptions for steps or outlines
-* No more than 1 graphic per slide
+* No more than one graphic per slide
 * Title slide should identify the speaker, a URL, and relevant contact info.
 * End slide should identify the speaker, a URL, and relevant contact info.
 * The URL for the talk should be its directory within this repository.
