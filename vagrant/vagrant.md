@@ -269,6 +269,12 @@ Resources
 
 * [Vagrant docs](https://docs.vagrantup.com/v2)
 
+This talk is open source
+===========================
+
+https://github.com/colindean/talks
+
+
 Go try it out
 =============
 
