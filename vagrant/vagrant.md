@@ -60,7 +60,7 @@ Vagrant makes development environments easy.
 What does Vagrant do?
 =====================
 
-Creates and configures lightweight, reproducible, and portable development environments.
+Creates and configures *lightweight*, *reproducible*, and *portable* development environments.
 
 The value of Vagrant
 ====================
@@ -84,7 +84,7 @@ That's it.
 ==========
 * No more "works on my machine"
 * No more rebuilding a shared dev server
-* Everyone gets their own dev environment
+* Everyone gets their own versioned dev environment
 
 
 Under the hood
