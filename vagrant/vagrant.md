@@ -19,7 +19,7 @@ allotted-time
 Introduction
 ============
 
-![Colin Dean - @colindean](me.jpg){:relative_width='15' align='left' reflect_ratio='0.1' }
+![Colin Dean - @colindean](me.jpg){:relative_height='35' align='left' reflect_ratio='0.1' }
 
 * Software Engineer @ IBM (formerly Vivisimo)
 
@@ -259,6 +259,7 @@ kvm *libvirt* lxc *openstack* parallels
 Usage in the real world
 ==========================
 
+
 * [Lanager](https://github.com/zeropingheroes/lanager)
 * [Gittip](https://github.com/gittip/www.gittip.com)
 * 
@@ -277,3 +278,7 @@ Thanks
 ======
 
 [@colindean](http://twitter.com/colindean)
+
+IBM Watson is hiring!
+
+http://j.mp/watson-pgh-jobs
