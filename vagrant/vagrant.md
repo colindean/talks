@@ -259,10 +259,8 @@ kvm *libvirt* lxc *openstack* parallels
 Usage in the real world
 ==========================
 
-
 * [Lanager](https://github.com/zeropingheroes/lanager)
 * [Gittip](https://github.com/gittip/www.gittip.com)
-* 
 
 Resources
 =========
