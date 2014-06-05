@@ -6,4 +6,4 @@ if [ -z "`which rabbit`" ]; then
 fi
 
 rabbit rubocop.md 2>&1 & 
-rabbiter --filter "#rubocop" 2>&1 &
+#rabbiter --filter "#rubocop" 2>&1 &
