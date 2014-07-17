@@ -42,3 +42,8 @@ Main points
   * own the code by proxy
   * make the code as if you had written it
   * make the code into something you could maintain
+
+Useful images
+=============
+
+![WTFs per minute](http://blog.codinghorror.com/content/images/uploads/2009/02/6a0120a85dcdae970b012877707a45970c-pi.png)
