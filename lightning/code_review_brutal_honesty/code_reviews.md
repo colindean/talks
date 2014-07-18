@@ -47,3 +47,9 @@ Useful images
 =============
 
 ![WTFs per minute](http://blog.codinghorror.com/content/images/uploads/2009/02/6a0120a85dcdae970b012877707a45970c-pi.png)
+
+References
+==========
+
+* [Code Reviews: Just Do It](http://blog.codinghorror.com/code-reviews-just-do-it/) by Jeff Atwood
+* [Peer Reviews in Software: A Practical Guide](http://www.amazon.com/exec/obidos/ASIN/0201734850/colingrad-20) by Karl Wiegers
