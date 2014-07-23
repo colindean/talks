@@ -17,4 +17,6 @@ allotted-time
 
 My words are not necessarily my employers'. Duh.
 
+# Watson on Wild Ducks
 
+![](https://pbs.twimg.com/media/BssBH0XCcAA-YP7.png:large)
