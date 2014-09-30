@@ -42,6 +42,38 @@ Main points
   * own the code by proxy
   * make the code as if you had written it
   * make the code into something you could maintain
+  * 
+  
+Things to Look for
+==================
+
+* Complexity of algorithms and loops
+* Exception handling
+* Exception naming
+* Logging sufficiency
+
+Things to Look for
+==================
+
+* Style conformation
+* Variable naming
+* Long lines
+* Long methods
+
+Things to Look for
+==================
+
+* Readability
+* Extraneous/Unnecessary Comments
+* SLOC 𝛥
+* Single Purpose 
+  * ("and" as a red flag)
+
+But really,
+===========
+
+* Does it work?
+* Is it tested?
 
 Useful images
 =============
