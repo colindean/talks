@@ -73,18 +73,14 @@ Immediate fix vs backlog
 Team as credit raters
 =====================
 
-```scala
-// XXX   risky business, fix ASAP
-// FIXME safe for now, revisit soon
-// TODO  low risk + enhancements
-```
+    // XXX   risky business, fix ASAP
+    // FIXME safe for now, revisit soon
+    // TODO  low risk + enhancements
 
 Group effort, group acceptance
 ==============================
 
 Commit or patchset = my/their code
-
-- - -
 
 Master = our code
 
