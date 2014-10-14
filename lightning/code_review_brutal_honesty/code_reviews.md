@@ -18,9 +18,9 @@ Introduction
 
 ![Colin Dean - @colindean](http://i.imgur.com/OQjWfCX.jpg){:relative_height='35' align='left' reflect_ratio='0.1' }
 
-* Software Engineer @ IBM (formerly Vivisimo)
-
-* Advisor @ YourTalentAgents
+* Software Engineer @ IBM (formerly Vivísimo)
+* Advisor @ Imagine Careers
+* CIO @ Meta Mesh
 
 Obligatory statement
 ====================
@@ -42,9 +42,53 @@ Main points
   * own the code by proxy
   * make the code as if you had written it
   * make the code into something you could maintain
-  * 
-  
-Things to Look for
+
+Honest & focused without ego in the way
+=======================================
+
+Enables *continuous* evolution of style and methods
+
+Explanation and Response
+========================
+
+critique | learning
+
+Code Reviewers are lawyers we want
+==================================
+
+Screening and minimizing risk
+
+If Code == Debt
+===============
+
+* Team *analyzes* debt
+* Team *minimizes* debt
+* Team *accepts* debt†
+
+† including small print
+
+Immediate fix vs backlog
+============================
+
+Team as credit raters
+=====================
+
+```scala
+// XXX   risky business, fix ASAP
+// FIXME safe for now, revisit soon
+// TODO  low risk + enhancements
+```
+
+Group effort, group acceptance
+==============================
+
+Commit or patchset = my/their code
+
+- - -
+
+Master = our code
+
+Things we look for
 ==================
 
 * Complexity of algorithms and loops
@@ -52,7 +96,7 @@ Things to Look for
 * Exception naming
 * Logging sufficiency
 
-Things to Look for
+Things we look for
 ==================
 
 * Style conformation
@@ -60,7 +104,7 @@ Things to Look for
 * Long lines
 * Long methods
 
-Things to Look for
+Things we look for
 ==================
 
 * Readability
@@ -74,6 +118,19 @@ But really,
 
 * Does it work?
 * Is it tested?
+
+Productive Commenting
+=====================
+
+* Attack - "wtf is this crap."
+* Statement - "I don't like this."
+* Pickyness/pedantry - "Whitespace!"
+* Constructive Criticism - "This would perform better if..."
+
+Sometimes meatspace is better
+=============================
+
+Learn when to *talk*, not post more
 
 Useful images
 =============
