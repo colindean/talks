@@ -25,13 +25,18 @@ Rubocop is a Ruby static code analyzer, based on the community Ruby style guide.
 
 # Rubocop finds style errors.
 
-It can even automatically correct simple ones.
+139 Styles, 36 Lints, 8 Rails-specific, 7 Metrics
+
+* Line length
+* Unless With Else
+* Trailing characters
+* Hash syntax
 
 # Run it.
 
     gem install rubocop
 
-    rubocop
+    rubocop # warning: hard mode
 
 # Read it.
 
@@ -50,7 +55,16 @@ It can even automatically correct simple ones.
 # Checks = "cops"
 
 You can write them yourself!
-                                                                           
+
+# Automatically fix some offences
+
+    ibm-registration.rb:8:13: C: [Corrected] Use the new Ruby 1.9 hash syntax.
+      uninstall :pkgutil => "com.ibm.IBM-Registration"
+                ^^^^^^^^^^^
+            
+    9 files inspected, 31 offenses detected, 12 offenses corrected
+
+
 # Output formats
 
 Regular output is good enough for regular, daily use.
@@ -106,11 +120,18 @@ Dashboards.
     guard init rubocop
 {: lang="ruby"}
 
+# Guardfile
+
+    guard :rubocop do
+      watch(/.+\.rb$/)
+      watch(/(?:.+\/)?\.rubocop\.yml$/) { |m| File.dirname(m[0]) }
+    end
+
 # Rake
 
     require 'rubocop/rake_task'
 
-    Rubocop::RakeTask.new
+    RuboCop::RakeTask.new
 {: lang="ruby"}
 
 # New sheriff in town
