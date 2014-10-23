@@ -21,7 +21,7 @@ Tweet with *#rubocop* and it'll display up here.
 
 # Introduction
 
-Rubocop is a Ruby static code analyzer, based on the community Ruby style guide. 
+Rubocop is a Ruby static code analyzer, based on the community Ruby style guide.
 
 # Rubocop finds style errors.
 
@@ -44,24 +44,24 @@ Rubocop is a Ruby static code analyzer, based on the community Ruby style guide.
     WCCC.C.C.W
 
     Offences:
-     
+
     Library/brew.rb:4:17: C: StringLiterals: Prefer single-quoted strings when you don't need string interpolation or special symbols.
     std_trap = trap("INT") { exit! 130 } # no backtrace thanks
                     ^^^^^
     Library/brew.rb:15:1: C: SpecialGlobalVars: Prefer $LOAD_PATH over $:.
     $:.unshift(HOMEBREW_LIBRARY_PATH + '/vendor')
-    ^^ 
+    ^^
 
 # Checks = "cops"
 
 You can write them yourself!
 
-# Automatically fix some offences
+# Automatically fix some offenses
 
     ibm-registration.rb:8:13: C: [Corrected] Use the new Ruby 1.9 hash syntax.
       uninstall :pkgutil => "com.ibm.IBM-Registration"
                 ^^^^^^^^^^^
-            
+
     9 files inspected, 31 offenses detected, 12 offenses corrected
 
 
@@ -69,9 +69,7 @@ You can write them yourself!
 
 Regular output is good enough for regular, daily use.
 
-# JSON for analytics
-
-Dashboards.
+JSON for analytics. Dashboards.
 
 # Offenses List
 
@@ -126,6 +124,9 @@ Dashboards.
       watch(/.+\.rb$/)
       watch(/(?:.+\/)?\.rubocop\.yml$/) { |m| File.dirname(m[0]) }
     end
+{: lang="ruby"}
+
+(`guard init rubocop` does this for you!s)
 
 # Rake
 
@@ -142,7 +143,7 @@ Dashboards.
 # *Cui bono?*
 
 * Give new contributors a TODO list guide
-* TODO list is in logical order of least work to most work. 
+* TODO list is in logical order of least work to most work.
 
 Small wins to big, low-hanging fruit to orchards.
 
@@ -152,11 +153,11 @@ Small wins to big, low-hanging fruit to orchards.
 
 ![](bark.svg){:relative_width="30" align="right" relative_margin_right="-5"}
 
-Little style violations are removed. 
+Little style violations are removed.
 
 This isn't much more than bragging rights, but it's something to feel good about.
 
-# At the tree level, 
+# At the tree level,
 
 ![](tree.svg){:relative_width="30" align="right" relative_margin_right="-5"}
 
@@ -174,6 +175,14 @@ Code may *execute more efficiently* because of **refactoring** necessary to sati
 
 * higher quality code
 * guide for better contributions
+
+# This applies to all style checkers!
+
+* ScalaCheck
+* CheckStyle for Java
+* `pep8` for Python
+* `scan` for Haskell
+* ??? for Rust, Go, et al.
 
 # gem install rubocop
 
