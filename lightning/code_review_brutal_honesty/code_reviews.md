@@ -34,6 +34,12 @@ Credentials
 * Professional services consultant 2009-2014
 * Software engineer on highly functional team 2014-
 
+Experience life at a high rate of WTFs per minute
+=================================================
+
+Code Reviews
+============
+
 Main points
 ===========
 
