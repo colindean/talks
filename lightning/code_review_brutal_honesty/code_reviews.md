@@ -144,3 +144,4 @@ References
 
 * [Code Reviews: Just Do It](http://blog.codinghorror.com/code-reviews-just-do-it/) by Jeff Atwood
 * [Peer Reviews in Software: A Practical Guide](http://www.amazon.com/exec/obidos/ASIN/0201734850/colingrad-20) by Karl Wiegers
+* [How to write the perfect pull request](https://github.com/blog/1943-how-to-write-the-perfect-pull-request) by Keavy McMinn
