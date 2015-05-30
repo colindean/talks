@@ -103,19 +103,34 @@ IPv6
 
 # Availability
 
-![Android](logos/Android_Robot_100.png) via ![JuiceSSH](logos/JuiceSSH.png)
+![Android](logos/Android_Robot_100.png)
+
+![JuiceSSH](logos/JuiceSSH.png)
+
 ![NetBSD](logos/NetBSD-smaller-tb.png)
+
 ![Arch](logos/arch.png)
+
 ![Chrome](logos/chrome.png)
+
 ![Debian](logos/debian.svg)
+
 ![Fedora](logos/fedora.png)
+
 ![FreeBSD](logos/freebsd.png)
+
 ![Gentoo](logos/gentoo.png)
+
 ![Homebrew](logos/homebrew2.png)
+
 ![Mac OS X](logos/macosx.png)
+
 ![Macports](logos/macports.png)
+
 ![openSUSE](logos/openSUSE.svg)
+
 ![openCSW](logos/opencsw.png)
+
 ![Ubuntu](logos/ubuntu.svg)
 
 # Common install invocation
