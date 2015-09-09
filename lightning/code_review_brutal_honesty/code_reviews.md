@@ -33,6 +33,7 @@ Credentials
 * Lone wolf developer on international team 2008-2009
 * Professional services consultant 2009-2014
 * Software engineer on highly functional team 2014-
+  * Tech Lead since late 2014
 
 Experience life at a high rate of WTFs per minute
 =================================================

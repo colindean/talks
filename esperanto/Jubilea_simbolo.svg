@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="155"
+   id="svg1876"
+   sodipodi:version="0.32"
+   inkscape:version="0.44"
+   version="1.0"
+   sodipodi:docbase="C:\Dokumente und Einstellungen\Kristjan'\Eigene Dateien\Esperanto\Grafiken"
+   sodipodi:docname="Jubilea_simbolo_01.svg"
+   inkscape:export-filename="C:\Dokumente und Einstellungen\Kristjan'\Eigene Dateien\Esperanto\Grafiken\Jubilea_simbolo_01.png"
+   inkscape:export-xdpi="175.93549"
+   inkscape:export-ydpi="175.93549">
+  <defs
+     id="defs1878" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="29.617382"
+     inkscape:cy="76.885591"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     width="256px"
+     height="155px"
+     inkscape:window-width="925"
+     inkscape:window-height="573"
+     inkscape:window-x="88"
+     inkscape:window-y="88" />
+  <metadata
+     id="metadata1881">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Ebene 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <g
+       transform="matrix(5.112918e-2,0,0,5.112918e-2,6.244522e-2,-0.119739)"
+       style="visibility:visible"
+       id="g1961">
+      <path
+         inkscape:export-ydpi="70.3125"
+         inkscape:export-xdpi="70.3125"
+         inkscape:export-filename="C:\Dokumente und Einstellungen\Kristjan'\Eigene Dateien\Esperanto\Grafiken\path6323.png"
+         sodipodi:nodetypes="czczczczczczc"
+         d="M 2445.151,2.3418951 C 2463.5718,15.008015 2461.4277,-4.4305823 2461.2985,119.9102 C 2461.1695,244.25312 2468.7132,224.00344 2448.5293,238.88283 C 1346.7331,365.79323 1025.668,742.40409 1025.0752,991.53927 C 1024.4823,1240.6744 1490.3215,1372.9768 2428.505,1366.1536 C 2468.9558,1372.9018 2460.6038,1362.416 2461.2031,1518.4729 C 2461.8023,1674.5305 2472.2202,1668.4601 2437.4953,1672.5888 C 1432.6219,1784.3065 1092.9661,1771.6267 1038.1214,2028.6872 C 983.27675,2285.7477 1622.2078,2722.3768 2444.6009,2797.7053 C 2461.7591,2812.4333 2461.7971,2794.8459 2460.5171,2910.8421 C 2459.237,3026.8383 2469.146,3030.4572 2444.1457,3033.7645 C 1840.4983,3040.839 -1.7359451,2721.8219 -1.2212144,1507.2978 C -0.70646365,292.75117 1844.6469,2.6980029 2445.151,2.3418951 z "
+         id="path1889"
+         style="fill:#2dbe23;fill-opacity:1;stroke:none;visibility:visible" />
+      <path
+         inkscape:export-ydpi="70.3125"
+         inkscape:export-xdpi="70.3125"
+         sodipodi:nodetypes="czczczczczczc"
+         d="M 2559.3319,2.3419292 C 2540.911,15.008033 2543.0552,-4.4305079 2543.1843,119.9103 C 2543.3133,244.2532 2535.7696,224.00345 2555.9536,238.88289 C 3657.7498,365.79325 3978.8149,742.40414 3979.4077,991.53932 C 3980.0006,1240.6744 3514.1613,1372.9768 2575.9779,1366.1536 C 2535.5271,1372.9018 2543.879,1362.416 2543.2798,1518.4729 C 2542.6806,1674.5305 2532.2627,1668.4601 2566.9876,1672.5888 C 3571.861,1784.3065 3911.5168,1771.6267 3966.3614,2028.6872 C 4021.2061,2285.7477 3382.2751,2722.3768 2559.882,2797.7053 C 2542.7238,2812.4333 2542.6858,2794.8459 2543.9658,2910.8421 C 2545.2458,3026.8383 2535.3369,3030.4572 2560.3372,3033.7645 C 3163.9846,3040.839 5006.2188,2721.8219 5005.7042,1507.2978 C 5005.1894,292.75122 3159.836,2.6980413 2559.3319,2.3419292 z "
+         id="path6323"
+         style="fill:#2dbe23;fill-opacity:1;stroke:none;visibility:visible" />
+    </g>
+  </g>
+</svg>
