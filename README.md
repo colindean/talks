@@ -4,8 +4,8 @@ Talks by Colin Dean
 Introduction
 ------------
 
-This repository is an archive of the various talks I am writing, have written, 
-and/or have delivered. All talks are original unless noted in the talk or its 
+This repository is an archive of the various talks I am writing, have written,
+and/or have delivered. All talks are original unless noted in the talk or its
 directory.
 
 Each talk is in its own directory, and I'll try to remember to tag whenever I've
@@ -34,40 +34,46 @@ Principles of Authorship and Delivery
 * The URL for the talk should be its directory within this repository.
 * The contact information should include Twitter handle, event hash tag, and a talk hash tag.
 * The color scheme must be readable at no less than 30 ft away.
-* The color yellow shall not be seen, except when grouped logically with red and green. 
+* The color yellow shall not be seen, except when grouped logically with red and green.
 
 Choice Quotes for Inspiration
 -----------------------------
 
-> If you can’t write your message in a sentence, you can’t say it in an hour. 
+> If you can’t write your message in a sentence, you can’t say it in an hour.
 *Dianna Booher*
 
-> There are always three speeches, for every one you actually gave. The one you 
-practiced, the one you gave, and the one you wish you gave. 
+> There are always three speeches, for every one you actually gave. The one you
+practiced, the one you gave, and the one you wish you gave.
 *Dale Carnegie*
 
-> He who wants to persuade should put his trust not in the right argument, but 
-in the right word. The power of sound has always been greater than 
+> He who wants to persuade should put his trust not in the right argument, but
+in the right word. The power of sound has always been greater than
 the power of sense. *Joseph Conrad*
 
-> Best way to conquer stage fright is to know what you’re talking about. 
+> Best way to conquer stage fright is to know what you’re talking about.
 *Michael H Mescon*
 
-> 90% of how well the talk will go is determined before the speaker steps on the platform. 
+> 90% of how well the talk will go is determined before the speaker steps on the platform.
 *Somers White*
 
-> Great is the art of beginning, but greater the art is of ending. 
+> Great is the art of beginning, but greater the art is of ending.
 *Henry Wadsworth Longfellow*
+
+Choice Articles on Process
+--------------------------
+
+* [[Eileen Uchitelle's] Process for Writing
+  a Talk](http://eileencodes.com/posts/my-process-for-writing-a-talk/)
 
 License
 -------
 
 Unless otherwise stated in a talk's individual directory, each talk is licensed
-under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view 
+under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view
 a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/.
 
 Any code examples included in the directory for a talk, but not embedded in the
-talk itself, are licensed under the terms of the 
+talk itself, are licensed under the terms of the
 [MIT License](http://opensource.org/licenses/MIT).
 
 Special Note
