@@ -1,0 +1,9 @@
+Tour of 3-4 languages for creating quick command line toolslllllllll
+
+1. Scala
+2. Ruby
+3. Go
+4. Python
+5. Bash?
+
+
