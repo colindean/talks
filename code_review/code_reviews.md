@@ -19,8 +19,9 @@ Introduction
 ![Colin Dean - @colindean](http://i.imgur.com/OQjWfCX.jpg){:relative_height='35' align='left' reflect_ratio='0.1' }
 
 * Software Engineer @ IBM (formerly Vivísimo)
+* President @ Meta Mesh
+* Advisor @ Code & Supply
 * Advisor @ Imagine Careers
-* CIO @ Meta Mesh
 
 Obligatory statement
 ====================
@@ -44,7 +45,7 @@ Code Reviews
 Main points
 ===========
 
-* Code Review is your chance to 
+* Code Review is your chance to
   * critique the code
   * own the code by proxy
   * make the code as if you had written it
@@ -91,6 +92,9 @@ Commit or patchset = my/their code
 
 Master = our code
 
+Healthy conflict
+================
+
 Things we look for
 ==================
 
@@ -113,7 +117,7 @@ Things we look for
 * Readability
 * Extraneous/Unnecessary Comments
 * SLOC 𝛥
-* Single Purpose 
+* Single Purpose
   * ("and" as a red flag)
 
 But really,
