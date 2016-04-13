@@ -95,6 +95,31 @@ Master = our code
 Healthy conflict
 ================
 
+Conflict is OK
+==============
+
+as long as it's not personal
+
+Talk about code not people
+==========================
+
+"This design doesn't allow..."
+
+vs
+
+"You didn't consider"
+
+"The code" not "You"
+====================
+
+Pick battles
+============
+
+* Make progress
+* Don't be pedantic
+* Accept debt
+* Identify high churn lines
+
 Things we look for
 ==================
 
