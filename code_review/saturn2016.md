@@ -68,3 +68,85 @@ _(summarized)_
 Notes and references
 -----
 * [How to deliver a great SATURN 2016 presentation](https://insights.sei.cmu.edu/saturn/2015/09/how-to-deliver-a-great-saturn-2016-presentation.html)
+
+Notes from dry run
+------------------
+
+I stopped in minorly late and I have no clue what you’re talking about.
+[1:03 PM]
+ah, that was all about you
+[1:03 PM]
+whoa.
+[1:03 PM]
+relevant?
+[1:08 PM]
+I feel like your talk is gonna say ‘code review is good’ :stuck_out_tongue:
+that seems like a given?
+[1:16 PM]
+Jean Lange on code review drives: you’re reading a lot.
+[1:19 PM]
+http://www.dictionary.com/browse/idiomaticity
+Dictionary.com
+the definition of idiomaticity
+Idiomaticity definition, peculiar to or characteristic of a particular language
+or dialect: idiomatic French. See more.
+
+[1:23 PM]
+also on ‘tips for thorough code review'
+[1:24 PM]
+bicker electronically: you recommend working in person
+[1:24 PM]
+but what if you can’t be in person?
+[1:27 PM]
+in review: your numbering seems weird? you mention ‘4th’ and ‘5th’ but not 3rd?
+And I think you were referring to sub-bullets?
+[1:27 PM]
+jenny says: chop out most of the ‘about me’.
+[1:27 PM]
+andrew says: unless it’s about code review specifically.
+[1:29 PM]
+intertwine ‘about code review’ with ‘history’?
+[1:29 PM]
+krofcheck: really clear when you were reading. Bigger words. Harder for me to
+follow. Faster. Speak to me!
+[1:30 PM]
+"I would have been much more engaged and followed the later part better if”...
+you weren’t reading at me
+[1:31 PM]
+still John: talk about building the team (some of the stuff you put under
+understandability and learnability are really about the team)
+[1:31 PM]
+steve: I would like to have the body of the talk focused on the assumption: you
+believe in code review
+[1:32 PM]
+what you had was “therapeutic trash talk” - save those for the end, for
+answering questions.
+[1:32 PM]
+could you use some examples? This code snippet is bad, how do we drive it to
+get better?
+[1:32 PM]
+you say: that’s a separate talk.
+[1:33 PM]
+this is: from the software architect’s view, how does the black box of code
+review fit into our architectural process?
+[1:33 PM]
+yo, did you say that?
+[1:34 PM]
+steve: I was sensitive to where you spent the time partly because the first two
+talks were so much shorter. You weren’t really over time (but you were way
+longer)
+[1:34 PM]
+"I was normalized to a lightning talk length" (edited)
+[1:36 PM]
+part of the intro to keep: I came to programming from journalism where review
+is totally a normal part of the process. And yo, like physical printing and
+committing. (edited)
+[1:38 PM]
+turge: I like your transitions
+[1:39 PM]
+steve: arrow transitions, I was reading it as filled in arrow is current topic
+[1:40 PM]
+I say: I agree that the reading parts were too fast and difficult to
+understand. If you throw away some intro, slow down on those.
+[1:40 PM]
+we all liked the comic at the beginning!
