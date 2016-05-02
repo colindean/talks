@@ -1,0 +1,30 @@
+digraph codereview {
+  PersonA [ label = "Learner" ]
+  PersonB [ label = "Teacher" ]
+
+  ACoding [ label = "Learning Coding" ]
+  BCoding [ label = "Teacher Coding" ]
+  AReviewing [ label = "Learner Reviewing" ]
+  BReviewing [ label = "Teacher Reviewing" ]
+
+  PairingTeaching [ label = "Pairing & Teaching\nLearning Together" ]
+  Evaluation [ label = "Evaluation" ]
+  ExemplaryReading [ label = "Exemplary Reading"]
+  SerendipitousEvaluationOfExample [ label = "Serendipity\nCritique Of Example" ]
+
+
+  PairingTeaching -> BCoding
+  PairingTeaching -> ACoding
+
+  Evaluation -> ACoding
+  Evaluation -> BReviewing
+
+  ExemplaryReading -> AReviewing
+  ExemplaryReading -> BCoding
+
+  SerendipitousEvaluationOfExample -> AReviewing
+  SerendipitousEvaluationOfExample -> BReviewing
+
+  overlap=false
+  #layout=neato
+}
