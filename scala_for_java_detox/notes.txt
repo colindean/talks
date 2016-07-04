@@ -1,2 +1,0 @@
-http://manuel.bernhardt.io/2015/11/13/5-years-of-scala-and-counting-debunking-some-myths-about-the-language-and-its-environment/
-https://m50d.github.io/2015/11/16/my-five-years.html
