@@ -27,6 +27,7 @@
 
 # Links
 
+* [The 10 Most Annoying Things Coming Back to Java After Some Days of Scala](https://blog.jooq.org/2014/08/01/the-10-most-annoying-things-coming-back-to-java-after-some-days-of-scala/)
 * [Sharing Our Experience With Scala at Smaato](http://blog.smaato.com/sharing-experience-scala-programming-language)
 * [Variance in Java and Scala](https://medium.com/@sinisalouc/variance-in-java-and-scala-63af925d21dc#.nee13u5af)
 * http://manuel.bernhardt.io/2015/11/13/5-years-of-scala-and-counting-debunking-some-myths-about-the-language-and-its-environment/
