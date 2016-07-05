@@ -27,6 +27,7 @@
 
 # Links
 
+* [Variance in Java and Scala](https://medium.com/@sinisalouc/variance-in-java-and-scala-63af925d21dc#.nee13u5af)
 * http://manuel.bernhardt.io/2015/11/13/5-years-of-scala-and-counting-debunking-some-myths-about-the-language-and-its-environment/
 * https://m50d.github.io/2015/11/16/my-five-years.html
 * [Carol (Nichols||Goulding)](https://github.com/carols10cents)'s talk [Rust out your C](https://github.com/PghTechFest/PghTechFest2016/blob/master/rust-out-your-c-carol-nichols-or-goulding.pdf) from [Pgh Techfest 2016](https://github.com/PghTechFest/PghTechFest2016)
