@@ -19,7 +19,14 @@ Posting my presentation work online for the world to see has its benefits!
 Did you find a bug in example code? Did you find a typographical error? Did you
 find a factual error? Please submit a pull request or file an issue.
 
-I use [Rabbit](http://rabbit-shocker.org/en/) for my presentations, for the most
+Colophon
+--------
+
+I generally use either [Apple Keynote](https://www.apple.com/mac/keynote/)
+or [Marp](https://github.com/yhatt/marp) for my presentations. Sometimes, I'll
+use Google Slides if I need something fast or I start it on a mobile device.
+
+For older presentations, I used [Rabbit](http://rabbit-shocker.org/en/), for the most
 part. I write the presentations in Markdown using Rabbit's [special
 syntax](http://rabbit-shocker.org/en/sample/markdown/rabbit.html).
 
