@@ -35,13 +35,23 @@ Principles of Authorship and Delivery
 
 * If there is a sentence on a slide, it is the only sentence on the slide.
 * No numbered lists greater than 10 items, exceptions for steps or outlines
-* No more than one graphic per slide
+* No more than one graphic per slide.
 * Title slide should identify the speaker, a URL, and relevant contact info.
 * End slide should identify the speaker, a URL, and relevant contact info.
 * The URL for the talk should be its directory within this repository.
 * The contact information should include Twitter handle, event hash tag, and a talk hash tag.
 * The color scheme must be readable at no less than 30 ft away.
 * The color yellow shall not be seen, except when grouped logically with red and green.
+* The slides shall be numbered, but the total number of slides shall be
+  optionally displayed.
+* Slide text should be no smaller than 40pt if it is the main text on the slide.
+  Smaller sizes can be used for footnotes useful for those reviewing the slides
+  later.
+* Contrast must be visible on crappy projectors.
+  * Gray on a black background shall be no darker than 30%.
+  * Gray on a white background shall be no lighter than 70%.
+  * Avoid using black and gray to distinguish text, instead use capitalization
+    or a different font, i.e a serif and a sans-serif font together.
 
 Choice Quotes for Inspiration
 -----------------------------
