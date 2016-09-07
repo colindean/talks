@@ -8,3 +8,7 @@ Recordings of My Talks
 |2015 June| [Architecture Modeling for Fun and Profit](https://www.youtube.com/watch?v=4nubbHqJNOo) | Humor | IBM Watson Battledecks day | Humorous, improvisational talk
 | 2014 May 28 | [Vagrant: Development Environments Made Easy](https://www.youtube.com/watch?v=NKwXhWa2ig8) | [Vagrant](vagrant/vagrant.md) | YourTalentAgents.com Emerging Technology Series
 | 2013 August 28 | [Bitcoin: digital cryptocurrency for the masses](https://www.youtube.com/watch?v=aGTRPhTiiXU) | [Bitcoin](bitcoin-technical/bitcoin-technical.md) | YourTalentAgents.com Emerging Technology Series
+
+## Slides
+
+I cache slides on my [SpeakerDeck profile](https://speakerdeck.com/colindean "Colin Dean on SpeakerDeck").
