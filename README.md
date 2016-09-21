@@ -52,6 +52,10 @@ Principles of Authorship and Delivery
   * Gray on a white background shall be no lighter than 70%.
   * Avoid using black and gray to distinguish text, instead use capitalization
     or a different font, i.e a serif and a sans-serif font together.
+* *Do not* take questions *during* the talk
+* Do not take questions *after* the talk, unless there are more than five minutes remaining in the session.
+  * Take no more than one question per two minutes available.
+  * Do not be afraid to respond with "That's a great question, but I cannot answer it succinctly in the time available."
 
 Choice Quotes for Inspiration
 -----------------------------
@@ -81,6 +85,7 @@ Choice Articles on Process
 
 * [[Eileen Uchitelle's] Process for Writing
   a Talk](http://eileencodes.com/posts/my-process-for-writing-a-talk/)
+* [Don't Take Questions from the Stage](http://baugues.com/questions) by [Greg Baugues](https://twitter.com/greggyb)
 
 License
 -------
