@@ -1,6 +1,6 @@
 <!-- $size: 16:9 -->
 <!-- page_number: true -->
-<!-- prerender: true -->
+<!-- *prerender: true -->
 
 ![bg original](trailer.jpg)
 
@@ -387,7 +387,7 @@ import "fmt"
 * Reach out to specific popular communities
 
 ---
-
+<!-- *prerender: true -->
 ## Github Universe in review
 
 ![bg](portofsanfrancisco.jpg)
