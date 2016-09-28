@@ -50,11 +50,11 @@ This sentence better captures the context of these words:
 
 Karl Wiegers describes this peer review formality spectrum in “Peer Reviews in Software”, where inspection is most formal and ad-hoc reviews are least formal.
 
-![Wiegers' peer review formality spectrum]()
+![Wiegers' peer review formality spectrum](blog_slides/wiegers_spectrum.png)
 
 My concept of code review, and my team's practice of code review, falls somewhere between “team review” and “pair programming”. 
 
-![Colin's team's location on the spectrum]()
+![Colin's team's location on the spectrum](blog_slides/colins_team_on_spectrum.png)
 
 We will from time to time allow pairs to review their own small changes at their discretion. However, our general rule is “if you wrote it, you shouldn’t review it.”
 
@@ -68,19 +68,19 @@ Aside from the primary goal of reducing defects, code review solves two major *h
 
 Code review solves **mental model synchronization**. Say there are five people on a team. Do they _all_ have the same mental model of the architecture and implementation?
 
-![Five people]()
+![Five people](blog_slides/five_people.png)
 
 Probably not, but hopefully they have similar understandings and concepts.
 
-![Five people, different concepts]()
+![Five people, different concepts](blog_slides/five_people_different_concepts.png)
 
 Code review reduces the feedback cycle so that people can keep their mental model in synchronization with the architecture, even as it changes. With that team-wide understanding in mind, they will be best equipped to mindfully implement the architecture and provide feedback on its design.
 
-![Five people, reordered]()
+![Five people, reordered](blog_slides/five_people_reordered.png)
 
 What if someone has a different idea entirely, one that is so worth exploring that it could change the architecture? This has happened more than once on my team, where discussions on individual lines of code turned into new issues, new pull requests, and architectural changes.
 
-![Five people, a new idea emerges]()
+![Five people, a new idea emerges](blog_slides/five_people_new_idea.png)
 
 Secondly, code review solves **tribal knowledge development**. Code review is an excellent way to develop and keep alive tribal knowledge of a project. Tribal knowledge is the sum of stories of what was tried and failed, how best to handle certain problems commonly faced, and *How Things Came to Be This Way*.
 
@@ -122,7 +122,7 @@ We want both the initial developers and the maintenance mode crew to understand 
 
 With this knowledge, they can deal with problems on their terms. We want them to use the same terminology, too: establishing that vocabulary is necessary to make the project learnable. Code review enables and encourages teaching moments, time when someone's understanding or views are challenged and possibly changed.
 
-![Pairing modalities chart]()
+![Pairing modalities chart](blog_slides/pairing_modalities_chart.png)
 
 This chart shows the modalities for learning in a reviewing situation. Pairing is great, but we need to spend just as much time *reviewing* in order to transfer knowledge to the next generation of engineers. We need to read *solid* code and we need to read code that can be *improved*. We need to point out problems to solidify problem code and have our misunderstandings — our Type I false positive review comments — corrected by other reviewers who disagree with us.
 
@@ -176,7 +176,7 @@ My second job out of school was a consulting role. I was a lone wolf consultant 
 
 The lack of control and review cost us considerable time and effort. From customers’ technical people messing up things and not owning up to it, to not having an audit trail or a second set of eyes leading to a compromised system, albeit with no evidence of exploitation, this lack hurt our relationships with our clients.
 
-![Meeting sketch]()
+![Meeting sketch](blog_slides/projector.png)
 
 My first professional code review experience was a group meeting, a formal inspection, on subcontract for a contractor with a government client. These sessions were painful. I was the subject-matter expert in the room, trying to get my own work done while teaching the other contractors and subcontractors in the room about my product. I’d developed the tool that exported the product’s configuration file so we could even do these reviews for my part of the project. 
 
@@ -249,7 +249,7 @@ A counter to this specific problem? Ensure that no one reviewer is a bottleneck,
 
 Microsoft Research published a paper in 2013, “Expectations, Outcomes, and Challenges Of Modern Code Review”, a part of which asked developers for their motivations for performing code review, the definition of which matches very closely with what I established at the beginning of this talk.
 
-![Ranked Motivations from Developers]()
+![Ranked Motivations from Developers](blog_slides/ranked_motivations_from_developers.png)
 
 From this, we can observe more empirically some of the outcomes from code review. All of these are desirable, thus code review should be desirable and a part of your process.
 
