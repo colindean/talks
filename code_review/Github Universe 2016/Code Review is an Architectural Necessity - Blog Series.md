@@ -28,7 +28,7 @@ I wrote this:
 
 Wikipedia’s definition is more succinct.
 
-> [Code review]() is **systematic examination** of computer source code.
+> [Code review](https://en.wikipedia.org/wiki/Code_review) is **systematic examination** of computer source code.
 
 This definition allows for some broader techniques than those in which I myself care to participate, or suffer, but the similarity is bolded: the act is an *examination*, and that examination must be *systematic*.
 
@@ -102,7 +102,7 @@ In short, code review forces us to write down our discussions and make them sear
 
 ## The architectural quality attributes that code review ensures
 
-The qualities of a system that are valued are called **quality attributes**. Architecture as a practice universally chooses from an ever-expanding set of attributes to value when building a thing. Wikipedia maintains a great list of [quality attributes](), but a quick example is the "choose any two" trichotomy of "fast, cheap, and sturdy".
+The qualities of a system that are valued are called **quality attributes**. Architecture as a practice universally chooses from an ever-expanding set of attributes to value when building a thing. Wikipedia maintains a great list of [quality attributes](https://en.wikipedia.org/wiki/List_of_system_quality_attributes), but a quick example is the "choose any two" trichotomy of "fast, cheap, and sturdy".
 
 The word "ensure" is used in architecture to convey that XXXXXXXXXXXXXXXXXXXXX.
 
