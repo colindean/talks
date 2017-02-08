@@ -1,5 +1,6 @@
 # Eight Easy Steps to Manage Your Tech Career
 
+> Note for casual readers: This is an incomplete work and is collection of thoughts from a lower morale point in my life and career. It may not be representative of my current outlook or experience in the meantime.
 --
 
 with apologies to Alanis, whose music I adore
@@ -41,7 +42,9 @@ These are things that I have done or experienced that I wish I had not.
 
 1. Your employer will hire people like you who are not like you.
 1. Your employer will use you as model, putting you on a pedestal. You
-   become a target and a 
+   become a target and people will celebrate your failures, sometimes 
+   to your face. This is unprofessional but there is not much to be
+   done about it.
 
 --
 
