@@ -67,14 +67,38 @@ These are things that I have done or experienced that I wish I had not.
 # How to mistrust the ones you supposedly love the most
 
 1. Friends who leave will shittalk the company and implicitly you.
+1. Someone will undermine your authority on a matter and you will have to
+   spend a lot of time explaining nuances and inaccuracies of what they said.
+1. You will speak out of turn and without a full understanding of a situation.
+1. You will speculate in a meeting for hours instead of walking 15 meters to ask 
+   someone who would enlighten those congregated in 30 seconds.
 
 --
 
 # How to pretend you're fine and don't need help from anyone
 
+1. You will scoff at mentoring programs.
+1. You will hold in all of your stressors because you think you can 
+   manage them.
+1. You will break down from the stress and want to disappear for a 
+   while in a [Heroic B.S.O.D.](http://tvtropes.org/pmwiki/pmwiki.php/Main/HeroicBSOD).
+1. You will work long hours because you have impossible deadlines and
+   insufficient staffing or focus to meet the deadlines.
+1. You will not take any vacation and end up losing it because of
+   outdated corporate policies. 
+   1. Your good manager will not look twice when you're gone for a
+      few days after shipping. 
+   1. Your bad manager will expect you at 9:00 a.m. sharp the next 
+      morning ready for the next challenge.
+
 --
 
 # How to feel worthless unless you're serving or helping someone
+
+1. You will put others needs and promotions ahead of your own in a way
+   that enables you to neglect your own advancement.
+1. You will get more of a thrill of solving other peoples' problems, 
+   hating yourself for not addressing your own problems.
 
 --
 
@@ -89,6 +113,14 @@ I'll show you how leadership looks when taught by the best
 
 # How to hate women when you're supposed to be a feminist
 
+1. You will be paralyzed by the fear of misspeaking when you 
+   do not have the capacity to do so.
+2. You will tell a manager that a woman is going to leave
+   when she finds out that she is paid less than a man with
+   less experience who started a year later.
+3. You will get bad advice on how to interact with someone
+   and spend months rebuilding the trust you initially had.
+
 --
 
 # How to play all biased when you're really a hypocrite
@@ -100,6 +132,10 @@ I'll show you how leadership looks when taught by the best
 --
 
 # How to sabotage your fantasies by fear of success
+
+1. You will not leave a company when it is in your best interest to do so.
+1. You will let someone else take credit for your work because you do not
+   want to endure the subsequent questioning.
 
 
 --
