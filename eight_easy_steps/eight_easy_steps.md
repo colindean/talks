@@ -128,11 +128,11 @@ I'll show you how leadership looks when taught by the best
 
 # How to play all biased when you're really a hypocrite
 
-1. I have avoided pairing with someone because I knew it would slow me down.
-1. I have merged code without really looking at it because I knew it would
-   slow us down to have another round of rework.
-1. I have gotten offtopic in meetings and I have let others go offtopic so I
-   could continue working on the thing I was doing instead of paying attention.
+1. You will avoid pairing with someone because you know it will slow you down.
+1. You will merge code without really looking at it because you know it would
+   slow down progress to have another round of rework.
+1. You will go offtopic in meetings and you will let others go offtopic so you
+   can continue working on the thing you were doing instead of paying attention.
 
 --
 
@@ -145,7 +145,7 @@ I'll show you how leadership looks when taught by the best
 1. You will not leave a company when it is in your best interest to do so.
 1. You will let someone else take credit for your work because you do not
    want to endure the subsequent questioning.
-1. I have shelved projects because I feared them eclipsing my other work.
+1. You will shelve projects when you fear that they will eclipse your other work.
 
 --
 
