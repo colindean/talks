@@ -26,6 +26,9 @@ I generally use either [Apple Keynote](https://www.apple.com/mac/keynote/)
 or [Marp](https://github.com/yhatt/marp) for my presentations. Sometimes, I'll
 use Google Slides if I need something fast or I start it on a mobile device.
 
+For exporting PDFs, I generally use the built-in functionality but I've heard that
+[better-keynote-export](https://github.com/mcfunley/better-keynote-export) works well.
+
 For older presentations, I used [Rabbit](http://rabbit-shocker.org/en/), for the most
 part. I write the presentations in Markdown using Rabbit's [special
 syntax](http://rabbit-shocker.org/en/sample/markdown/rabbit.html).
