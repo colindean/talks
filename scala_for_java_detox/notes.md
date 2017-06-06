@@ -33,3 +33,4 @@
 * http://manuel.bernhardt.io/2015/11/13/5-years-of-scala-and-counting-debunking-some-myths-about-the-language-and-its-environment/
 * https://m50d.github.io/2015/11/16/my-five-years.html
 * [Carol (Nichols||Goulding)](https://github.com/carols10cents)'s talk [Rust out your C](https://github.com/PghTechFest/PghTechFest2016/blob/master/rust-out-your-c-carol-nichols-or-goulding.pdf) from [Pgh Techfest 2016](https://github.com/PghTechFest/PghTechFest2016)
+* [Uniting Church and State: FP and OO Together](http://underscore.io/blog/posts/2017/06/02/uniting-church-and-state.html) - A fantastic look at moving between FP and OO using Church encoding, then building on that knowledge to understand monads much more clearly than most other explanations
