@@ -1,4 +1,4 @@
-# Tour of 3-4 languages for creating quick command line toolslllllllll
+# Tour of 3-4 languages for creating quick command line tools
 
 1. Scala
 2. Ruby
