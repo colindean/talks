@@ -1,0 +1,31 @@
+.reset       {color: black;}
+.bg-reset    {background-color: white;}
+.inverted    {color: white;}
+.bg-inverted {background-color: black;}
+.dimgray     {color: dimgray;}
+.red         {color: red;}
+.green       {color: green;}
+.yellow      {color: olive;}
+.blue        {color: blue;}
+.purple      {color: purple;}
+.cyan        {color: teal;}
+.white       {color: gray;}
+.bg-black    {background-color: black;}
+.bg-red      {background-color: red;}
+.bg-green    {background-color: green;}
+.bg-yellow   {background-color: olive;}
+.bg-blue     {background-color: blue;}
+.bg-purple   {background-color: purple;}
+.bg-cyan     {background-color: teal;}
+.bg-white    {background-color: gray;}
+.underline   {text-decoration: underline;}
+.bold        {font-weight: bold;}
+.blink       {text-decoration: blink;}
+
+body {
+  font-size: 36pt;
+}
+
+h1, pre {
+  font-family: "Input Mono", monospace;
+}
