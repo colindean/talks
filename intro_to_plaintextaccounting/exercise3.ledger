@@ -1,0 +1,39 @@
+~ Monthly
+    Expenses:Restaurants:Coffee  30.00 USD
+    Expenses:Restaurants:Lunch  100.00 USD
+    Expenses:Coworking           50.00 USD
+    Expenses:Groceries          600.00 USD
+    Expenses:Phone              100.00 USD
+    Expenses:House:Utilities    150.00 USD
+    Liabilities:Mortgage        600.00 USD
+    Expenses:Movies              50.00 USD
+    Expenses:Auto:Insurance     150.00 USD
+    Expenses:Auto:Gasoline      120.00 USD
+    Expenses:Taxes             3000.00 USD
+    Expenses                    200.00 USD ; all other expenses
+    Assets
+
+~ Yearly
+    Expenses:Auto:Repair        1500.00 USD
+    Expenses:House:Insurance     800.00 USD
+    Assets
+
+2017-06-01 Mortgage
+  Liabilities:Mortgage        580.00 USD
+  Assets:Cash:Bank:Checking
+
+2017-06-26 Commonplace Coffee
+  Expenses:Restaurants:Coffee   3.00 USD
+  Assets:Cash:Wallet
+
+2017-06-26 Whole Foods
+  Expenses:Restaurants:Lunch   15.00 USD
+  Liabilities:CreditCards:Costco
+
+2017-07-30 Spacely Sprockets
+  ; payday with taxes
+  Income:SpacelySprockets     -2735.00 USD
+  Expenses:Taxes:Federal:EIT    500.00 USD
+  Expenses:Taxes:Federal:FICA   200.00 USD
+  Expenses:Taxes:State:EIT       35.00 USD
+  Assets:Cash:Bank:Checking    2000.00 USD
