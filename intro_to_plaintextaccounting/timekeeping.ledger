@@ -1,0 +1,30 @@
+i 2017/06/23 09:15:00 CodeAndSupply:Talks [Plain Text Accounting]
+o 2017/06/23 10:00:00
+
+i 2017/07/09 20:15:00 CodeAndSupply:Talks [Plain Text Accounting]
+o 2017/07/10 00:06:48
+
+i 2017/07/11 22:00:00 CodeAndSupply:Email [Uptime Sponsorship]
+o 2017/07/11 22:15:00
+
+i 2017/07/11 22:15:00 CodeAndSupply:Talks [Plain Text Accounting]
+o 2017/07/12 00:06:00
+
+
+i 2017/05/09 09:15:00 Billable:Meeting
+o 2017/05/09 10:00:00
+
+i 2017/05/09 10:00:00 Billable:Development [Front end]
+o 2017/05/09 18:15:00
+
+i 2017/05/10 08:15:00 Billable:Development [Front end]
+o 2017/05/10 17:15:00
+
+i 2017/05/11 08:00:00 Away:Vacation
+o 2017/05/11 17:00:00
+
+i 2017/05/12 09:00:00 Nonbillable:Training
+o 2017/05/12 16:00:00
+
+i 2017/05/12 16:00:00 Away:DoctorAppt
+o 2017/05/12 17:00:00
