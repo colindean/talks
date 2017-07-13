@@ -3,6 +3,11 @@ Recordings of My Talks
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2017 July 12 | [Plain Text
+Accounting](https://www.youtube.com/watch?v=8r5Cp66k4PA) | [Intro to Plain Text
+Accounting](intro_to_plaintext_accounting) | [Code
+& Supply](https://www.meetup.com/Pittsburgh-Code-Supply/events/238443510/)
+| A part of C&S's series on personal finance
 | 2016 September 15 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=pJFM321_lAs) | [Code Review](code_review) | [Github Universe](http://githubuniverse.com/program/sessions/#code-review) | Revision of SATURN 2016 talk
 | 2016 May 03 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=TKZ3W8FggYY) | [Code Review](code_review) | [SATURN 2016](https://saturn2016.sched.org/event/63lw/code-review-is-an-architectural-necessity) | First conference talk!
 |2015 June| [Architecture Modeling for Fun and Profit](https://www.youtube.com/watch?v=4nubbHqJNOo) | Humor | IBM Watson Battledecks day | Humorous, improvisational talk
