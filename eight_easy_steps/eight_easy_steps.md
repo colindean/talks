@@ -102,6 +102,8 @@ These are things that I have done or experienced that I wish I had not.
    that enables you to neglect your own advancement.
 1. You will get more of a thrill of solving other peoples' problems, 
    hating yourself for not addressing your own problems.
+1. You will say yes to everything and then burn out trying to fulfill
+   obligations, only to realize that you cannot.
 
 --
 
@@ -123,6 +125,8 @@ I'll show you how leadership looks when taught by the best
    less experience who started a year later.
 3. You will get bad advice on how to interact with someone
    and spend months rebuilding the trust you initially had.
+4. Someone considered to be a visionary will say something extreme, fanning the
+   fire of an argument instead of dousing it with wisdom and experience.
 
 --
 
@@ -146,6 +150,9 @@ I'll show you how leadership looks when taught by the best
 1. You will let someone else take credit for your work because you do not
    want to endure the subsequent questioning.
 1. You will shelve projects when you fear that they will eclipse your other work.
+1. You will set admirable long term goals and establish a plan to achieve them,
+   but someone higher up will interfere and leave the unfinished project looking
+   like poor planning on your part.
 
 --
 
@@ -167,9 +174,21 @@ Culminating just to be this well-versed leader before you
 
 # How to lie to yourself and thereby to everyone else
 
+1. You will cry at a company luncheon when you realize how much you will miss
+   your coworkers, and be unable to say why you are crying because they do not
+   yet know that you are leaving. You brush off questions and blame it on
+   something else, like a celebrity death or something you read online causing
+   tears of laughter, not tears of emotional pain.
+
 --
 
 # How to keep smiling when you're thinking of killing yourself
+
+1. You will talk to power and power will make a decision that is aligned with
+   neither your immediate project goals nor your long-term career goals.
+1. You will go back to the drawing board again, and again, and again.
+1. You will want to quit but cannot find a better opportunity without
+   relocating.
 
 --
 
@@ -178,5 +197,10 @@ Culminating just to be this well-versed leader before you
 --
 
 # How to stay stuck in your life blaming them for everything
+
+1. You will hit ceilings and know that the only way through is painful,
+   emotionally and maybe even physically.
+1. You will tire of playing games, and realize the only way forward is to play
+   a different game on a different court in a different walled garden.
 
 [Chorus: x2]
