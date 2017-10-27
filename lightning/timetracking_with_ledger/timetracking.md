@@ -1,6 +1,6 @@
 # time tracking with ledger
 
-Command-line accounting tools are fun
+Command-line, plaintext accounting tools are fun
 
 ---
 
@@ -33,7 +33,9 @@ i, too, track time
 * `ledger` - ledger-cli.org
 * `t` - https://github.com/colindean/hejmo/blob/master/scripts/t
 
-(I promise it'll get better if others clamor)
+_(I promise it'll get better if others clamor.)_
+
+_(I'm probably a user away from making a Homebrew tap.)_
 
 ---
 
@@ -83,10 +85,46 @@ $ t hours
 
 # Time sheet
 
-```
-$ t sheet
-```
+![](sheet.png)
 
-Easy.
+Easily view daily totals for transposition to tracking system
 
 ---
+
+# But wait, there's more!
+
+---
+
+# BitBar
+
+![](bitbar.png)
+
+https://github.com/colindean/hejmo/blob/master/dotfiles/bitbar/work/hours.6m.sh
+
+_(Unfortunately requires some customization to get `t` path right)_
+
+---
+
+# How can you help?
+
+* Use `t` and submit improvements and reports
+* Improve ledger syntax highlighting to include time mode
+
+---
+
+# Text editor support
+
+vim
+```
+Plugin 'ledger/vim-ledger'
+```
+atom
+
+```
+$ apm install language-ledger
+```
+and many more
+
+---
+
+# Go forth and track time!
