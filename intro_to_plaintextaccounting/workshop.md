@@ -30,3 +30,7 @@ Time breakdown:
 * Hour 1: Presentation of GAAP, double-entry accounting basics, ledger format basics, and why ledger
 * Hour 2: Collecting data, experimenting with `ledger`
 * Hour 3: Building and automating reports
+
+## Why me?
+
+Colin has been using plain text accounting tools for more than four years for his work time tracking, personal finance, and the organizations he administers. He runs the fledgling /r/plaintextaccounting reddit and has contributed to the ledger-like ecosystem.
