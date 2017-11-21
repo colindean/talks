@@ -21,7 +21,7 @@ In this presentation, you'll learn
 
 ## Why should you attend?
 
-Developers throughout the world are often highly-compensated professionals. By carefully capturing and documenting the flow of one's money, these professionals can avoid mismanaging their personal finances and squandering the assets at their disposal. This talk introduces personal finance accounting in general and moves into teaching how to use the open source plain text accounting ecosystem to manage one's money.
+Developers throughout the world are often highly-compensated professionals. By carefully capturing and documenting the flow of one's money, these professionals can avoid mismanaging their personal finances and squandering the assets at their disposal, preserving more funds for important things like debt repayment, retirement investment, vacations, and charitable contributions. This talk introduces personal finance accounting in general and moves into teaching how to use the open source plain text accounting ecosystem to manage one's money.
 
 ## Logistics
 
