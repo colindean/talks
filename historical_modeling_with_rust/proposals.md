@@ -1,6 +1,6 @@
 # Proposals submitted
 
-## CodeMash 2018
+## CodeMash 2019
 
 |Thing | Value |
 |------|-------|
