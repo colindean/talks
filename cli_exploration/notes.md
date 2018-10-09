@@ -5,6 +5,7 @@
 3. Go
 4. Python
 5. Bash?
+6. JavaScript?
 
 ## Scala
 
@@ -25,3 +26,7 @@ https://crates.io/crates/cargo-cli
 Thor is the only real game in town.
 
 http://whatisthor.com/ - https://github.com/erikhuda/thor
+
+## All
+
+* [12 factor CLI apps at Heroku](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)
