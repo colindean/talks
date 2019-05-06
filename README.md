@@ -38,7 +38,11 @@ Principles of Authorship and Delivery
 
 * If there is a sentence on a slide, it is the only sentence on the slide.
 * No numbered lists greater than 10 items, exceptions for steps or outlines
+  * List item text may only wrap if there are fewer than four items in the list
 * No more than one graphic per slide.
+* The complexity of a graphic indicates how long it should be displayed:
+  * Memes (avoid, in general) - long enough for a laugh, but if you have to explain it, it's not appropriate
+  * Graphs and charts - It's OK to show it quickly if only demonstrating a trend and not pointing out specific features of the graph. The figure must still be proper, with a title, legend, axis labels, etc., to stand up to scrutiny.
 * Title slide should identify the speaker, a URL, and relevant contact info.
 * End slide should identify the speaker, a URL, and relevant contact info.
 * The URL for the talk should be its directory within this repository.
