@@ -94,6 +94,7 @@ Choice Articles on Process
   a Talk](http://eileencodes.com/posts/my-process-for-writing-a-talk/)
 * [Don't Take Questions from the Stage](http://baugues.com/questions) by [Greg Baugues](https://twitter.com/greggyb)
 * [The Ultimate Guide To Memorable Tech Talks](https://medium.com/@nnja/the-ultimate-guide-to-memorable-tech-talks-e7c350778d4b), a series by [Nina Zakharenko](https://twitter.com/@nnja)
+* [Duarte's Resources list](https://www.duarte.com/resources/)
 
 License
 -------
