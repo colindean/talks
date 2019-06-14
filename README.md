@@ -87,6 +87,9 @@ the power of sense. *Joseph Conrad*
 > Great is the art of beginning, but greater the art is of ending.
 *Henry Wadsworth Longfellow*
 
+> Criticism comes easier than craftsmanship.
+*Zeuxis*
+
 Choice Articles on Process
 --------------------------
 
