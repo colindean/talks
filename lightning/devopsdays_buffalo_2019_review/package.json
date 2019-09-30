@@ -1,0 +1,19 @@
+{
+  "name": "devopsdays-buffalo-2019-review",
+  "version": "0.0.0",
+  "author": "Colin Dean",
+  "license": "CC0",
+  "private": true,
+  "scripts": {
+    "build": "rimraf dist && npm run -s og-image && npm run -s deck",
+    "deck": "marp --no-stdin dodbuf19.md -o dist/index.html && cpx \"assets/**/*\" dist/assets",
+    "now-build": "npm run -s deck",
+    "og-image": "marp dodbuf19.md -o dist/og-image.jpg",
+    "start": "marp -ps ."
+  },
+  "devDependencies": {
+    "@marp-team/marp-cli": "^0.14.1",
+    "cpx": "^1.5.0",
+    "rimraf": "^3.0.0"
+  }
+}

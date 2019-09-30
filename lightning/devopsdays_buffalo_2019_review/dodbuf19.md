@@ -6,7 +6,8 @@ theme: uncover
 paginate: true
 _paginate: false
 ---
-
+<!-- _backgroundColor: black -->
+<!-- _color: white -->
 # devopsdays Buffalo 2019
 
 Distillation of notes by Colin Dean
@@ -25,7 +26,7 @@ Ken Mugrage - @kmugrage - ThoughtWorks
 
 ---
 
-# Modern Continuous Delivery
+#### Modern Continuous Delivery
 
 Canary deployments should not fail on technical problems only.
 
@@ -39,7 +40,10 @@ This means that you need to know and collect these measurements!
 
 Jennifer Petoff - @jennski - Google (co-author of SRE book)
 
-`class SRE implements DevOps` – SRE is a set of practices
+> `class SRE implements DevOps` – SRE is a set of practices
+
+---
+#### How to Run Smarter in Production: Getting Started with SRE
 
 1. SRE needs Service Level Objectives (SLO) with consequences
 2. SRE must have time to make tomorrow better than today
@@ -48,9 +52,9 @@ Jennifer Petoff - @jennski - Google (co-author of SRE book)
 
 ---
 
-# How to Run Smarter in Production: Getting Started with SRE
+#### How to Run Smarter in Production: Getting Started with SRE
 
-## Error budget
+**_Error budget_**
 
 Gap between 100% uptime and SLO
 
@@ -62,7 +66,7 @@ When under SLO, policy kicks in:
 
 ---
 
-# How to Run Smarter in Production: Getting Started with SRE
+#### How to Run Smarter in Production: Getting Started with SRE
 
 SRE isn't "responsible for production"
 
@@ -72,7 +76,7 @@ SRE isn't "responsible for production"
 
 ---
 
-# How to Run Smarter in Production: Getting Started with SRE
+#### How to Run Smarter in Production: Getting Started with SRE
 
 If you can write it in a playbook, it can be `scripted`.
 
@@ -99,7 +103,7 @@ Jamey Hampton - @jameybash
 
 ---
 
-# Walking a Mile in your Users' Shoes
+#### Walking a Mile in your Users' Shoes
 
 Wildly different set of planned challenges when developing app for sexual abuse reporting for an African country.
 
@@ -108,13 +112,15 @@ Real: Lack of resources like electricity, inexperienced userbase unfamiliar with
 
 ---
 
-# Walking a Mile in your Users' Shoes
+#### Walking a Mile in your Users' Shoes
 
-**Accessibility isn't an edge case!**
+## Accessibility isn't an edge case!
 
-Devs are the edge case! We need to learn peoples' needs.
+Devs are the edge case!
+We need to learn peoples' needs.
 
-Predicting pain points is hard but necessary. Do research!
+Predicting pain points is hard but necessary.
+Do research!
 
 ---
 
@@ -132,7 +138,7 @@ How to deal with Wall of Awful
 
 ---
 
-# Continuous Improvement: DevOps and Mental Illness
+#### Continuous Improvement: DevOps and Mental Illness
 
 Sorry, your API is open and you can't control how and when others access the buggy parts.
 
@@ -140,9 +146,9 @@ Root Cause Analysis isn't worthwhile. Understand the contributing factors.
 
 ---
 
-# Continuous Improvement: DevOps and Mental Illness
+#### Continuous Improvement: DevOps and Mental Illness
 
-**Your performance is not your value.**
+## Your performance is not your value.
 
 Be blame-aware but not blameless: accept failure, forgive yourself, and move on.
 
@@ -154,6 +160,10 @@ Waldo Grunenwald - @gwaldo
 
 Use a token, like a talking stick.
 
+---
+
+#### Argue Better with Active Listening
+
 1. A: State problem, pass the token.
 2. B: Restate for confirmation, pass the token.
 3. A: Confirm understanding or clarify, pass the token.
@@ -164,7 +174,7 @@ Use a token, like a talking stick.
 
 ---
 
-# Argue Better with Active Listening
+#### Argue Better with Active Listening
 
 This is slow but that's a feature. Focus on listening.
 
@@ -190,7 +200,7 @@ Nell Shamrell-Harrington - @nellshamrell
 
 ---
 
-# DevOps in Politics
+#### DevOps in Politics
 
 Tech changes and moves on between elections.
 
@@ -200,7 +210,7 @@ Principles remain the same regardless of evolution: tools aren't DevOps.
 
 ---
 
-# DevOps in Politics
+#### DevOps in Politics
 
 Success of campaign is measures in _votes_, just as business success is measured in money.
 
@@ -210,7 +220,7 @@ Vote = heart + mind + motivation
 
 ---
 
-# DevOps in Politics
+#### DevOps in Politics
 
 Speed is critical - first mover advantage
 
@@ -222,7 +232,7 @@ Robocalls do not make personal connections. Personal connections turn into votes
 
 ---
 
-# DevOps in Politics
+#### DevOps in Politics
 
 Being _right_ is irrelevant when you don't have the votes.
 
@@ -252,13 +262,17 @@ These are things that must be build in to accomodate environment.
 
 Veronica Hanus - @veronica_hanus
 
+---
+
+#### To Comment or Not to Comment?
+
 Comments are learner's documentation. You are the learner, even when you wrote the documentation.
 
 > Refactoring shouldn't be this self-care activity that feels akin to a bubble bath.
 
---- 
+---
 
-# To Comment or Not to Comment?
+#### To Comment or Not to Comment?
 
 > Repos don't contain just software, they contain the understanding and modeling of problems.
 
@@ -281,7 +295,7 @@ Retrofitting prod monitoring to staging is wasted effort
 
 ---
 
-# Production as an Experiment Lab
+#### Production as an Experiment Lab
 
 **Progressive Delivery** - CD w/ control of blast radius
 
@@ -291,7 +305,7 @@ Retrofitting prod monitoring to staging is wasted effort
 
 ---
 
-# Production as an Experiment Lab
+##### Production as an Experiment Lab
 
 ## Shift from _correctness_ to _safety_
 
@@ -311,4 +325,8 @@ James Hunt - @iamjameshunt
 
 ---
 
+<!-- _backgroundColor: black -->
+<!-- _color: white -->
 ![devopsdays buffalo logo](devopsdays_buffalo_logo.jpg)
+
+# FIN
