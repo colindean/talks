@@ -9,3 +9,12 @@
 * Kubernetes: Cube bear nets, Koo ber nets, Que bear net ees
 * Scala: Scal ah
 * Java: Dza vah
+* nginx: en-jinx, ng-inks (Vietnamese `ng`)
+
+## Missteps
+
+> nginx is pronounced engine-x. engine-x is a cool name. n-jinx is not. if i ever hear you pronounce it n-jinx, i will lose respect for you forever
+
+`@kathyra_` - [1:33 AM · Nov 12, 2019](https://twitter.com/kathyra_/status/1194141061108490240)
+
+…but the thread is gold.
