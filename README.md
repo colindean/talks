@@ -36,6 +36,12 @@ syntax](http://rabbit-shocker.org/en/sample/markdown/rabbit.html).
 Principles of Authorship and Delivery
 -------------------------------------
 
+### Abstracts
+
+* Abstracts should be written in inverse pyramid style. That is, the first sentence or paragraph should have as much information as possible while the last sentence should be ancillary information that almost could be omitted.
+
+### Slides
+
 * If there is a sentence on a slide, it is the only sentence on the slide.
 * No numbered lists greater than 10 items, exceptions for steps or outlines
   * List item text may only wrap if there are fewer than four items in the list
@@ -59,6 +65,8 @@ Principles of Authorship and Delivery
   * Gray on a white background shall be no lighter than 70%.
   * Avoid using black and gray to distinguish text, instead use capitalization
     or a different font, i.e a serif and a sans-serif font together.
+
+### Audience Management
 * *Do not* take questions *during* the talk
 * Do not take questions *after* the talk, unless there are more than five minutes remaining in the session.
   * Take no more than one question per two minutes available.
