@@ -43,7 +43,7 @@ These aren't really walls, though: they're guides for unintelligent matter.
 Intelligence on both sides of the wall inevitable leads to the wall failing.
 See the Great Wall of China, Hadrian's Wall, Maginot Lines.
 Berlin Wall.
-Trump's wall.
+[Trump's wall](https://www.cnn.com/2020/01/29/politics/us-border-wall-falls-over-high-winds/index.html).
 Great Firewall of China. Kazakh Firewall.
 
 ## ???
