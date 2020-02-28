@@ -5,6 +5,7 @@
 * WYSIWYG
 * Install with package manager or install docker and pull container
 * Converting from Word, etc. loses cross-references
+* Markdown is well-known but so many orgs have their own flavors, Pandoc is just another one
 
 ## Accomodating objections
 
