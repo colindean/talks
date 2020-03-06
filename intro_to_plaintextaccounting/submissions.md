@@ -91,4 +91,47 @@ Developers, Tester/test leads, Architects, Security professionals, Product devel
 
 ### Participant requirements
 
-They should bring a laptop but it's not 100% necessary as long as at least half of the group has a laptop with them. 
+They should bring a laptop but it's not 100% necessary as long as at least half of the group has a laptop with them.
+
+
+## [Codeland 2020](https://codelandconf.com/)
+
+### Goal
+
+> How would you describe your goal for attendees of this workshop? What do you want them to walk away with, and how do you see this adding value to their coding journey?
+
+Far too often, developers mismanage their personal finances and squander the assets at their disposal. This talk introduces personal finance accounting in general and moves into teaching how to use the open source plain text accounting ecosystem to manage one's money. They'll walk away with a fun, creative way to effectively collect their transaction data iteratively and analyze it using freely available tools combined with some of their own code.
+
+### What will attendees make?
+> It's important that attendees walk away with something tangible. What will attendees make during your workshop? If they're following an existing tutorial, please include a link to that tutorial. Otherwise, please submit in as much detail as possible what steps attendees will go through to complete this project.
+
+Attendees will walk away with a basic ledger transaction log, modeled on their own account statement or an example one.
+
+Steps in the workshop:
+
+* how to track daily transactions as well as investments, from brokerage accounts to cryptocurrencies
+    * Write Ledger transactions by hand
+    * Use a tool that expedites manual entry
+* how to automate some entry of data
+    * exporting data from a bank in CSV or QFX format
+    * running a conversion tool
+    * customizing a conversion tool plugin to convert inevitable strange CSV
+* how to analyze and visualize data
+    * how to build informative reports with HTML, SVG, PDFs, and more
+    * how to use an existing visualization suite that requires post-processing the Ledger log
+* how to securely backup your financial data stored as plain text
+    * Using private git repos
+    * Automating some entry using Git hosting sites' repo hooks
+
+### Introduction to Topic
+> Having some background info on the workshop topic before getting started on a project is important. What background info do you plan to present? Think of this as a short 5-10 min talk to give people context before diving in. Please provide as much detail as possible.
+
+* basic generally-accepted accounting principles (GAAP) and double-entry accounting,
+* ledger command line tool usage,
+* alternatives to and similar programs that complement ledger
+* why you might choose Plain Text Accounting over other tools such as Quicken, QuickBooks, Mint.com, or You Need a Budget
+
+### Fit
+> Why are you the right person to conduct this workshop? This is less about expertise (which is not a requirement), and more about the relationship between the topic and the workshop conductor, and finding a good fit. Feel free to include your passion, past experience, previous roles, etc.
+
+I've been using plain text accounting tools for more than six years for his work time tracking, personal finance, and business finance, including one of the non-profit organizations I administer. 
