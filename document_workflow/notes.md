@@ -1,5 +1,15 @@
 # Talking points
 
+## Values
+
+* Content-focused
+* Minimize structural exceptions
+* Standardized styling and typesetting
+* Reviewable prose and diagrams
+* Accomodate some preferences for LaTeX over simpler formats (Markdown)
+* One command to generate output
+* Automatable with versioned, single master copy
+
 ## Pain points
 
 * WYSIWYG
