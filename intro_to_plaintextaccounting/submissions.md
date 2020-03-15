@@ -135,3 +135,28 @@ Steps in the workshop:
 > Why are you the right person to conduct this workshop? This is less about expertise (which is not a requirement), and more about the relationship between the topic and the workshop conductor, and finding a good fit. Feel free to include your passion, past experience, previous roles, etc.
 
 I've been using plain text accounting tools for more than six years for his work time tracking, personal finance, and business finance, including one of the non-profit organizations I administer. 
+
+## Pittsburgh Techfest 2020
+
+### Elevator Pitch
+
+Years ago, I needed a way to track my time at work. I found a neat Ledger accounting program that does that and so much more. I relearned double-entry bookkeeping and now use this to run books for myself and two other organizations. I'll talk about the freedom of plain text and how to automate much.
+
+### Description
+
+Plain Text Accounting is the practice of maintaining a ledger in a format that values human readability, accountant auditability, and version control. The ledger-like ecosystem enables recording of purchases and transfers and investments, versioning of ledger-files to provide an audit trail, and performing analysis to produce registers, balance sheets, profit and loss statements, track billable time and paid time off, and lots of other reports. In this presentation, you’ll learn some basic accounting principals, ledger tool usage, and why you might choose plain text accounting over Quicken, QuickBooks, Mint.com, or You Need a Budget.
+
+Developers throughout the world are often highly-compensated professionals. By carefully capturing and documenting the flow of one's money, these professionals can avoid mismanaging their personal finances and squandering the assets at their disposal, preserving more funds for important things like debt repayment, retirement investment, vacations, and charitable contributions. This talk introduces personal finance accounting in general and moves into teaching how to use the open-source plain text accounting ecosystem to manage one's money.
+
+### Notes
+
+Topics:
+
+* basic generally-accepted accounting principles (GAAP) and double-entry accounting,
+* ledger command line tool usage,
+* alternatives to and similar programs that complement ledger
+* why you might choose Plain Text Accounting over other tools such as Quicken, QuickBooks, Mint.com, or You Need a Budget
+
+I've been using plain text accounting tools for more than six years for his work time tracking, personal finance, and business finance, including one of the non-profit organizations I administer.
+
+
