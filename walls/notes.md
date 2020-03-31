@@ -35,6 +35,15 @@ But of course, _not all walls_...
 Levees are pretty important and so are guard rails.
 These aren't really walls, though: they're guides for unintelligent matter.
 
+## Transparency
+
+![Checkout line cough guards during COVID-19 pandemic](#)
+
+Consider what walls do not stop.
+This wall is a safety device.
+It allows light through it.
+Sound flows around it, albiet at a lower volume.
+
 ## Failing walls
 
 ![Great Wall crumbling](#)
