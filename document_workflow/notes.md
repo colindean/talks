@@ -16,6 +16,8 @@
 * Install with package manager or install docker and pull container
 * Converting from Word, etc. loses cross-references
 * Markdown is well-known but so many orgs have their own flavors, Pandoc is just another one
+* New software has bugs, including gaps in the workflow
+    * E.g. Build hang when steps aren't followed
 
 ## Accomodating objections
 
