@@ -18,6 +18,12 @@
 * Markdown is well-known but so many orgs have their own flavors, Pandoc is just another one
 * New software has bugs, including gaps in the workflow
     * E.g. Build hang when steps aren't followed
+* Equation writing workflow may be cumbersome
+    * Use an editor supporting preview with math rendering (Macdown and Mou both do) OR
+    * Use a separate renderer to test your equations
+        * Latexit
+        * MathJax website
+        * just render the document with pandoc via `make pdf` or `make open`.
 
 ## Accomodating objections
 
