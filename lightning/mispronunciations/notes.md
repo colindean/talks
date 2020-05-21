@@ -18,3 +18,7 @@
 `@kathyra_` - [1:33 AM · Nov 12, 2019](https://twitter.com/kathyra_/status/1194141061108490240)
 
 …but the thread is gold.
+
+## Additional Research by Others
+
+* [From iOS to SQL: The world’s most incorrectly pronounced tech terms](https://arstechnica.com/gadgets/2020/05/eye-oss-vs-eye-oh-ess-judging-the-fiercest-tech-pronunciation-debates/)
