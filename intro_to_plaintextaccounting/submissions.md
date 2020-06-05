@@ -96,6 +96,8 @@ They should bring a laptop but it's not 100% necessary as long as at least half 
 
 ## [Codeland 2020](https://codelandconf.com/)
 
+Accepted :white_check_mark:
+
 ### Goal
 
 > How would you describe your goal for attendees of this workshop? What do you want them to walk away with, and how do you see this adding value to their coding journey?
