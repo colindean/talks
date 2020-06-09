@@ -1,0 +1,5 @@
+brew 'peru'
+brew 'pandoc'
+brew 'make'
+brew 'miniserve'
+
