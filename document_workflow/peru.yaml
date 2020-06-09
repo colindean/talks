@@ -1,5 +1,6 @@
 imports:
   revealjs: reveal.js
+  fontawesome: font-awesome
 
 curl module revealjs:
   # url: https://github.com/hakimel/reveal.js/archive/master.zip
@@ -8,3 +9,6 @@ curl module revealjs:
   url: https://github.com/hakimel/reveal.js/archive/3.9.2.zip
   unpack: zip
 
+curl module fontawesome:
+  url: https://use.fontawesome.com/releases/v5.13.0/fontawesome-free-5.13.0-web.zip
+  unpack: zip

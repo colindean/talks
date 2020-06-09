@@ -31,7 +31,7 @@
    * "But I want to use LaTeX" - only if you'll own that file!
    * "But I want to write my section in X and export it to Pandoc Markdown" - only if you can effect changes suggested in the PR
    * Overwriting is a real concern with exporting: changes made to a file in the repo getting overwritten by an external tool's export cost us a lot of time
-  
+
 
 # See Also
 
