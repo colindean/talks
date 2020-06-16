@@ -4,6 +4,8 @@ This file collects abstracts and whatnot.
 
 ## Code & Supply 2017 meetup line up
 
+[📹 Video](https://www.youtube.com/watch?v=8r5Cp66k4PA "Plain Text Accounting recorded Jul 12, 2017 at Code & Supply")
+
 Accepted :white_check_mark:
 
 **Length: 60 minutes**
@@ -13,6 +15,8 @@ Plain Text Accounting is the practice of maintaining a ledger in a format that v
 Colin Dean has been using plain text accounting tools for more than four years. He runs the fledgling /r/plaintextaccounting reddit and has contributed to the ledger-like ecosystem.
 
 ## Ohio Linuxfest 2017
+
+[📹 Video](https://www.youtube.com/watch?v=FJtaM43PgXQ "Plaintext Accounting with the Ledger Ecosystem - Ohio Linuxfest 2017")
 
 Accepted :white_check_mark:
 
