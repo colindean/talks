@@ -1,6 +1,6 @@
 imports:
-  revealjs: reveal.js
-  fontawesome: font-awesome
+  revealjs: deps/reveal.js
+  fontawesome: deps/font-awesome
 
 curl module revealjs:
   # url: https://github.com/hakimel/reveal.js/archive/master.zip
