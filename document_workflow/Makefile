@@ -20,6 +20,7 @@ watch: Procfile
 deps: peru.yaml Brewfile
 	brew bundle
 	peru sync
+	npm install nicollet-tokens
 
 clean:
 	rm -f $(HTML)

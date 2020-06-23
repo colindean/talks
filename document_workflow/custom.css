@@ -1,1 +1,32 @@
-@import "font-awesome/fontawesome-free-5.13.0-web/css/all.min.css";
+@import "deps/font-awesome/fontawesome-free-5.13.0-web/css/all.min.css";
+@import "node_modules/nicollet-tokens/lib/colors.css";
+@import "node_modules/nicollet-tokens/lib/font.css";
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6 {
+  font-family: var(--nds-font-family-sans-serif);
+}
+
+.reveal p, .reveal li {
+  color: var(--nds-colors-text-on-light-primary);
+  font-family: var(--nds-font-family-sans-serif);
+}
+.reveal small > em {
+  color: var(--nds-colors-text-on-light-secondary);
+}
+
+.reveal h1,
+.reveal h1.title p {
+  color:  var(--nds-colors-messaging-promotion);
+}
+
+.reveal h1 {
+  font-size: 2.3em;
+}
+.reveal h1.title p {
+  font-size: 0.8em;
+}
