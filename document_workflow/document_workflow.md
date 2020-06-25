@@ -186,7 +186,7 @@ building it.
 
 ## Avoid at all costs
 
-* Binary files
+* Binary files or XML
 * Passing around a file via email/Slack
 * Manual copy-paste to merge changes
 * Difficult exports from wiki format
@@ -764,6 +764,24 @@ _You don't have to take my word for it!_
 * Several smaller papers
 * Nearly two dozen authors
 
+::: notes
+
+Our leadership was very impressed not only with the
+document we produced, but also the system.
+
+We've since expanded its use to other teams, including
+one using a fork of my original repo as a basis for
+documentation spanning several teams. Content is brought
+in via git submodules, where each repository is also its
+own document.
+
+At least one person working on a book has inquired about
+using it. That's awesome, because the basis of my system
+was what was used to write the first edition of
+A Friendly Introduction to Software Testing by Bill Laboon.
+
+:::
+
 ---
 
 ## Many tools
@@ -798,4 +816,5 @@ _You don't have to take my word for it!_
 
 # References and Attributions
 
-* Icons by Font Awesome, https://github.com/FortAwesome/Font-Awesome. CC-BY-4.0 / SIL OFL 1.1.
+* [Icons by Font Awesome](https://github.com/FortAwesome/Font-Awesome). CC-BY-4.0 / SIL OFL 1.1.
+* [A Friendly Introduction to Software Testing](https://www.amazon.com/Friendly-Introduction-Software-Testing-ebook/dp/B01BCPXLHU) by Bill Laboon ([repo](https://github.com/laboon/ebook))
