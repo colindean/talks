@@ -541,6 +541,38 @@ Next, I'll tell you about how my team used this powerful tool to create a workfl
 
 ### Flow of data
 
+```{.graphviz caption="Git+GitHub workflow"}
+digraph document_workflow {
+  rankdir=LR;
+  size="9,9"
+
+  graph [fontname = "helvetica"];
+  node [fontname = "helvetica"];
+  edge [fontname = "helvetica"];
+
+  node [label="Working Copy"]; edit
+  node [label="pandoc"]; local_render
+  node [label="Commited Work"]; commit
+  node [label="GitHub"]; github
+  node [label="CI"]; ci
+  node [label="pandoc in Docker"]; remote_render
+
+  github -> edit [ label = "Clone" ]
+  edit -> edit [ label = "Write" ]
+  edit -> local_render [label="Compile"]
+  local_render -> edit [label="Fix"]
+  edit -> commit [label="Commit"]
+  commit -> edit [label="Refactor"]
+  commit -> github [label="Push"]
+  github -> ci [label="Check"]
+  ci -> github [label="Validate"]
+  ci -> remote_render [label="Compile"]
+  remote_render -> github [label="Save Build Artifacts"]
+  remote_render -> github [label="Notify of Build Errors"]
+
+}
+```
+
 ---
 
 ### Authoring

@@ -27,5 +27,5 @@ clean:
 
 %.html: %.md
 	pandoc -t revealjs -s $< -o $@ \
-	-M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-3.9.2
-
+	-M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-3.9.2 \
+	--lua-filter .filters/embedded_graphviz.lua
