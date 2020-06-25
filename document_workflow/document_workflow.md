@@ -814,7 +814,17 @@ A Friendly Introduction to Software Testing by Bill Laboon.
 
 ---
 
+# `pandoc.org`
+
+---
+
 # References and Attributions
 
 * [Icons by Font Awesome](https://github.com/FortAwesome/Font-Awesome). CC-BY-4.0 / SIL OFL 1.1.
 * [A Friendly Introduction to Software Testing](https://www.amazon.com/Friendly-Introduction-Software-Testing-ebook/dp/B01BCPXLHU) by Bill Laboon ([repo](https://github.com/laboon/ebook))
+
+---
+
+# FIN
+
+![\@colindean](colindean_devopsdays_hatscarf.webp)
