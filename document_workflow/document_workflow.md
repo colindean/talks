@@ -16,6 +16,15 @@ history: true
 transitionSpeed: "fast"
 totalTime: 1800
 # setup https://github.com/reveal/notes-server?
+include-after: |
+  <script>
+    window.addEventListener('load', (event) => {
+      var words = document.getElementsByClassName('wordcloud')[0].firstElementChild.children
+      Array.from(words).forEach((el) => {
+        el.className += el.innerText.toLowerCase()
+      });
+    });
+  </script>
 ---
 
 # I am Colin Dean.
@@ -732,19 +741,23 @@ _You don't have to take my word for it!_
 
 ## Many tools
 
-`pandoc`
-`pandoc-crossref`
-`pandoc-citeproc`
-`MacTeX`
-`XeTeX`
-`Tectonic`
-`Homebrew`
-`librsvg`
-`proselint`
-`docker`
-`pandocker`
-`make`
-`git`
+::: wordcloud
+
+* `MacTeX`
+* `pandoc`
+* `pandoc-crossref`
+* `pandoc-citeproc`
+* `XeTeX`
+* `Tectonic`
+* `make`
+* `Homebrew`
+* `librsvg`
+* `proselint`
+* `docker`
+* `pandocker`
+* `git`
+
+:::
 
 ---
 
