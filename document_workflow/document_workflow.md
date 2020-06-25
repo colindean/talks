@@ -10,9 +10,10 @@ author: '@colindean'
 date: August 11, 2020
 theme: white
 css: custom.css
-slideNumber: 1
+slideNumber: true
 hash: true
 history: true
+transition: none
 transitionSpeed: "fast"
 totalTime: 1800
 # setup https://github.com/reveal/notes-server?
