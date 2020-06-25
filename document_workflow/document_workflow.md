@@ -1,4 +1,8 @@
 ---
+####
+## NOTA BENE:
+## :::Notes are not shown on slides, only on presenter view.
+####
 title: >
   A documentation workflow loved
   by both Data Scientists and Engineers
@@ -6,7 +10,7 @@ author: '@colindean'
 date: August 11, 2020
 theme: white
 css: custom.css
-# slideNumber: c/t
+slideNumber: 1
 hash: true
 history: true
 transitionSpeed: "fast"
@@ -33,6 +37,10 @@ totalTime: 1800
 
 Lead AI Engineer at Target Corporation
 
+::: notes
+I'm based out of our tiny Pittsburgh office on Robotics Row in the Strip District.
+:::
+
 ---
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 447 421.125" width="300" height="282.634228188"><path fill="none" stroke="#b22d00" stroke-width="15" d="M7.5 385.563V35.562l216-28 216 28v350.001l-216 28z"/><path fill="#b22d00" d="M126.094 100.422v21.562c-10.521-8.801-21.406-13.203-32.656-13.203-12.396 0-22.84 4.453-31.328 13.359-8.543 8.855-12.812 19.688-12.812 32.5 0 12.656 4.27 23.334 12.812 32.031 8.541 8.699 19.01 13.047 31.406 13.047 6.406 0 11.848-1.041 16.328-3.125 2.5-1.041 5.09-2.447 7.773-4.219 2.682-1.77 5.508-3.906 8.477-6.406v21.953c-10.418 5.887-21.355 8.829-32.812 8.829-17.24 0-31.953-6.016-44.141-18.047-12.136-12.135-18.203-26.77-18.203-43.906 0-15.364 5.078-29.062 15.234-41.094 12.5-14.739 28.672-22.109 48.516-22.109 10.832 0 21.3 2.943 31.406 8.828zM247.996 201.789l54.297 65.625 1.758-1.953a662.226 662.226 0 0016.602-18.75 495.367 495.367 0 0015.039-18.555l29.688 30.469c-3.646 5.209-8.432 11.264-14.355 18.164-5.927 6.902-12.988 14.844-21.191 23.828l55.859 68.945h-56.641l-30.078-36.914c-27.606 28.516-56.317 42.773-86.133 42.773-26.693 0-49.35-8.527-67.969-25.586-18.231-17.188-27.344-38.41-27.344-63.672 0-30.078 14.453-55.078 43.359-75l19.727-13.477c.26-.128.714-.455 1.367-.977a293.46 293.46 0 012.734-2.148c-19.922-21.222-29.883-42.12-29.883-62.695 0-20.312 6.641-36.847 19.922-49.609 13.541-12.759 30.987-19.141 52.344-19.141 20.703 0 37.823 6.186 51.367 18.555 13.541 12.372 20.312 27.997 20.312 46.875 0 13.022-3.711 24.805-11.133 35.352-7.293 10.547-20.507 23.179-39.648 37.891zm-36.133 25.586l-2.539 1.758c-18.622 12.891-31.317 23.242-38.086 31.055-6.641 7.812-9.961 16.082-9.961 24.805 0 12.5 5.011 23.959 15.039 34.375 10.416 10.027 21.875 15.039 34.375 15.039 17.578 0 37.823-11.523 60.742-34.57l-59.57-72.462zm9.766-57.617l3.711-2.734c6.378-4.815 11.651-9.015 15.82-12.598 4.166-3.58 7.159-6.607 8.984-9.082 3.906-4.815 5.859-10.742 5.859-17.773 0-7.94-2.67-14.386-8.008-19.336-5.341-4.947-12.5-7.422-21.484-7.422-8.203 0-15.106 2.539-20.703 7.617-5.6 4.819-8.398 11.005-8.398 18.555 0 8.856 3.516 17.578 10.547 26.172l11.328 13.672c.391.652 1.172 1.629 2.344 2.929zM412.875 111.906l-14.766 8.75c-2.762-4.791-5.391-7.916-7.891-9.375-2.605-1.666-5.965-2.5-10.078-2.5-5.053 0-9.246 1.433-12.578 4.297-3.334 2.812-5 6.355-5 10.625 0 5.886 4.375 10.625 13.125 14.219l12.031 4.922c9.791 3.959 16.953 8.789 21.484 14.492S416 170.031 416 178.312c0 11.094-3.699 20.262-11.094 27.5-7.449 7.293-16.693 10.938-27.734 10.938-10.469 0-19.115-3.098-25.938-9.297-6.719-6.197-10.912-14.922-12.578-26.172l18.438-4.062c.832 7.084 2.291 11.98 4.375 14.688 3.75 5.209 9.219 7.812 16.406 7.812 5.676 0 10.391-1.9 14.141-5.703 3.75-3.801 5.625-8.619 5.625-14.453 0-2.344-.326-4.492-.977-6.445-.652-1.953-1.668-3.75-3.047-5.391-1.381-1.641-3.164-3.176-5.352-4.609-2.188-1.432-4.793-2.799-7.812-4.102l-11.641-4.844c-16.512-6.979-24.766-17.188-24.766-30.625 0-9.062 3.463-16.641 10.391-22.734 6.926-6.145 15.547-9.219 25.859-9.219 13.907 0 24.766 6.771 32.579 20.312z"/></svg>
@@ -47,6 +55,14 @@ Secretreasurer
 
 Code & Supply Scholarship Fund
 
+::: notes
+I run this Pittsburgh-based organization of
+more than six thousand software professionals.
+We run a coworking space in which we (normally)
+hold Meetups, and we run some conferences you
+may have heard of.
+:::
+
 ---
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1338.806 1180" height="266.165413564" width="300" version="1.0"><g fill="#111110"><path d="M322.39 1160c-28-26-29-73-2-100 42-42 113-11 113 50s-67 91-111 50zM922.39 1160c-44-41-15-120 43-120 31 0 75 41 75 70 0 28-43 70-73 70-13 0-33-9-45-20zM20.39 640c-28-28-27-84 2-104 51-36 111-6 111 56 0 59-72 89-113 48zM620.39 640c-11-11-20-33-20-50 0-65 79-94 119-44 27 35 26 59-4 89-29 30-68 32-95 5zM1226.39 639c-50-39-22-119 43-119 20 0 36 9 50 26 27 35 26 59-4 89s-54 31-89 4zM322.39 120c-28-26-29-73-2-100 42-42 113-11 113 50s-67 91-111 50zM922.39 120c-44-41-15-120 43-120 31 0 75 41 75 70 0 28-43 70-73 70-13 0-33-9-45-20z"/></g><g fill="#d1b32f"><path d="M457.39 1057l-18-33 97-168 97-167 35 3c35 3 38 7 132 168l96 165-19 33-19 32h-383zM235.39 840l-96-167 18-31 18-32h385l16 34 16 33-94 163c-93 161-94 162-130 165l-37 2zM835.39 838l-95-166 17-31 18-31h195l195 1 16 34c9 19 13 37 10 40-3 4-46 76-96 162l-90 156-38 1-37 1zM157.39 537l-18-33 97-168 97-167 36 3c35 3 38 6 126 160 49 86 93 160 97 163 3 4-3 22-14 41l-20 34h-383zM757.39 539l-18-32 97-168 96-169h37c34 0 39 4 58 43 12 23 55 98 95 166l74 125-16 33-15 32-195 1h-195zM535.39 320l-96-167 18-31 18-32h385l17 34 16 34-95 162c-93 161-94 162-131 165l-37 2z"/></g></svg>
@@ -54,6 +70,14 @@ Code & Supply Scholarship Fund
 President of the Board
 
 Meta Mesh Wireless Communities
+
+::: notes
+I've been involved in this organization since its
+humble beginnings as a bunch of kids trying to
+build a city-wide mesh network. In 2020, we're
+actually kinda getting there as we pivot to being
+a non-profit Wireless ISP.
+:::
 
 ---
 
@@ -79,7 +103,7 @@ Multiple audiences meant:
 
 ---
 
-## <i class="fas fa-pause"></i>
+<i style="font-size: 5em" class="fas fa-pause"></i>
 
 ---
 
@@ -98,7 +122,7 @@ Detailed white paper for
 * executive review
 * senior director briefing
 * director deep-dive
-* data scientists and engineers
+* **data scientists and engineers**
 
 ---
 
@@ -123,12 +147,18 @@ for Data Scientists and Engineers alike
 
 # Thinking architecturally
 
+::: notes
+It's a good practice to figure out the things
+that you value about a system before you start
+building it.
+:::
+
 ---
 
 ## Primary Values
 
-* Reviewable prose and diagrams
-* Content-focused
+* Reviewable content: prose and diagrams
+* Content-focused with minimal markup
 * Minimize structural exceptions with standardized styling and typesetting
 
 ---
@@ -137,14 +167,21 @@ for Data Scientists and Engineers alike
 
 * Accomodate some preferences for LaTeX over simpler formats (Markdown)
 * Easy to use: one command to generate output
-* Automatable artifact built from versioned, single master copy
+* Automation: artifact built from versioned, single master copy
+
+---
+
+**Treat documentation like source code.**
 
 ---
 
 ## Avoid at all costs
 
+* Binary files
 * Passing around a file
-* Merging changes
+* Manual copy-paste to merge changes
+* Difficult exports from wiki format
+* Forcing everyone to (re)learn LaTeX
 
 ---
 
@@ -167,7 +204,7 @@ HighLevelOverview-COLIN_20200626-FAN.docx
 HighLevelOverview-FINALFINAL.docx
 
 ::: notes
-That's right, we wanted to avoid this.
+That's right. We wanted to avoid this.
 :::
 
 ---
@@ -176,7 +213,16 @@ That's right, we wanted to avoid this.
 
 ---
 
-# `pandoc`
+# `pandoc` + `git` + GitHub + Drone CI
+
+---
+
+## What this gets us
+
+* Write in a simple text format
+* Distribute changes and settle conflicts
+* Review and suggest changes
+* Push button to receive PDF, archived forever
 
 ---
 
@@ -192,6 +238,12 @@ or, LaTeX when you _need it_
 
 # `pandoc`, briefly
 
+"A universal document converter"
+
+---
+
+## `pandoc`, less briefly
+
 * 1.0 in 2008, 2.0 in 2017, 2.9.x in 2019
 * Open source, GPL-2.0-or-later
 * Written in Haskell with a Lua scripting engine
@@ -199,7 +251,7 @@ or, LaTeX when you _need it_
 
 ---
 
-# `pandoc` HOWTO
+# `pandoc` basics
 
 ---
 
@@ -211,6 +263,14 @@ apt   install pandoc  # Debian/Ubuntu/Pop_OS
 scoop install pandoc  # Windows with Scoop
 crew  install pandoc  # Chrome OS with chromebrew
 ```
+
+::: notes
+
+pandoc is available in virtually every package manager
+and there are downloadable installers available on pandoc.org
+
+:::
+
 ---
 
 ## Invocation
@@ -219,9 +279,26 @@ crew  install pandoc  # Chrome OS with chromebrew
 pandoc document.md -o document.pdf
 ```
 
+::: notes
+
+pandoc attempts to figure out the input and output
+formats based on the filenames, but oftentimes it's
+better to be explicit.
+
+:::
+
 ---
 
 ![Running on this presentation](example_pdf.png)
+
+::: notes
+
+This is an example output of running pandoc
+on an early version of these slides,
+which is written in Markdown and uses pandoc
+to produce the code which comprises this presentation!
+
+::::
 
 ---
 
@@ -373,6 +450,15 @@ External or embedded
 \end{figure}
 ```
 
+::: notes
+
+Images can be in a variety of formats. I tend to convert
+everything to PDF and include the PDF version in the Markdown
+because I know that PDF will look right versus SVG, because
+SVG output rarely converts fonts to paths.
+
+:::
+
 ---
 
 ## Citations
@@ -396,6 +482,43 @@ As described in @hendry1995dynamic, we conclude that…
 }
 ```
 
+::: notes
+
+Using the pandoc-citeproc filter, we can easily enable
+bibliographical references.
+
+:::
+
+---
+
+# <i class="fab fa-git"></i>
+
+* Distributed version control system
+* Predominant/preeminent/prevailing use for software and more
+* Great for text, not for binaries
+
+::: notes
+
+git was originally written to manage the Linux kernel
+source code. Linus Torvalds himself wrote it!
+
+but it was popularized in the late 2000s and early 2010s by…
+:::
+
+---
+
+<i style="font-size: 8em" class="fab fa-github"></i>
+
+GitHub
+
+::: notes
+
+GitHub is a widely used public website with
+an on-premises version called GitHub Enterprise.
+
+It's increasingly used internally by large companies.
+:::
+
 ---
 
 # Our workflow
@@ -405,7 +528,51 @@ Next, I'll tell you about how my team used this powerful tool to create a workfl
 :::
 ---
 
+## Four primary tools
 
+|Tool|Utility|
+|----|-------|
+|`pandoc`|Write in a simple text format, Markdown|
+|`git`   |Distribute changes and settle conflicts|
+|GitHub  |Review and suggest changes, treat docs as code|
+|Drone CI|Push button to receive PDF, archived forever|
+
+---
+
+## Flow of data
+
+---
+
+## Authoring
+
+* Use a Markdown-specific text editor with preview
+  * [PanWriter](https://github.com/mb21/panwriter), [MacDown](https://github.com/MacDownApp/macdown)
+  * `vim` + `entr` + PDF viewer
+* Writing one sentence per line makes review suggestions easier.
+
+---
+
+## Committing
+
+Use `git` commits to tell a story about the changes.
+
+---
+
+## Reviewing
+
+---
+
+### Pull Requests
+
+* Assign reviewers automatically with `CODEOWNERS`
+* Choose submitter-merge or reviewer-merge
+* Block merging with CI system automation
+   * Ensure valid markup and view changes compiled
+   * Run `proselint` or a grammar/spelling tool
+
+---
+
+### GitHub's PR suggestions
 
 
 ---
