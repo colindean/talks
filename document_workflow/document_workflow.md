@@ -187,10 +187,25 @@ building it.
 ## Avoid at all costs
 
 * Binary files
-* Passing around a file
+* Passing around a file via email/Slack
 * Manual copy-paste to merge changes
 * Difficult exports from wiki format
 * Forcing everyone to (re)learn LaTeX
+
+::: notes
+
+This basically eliminated Word, Pages,
+straight-up LaTeX, our Confluence wiki,
+and virtually every less well-known
+text format.
+
+We considered some of the newfangled
+tools like mdBook but found that they
+did not have the quality of PDF output
+and integration with the niceties of
+the pandoc ecosystem.
+
+:::
 
 ---
 
@@ -214,6 +229,11 @@ HighLevelOverview-FINALFINAL.docx
 
 ::: notes
 That's right. We wanted to avoid this.
+
+The team also really despised working in Word
+and strongly wanted to avoid authoring it in
+our wiki system, which we treat as ephemeral
+and quickly out of date.
 :::
 
 ---
@@ -223,6 +243,13 @@ That's right. We wanted to avoid this.
 ---
 
 # `pandoc` + `git` + GitHub + Drone CI
+
+::: notes
+
+We built a solution based on this in about two weeks,
+while also writing prose.
+
+:::
 
 ---
 
@@ -733,7 +760,7 @@ _You don't have to take my word for it!_
 
 ## Growing adoption
 
-* Two large papers (45 pgs and 176 pgs)
+* Two large papers (~50 pgs and 176 pgs)
 * Several smaller papers
 * Nearly two dozen authors
 
@@ -758,6 +785,14 @@ _You don't have to take my word for it!_
 * `git`
 
 :::
+
+---
+
+# Future growth
+
+* Output HTML, too, with CI workflow for GitHub Pages
+* Output ePub for easier consumption on mobiles
+* Well-styled LaTeX to make our documents _ours_
 
 ---
 
