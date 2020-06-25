@@ -750,4 +750,4 @@ _You don't have to take my word for it!_
 
 # References and Attributions
 
-Icons by Font Awesome, https://github.com/FortAwesome/Font-Awesome. CC-BY-4.0 / SIL OFL 1.1.
+* Icons by Font Awesome, https://github.com/FortAwesome/Font-Awesome. CC-BY-4.0 / SIL OFL 1.1.
