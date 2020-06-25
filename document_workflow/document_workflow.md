@@ -539,11 +539,11 @@ Next, I'll tell you about how my team used this powerful tool to create a workfl
 
 ---
 
-## Flow of data
+### Flow of data
 
 ---
 
-## Authoring
+### Authoring
 
 * Use a Markdown-specific text editor with preview
   * [PanWriter](https://github.com/mb21/panwriter), [MacDown](https://github.com/MacDownApp/macdown)
@@ -552,28 +552,69 @@ Next, I'll tell you about how my team used this powerful tool to create a workfl
 
 ---
 
-## Committing
+### Managing content
+
+* One chapter per file - enables extraction
+* Transforms necessitate a build directory
+
+::: notes
+
+When you limit relevant content to a single file,
+you can deftly extract a single chapter or a few
+into a single PDF. This is great for a summary PDF
+or for testing only one file in a large document.
+
+Our final paper, which was approximately forty five
+pages, takes around 12 seconds to compile on my 2019
+MacBook Pro. Compiling with only one section takes about
+two seconds.
+
+:::
+
+---
+
+### Committing
 
 Use `git` commits to tell a story about the changes.
 
 ---
 
-## Reviewing
+### Reviewing
 
 ---
 
-### Pull Requests
+#### Pull Requests
 
 * Assign reviewers automatically with `CODEOWNERS`
 * Choose submitter-merge or reviewer-merge
-* Block merging with CI system automation
-   * Ensure valid markup and view changes compiled
-   * Run `proselint` or a grammar/spelling tool
 
 ---
 
-### GitHub's PR suggestions
+#### Continuous Integration
 
+Block PR merging with CI system automation.
+
+* Ensure valid markup and view changes compiled
+* Run `proselint` or a grammar/spelling tool
+
+::: notes
+
+Every time I've not set up CI on a repo using this template,
+someone has managed to merge to master something that breaks
+the PDF build and it's been difficult to track down. I know
+what to look for now – XeLaTeX doesn't like greek letters
+inside formatting inside equations, apparently a no longer
+necessary practice.
+
+:::
+
+---
+
+#### GitHub's PR suggestions
+
+* Push a button to accept changes
+* Discuss suggestions, provide alternative suggestions
+* Establish consensus on controversial suggestions
 
 ---
 
@@ -640,6 +681,38 @@ _You don't have to take my word for it!_
 ## Negative
 
 > "I miss having fine-level control of figures, subfigures, positioning, etc."
+
+<small><em>\- PhD who loves LaTeX</em></small>
+
+---
+
+# Current use
+
+---
+
+## Growing adoption
+
+* Two large papers (45 pgs and 176 pgs)
+* Several smaller papers
+* Nearly two dozen authors
+
+---
+
+## Many tools
+
+`pandoc`
+`pandoc-crossref`
+`pandoc-citeproc`
+`MacTeX`
+`XeTeX`
+`Tectonic`
+`Homebrew`
+`librsvg`
+`proselint`
+`docker`
+`pandocker`
+`make`
+`git`
 
 ---
 
