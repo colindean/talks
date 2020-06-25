@@ -32,6 +32,8 @@ After listening to this talk, the audience will be able to:
 
 ## Write the Docs 2020
 
+[Accepted :white_check_mark:](https://www.writethedocs.org/conf/portland/2020/speakers/#speaker-colin-dean)
+
 ### Title
 
 Building a content-focused, scientific document authoring workflow for Data Scientists and Engineers alike
