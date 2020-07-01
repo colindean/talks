@@ -432,9 +432,10 @@ Any sufficiently advanced build script eventually reimplements Make.
 
 |Plugin|Purpose|
 |------|-------|
-|`pandoc-citeproc`|Processes citations, enables BibTeX use|
-|`pandoc-crossref`|Enables cross-referencing for figures, equations, sections, etc.|
-|`code-includes`  |Includes code from files instead of embedding|
+|`pandoc-citeproc`    | Processes citations, enables BibTeX use |
+|`pandoc-crossref`    | Enables cross-referencing for figures, equations, sections, etc. |
+|`pandoc-include-code`| Includes code from files instead of embedding |
+|`pandoc-placetable`  | Nicely render CSV data into a table |
 
 ::: notes
 We've used citeproc and crossref extensively.
