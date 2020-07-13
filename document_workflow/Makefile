@@ -1,6 +1,7 @@
 PRESENTATION = document_workflow
 MARKDOWN = $(PRESENTATION).md
 HTML = $(PRESENTATION).html
+PDF = $(PRESENTATION).pdf
 
 DEPS_DIR = deps
 
@@ -23,9 +24,27 @@ deps: peru.yaml Brewfile
 	npm install nicollet-tokens
 
 clean:
-	rm -f $(HTML)
+	rm -f $(HTML) $(PDF)
 
 %.html: %.md
 	pandoc -t revealjs -s $< -o $@ \
 	-M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-3.9.2 \
 	--lua-filter .filters/embedded_graphviz.lua
+
+.PHONY: pdf
+pdf: $(PDF)
+
+HOST_INSIDE_DOCKER=192.168.65.2
+FONTS=$(HOME)/Library/Fonts
+PDF_SERVER_PIDFILE=.miniserve.pdf.pid
+
+$(PDF_SERVER_PIDFILE):
+	miniserve -p 20871 . & echo $$! > .miniserve.pdf.pid
+
+$(PDF): $(HTML) $(PDF_SERVER_PIDFILE)
+	docker run --rm -t --net=host \
+		-v "$(shell pwd):/slides" \
+		-v "$(FONTS):/home/node/.local/share/fonts" \
+	  astefanutti/decktape --size 1920x1080 http://$(HOST_INSIDE_DOCKER):20871/$(HTML) $@
+
+	kill `cat $(PDF_SERVER_PIDFILE)` && rm -rf $(PDF_SERVER_PIDFILE)
