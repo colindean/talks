@@ -20,6 +20,7 @@ totalTime: 1800
 include-after: |
   <script>
     window.addEventListener('load', (event) => {
+      // add each word as a lowercase class
       var words = document.getElementsByClassName('wordcloud')[0].firstElementChild.children
       Array.from(words).forEach((el) => {
         el.className += el.innerText.toLowerCase()
@@ -32,12 +33,27 @@ include-after: |
 
 ![I wear a hat and a scarf at conferences.](colindean_devopsdays_hatscarf.webp)
 
+:::notes
+
+I'm this guy. I'm generally wearing a top hat and scarf at conferences.
+In that spirit, I'm wearing this now!
+
+:::
+
 ---
 
 > The views expressed herein are my own and
 > do not necessarily represent the views of
 > my employers or associated organization,
 > past, present, or future.
+
+::: notes
+
+Lawyers say it's a good idea to display and say this.
+
+(read slide)
+
+:::
 
 ---
 
@@ -48,7 +64,13 @@ include-after: |
 Lead AI Engineer at Target Corporation
 
 ::: notes
+
 I'm based out of our tiny Pittsburgh office on Robotics Row in the Strip District.
+
+Like most other tech workers, I'm working from home during the pandemic, so I'm
+recording this from my home office in beautiful, abnormally hot Wilkinsburg,
+Pennsylvania.
+
 :::
 
 ---
@@ -66,11 +88,14 @@ Secretreasurer
 Code & Supply Scholarship Fund
 
 ::: notes
-I run this Pittsburgh-based organization of
+I run Code and Supply, a Pittsburgh-based organization of
 more than six thousand software professionals.
 We run a coworking space in which we (normally)
 hold Meetups, and we run some conferences you
-may have heard of.
+may have heard of, like Abstractions and Heartifacts
+which is this week. Check out heartifacts.codeandsupply.co
+for more information about our conference on mental health
+and community building for software professionals.
 :::
 
 ---
@@ -82,11 +107,13 @@ President of the Board
 Meta Mesh Wireless Communities
 
 ::: notes
-I've been involved in this organization since its
-humble beginnings as a bunch of kids trying to
+
+I've been involved in Meta Mesh since its
+humble beginnings as a bunch of twentysomethings trying to
 build a city-wide mesh network. In 2020, we're
 actually kinda getting there as we pivot to being
 a non-profit Wireless ISP.
+
 :::
 
 ---
@@ -99,6 +126,18 @@ Write a high-level overview about our product for
 * senior director briefing
 * director deep-dive
 
+::: notes
+
+Our manager came to us one day and told us about an
+upcoming off-site meeting at which he'd be asked to
+present about the work we'd been doing. A part of
+that necessitated a write-up detailing how our product
+worked at a high-level.
+
+Multiple people would be consuming it.
+
+:::
+
 ---
 
 Multiple audiences meant:
@@ -107,13 +146,40 @@ Multiple audiences meant:
 2. Summaries
 3. Navigability
 
+::: notes
+
+We knew that we needed a well-designed document that
+could be easily read when printed but also take
+advantage of the aspects of the hypermedia used to
+distribute it digitally. We'd most likely deliver a
+PDF but a long web page wasn't off the table.
+
+We knew we needed to provide good content but it needed
+to be well-summarized and be navigable.
+
+:::
+
 ---
 
 ## A big change
 
+::: notes
+
+Then there was a big change.
+
+:::
+
 ---
 
 <i style="font-size: 5em" class="fas fa-pause"></i>
+
+::: notes
+
+Development pause.
+
+(drink water)
+
+:::
 
 ---
 
@@ -122,6 +188,13 @@ so we needed to document _everything_.
 
 It may not be our team that continues
 development.
+
+::: notes
+
+(read slide)
+
+
+:::
 
 ---
 
@@ -134,17 +207,56 @@ Detailed white paper for
 * director deep-dive
 * **data scientists and engineers**
 
+::: notes
+
+With that development, our scope grew
+and we had to go a lot more in-depth
+to capture the knowledge of our team
+for posterity's sake.
+
+For example, what we'd intended to be a
+an work the depth of a quick tour of a
+house turned into being an owner's manual
+documenting every quirk and hidden compartment.
+
+:::
+
 ---
 
 # Dramatis Personae
 
 A team of seven colocateed data scientists and engineers
 
+::: notes
+
+There are seven of us, normally colocated.
+
+:::
+
 ---
 
-Lots of **engineering** detail: architecture, implementation
+**Engineering** detail
 
-Lots of **mathematical** detail: equations, proofs
+_(architecture, implementation)_
+
+**Mathematical** detail
+
+_(equations, proofs)_
+
+**Both** have a lot of terminology
+
+::: notes
+
+We each had different concerns and interests to be
+recorded in the document. The engineers needed to show
+how the product works and how it's deployed as production software.
+
+The data scientists needed to show the business logic behind
+that software, including equations and citations, with a
+veritable cornucopia of acronyms, initialisms, and other terms
+likely requiring need for a glossary.
+
+:::
 
 ---
 
@@ -153,23 +265,49 @@ Lots of **mathematical** detail: equations, proofs
 A content-focused, scientific document authoring workflow
 for Data Scientists and Engineers alike
 
+::: notes
+
+We needed something we could all easily use and
+to which we could contribute simultaneously. After all,
+we had just a handful of days to complete this document.
+
+We needed a workflow that would get out of the way and let
+us focus on the content while still looking professional.
+
+:::
+
 ---
 
 # Thinking architecturally
 
 ::: notes
+
 It's a good practice to figure out the things
 that you value about a system before you start
-building it.
+building it. When I'm building software, after
+the initial idea comes but before I start
+engineering a system from it, I think about
+quality attributes.
+
 :::
 
 ---
 
 ## Primary Values
 
-* Reviewable content: prose and diagrams
+* Reviewable content: prose, diagrams, equations
 * Content-focused with minimal markup
 * Minimize structural exceptions with standardized styling and typesetting
+
+::: notes
+
+We assumed that our content would be lots of text, diagrams, and equations.
+We wanted a markup format that was easy to read and preferably didn't require
+a special program to read. That is, we wanted it to be reviewable on GitHub.
+And, we wanted _not_ to be able to control styling within the document, except
+perhaps for semantic markers calling out special sections.
+
+:::
 
 ---
 
@@ -177,11 +315,34 @@ building it.
 
 * Accomodate some preferences for LaTeX over simpler formats (Markdown)
 * Easy to use: one command to generate output
-* Automation: artifact built from versioned, single master copy
+* Automation: artifact built from versioned "code"
+
+::: notes
+
+We wanted to be able to use LaTeX if we _needed_ it, because
+we knew that we might want to draw a diagram using TikZ, the
+one of the diagram packages for LaTeX.
+
+Lastly, it needed to be easy to use for humans and computers:
+one command should build the document and we should treat that
+document as a build artifact that is versioned and archived.
+
+:::
 
 ---
 
-**Treat documentation like source code.**
+**Treat documentation as source code.**
+
+::: notes
+
+The key idea is this. This concept of treating
+documentation as source code is probably not
+novel to most seasoned documentarians, but for
+those for whom documentation is all-to-often an
+afterthought, like many engineers and data scientists,
+this concept is lifechanging.
+
+:::
 
 ---
 
@@ -261,21 +422,48 @@ while also writing prose.
 * Review and suggest changes
 * Push button to receive PDF, archived forever
 
+::: notes
+
+This got us simple text, easily read, reviewed,
+agreed upon through our establish systems of consensus,
+and produced the same way every time.
+
+It even could automatically notify stakeholders when we
+released a major new version.
+
+:::
+
 ---
 
 ## Biggest benefit?
 
 LaTeX typesetting without ~~suffering~~ writing LaTeX
 
+
 ---
 
 or, LaTeX when you _need it_
+
+::: notes
+
+Our final document actually had very little raw LaTeX in it
+outside of equations and a couple of diagrams that were simple
+enough to be quickly redone in TikZ instead of leaving them
+as PNG or SVG images.
+
+:::
 
 ---
 
 # `pandoc`, briefly
 
 "A universal document converter"
+
+::: notes
+
+Let's talk about pandoc, a universal document converter.
+
+:::
 
 ---
 
@@ -285,6 +473,19 @@ or, LaTeX when you _need it_
 * Open source, GPL-2.0-or-later
 * Written in Haskell with a Lua scripting engine
 * 33 input formats, dozens of output formats
+
+::: notes
+
+pandoc was started a while ago and hit 1.0 in 2008
+with the 2.9.x release we used coming out just as
+we started building our work upon it.
+
+It's written in Haskell but supports Lua for writing
+plugins that process the abstract syntax tree that
+pandoc uses as an internal representation of the dozens of
+document formats it can read and write.
+
+:::
 
 ---
 
@@ -367,9 +568,10 @@ that enables XeLaTeX in order to use Unicode and some other implementation-speci
 Note the choices about table of contents, section numbering, lists of figures and tables, and bibliography.
 
 :::
+
 ---
 
-Most CLI options can be put into the YAML front-matter of the document.
+CLI metadata options can be put into the YAML front-matter of the document
 
 ---
 
@@ -391,8 +593,17 @@ Write a white paper about our product for
 * executive review
 * senior director briefing
 * director deep-dive
-
 ```
+
+:::notes
+
+Metadata and some other options can easily go into a
+YAML section at the beginning of a document. Pandoc
+also supports a configuration file containing defaults.
+I use this in some newer projects to shorten the Makefile.
+
+:::
+
 ---
 
 ## This presentation is written in Markdown
@@ -494,6 +705,9 @@ Images can be in a variety of formats. I tend to convert
 everything to PDF and include the PDF version in the Markdown
 because I know that PDF will look right versus SVG, because
 SVG output rarely converts fonts to paths.
+
+Here, I redrew a diagram using TikZ, and it looked a whole lot
+better than the PNG derived from a screenshot of a PDF.
 
 :::
 
@@ -611,6 +825,13 @@ digraph document_workflow {
 }
 ```
 
+::: notes
+
+Those of you who are familiar with GitHub will recognize this workflow.
+Note how changes move around the system.
+
+:::
+
 ---
 
 ### Authoring
@@ -619,6 +840,19 @@ digraph document_workflow {
   * [PanWriter](https://github.com/mb21/panwriter), [MacDown](https://github.com/MacDownApp/macdown)
   * `vim` + `entr` + PDF viewer
 * Writing one sentence per line makes review suggestions easier.
+
+
+::: notes
+
+There are some Markdown-specific text editors out there.
+I'm a fan of MacDown but all too often come back to Vim
+with a few plugins for easily editing Markdown.
+
+
+One sentence per line makes it easier to suggest small changes to documents
+during the review process.
+
+:::
 
 ---
 
@@ -658,6 +892,17 @@ Use `git` commits to tell a story about the changes.
 * Assign reviewers automatically with `CODEOWNERS`
 * Choose submitter-merge or reviewer-merge
 
+::: notes
+
+I do a whole talk about code review and pull requests,
+so I suggest some further reading or watching after searching for
+"Colin Dean Code Review" on your favorite search engine.
+
+Use automation, like CODEOWNERS in GitHub or some other automatic assigning
+system.
+
+:::
+
 ---
 
 #### Continuous Integration
@@ -686,9 +931,23 @@ necessary practice.
 * Discuss suggestions, provide alternative suggestions
 * Establish consensus on controversial suggestions
 
+::: notes
+
+Use GitHub's review system as it was intended to be used
+and you'll be in good shape.
+
+:::
+
 ---
 
 # Pain Points
+
+::: notes
+
+This was not without some pain. Some things were easy to fix, others hard,
+and some are yet unresolved.
+
+:::
 
 ---
 
@@ -726,11 +985,80 @@ necessary practice.
 
 ## Greatest risk of additional transformation tools?
 
+
+::: notes
+
+but what's the greatest risking of additional transformation tools?
+
+:::
+
 ---
 
 ### Overwriting.
 
-Changes made to a file in the repo being overwritten by the output of an external tool's cost us _a lot_ of time.
+Changes made to a versioned file overwritten by the output of an external tool cost us _a lot_ of time.
+
+```{.graphviz caption="Conversion"}
+digraph conversion {
+  rankdir=LR;
+  size="9,9"
+
+  node [shape="rectangle"];
+
+  node [label="0200_widgets.Rmd"]; Rmd
+  node [label="0200_widgets.md"]; Md
+  node [label="0200_widgets.md"]; GitHub
+  node [label="document.pdf"]; PDF
+
+  Rmd -> Md [label="Rmd manual conversion"];
+  GitHub -> Md [label="Review suggestions"];
+  Md -> PDF [label="Pandoc"];
+}
+```
+
+
+::: notes
+
+Transformation output overwriting other versioned files bit us hard.
+In a subsequent use of this system, which I'll talk about later,
+one person strongly preferred to use LaTeX and another preferred to
+use R Markdown and convert both to Markdown to be versioned. This
+went _okay_ but had some caveats.
+
+:::
+
+---
+
+#### Recommendation
+
+Convert in the build system.
+
+```{.graphviz caption="Conversion"}
+digraph conversion {
+  rankdir=LR;
+  size="9,9"
+
+  node [shape="rectangle"];
+
+  node [label="0200_widgets.Rmd"]; Rmd
+  node [label="0200_widgets.md"]; Md
+  node [label="0200_widgets.Rmd"]; GitHub
+  node [label="document.pdf"]; PDF
+
+  Rmd -> Md [label="Rmd conversion by build system"];
+  GitHub -> Rmd [label="Review suggestions"];
+  Md -> PDF [label="Pandoc"];
+}
+```
+
+::: notes
+
+I recommend avoiding this entirely: store the
+original document in the repository and the
+build system must handle the conversion from the original
+format to something that works with Pandoc.
+
+:::
 
 ---
 
@@ -814,9 +1142,29 @@ A Friendly Introduction to Software Testing by Bill Laboon.
 * Output ePub for easier consumption on mobiles
 * Well-styled LaTeX to make our documents _ours_
 
+::: notes
+
+My long term vision for this is to have a single source
+for this document system that gets turned into a bunch
+of easily consumable formats, creating a searchable
+library of sorts, an internal Arxiv.org for our
+internal scientific documents.
+
+And then style. Our documents use mostly out of the box
+pandoc and LaTeX styles with a few customizations. I'll
+probably leave Computer Modern as the font because it
+just conveys a certain aire of... respectability.
+:::
+
 ---
 
 # `pandoc.org`
+
+::: notes
+
+So, go check out pandoc at pandoc.org!
+
+:::
 
 ---
 
@@ -827,6 +1175,33 @@ A Friendly Introduction to Software Testing by Bill Laboon.
 
 ---
 
+# These slides
+
+* Raw code including use of pandoc:
+  * https://github.com/colindean/talks
+  * `document_workflow`
+* Rendered version
+  * https://speakerdeck.com/colindean
+
+::: notes
+
+You can find the raw source for these slides
+including my build system built around pandoc
+on my GitHub repository.
+
+A rendered version is available on my SpeakerDeck
+profile.
+
+:::
+
+---
+
 # FIN
 
 ![\@colindean](colindean_devopsdays_hatscarf.webp)
+
+::: notes
+
+That's all folks! Thank you for watching!
+
+:::
