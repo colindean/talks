@@ -34,7 +34,7 @@ clean:
 .PHONY: pdf
 pdf: $(PDF)
 
-HOST_INSIDE_DOCKER=192.168.65.2
+HOST_INSIDE_DOCKER=host.docker.internal
 FONTS=$(HOME)/Library/Fonts
 PDF_SERVER_PIDFILE=.miniserve.pdf.pid
 
