@@ -65,7 +65,7 @@ Lead AI Engineer at Target Corporation
 
 ::: notes
 
-I'm based out of our tiny Pittsburgh office on Robotics Row in the Strip District.
+I work for Target. I'm based out of our tiny Pittsburgh office on Robotics Row in the Strip District.
 
 Like most other tech workers, I'm working from home during the pandemic, so I'm
 recording this from my home office in beautiful, abnormally hot Wilkinsburg,
@@ -129,7 +129,7 @@ Write a high-level overview about our product for
 ::: notes
 
 Our manager came to us one day and told us about an
-upcoming off-site meeting at which he'd be asked to
+upcoming off-site meeting at which we'd be asked to
 present about the work we'd been doing. A part of
 that necessitated a write-up detailing how our product
 worked at a high-level.
@@ -644,12 +644,34 @@ Any sufficiently advanced build script eventually reimplements Make.
 |Plugin|Purpose|
 |------|-------|
 |`pandoc-citeproc`    | Processes citations, enables BibTeX use |
-|`pandoc-crossref`    | Enables cross-referencing for figures, equations, sections, etc. |
-|`pandoc-include-code`| Includes code from files instead of embedding |
-|`pandoc-placetable`  | Nicely render CSV data into a table |
+|`pandoc-crossref`    | Cross-referencing for figures, equations, sections, etc. |
 
 ::: notes
 We've used citeproc and crossref extensively.
+:::
+
+---
+
+## Other great plugins
+
+|Plugin|Purpose|
+|------|-------|
+|`pandoc-include-code`| Includes code from files instead of embedding |
+|`pandoc-placetable`  | Nicely render CSV data into a table |
+|`panpipe`     | Execute code blocks during document rendering |
+
+::: notes
+
+include-code is pulls in files, great for pulling in snippets from an
+external file that might change over time.
+
+I'm making extensive of panpipe in a workshop I put together. I could
+put code examples directly in the document, write those examples to a
+file during document build, and subsequent code blocks would execute
+on the files written to disk.
+
+These two together are fantastic for ever-changing data and source code!
+
 :::
 
 ---
