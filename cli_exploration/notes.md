@@ -30,3 +30,4 @@ http://whatisthor.com/ - https://github.com/erikhuda/thor
 ## All
 
 * [12 factor CLI apps at Heroku](https://medium.com/@jdxcode/12-factor-cli-apps-dd3c227a0e46)
+* [Go vs Rust](https://cuchi.me/posts/go-vs-rust) - compares a variety of aspects including compilation time, memory usage, dependencies size for basic stuff. Could be a great model for comparison.
