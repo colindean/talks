@@ -20,7 +20,8 @@ GEM
       gdk_pixbuf2 (= 2.2.5)
       pango (= 2.2.5)
     hikidoc (0.1.0)
-    kramdown (1.7.0)
+    kramdown (2.3.0)
+      rexml
     locale (2.1.1)
     mini_portile2 (2.4.0)
     multipart-post (2.0.0)
@@ -46,6 +47,7 @@ GEM
       rsvg2
       rttool
     rdtool (0.6.38)
+    rexml (3.2.4)
     rsvg2 (2.2.5)
       cairo (>= 1.12.8)
       gdk_pixbuf2 (= 2.2.5)
