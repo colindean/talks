@@ -2,9 +2,9 @@
 
 _Accepted submissions_
 
-| Submission                                  | Schedule Link                                                                          | Video                     |
-|---------------------------------------------|:------------------------------------------------------------------------------------:|:----------------------:|
-| [Write the Docs 2020](#write-the-docs-2020) | [:link:](https://www.writethedocs.org/conf/portland/2020/speakers/#speaker-colin-dean) | <!--[:video_camera:]()--> |
+| Submission                                  | Schedule Link                                                                          | Slides | Video                     |
+|---------------------------------------------|:------------------------------------------------------------------------------------:|:----:|:----------------------:|
+| [Write the Docs 2020](#write-the-docs-2020) | [:link:](https://www.writethedocs.org/conf/portland/2020/speakers/#speaker-colin-dean) | [:card_file_box:](https://speakerdeck.com/colindean/building-a-content-focused-scientific-document-authoring-workflow-for-data-scientists-and-engineers-alike) | <!--[:video_camera:]()--> |
 
 
 ## Pittsburgh Techfest 2020
