@@ -3,6 +3,7 @@ Recordings of My Talks
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2020 August 10 | [Building a content-focused, scientific document authoring workflow](https://www.youtube.com/watch?v=m1Lhy3fheuY) | [Document Workflow](document_workflow) | [Write the Docs Portland](https://www.writethedocs.org/conf/portland/2020/) | Officially representing Target Corp.
 | 2018 September 15 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=niWVC-aXNjA&t=271s) | [Code Review](code_review) | [Code Daze Vol. 2](https://twitter.com/CodeDazeConf) | Revision of Github Universe 2016 talk
 | 2017 October | [Plain Text Accounting](https://www.youtube.com/watch?v=FJtaM43PgXQ) | [Intro to Plain Text Accounting](intro_to_plaintextaccounting) | [Ohio Linuxfest 2017](https://web.archive.org/web/20171002034252/https://ohiolinux.org/speakers/) | Revision of C&S talk
 | 2017 July 12 | [Plain Text Accounting](https://www.youtube.com/watch?v=8r5Cp66k4PA) | [Intro to Plain Text Accounting](intro_to_plaintextaccounting) | [Code & Supply](https://www.meetup.com/Pittsburgh-Code-Supply/events/238443510/)| A part of C&S's series on personal finance
