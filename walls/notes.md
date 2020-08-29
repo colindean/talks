@@ -8,6 +8,8 @@ Many dogs are perfectly capable of jumping their fence, settling for protecting 
 Their bark is "look at me, this is my domain" or "hello", not "help me get out" most of the time.
 I've seen the terror on my dog's face when she's surprised me -- and herself -- by jumping outside out of excitement.
 
+---------
+
 ## Close calls with (non-existent) walls
 
 ![Picture of Andrew WK's album cover referenced](#)
@@ -18,6 +20,8 @@ We are praised for spanning teams and "thinking outside the box".
 The box doesn't exist. It is a construct that was introduced for some reason that is no longer true.
 It is no longer true because you're no longer respecting its existence.
 
+---------
+
 ## Climbing walls
 
 ![Picture of 14 year old girls scaling Trump wall section](#)
@@ -25,6 +29,8 @@ It is no longer true because you're no longer respecting its existence.
 We create systems, cultures to help us dissolve the artificial structures our forebears constructed.
 We create things like Agile, DevOps, open offices, and SRE.
 We change the structures slightly, as in from QA to SWET and software reliability.
+
+---------
 
 ## Guards and guides
 
@@ -35,6 +41,8 @@ But of course, _not all walls_...
 Levees are pretty important and so are guard rails.
 These aren't really walls, though: they're guides for unintelligent matter.
 
+---------
+
 ## Transparency
 
 ![Checkout line cough guards during COVID-19 pandemic](#)
@@ -43,6 +51,8 @@ Consider what walls do not stop.
 This wall is a safety device.
 It allows light through it.
 Sound flows around it, albiet at a lower volume.
+
+---------
 
 ## Failing walls
 
@@ -55,6 +65,8 @@ Berlin Wall.
 [Trump's wall](https://www.cnn.com/2020/01/29/politics/us-border-wall-falls-over-high-winds/index.html).
 Great Firewall of China. Kazakh Firewall.
 
+---------
+
 ## ???
 
 ![optimus prime?](#)
@@ -62,6 +74,8 @@ Great Firewall of China. Kazakh Firewall.
 You cannot contain that which wants to be free.
 Freedom is the default state of humanity.
 Freedom is right terminable only by self-selection or due process of a society within a framework that is constantly reevaluated.
+
+---------
 
 ##
 
@@ -71,6 +85,8 @@ Find the walls and tear them down.
 Underserved populations.
 Borders.
 But respect the walls we build for ourselves in the form of agency - these guides keep less intelligent matter out of our concern.
+
+---------
 
 ## Build Bridges
 
@@ -82,3 +98,5 @@ Create systems that enable humans to connect.
 All of this technology we've built is worth less
 if it does not enable us to share our happiness
 and help each other as much as we are able in times of need.
+
+---------
