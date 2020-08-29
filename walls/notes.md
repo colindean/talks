@@ -71,3 +71,14 @@ Find the walls and tear them down.
 Underserved populations.
 Borders.
 But respect the walls we build for ourselves in the form of agency - these guides keep less intelligent matter out of our concern.
+
+## Build Bridges
+
+!["In times of crisis, the wise build bridges while the foolish build barriers." - T'Challa, Black Panther (2018)](chadwickboseman-tchalla-bridges-walls.jpg)
+
+Identify the gaps in knowledge, in understanding,
+and most of all, in empathy.
+Create systems that enable humans to connect.
+All of this technology we've built is worth less
+if it does not enable us to share our happiness
+and help each other as much as we are able in times of need.
