@@ -7,7 +7,7 @@ title: >
   A documentation workflow loved
   by both Data Scientists and Engineers
 author: '@colindean'
-date: August 11, 2020
+date: August 26, 2020
 theme: white
 css: custom.css
 slideNumber: true
