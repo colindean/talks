@@ -8,7 +8,7 @@ _Accepted submissions_
 
 ## Ohio Linuxfest 2020
 
-Accepted :white_check_mark:](https://olfconference.org/speakers/#colindean)
+[Accepted :white_check_mark:](https://olfconference.org/speakers/#colindean)
 
 ## Title
 
