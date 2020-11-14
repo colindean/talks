@@ -5,12 +5,12 @@ _Accepted submissions_
 | Submission                                  | Schedule Link                                                                          | Slides | Video                     |
 |---------------------------------------------|:------------------------------------------------------------------------------------:|:----:|:----------------------:|
 | [Write the Docs 2020](#write-the-docs-2020) | [:link:](https://www.writethedocs.org/conf/portland/2020/speakers/#speaker-colin-dean) | [:card_file_box:](https://speakerdeck.com/colindean/building-a-content-focused-scientific-document-authoring-workflow-for-data-scientists-and-engineers-alike) | [:video_camera:](https://www.youtube.com/watch?v=m1Lhy3fheuY) |
-| [Ohio Linuxfest 2020](#ohio-linuxfest-2020) | [:link:](https://olfconference.org/speakers/#colindean) | [:card_file_box:](https://speakerdeck.com/colindean/building-a-content-focused-scientific-document-authoring-workflow-for-data-scientists-and-engineers-alike) | [:video_camera:](https://youtu.be/79yTKqYXn8o?t=3110 "NixiePixel's live stream of OLF Conference 2020") |
+| [Open Libre Free 2020](#ohio-linuxfest-2020) | [:link:](https://olfconference.org/speakers/#colindean) | [:card_file_box:](https://speakerdeck.com/colindean/building-a-content-focused-scientific-document-authoring-workflow-for-data-scientists-and-engineers-alike) | [:video_camera:](https://youtu.be/79yTKqYXn8o?t=3110 "NixiePixel's live stream of OLF Conference 2020") |
 
 <details>
-  <summary>Ohio Linuxfest 2020</summary>
+  <summary>Open Libre Free 2020</summary>
 
-## Ohio Linuxfest 2020
+## Open Libre Free 2020 (a.k.a. Ohio Linuxfest)
 
 [Accepted :white_check_mark:](https://olfconference.org/speakers/#colindean)
 
