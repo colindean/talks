@@ -23,15 +23,20 @@ Colophon
 --------
 
 I generally use either [Apple Keynote](https://www.apple.com/mac/keynote/)
-or [Marp](https://github.com/yhatt/marp) for my presentations. Sometimes, I'll
-use Google Slides if I need something fast or I start it on a mobile device.
+or [Pandoc](https://pandoc.org) + [Reveal.js](https://revealjs.com/) for my presentations. 
+Sometimes, I'll use Google Slides if I need something fast or I start it on a mobile device.
 
-For exporting PDFs, I generally use the built-in functionality but I've heard that
+For exporting PDFs, I generally use the built-in functionality of Keynote but I've heard that
 [better-keynote-export](https://github.com/mcfunley/better-keynote-export) works well.
+For browser-based systems, I'll simply print from the browser or use a headless browser to export.
 
-For older presentations, I used [Rabbit](http://rabbit-shocker.org/en/), for the most
-part. I write the presentations in Markdown using Rabbit's [special
-syntax](http://rabbit-shocker.org/en/sample/markdown/rabbit.html).
+For older presentations, I've used
+
+* [Rabbit](http://rabbit-shocker.org/en/), presentations written in Markdown 
+  using Rabbit's [special
+syntax](http://rabbit-shocker.org/en/sample/markdown/rabbit.html)
+* [Marp](https://github.com/yhatt/marp) or [Marp Next](https://marp.app),
+  a batteries-included tool for Markdown-formatted presentations
 
 Principles of Authorship and Delivery
 -------------------------------------
