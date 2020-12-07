@@ -8,13 +8,34 @@ _Accepted submissions_
 | [Open Libre Free 2020](#open-libre-free-2020-aka-ohio-linuxfest) | [:link:](https://olfconference.org/speakers/#colindean) | [:card_file_box:](https://speakerdeck.com/colindean/building-a-content-focused-scientific-document-authoring-workflow-for-data-scientists-and-engineers-alike) | [:video_camera:](https://youtu.be/79yTKqYXn8o?t=3110 "NixiePixel's live stream of OLF Conference 2020") |
 
 <details>
+  <summary>FOSDEM 2021</summary>
+  
+## FOSDEM 2020
+
+### Title
+
+An open-source documentation workflow loved by both Data Scientists and Engineers
+
+### Subtitle
+
+Using Pandoc with VCS and CI/CD
+
+### Abstract
+
+I observed a white paper authoring collaboration workflow problem at my Forbes 50 employer wherein a tedious workflow around legacy tooling caused undue stress, headaches, rework, and, ultimately, a cosmetically poor-looking document with inconsistent content and styles. Knowing that a good document requires both good content and presentation, I proposed and led the creation of a simple workflow amenable to our team's software engineers and data scientists: treating the white paper text as code with technologies including Markdown, GitHub Enterprise, Pandoc, LaTeX, and a review process that gets the tooling out of the way in order to enable content authors to focus less on logistics and more on writing and reviewing. The result was that a team of seven engineers and data scientists created a 50-page document containing text, diagrams, equations, graphics, and more in just two weeks. The result greatly pleased our directors and executives. They praised our team not only for the incredibly valuable content but also for the professional appearance of the document. When they learned about the peer review process we used to create it, they wanted more teams to use it.
+
+This talk focuses on the problems of passing around files by email or shared drives, the problems of collaborative editing of online documentation, and the problems we're still addressing in our solution that we've now used to author several significant internal documents.
+
+</details>
+
+<details>
   <summary>Open Libre Free 2020</summary>
 
 ## Open Libre Free 2020 (a.k.a. Ohio Linuxfest)
 
 [Accepted :white_check_mark:](https://olfconference.org/speakers/#colindean)
 
-## Title
+### Title
 
 An open-source documentation workflow loved by both Data Scientists and Engineers
 
