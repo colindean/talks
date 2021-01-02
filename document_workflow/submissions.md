@@ -16,7 +16,7 @@
   
 ## FOSDEM 2021
 
-[Accepted :white_check_mark:]((https://fosdem.org/2021/schedule/event/ttddatascience/))
+[Accepted :white_check_mark:](https://fosdem.org/2021/schedule/event/ttddatascience/)
 
 ### Title
 
