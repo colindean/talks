@@ -7,7 +7,7 @@ title: >
   A documentation workflow loved
   by both Data Scientists and Engineers
 author: '@colindean'
-date: August 26, 2020
+date: Ohio Linuxfest, November 2020
 theme: white
 css: custom.css
 slideNumber: true
@@ -68,7 +68,7 @@ Lead AI Engineer at Target Corporation
 I work for Target. I'm based out of our tiny Pittsburgh office on Robotics Row in the Strip District.
 
 Like most other tech workers, I'm working from home during the pandemic, so I'm
-recording this from my home office in beautiful, abnormally hot Wilkinsburg,
+recording this from my home office in beautiful Wilkinsburg,
 Pennsylvania.
 
 :::
@@ -92,10 +92,7 @@ I run Code and Supply, a Pittsburgh-based organization of
 more than six thousand software professionals.
 We run a coworking space in which we (normally)
 hold Meetups, and we run some conferences you
-may have heard of, like Abstractions and Heartifacts
-which is this week. Check out heartifacts.codeandsupply.co
-for more information about our conference on mental health
-and community building for software professionals.
+may have heard of, like Abstractions and Heartifacts.
 :::
 
 ---
@@ -229,7 +226,7 @@ A team of seven colocateed data scientists and engineers
 
 ::: notes
 
-There are seven of us, normally colocated.
+There were seven of us, normally colocated.
 
 :::
 
@@ -446,7 +443,7 @@ or, LaTeX when you _need it_
 
 ::: notes
 
-Our final document actually had very little raw LaTeX in it
+Our final document actually had little raw LaTeX in it
 outside of equations and a couple of diagrams that were simple
 enough to be quickly redone in TikZ instead of leaving them
 as PNG or SVG images.
@@ -621,7 +618,7 @@ all: $(HTML)
   pandoc \
     --to=revealjs --standalone \
     $< --output=$@ \
-    -M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-3.9.2
+    -M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-4.1.0
 ```
 ::: notes
 Reveal and Powerpoint are supported first-class for output
@@ -1118,7 +1115,7 @@ _You don't have to take my word for it!_
 
 ::: notes
 
-Our leadership was very impressed not only with the
+Our leadership was quite impressed not only with the
 document we produced, but also the system.
 
 We've since expanded its use to other teams, including
@@ -1127,7 +1124,7 @@ documentation spanning several teams. Content is brought
 in via git submodules, where each repository is also its
 own document.
 
-At least one person working on a book has inquired about
+At least one person working on a book inquired about
 using it. That's awesome, because the basis of my system
 was what was used to write the first edition of
 A Friendly Introduction to Software Testing by Bill Laboon.

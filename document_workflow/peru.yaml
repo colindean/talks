@@ -7,7 +7,7 @@ curl module revealjs:
   # have to use 3.9.2 because the repo layout changed in 4.0.0
   # and pandoc hasn't caught up yet as of the creation of this deck
   #url: https://github.com/hakimel/reveal.js/archive/3.9.2.zip
-  url: https://github.com/hakimel/reveal.js/archive/4.0.2.zip
+  url: https://github.com/hakimel/reveal.js/archive/4.1.0.zip
   unpack: zip
 
 curl module fontawesome:
