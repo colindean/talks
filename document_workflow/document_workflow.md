@@ -4,10 +4,10 @@
 ## :::Notes are not shown on slides, only on presenter view.
 ####
 title: >
-  A documentation workflow loved
+  An open source documentation workflow loved
   by both Data Scientists and Engineers
 author: '@colindean'
-date: Ohio Linuxfest, November 2020
+date: FOSDEM, February 2020
 theme: white
 css: custom.css
 slideNumber: true
@@ -15,7 +15,7 @@ hash: true
 history: true
 transition: none
 transitionSpeed: "fast"
-totalTime: 1800
+totalTime: 1500
 # setup https://github.com/reveal/notes-server?
 include-after: |
   <script>
@@ -36,7 +36,9 @@ include-after: |
 :::notes
 
 I'm this guy. I'm generally wearing a top hat and scarf at conferences.
-In that spirit, I'm wearing this now!
+<!-- In that spirit, I'm wearing this now! -->
+I've let my hair grow out during the pandemic and now my hat doesn't fit my
+head!
 
 :::
 
@@ -65,11 +67,12 @@ Lead AI Engineer at Target Corporation
 
 ::: notes
 
-I work for Target. I'm based out of our tiny Pittsburgh office on Robotics Row in the Strip District.
+I work for Target, an American retailer.
+I'm based out of our tiny Pittsburgh office. <!--on Robotics Row in the Strip District. -->
 
-Like most other tech workers, I'm working from home during the pandemic, so I'm
-recording this from my home office in beautiful Wilkinsburg,
-Pennsylvania.
+Like most other tech workers, I'm working from home during the pandemic, so
+I'm recording this from my home office in beautiful borough of Wilkinsburg
+in the Commonwealth of Pennsylvania.
 
 :::
 
@@ -89,9 +92,8 @@ Code & Supply Scholarship Fund
 
 ::: notes
 I run Code and Supply, a Pittsburgh-based organization of
-more than six thousand software professionals.
-We run a coworking space in which we (normally)
-hold Meetups, and we run some conferences you
+thousands of software professionals.
+We run some conferences those of you outside of the United States
 may have heard of, like Abstractions and Heartifacts.
 :::
 
@@ -105,11 +107,8 @@ Meta Mesh Wireless Communities
 
 ::: notes
 
-I've been involved in Meta Mesh since its
-humble beginnings as a bunch of twentysomethings trying to
-build a city-wide mesh network. In 2020, we're
-actually kinda getting there as we pivot to being
-a non-profit Wireless ISP.
+I am also president of a non-profit network builder that is
+pivoting into the Wireless ISP space in 2021.
 
 :::
 
@@ -149,7 +148,7 @@ We knew that we needed a well-designed document that
 could be easily read when printed but also take
 advantage of the aspects of the hypermedia used to
 distribute it digitally. We'd most likely deliver a
-PDF but a long web page wasn't off the table.
+PDF but a long web page <!--wasn't off the table. --> was possibile, too.
 
 We knew we needed to provide good content but it needed
 to be well-summarized and be navigable.
@@ -172,7 +171,7 @@ Then there was a big change.
 
 ::: notes
 
-Development pause.
+A development pause.
 
 (drink water)
 
@@ -222,7 +221,7 @@ documenting every quirk and hidden compartment.
 
 # Dramatis Personae
 
-A team of seven colocateed data scientists and engineers
+A team of seven colocated data scientists and engineers
 
 ::: notes
 
@@ -246,11 +245,11 @@ _(equations, proofs)_
 
 We each had different concerns and interests to be
 recorded in the document. The engineers needed to show
-how the product works and how it's deployed as production software.
+how the product works and how it is deployed as production software.
 
 The data scientists needed to show the business logic behind
-that software, including equations and citations, with a
-veritable cornucopia of acronyms, initialisms, and other terms
+that software, including equations and citations, with
+<!--a veritable cornucopia of--> many acronyms, initialisms, and other terms
 likely requiring need for a glossary.
 
 :::
@@ -300,7 +299,9 @@ quality attributes.
 
 We assumed that our content would be lots of text, diagrams, and equations.
 We wanted a markup format that was easy to read and preferably didn't require
-a special program to read. That is, we wanted it to be reviewable on GitHub.
+a special program to read. That is, we wanted it to be reviewable on our code
+review tool.
+
 And, we wanted _not_ to be able to control styling within the document, except
 perhaps for semantic markers calling out special sections.
 
@@ -478,8 +479,8 @@ with the 2.9.x release we used coming out just as
 we started building our work upon it.
 
 It's written in Haskell but supports Lua for writing
-plugins that process the abstract syntax tree that
-pandoc uses as an internal representation of the dozens of
+plugins that process the <!-- abstract syntax tree --> internal format that
+pandoc uses to represent dozens of
 document formats it can read and write.
 
 :::
@@ -493,10 +494,10 @@ document formats it can read and write.
 ## Install
 
 ```shell
-brew  install pandoc  # macOS with Homebrew
 apt   install pandoc  # Debian/Ubuntu/Pop_OS
-scoop install pandoc  # Windows with Scoop
+brew  install pandoc  # macOS/Linux with Homebrew
 crew  install pandoc  # Chrome OS with chromebrew
+scoop install pandoc  # Windows with Scoop
 ```
 
 ::: notes
@@ -597,7 +598,7 @@ Write a white paper about our product for
 Metadata and some other options can easily go into a
 YAML section at the beginning of a document. Pandoc
 also supports a configuration file containing defaults.
-I use this in some newer projects to shorten the Makefile.
+I use this in newer projects to shorten the Makefile.
 
 :::
 
@@ -621,7 +622,9 @@ all: $(HTML)
     -M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-4.1.0
 ```
 ::: notes
-Reveal and Powerpoint are supported first-class for output
+Reveal and Powerpoint are supported first-class for output.
+This slide deck is written in Markdown and transformed to a
+Reveal presentation via Pandoc.
 :::
 ---
 
@@ -662,8 +665,8 @@ We've used citeproc and crossref extensively.
 include-code is pulls in files, great for pulling in snippets from an
 external file that might change over time.
 
-I'm making extensive of panpipe in a workshop I put together. I could
-put code examples directly in the document, write those examples to a
+I'm making extensive of panpipe in a workshop I built.
+I can put code examples directly in the document, write those examples to a
 file during document build, and subsequent code blocks would execute
 on the files written to disk.
 
@@ -788,6 +791,9 @@ GitHub is a widely used public website with
 an on-premises version called GitHub Enterprise.
 
 It's increasingly used internally by large companies.
+
+You could also use GitLab, Gitea, or a host of other systems.
+We use GitLab for Code & Supply and Gitea for Meta Mesh.
 :::
 
 ---
@@ -900,9 +906,21 @@ two seconds.
 
 Use `git` commits to tell a story about the changes.
 
+::: notes
+
+(read slide)
+
+:::
+
 ---
 
 ### Reviewing
+
+::: notes
+
+Next, we'll talk about reviewing.
+
+:::
 
 ---
 
@@ -979,6 +997,14 @@ and some are yet unresolved.
 
 <small><em>˚as of Pandoc 2.9.x</em></small>
 
+::: notes
+
+Some users had problems installing the large dependencies on our corporate
+network. Some users found the minute differences between Pandoc Markdown and
+CommonMark to be frustrating. Someone wanted to "just use LaTeX or Microsoft Word".
+
+:::
+
 ---
 
 ## Productivity Pain points
@@ -990,6 +1016,20 @@ and some are yet unresolved.
   * Separate renderer (LaTeXiT, MathJax.com)
   * Just render it
 
+::: notes
+
+We never really established a reliable way to make changes and see them
+automatically.
+I've since found that Evince is probably the best PDF reader for this workflow,
+as it reloads PDFs when they've been changed.
+
+Also, I was a single point of failure too often early on.
+
+Lastly, authors less comfortable with TeX equations were frustrated by the
+tooling to preview their equations quickly.
+
+:::
+
 ---
 
 ## Accomodating objections
@@ -999,6 +1039,12 @@ and some are yet unresolved.
     * only if you'll own that file!
   * "But I want to write my section in X and export it to Pandoc Markdown"
     * only if you can effect changes suggested in the PR
+
+::: notes
+
+Authors who wanted to deviate had to own their sections entirely.
+
+:::
 
 ---
 
@@ -1039,7 +1085,7 @@ digraph conversion {
 ::: notes
 
 Transformation output overwriting other versioned files bit us hard.
-In a subsequent use of this system, which I'll talk about later,
+In a subsequent use of this system,
 one person strongly preferred to use LaTeX and another preferred to
 use R Markdown and convert both to Markdown to be versioned. This
 went _okay_ but had some caveats.
@@ -1112,6 +1158,7 @@ _You don't have to take my word for it!_
 * Two large papers (~50 pgs and 176 pgs)
 * Several smaller papers
 * Nearly two dozen authors
+* A workshop and two papers outside work
 
 ::: notes
 
@@ -1124,8 +1171,8 @@ documentation spanning several teams. Content is brought
 in via git submodules, where each repository is also its
 own document.
 
-At least one person working on a book inquired about
-using it. That's awesome, because the basis of my system
+An executive decided to use Pandoc to write a book after
+seeing what we'd done. That's awesome, because the basis of my system
 was what was used to write the first edition of
 A Friendly Introduction to Software Testing by Bill Laboon.
 
