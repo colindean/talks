@@ -49,7 +49,7 @@ GEM
       rttool
     racc (1.5.2)
     rdtool (0.6.38)
-    rexml (3.2.4)
+    rexml (3.2.5)
     rsvg2 (2.2.5)
       cairo (>= 1.12.8)
       gdk_pixbuf2 (= 2.2.5)
