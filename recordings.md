@@ -3,7 +3,7 @@ Recordings of My Talks
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
-| 2020 November 7 | [An open-source documentation workflow loved by both data scientists and engineers](https://youtu.be/79yTKqYXn8o?t=3110) |  [Document Workflow](document_workflow) | [Open Libre Free Conference](https://olfconference.org/) (a.k.a. Ohio LinuxFest) | Officially representing Target Corp.
+| 2020 November 7 | [An open-source documentation workflow loved by both data scientists and engineers](https://www.youtube.com/watch?v=gSjEQ49GDdc) ([livestream](https://youtu.be/79yTKqYXn8o?t=3110)) |  [Document Workflow](document_workflow) | [Open Libre Free Conference](https://olfconference.org/) (a.k.a. Ohio LinuxFest) | Officially representing Target Corp.
 | 2020 August 10 | [Building a content-focused, scientific document authoring workflow](https://www.youtube.com/watch?v=m1Lhy3fheuY) | [Document Workflow](document_workflow) | [Write the Docs Portland](https://www.writethedocs.org/conf/portland/2020/) | Officially representing Target Corp.
 | 2018 September 15 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=niWVC-aXNjA&t=271s) | [Code Review](code_review) | [Code Daze Vol. 2](https://twitter.com/CodeDazeConf) | Revision of Github Universe 2016 talk
 | 2017 October | [Plain Text Accounting](https://www.youtube.com/watch?v=FJtaM43PgXQ) | [Intro to Plain Text Accounting](intro_to_plaintextaccounting) | [Ohio Linuxfest 2017](https://web.archive.org/web/20171002034252/https://ohiolinux.org/speakers/) | Revision of C&S talk
