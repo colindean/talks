@@ -1,0 +1,2 @@
+serve: miniserve .
+watch: echo sei_issue_classification.md | entr -apr make sei_issue_classification.html

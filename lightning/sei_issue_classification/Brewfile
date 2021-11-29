@@ -1,0 +1,6 @@
+brew 'peru'
+brew 'pandoc'
+brew 'make'
+brew 'miniserve'
+brew 'hivemind'
+brew 'graphviz'
