@@ -202,4 +202,8 @@ Label your tickets/issues
 
 `user-story`, `arch-story`, `defect`, `techdebt`
 
-Colorize to make the standout
+Colorize to make them standout
+
+Documentation is a part of the product
+
+Decisions should produce documentation, too
