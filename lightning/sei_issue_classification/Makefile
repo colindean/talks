@@ -21,14 +21,13 @@ watch: Procfile
 deps: peru.yaml Brewfile
 	brew bundle
 	peru sync
-	npm install nicollet-tokens
 
 clean:
 	rm -f $(HTML) $(PDF)
 
 %.html: %.md
 	pandoc -t revealjs -s $< -o $@ \
-	-M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-4.0.2 \
+	-M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-4.2.0 \
 	--lua-filter .filters/embedded_graphviz.lua
 
 .PHONY: pdf

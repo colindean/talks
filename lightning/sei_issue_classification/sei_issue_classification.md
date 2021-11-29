@@ -4,8 +4,8 @@
 ## :::Notes are not shown on slides, only on presenter view.
 ####
 title: >
-  Understanding work tickets through
-  SEI classification
+  Meaningful ticket labeling
+  with SEI classification
 author: '@colindean'
 date: November 30, 2021
 theme: white
@@ -42,11 +42,9 @@ Carnegie Mellon University
 
 ---
 
-# Software Architecture in Practice
-
-<!-- TODO: cache locally -->
-![SAP 3rd Edition cover](https://images-na.ssl-images-amazon.com/images/I/41CLtb7RmOL._SX336_BO1,204,203,200_.jpg)
-![SAP 4th Edition cover](https://images-na.ssl-images-amazon.com/images/I/51QmvFhzy-L._SX218_BO1,204,203,200_QL40_FMwebp_.jpg)
+![Software Architecture in Practice 3rd Edition cover](software_architecture_in_practice_cover_3rdEd.jpg)
+<!-- swap after May 2022 -->
+<!--![Software Architecture in Practice 4th Edition cover](software_architecture_in_practice_cover_4thEd.jpg)-->
 
 by Bass, Clements, Kazman
 
@@ -56,9 +54,7 @@ ISBN-13: 978-0321815736
 
 # Quadrants
 
-<!-- TODO: cache locally -->
-<script src="https://gist.github.com/colindean/13538cb2edbbe60e708f97feb12852c5.js"></script>
-![SEI Classification Quadrants diagram](https://gist.githubusercontent.com/colindean/13538cb2edbbe60e708f97feb12852c5/raw/89be781902964c56965f75790243d830c8fe16f4/SEI_Issue_Classifcation_Quadrants.svg)
+![SEI Classification Quadrants diagram](SEI_Issue_Classifcation_Quadrants.svg)
 
 ---
 
@@ -86,7 +82,7 @@ Positive value & User invisible
 
 * Build backend service or pipeline
 * Implement new algorithm
-* 
+*
 
 _(best practices as of implementation)_
 
@@ -122,9 +118,9 @@ _(moving toward best practices)_
 
 ---
 
-> Collecting the corners cut in a jar to reattach them later
+![A notebook with no corners](https://2.bp.blogspot.com/-4DXMlnobQsw/UcBhu1LO7yI/AAAAAAAAA1w/yZoNcgR0ggc/s1600/DSC_0301.JPG){height=30%}\
 
-![A notebook with no corners](https://2.bp.blogspot.com/-4DXMlnobQsw/UcBhu1LO7yI/AAAAAAAAA1w/yZoNcgR0ggc/s1600/DSC_0301.JPG)
+> Collecting the corners cut in a jar to reattach them later
 
 ---
 
@@ -152,7 +148,7 @@ when something doesn't quite fit well within these four quadrants.
 ## Documentation
 
 * Documenting team procedures
-* 
+*
 
 Beware: product documentation falls into the four quadrants categories!
 
@@ -187,7 +183,9 @@ ADRs are a product, too…
 
 # Consuming the classification
 
-Use reports or saved searches
+---
+
+## Use reports or saved searches
 
 * Lots of red = work on defects first
 * Lots of black = pay down debt or prune backlog for outdated ideas
