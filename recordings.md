@@ -3,6 +3,7 @@ Recordings of My Talks
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2021 February 7 | [An documentation workflow loved by both Data Scientists and Engineers: Using Pandoc with VCS and CI/CD](https://fosdem.org/2021/schedule/event/ttddatascience/) | [Document Workflow](document_workflow) | [FOSDEM 2021](https://archive.fosdem.org/2021/schedule/event/ttddatascience/) | Officially representing Target Corp. |
 | 2020 November 7 | [An open-source documentation workflow loved by both data scientists and engineers](https://www.youtube.com/watch?v=gSjEQ49GDdc) ([livestream](https://youtu.be/79yTKqYXn8o?t=3110)) |  [Document Workflow](document_workflow) | [Open Libre Free Conference](https://olfconference.org/) (a.k.a. Ohio LinuxFest) | Officially representing Target Corp.
 | 2020 August 10 | [Building a content-focused, scientific document authoring workflow](https://www.youtube.com/watch?v=m1Lhy3fheuY) | [Document Workflow](document_workflow) | [Write the Docs Portland](https://www.writethedocs.org/conf/portland/2020/) | Officially representing Target Corp.
 | 2018 September 15 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=niWVC-aXNjA&t=271s) | [Code Review](code_review) | [Code Daze Vol. 2](https://twitter.com/CodeDazeConf) | Revision of Github Universe 2016 talk
