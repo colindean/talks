@@ -3,6 +3,7 @@ Recordings of My Talks
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2021 December 20 | [SEI Issue Classification](https://www.youtube.com/watch?v=1UtklNrB8XA&t=1042s) | [SEI Issue Classification](lightning/sei_issue_classification) | [Code & Supply](https://codeandsupply.co) | |
 | 2021 February 7 | [An documentation workflow loved by both Data Scientists and Engineers: Using Pandoc with VCS and CI/CD](https://fosdem.org/2021/schedule/event/ttddatascience/ "webm and mp4 available") | [Document Workflow](document_workflow) | [FOSDEM 2021](https://archive.fosdem.org/2021/schedule/event/ttddatascience/) | Officially representing Target Corp. |
 | 2020 November 7 | [An open-source documentation workflow loved by both data scientists and engineers](https://www.youtube.com/watch?v=gSjEQ49GDdc "official cut") ([livestream](https://youtu.be/79yTKqYXn8o?t=3110 "livestream")) |  [Document Workflow](document_workflow) | [Open Libre Free Conference](https://olfconference.org/) (a.k.a. Ohio LinuxFest) | Officially representing Target Corp.
 | 2020 August 26 | [A Collaborative Scientific Document Authoring workflow using hosted Git and Pandoc](https://www.youtube.com/watch?v=hSoXV9vsMFc "livestream") | [Document Workflow](document_workflow) | [Code & Supply](https://codeandsupply.co) | |
