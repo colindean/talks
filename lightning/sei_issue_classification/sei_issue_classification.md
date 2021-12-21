@@ -7,7 +7,7 @@ title: >
   Meaningful ticket labeling
   with SEI classification
 author: '@colindean'
-date: November 30, 2021
+date: December 20, 2021
 theme: white
 css: custom.css
 slideNumber: true
@@ -22,6 +22,17 @@ totalTime: 1800
 
 Software Engineer & Community Builder
 
+::: notes
+
+Hi, I'm Colin. I'm a software engineer for a retail company that seems like it
+might sell archery sporting goods but the only archery-related products we sell
+are children's toys.
+
+I also run this here community, Code & Supply, and you may have heard of a
+non-profit WiFi ISP I helped to start called Meta Mesh Wireless Communities.
+
+:::
+
 ---
 
 # Classification
@@ -29,6 +40,14 @@ Software Engineer & Community Builder
 Label your tickets
 
 _(in JIRA, GitHub Issues, etc.)_
+
+::: notes
+
+I'm going to talk about classifying work tickets.
+You know, those things you're supposed to file and update between planning
+meetings...?
+
+:::
 
 ---
 
@@ -40,6 +59,13 @@ at
 
 Carnegie Mellon University
 
+::: notes
+
+There's this really cool organization at CMU called the Software Engineering
+Institute.
+
+:::
+
 ---
 
 ![Software Architecture in Practice 3rd Edition cover](software_architecture_in_practice_cover_3rdEd.jpg)
@@ -50,11 +76,27 @@ by Bass, Clements, Kazman
 
 ISBN-13: 978-0321815736
 
+::: notes
+
+These folks published a book called _Software Architecture in Practice_ many
+years ago. A then-coworker and Code & Supply member Michael Keeling introduced
+me and others to this book and I went all-in on it.
+
+:::
+
 ---
 
 # Quadrants
 
 ![SEI Classification Quadrants diagram](SEI_Issue_Classifcation_Quadrants.svg)
+
+::: notes
+
+One big takeaway on this was this diagram.
+I decided to classify my project's tickets according to this diagram.
+It's been wonderful across three companies and several teams.
+
+:::
 
 ---
 
@@ -82,7 +124,6 @@ Positive value & User invisible
 
 * Build backend service or pipeline
 * Implement new algorithm
-*
 
 _(best practices as of implementation)_
 
@@ -122,13 +163,24 @@ _(moving toward best practices)_
 
 > Collecting the corners cut in a jar to reattach them later
 
+::: notes
+
+One team member who's been around the industry for decades
+said it was like collecting the corners we cut during development
+into a jar so we can pull them out and reattach them later on.
+
+:::
+
 ---
 
 # Tracking
 
 Create colored labels:
 
-`user-story`, `arch-story`, `defect`, `techdebt`
+<code style="background-color: green; color: white;border-radius: 5px">user-story</code>,
+<code style="background-color: yellow;border-radius: 5px">arch-story</code>,
+<code style="background-color: red;border-radius: 5px">defect</code>,
+<code style="background-color: black; color:white; border-radius: 5px">techdebt</code>,
 
 Require at least one of them.
 
@@ -148,7 +200,7 @@ when something doesn't quite fit well within these four quadrants.
 ## Documentation
 
 * Documenting team procedures
-*
+* Writing post-mortems about outages, etc.
 
 Beware: product documentation falls into the four quadrants categories!
 
@@ -198,7 +250,10 @@ ADRs are a product, too…
 
 Label your tickets/issues
 
-`user-story`, `arch-story`, `defect`, `techdebt`
+<code style="background-color: green; color: white;border-radius: 5px">user-story</code>,
+<code style="background-color: yellow;border-radius: 5px">arch-story</code>,
+<code style="background-color: red;border-radius: 5px">defect</code>,
+<code style="background-color: black; color:white; border-radius: 5px">techdebt</code>,
 
 Colorize to make them standout
 
