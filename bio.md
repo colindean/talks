@@ -2,17 +2,17 @@
 
 ## Last update
 
-`2020-01-18 12:38 EST`
+`2022-01-12 10:33 EST`
 
 ## Short bio
 
 ### Third person
 
-Colin Dean is a software engineer and community builder from Pittsburgh, Pennsylvania in the United States.
+Colin Dean is a software engineer, community builder, and non-profit leader from Pittsburgh, Pennsylvania in the United States.
 
 ### First person
 
-I am a software engineer and community builder from Pittsburgh, Pennsylvania in the United States.
+I am a software engineer, community builder, and non-profit leader from Pittsburgh, Pennsylvania in the United States.
 
 ## Medium bio
 
@@ -22,7 +22,7 @@ Colin Dean is a software engineer, community builder, and non-profit leader. He'
 
 ### First person
 
-I am a software engineer, community builder, and non-profit leader. I've built software for IBM Watson, Target, Vivisimo, and Arcadia.io, plus some open source software used by a lot of Mac-using developers. I've served on boards of four non-profits, founding two, and advising other non-profits on leadership and technical topics. I spend most of his time directing Code & Supply, Pittsburgh's largest community of software professionals, and its Meetups, conferences, and coworking space, and otherwise love cuddling with my dogs and partner.
+I am a software engineer, community builder, and non-profit leader. I've built software for IBM Watson, Target, Vivisimo, and Arcadia.io, plus some open source software used by a lot of Mac-using developers. I've served on boards of four non-profits, founding two, and advising other non-profits on leadership and technical topics. I spend most of my time directing Code & Supply, Pittsburgh's largest community of software professionals, and its Meetups, conferences, and coworking space, and otherwise love cuddling with my dogs and partner.
 
 ## Long bio
 
