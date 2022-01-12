@@ -31,3 +31,13 @@ I am a software engineer, community builder, and non-profit leader. I've built s
 TBD
 
 Colin likes to discuss disintermediation, decentralization, and democratization.
+
+## Pictures
+
+It's acceptable to use any of these pictures, as long as it's a picture of me!
+
+* [GitHub](https://avatars.githubusercontent.com/u/197224?v=4)
+* [Twitter](https://twitter.com/colindean/photo)
+* [LinkedIn](https://www.linkedin.com/in/colindean/)
+
+Higher resolution or more recent pictures available on request (tophat+smile = 2020, tophat+mic = 2015).
