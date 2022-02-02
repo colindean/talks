@@ -1,6 +1,6 @@
 # `make python devex` Submissions
 
-## PyCon US 2022
+## PyCon US 2022 - Not Accepted
 
 ### Title
 
