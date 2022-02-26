@@ -23,10 +23,10 @@ GEM
     kramdown (2.3.1)
       rexml
     locale (2.1.1)
-    mini_portile2 (2.6.1)
+    mini_portile2 (2.8.0)
     multipart-post (2.0.0)
-    nokogiri (1.12.5)
-      mini_portile2 (~> 2.6.1)
+    nokogiri (1.13.3)
+      mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pango (2.2.5)
       cairo (>= 1.14.0)
@@ -47,7 +47,7 @@ GEM
       rdtool
       rsvg2
       rttool
-    racc (1.5.2)
+    racc (1.6.0)
     rdtool (0.6.38)
     rexml (3.2.5)
     rsvg2 (2.2.5)
