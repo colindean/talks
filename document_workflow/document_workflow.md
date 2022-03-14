@@ -400,6 +400,24 @@ and quickly out of date.
 
 ---
 
+## Always bet on text
+
+> Text is the most socially useful communication technology. It works well in 1:1, 1:N, and M:N modes. It can be indexed and searched efficiently, even by hand. It can be translated. It can be produced and consumed at variable speeds. It is asynchronous. It can be compared, diffed, clustered, corrected, summarized and filtered algorithmically. **It permits multiparty editing.** It permits branching conversations, lurking, annotation, quoting, reviewing, summarizing, structured responses, exegesis, even fan fic. The breadth, scale and depth of ways people use text is unmatched by anything. There is no equivalent in any other communication technology for the social, communicative, cognitive and reflective complexity of a library full of books or an internet full of postings. Nothing else comes close.
+
+— Graydon Hoare, Rust language author
+
+::: notes
+
+Graydon Hoare, the designer of the Rust programming language,
+said it best. Always bet on text. I believe that text really is
+the best way to handle this, especially at scale.
+
+:::
+
+[hoare_on_text]: https://graydon2.dreamwidth.org/193447.html
+
+---
+
 # Solution
 
 ---
@@ -1194,6 +1212,7 @@ So, go check out pandoc at pandoc.org!
 
 * [Icons by Font Awesome](https://github.com/FortAwesome/Font-Awesome). CC-BY-4.0 / SIL OFL 1.1.
 * [A Friendly Introduction to Software Testing](https://www.amazon.com/Friendly-Introduction-Software-Testing-ebook/dp/B01BCPXLHU) by Bill Laboon ([repo](https://github.com/laboon/ebook))
+* [always bet on text](https://graydon2.dreamwidth.org/193447.html) by Graydon Hoare
 
 ---
 
