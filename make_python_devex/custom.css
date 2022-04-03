@@ -1,0 +1,48 @@
+@import "deps/font-awesome/fontawesome-free-6.0.0-web/css/all.min.css";
+
+:root {
+  --font-family-sans-serf: "Source Sans", "Helvetica", sans-serif;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5,
+.reveal h6,
+.reveal figcaption {
+    font-family: var(--font-family-sans-serif);
+}
+
+.reveal p, .reveal li {
+    color: #000;
+    font-family: var(--font-family-sans-serif);
+}
+.reveal small > em {
+    color: #666;
+}
+
+.reveal h1,
+.reveal h1.title p {
+    color:  #000;
+}
+
+.reveal h1 {
+    font-size: 2.3em;
+}
+.reveal h1.title p {
+    font-size: 0.8em;
+}
+
+.wordcloud ul li {
+    display: inline;
+}
+
+.wordcloud ul li:nth-child(n+2)::before {
+    content:'\00a0\00a0';
+}
+
+.wordcloud ul li:nth-child(2n) {
+    color: #666;
+}
+

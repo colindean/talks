@@ -1,0 +1,2 @@
+serve: miniserve .
+watch: echo presentation.md | entr -apr make presentation.html
