@@ -2,7 +2,7 @@
 
 ## Last update
 
-`2022-01-12 10:33 EST`
+`2022-04-11 14:22 EST`
 
 ## Short bio
 
@@ -28,9 +28,17 @@ I am a software engineer, community builder, and non-profit leader. I've built s
 
 ### Third Person
 
-TBD
+Colin Dean is a software engineer, community builder, and non-profit leader. He's built software for IBM Watson, Target, Vivísimo, and Arcadia.io, plus some open source software used by a many developers, especially Mac devs. 
 
-Colin likes to discuss disintermediation, decentralization, and democratization.
+Colin has spoken at SATURN, GitHub Universe, FOSDEM, Write the Docs, Ohio Linuxfest, and other conferences. He's organized tech conferences in Pittsburgh such as Abstractions, Heartifacts, devopsdays, and Steel City Ruby.
+
+_(:warning: consumer should validate the next paragraph or remove it for usage in timeless publication)_
+
+He is currently a Lead AI Engineer at Target focusing on developer experience, DevOps, build engineering, code quality, and observability. He is also Managing Director of Code & Supply Co., Pittsburgh's largest community of software professionals, and its Meetups, conferences, and coworking space.
+
+_(:warning: consumer should validate the previous paragraph or remove it for usage in timeless publication)_
+
+He's served on boards of four non-profits, including two organizations he founded: Meta Mesh Wireless Communities, a non-profit WiFi ISP in Pittsburgh, and Code & Supply Scholarship Fund, which awards conference travel grants. He also advises other non-profits on leadership and technical topics.
 
 ## Pictures
 
