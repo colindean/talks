@@ -2,7 +2,7 @@
 
 Or, "An open-source documentation workflow loved by both Data Scientists and Engineers"
 
-## Submissions
+## Submissions & Recordings
 
 See [submissions.md](submissions.md).
 
