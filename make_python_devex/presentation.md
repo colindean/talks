@@ -20,6 +20,37 @@ title-slide-attributes:
 
 ---
 
+## Who is this guy?
+
+![Colin Dean, who wears many hats](https://avatars.githubusercontent.com/u/197224?s=300)
+
+Software engineer and community builder since 2002
+
+::: notes
+
+I'm Colin Dean and I'm [[current position and team]].
+
+I've been a developer for more than 20 years.
+I started out in PHP before moving to Ruby, Java, and proprietary language for
+work, then spent many years working in Scala before picking up some Rust and
+Groovy. I came back to Scala for a while then now find myself working in
+Python.
+
+:::
+
+---
+
+## Developer Experience
+
+::: notes
+
+I focus a lot on developer experience.
+I believe that good tools and good practices enable building good software.
+
+:::
+
+---
+
 ## Agenda
 
 |   |   |
@@ -27,7 +58,6 @@ title-slide-attributes:
 |Problem  |Getting <i class="fab fa-python"></i> Python developer experience right is hard
 |Diagnosis|<i class="fab fa-python"></i> Python project definitions leave too much undefined
 |Remedy   |Standardized Makefile for <i class="fab fa-python"></i> Python dev
-
 
 ::: notes
 
@@ -79,6 +109,7 @@ problem with the presentation occurs.
 * How do I install Python at a specific version?
 * How do I ensure that my project works on a diverse development and production
     installation base?
+* How do I install dependencies?
 
 ::: notes
 
@@ -99,10 +130,41 @@ working in Python for the first time in more than 15 years.
 
 ---
 
+### System Python unreliable, inflexible
+
+```bash
+$ date && sw_vers && uname -sm && /usr/bin/python3 --version
+Fri May  6 12:39:51 EDT 2022
+ProductName:	macOS
+ProductVersion:	12.3.1
+BuildVersion:	21E258
+Darwin arm64
+Python 3.8.9
+```
+
+::: notes
+
+COLIN:
+
+My team uses macOS for development.
+Apple tends to keep its Python 3.x installation within
+Python EOL dates but it's always a little out of date.
+Apple says not to rely on this and that it's for internal use only, a policy
+similar to Homebrew's but at least Homebrew's Python won't just disappear
+someday.
+
+This one is a bit of a given; nearly all Python developers with a project in
+production learn quickly not to use a macOS-provided Python.
+
+:::
+
+---
+
 ### Inconsistent Installation Methods and Source
 
-* Operating System-provided packaging?
-* Homebrew? Pyenv? Anaconda?
+* ~~Operating System-provided packaging?~~
+* Homebrew?
+* **Pyenv? Anaconda?**
 * …MacPorts? …Nix?
 
 ::: notes
@@ -113,31 +175,20 @@ There are a ton of ways to install and use Python.
 My team was consistently bringing their own Python, installing it however they
 felt was most appropriate.
 
-:::
+Using system-provided Python is just wrong, it'll change and it'll go away
+eventually.
+Using Homebrew Python is hitting a moving target, and is inadvisable.
+Using PyEnv is probably as correct as choosing Anaconda,
+which [PythonSpeed reports is the most performant][faster-python],
+but both require knowledge of the tool and some setup.
+I'm sure there are still MacPorts holdouts in the audience
+and the rumblings of the Nix horde can be heard in the
+distance.
 
----
-
-### System Python?
-
-```bash
-$ date && sw_vers && /usr/bin/python3 --version && uname -sm
-Fri May  6 12:39:51 EDT 2022
-ProductName:	macOS
-ProductVersion:	12.3.1
-BuildVersion:	21E258
-Python 3.8.9
-Darwin arm64
-```
-
-::: notes
-
-COLIN:
-
-My team is on macOS and Apple tends to keep its Python 3.x installation within
-Python EOL dates but it's always a little out of date.
-Apple says not to rely on this and that it's for internal use only, a policy
-similar to Homebrew's but at least Homebrew's Python won't just disappear
-someday.
+It's OK if you don't know what any of these are because
+this developer experience in the end _should_ abstract them away
+and do so on a per-repository basis with conventions established
+across teams.
 
 :::
 
@@ -164,20 +215,9 @@ COLIN:
 We don't have clear single-source installation of our Pythons
 and we don't use versions consistently.
 
-Using system-provided Python is just wrong, it'll change and it'll go away
-eventually.
-Using Homebrew Python is hitting a moving target.
-Using PyEnv is probably most correct outside of Conda,
-which [PythonSpeed reports is the most performant][faster-python],
-but both require knowledge of the tool and some setup.
-I'm sure there are still MacPorts holdouts in the audience
-and the rumblings of the Nix horde can be heard in the
-distance.
-
-It's OK if you don't know what any of these are because
-this developer experience in the end _should_ abstract them away
-and do so on a per-repository basis with conventions established
-across teams.
+While many of our projects are tied to a particular version because of a hard
+requirement on our cluster, we still had unexercised freedom to choose updated
+versions in other contexts, including containerized services and pipelines.
 
 :::
 
@@ -212,7 +252,40 @@ README.
 
 ---
 
-### Scripts are hard to manage and scale
+### Python ecosystem may necessitate compiling with options
+
+* Apple M1 processor, ARM64 m-arch., ca. June 2020
+* `macos_{11,12}` `arm64` binary avail. growing
+* Passing compiler flags is not ergonomic:
+
+```
+$ LDFLAGS="-L/opt/homebrew/Cellar/unixodbc/2.3.9_1/lib -lodbc -liodbc -liodbcinst -ldl" CPPFLAGS="-I/opt/homebrew/Cellar/unixodbc/2.3.9_1/include -I/usr/include" HDF5_DIR=/opt/homebrew/opt/hdf5 poetry install
+```
+
+::: notes
+
+COLIN:
+
+Pythonistas seem pretty accustomed to having packages "just work" when
+installed.
+Unfortunately, Apple's transition from Intel processors to its own
+processors, switching from the x86_64 architecture to ARM64 in the process, is
+complicating installing Python dependencies.
+Nearly two years in, many projects still have not released macOS ARM64 binary
+packages.
+There are many variables and barriers to this, notably the slim availability of
+macOS ARM64 continuous integration system runners capable of building the
+binaries.
+Nevertheless, it necessitates building some packages from the source
+distribution and that requires passing arguments or environment variables to
+Python packaging tools.
+This is scriptable but…
+
+:::
+
+---
+
+### Scripts grow hard to manage
 
 * A collection of scripts that gets copied around
 * Specialization for the repo difficult once shared
@@ -238,6 +311,12 @@ tool, so let's just use one from the start!
 ### Automate
 
 We need a **task runner** for onboarding _and_ resync instead of _just_ better documentation.
+
+::: notes
+
+[[read slide]]
+
+:::
 
 ---
 
@@ -313,8 +392,8 @@ COLIN:
 
 There are a ton of ways to install and use Python:
 Use the system-provided Python,
-install minor version packages from Homebrew directly(with [caveats about rolling updates][brewpy]; version switch is system-wide),
-install from Homebrew a version manager such as pyenv or asdf that can install specific minor or patch versions and easily switch per-directory,
+install a minor version packages from Homebrew directly (with [caveats about rolling updates][brewpy]; and don't forget that a version switch is system-wide),
+install from Homebrew a version manager such as pyenv or asdf that can install specific minor or patch version and easily switch per-directory,
 or install from Homebrew another, specialized package manager such as Anaconda that can install optimized Python builds in an environment activated per-project or per-directory.
 For our team, Homebrew or Conda were the go-tos, for the most part.
 
@@ -394,7 +473,6 @@ Poetry or other similar tools.
 
 And, of course, Poetry combines dependency management and packaging into one
 smart tool. It's nearly a no-brainer.
-
 
 :::
 
@@ -590,7 +668,7 @@ the output and input, respectively.
 
 ---
 
-https://github.com/colindean/plaintextaccounting_workshop
+<https://github.com/colindean/plaintextaccounting_workshop>
 
 ::: notes
 
@@ -635,6 +713,8 @@ in many of my Python projects.
 ::: notes
 
 COLIN:
+
+Why not something else?
 
 I've used probably two-thirds of these, and they're great for a
 particular ecosystem, but literally none beat the ubiquity of Make.
@@ -692,6 +772,7 @@ I've got strong opinions weakly held.
 
 ---
 
+<!--
 snap back to reality
 
 <small>
@@ -699,6 +780,7 @@ _(ope, there goes gravity)_
 </small>
 
 ---
+-->
 
 ## Our Particular Setup
 
@@ -717,6 +799,20 @@ Utility
   version-python   Echos the version of Python in use
 
 ```
+
+::: notes
+
+COLIN:
+
+A while ago, I came upon an excellent help generator tasks that I've now used
+just about everywhere.
+This enables a self-documenting Makefile with a helpful output: no reading of
+a Makefile required to understand what the tasks do while keeping the task
+names typeable.
+
+:::
+
+
 ---
 
 ```
@@ -784,6 +880,8 @@ Code Quality
 COLIN:
 
 And we have plenty of code quality checks.
+We love flake8, black, mypy, and more that enable us to write maintainable code
+that captures our intent.
 
 :::
 
@@ -880,6 +978,8 @@ This is what the poetry command will look like in various scenarios.
 
 :::
 
+<!--
+
 ---
 
 ::: demo
@@ -892,10 +992,24 @@ poster="data:text/plain,Click the |> button to play the demo!"
 title="Demo"></asciinema-player>
 
 :::
-
+-->
 ---
 
 # Future work
+
+::: notes
+
+This was hopefully enough to catch your interest and spark conversation for
+your Python team, or any team struggling to quickly onboard developers to new
+codebases, or codebases they've not touched in many months.
+
+I have no doubt this system will improve over time, but on its second major
+iteration in a year and openly talking about it inside and outside of [[my
+company]], and contributing to several Python open source projects in that
+time, it's clear that something like this is needed in some form for nearly all
+Python projects.
+
+:::
 
 ---
 
@@ -904,7 +1018,6 @@ title="Demo"></asciinema-player>
 * Cookie Cutter template (WIP!)
 * More Make documentation in Makefile
 * Streamline one-time setup experience
-
 
 ::: notes
 
@@ -943,7 +1056,7 @@ most current iteration of this setup.
 
 * Pandoc rendering
 * Reveal.js presentation
-* Asciinema CLI playback
+<!--* Asciinema CLI playback-->
 
 ::: notes
 
