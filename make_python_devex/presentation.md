@@ -2,7 +2,7 @@
 title: "make python devex"
 subtitle: "How a 45+ year old tool can MAKE Python developer experience easier"
 author:
-  - Colin Dean
+  - _Colin Dean, Lead AI Engineer_
 theme: white
 css: custom.css
 slideNumber: true
@@ -15,14 +15,17 @@ include-after: |
     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
 title-slide-attributes:
+    data-background-image: "targettech.png"
     data-background-size: "10%"
     data-background-position: "50% 100%"
 
 ---
 
-## Who is this guy?
+# Who is this guy?
 
+::: biopic
 ![Colin Dean, who wears many hats](https://avatars.githubusercontent.com/u/197224?s=300)
+:::
 
 Software engineer and community builder since 2002
 
@@ -40,7 +43,7 @@ Python.
 
 ---
 
-## Developer Experience
+# Developer Experience
 
 ::: notes
 
@@ -51,7 +54,7 @@ I believe that good tools and good practices enable building good software.
 
 ---
 
-## Agenda
+# Agenda
 
 |   |   |
 |---|---|
@@ -100,7 +103,7 @@ problem with the presentation occurs.
 
 ---
 
-## Problems
+# Problems
 
 ---
 
@@ -126,7 +129,7 @@ working in Python for the first time in more than 15 years.
 
 ---
 
-## Diagnosis
+# Diagnosis
 
 ---
 
@@ -304,7 +307,7 @@ tool, so let's just use one from the start!
 
 ---
 
-## Remedy
+# Remedy
 
 ---
 
@@ -403,7 +406,7 @@ For our team, Homebrew or Conda were the go-tos, for the most part.
 
 ---
 
-# Homebrew + Pyenv
+## Homebrew + Pyenv
 
 ```{.graphviz caption="Out Python installation method"}
 digraph our_method {
@@ -688,7 +691,7 @@ in many of my Python projects.
 
 ---
 
-# Why Not X?
+## Why Not X?
 
 ::: wordcloud
 
@@ -782,7 +785,7 @@ _(ope, there goes gravity)_
 ---
 -->
 
-## Our Particular Setup
+# Our Particular Setup
 
 ---
 
@@ -887,7 +890,7 @@ that captures our intent.
 
 ---
 
-## Challenges
+# Challenges
 
 ---
 

@@ -46,3 +46,6 @@
     color: #666;
 }
 
+.reveal .biopic img {
+    border-radius: 80px;
+}
