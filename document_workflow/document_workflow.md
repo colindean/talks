@@ -4,10 +4,10 @@
 ## :::Notes are not shown on slides, only on presenter view.
 ####
 title: >
-  A documentation workflow loved
+  An (open source) documentation workflow loved
   by both Data Scientists and Engineers
 author: '@colindean'
-date: August 26, 2020
+date: May 10, 2022
 theme: white
 css: custom.css
 slideNumber: true
@@ -31,12 +31,14 @@ include-after: |
 
 # I am Colin Dean.
 
-![I wear a hat and a scarf at conferences.](colindean_devopsdays_hatscarf.webp)
+![I wear a hat and a scarf at conferences.](colindean_bust_hat_codemash2020_circle.webp){width=10em}
 
 :::notes
 
 I'm this guy. I'm generally wearing a top hat and scarf at conferences.
-In that spirit, I'm wearing this now!
+Unfortunately, I've grown out my hair during the pandemic and my hat doesn't
+fit well; also I look like I'm trying to pull off the look of Guns 'n' Roses
+guitarist Slash and it just doesn't fit my idiom these days!
 
 :::
 
@@ -65,11 +67,13 @@ Lead AI Engineer at Target Corporation
 
 ::: notes
 
-I work for Target. I'm based out of our tiny Pittsburgh office on Robotics Row in the Strip District.
+I work for Target. I'm based out of Pittsburgh, where we had an office in the Strip District prior to the pandemic.
 
+<!--
 Like most other tech workers, I'm working from home during the pandemic, so I'm
 recording this from my home office in beautiful, abnormally hot Wilkinsburg,
 Pennsylvania.
+-->
 
 :::
 
@@ -89,20 +93,19 @@ Code & Supply Scholarship Fund
 
 ::: notes
 I run Code and Supply, a Pittsburgh-based organization of
-more than six thousand software professionals.
+more than seven thousand software professionals.
 We run a coworking space in which we (normally)
 hold Meetups, and we run some conferences you
-may have heard of, like Abstractions and Heartifacts
-which is this week. Check out heartifacts.codeandsupply.co
-for more information about our conference on mental health
-and community building for software professionals.
+may have heard of, like Abstractions and Heartifacts,
+as well as our nationwide compensation survey for tech workers.
+More on that at the end.
 :::
 
 ---
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1338.806 1180" height="266.165413564" width="300" version="1.0"><g fill="#111110"><path d="M322.39 1160c-28-26-29-73-2-100 42-42 113-11 113 50s-67 91-111 50zM922.39 1160c-44-41-15-120 43-120 31 0 75 41 75 70 0 28-43 70-73 70-13 0-33-9-45-20zM20.39 640c-28-28-27-84 2-104 51-36 111-6 111 56 0 59-72 89-113 48zM620.39 640c-11-11-20-33-20-50 0-65 79-94 119-44 27 35 26 59-4 89-29 30-68 32-95 5zM1226.39 639c-50-39-22-119 43-119 20 0 36 9 50 26 27 35 26 59-4 89s-54 31-89 4zM322.39 120c-28-26-29-73-2-100 42-42 113-11 113 50s-67 91-111 50zM922.39 120c-44-41-15-120 43-120 31 0 75 41 75 70 0 28-43 70-73 70-13 0-33-9-45-20z"/></g><g fill="#d1b32f"><path d="M457.39 1057l-18-33 97-168 97-167 35 3c35 3 38 7 132 168l96 165-19 33-19 32h-383zM235.39 840l-96-167 18-31 18-32h385l16 34 16 33-94 163c-93 161-94 162-130 165l-37 2zM835.39 838l-95-166 17-31 18-31h195l195 1 16 34c9 19 13 37 10 40-3 4-46 76-96 162l-90 156-38 1-37 1zM157.39 537l-18-33 97-168 97-167 36 3c35 3 38 6 126 160 49 86 93 160 97 163 3 4-3 22-14 41l-20 34h-383zM757.39 539l-18-32 97-168 96-169h37c34 0 39 4 58 43 12 23 55 98 95 166l74 125-16 33-15 32-195 1h-195zM535.39 320l-96-167 18-31 18-32h385l17 34 16 34-95 162c-93 161-94 162-131 165l-37 2z"/></g></svg>
 
-President of the Board
+Board Member, former President
 
 Meta Mesh Wireless Communities
 
@@ -110,9 +113,11 @@ Meta Mesh Wireless Communities
 
 I've been involved in Meta Mesh since its
 humble beginnings as a bunch of twentysomethings trying to
-build a city-wide mesh network. In 2020, we're
-actually kinda getting there as we pivot to being
-a non-profit Wireless ISP.
+build a city-wide mesh network.
+
+In 2022, we've really become the non-profit Wireless ISP toward which we
+pivoted in 2020, with more than three dozen households online
+and rolling out to approximately a dozen per month at our current staffing.
 
 :::
 
@@ -127,6 +132,9 @@ Write a high-level overview about our product for
 * director deep-dive
 
 ::: notes
+
+Enough about me, let's talk about a different kind of pivot, one that starts
+with a task.
 
 Our manager came to us one day and told us about an
 upcoming off-site meeting at which we'd be asked to
@@ -175,7 +183,7 @@ Then there was a big change.
 
 ::: notes
 
-Development pause.
+A development pause.
 
 (drink water)
 
@@ -229,7 +237,7 @@ A team of seven colocateed data scientists and engineers
 
 ::: notes
 
-There are seven of us, normally colocated.
+There are seven of us, normally colocated in those days.
 
 :::
 
@@ -342,6 +350,9 @@ those for whom documentation is all-to-often an
 afterthought, like many engineers and data scientists,
 this concept is lifechanging.
 
+If you take nothing else from this presentation,
+allow this slide to burn into your brain for a moment.
+
 :::
 
 ---
@@ -356,7 +367,7 @@ this concept is lifechanging.
 
 ::: notes
 
-This basically eliminated Word, Pages,
+These requirements basically eliminated Word, Pages,
 straight-up LaTeX, our Confluence wiki,
 and virtually every less well-known
 text format.
@@ -402,7 +413,11 @@ and quickly out of date.
 
 ## Always bet on text
 
+::: bigquote
+
 > Text is the most socially useful communication technology. It works well in 1:1, 1:N, and M:N modes. It can be indexed and searched efficiently, even by hand. It can be translated. It can be produced and consumed at variable speeds. It is asynchronous. It can be compared, diffed, clustered, corrected, summarized and filtered algorithmically. **It permits multiparty editing.** It permits branching conversations, lurking, annotation, quoting, reviewing, summarizing, structured responses, exegesis, even fan fic. The breadth, scale and depth of ways people use text is unmatched by anything. There is no equivalent in any other communication technology for the social, communicative, cognitive and reflective complexity of a library full of books or an internet full of postings. Nothing else comes close.
+
+:::
 
 — Graydon Hoare, Rust language author
 
@@ -428,6 +443,9 @@ the best way to handle this, especially at scale.
 
 We built a solution based on this in about two weeks,
 while also writing prose.
+
+In the time since, I've used this combination for
+nearing a dozen large documents and it's been great.
 
 :::
 
@@ -457,12 +475,21 @@ released a major new version.
 
 LaTeX typesetting without ~~suffering~~ writing LaTeX
 
+::: notes
+
+The biggest benefit was effectively writing LaTeX without LaTeX.
+
+:::
+
 
 ---
 
 or, LaTeX when you _need it_
 
 ::: notes
+
+It's sort of like writing Python but being able to write something in C if you
+really need it.
 
 Our final document actually had very little raw LaTeX in it
 outside of equations and a couple of diagrams that were simple
@@ -497,6 +524,7 @@ Let's talk about pandoc, a universal document converter.
 pandoc was started a while ago and hit 1.0 in 2008
 with the 2.9.x release we used coming out just as
 we started building our work upon it.
+2.18 came out in April 2022.
 
 It's written in Haskell but supports Lua for writing
 plugins that process the abstract syntax tree that
@@ -591,6 +619,12 @@ Note the choices about table of contents, section numbering, lists of figures an
 
 CLI metadata options can be put into the YAML front-matter of the document
 
+::: notes
+
+[[ read slide ]]
+
+:::
+
 ---
 
 ```yaml
@@ -607,10 +641,6 @@ css: custom.css
 # Task
 
 Write a white paper about our product for
-
-* executive review
-* senior director briefing
-* director deep-dive
 ```
 
 :::notes
@@ -639,7 +669,7 @@ all: $(HTML)
   pandoc \
     --to=revealjs --standalone \
     $< --output=$@ \
-    -M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-3.9.2
+    -M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-4.3.0
 ```
 ::: notes
 Reveal and Powerpoint are supported first-class for output
@@ -652,7 +682,10 @@ Reveal and Powerpoint are supported first-class for output
 * Gradle
 
 ::: notes
-Any sufficiently advanced build script eventually reimplements Make.
+In all of 20-some years as a developer, I've proven and observed time and time
+again that any sufficiently advanced build script eventually reimplements
+Make. It's the greatest common denominator, so it's what I reach for first
+anymore.
 :::
 
 ---
@@ -829,6 +862,14 @@ Next, I'll tell you about how my team used this powerful tool to create a workfl
 |GitHub  |Review and suggest changes, treat docs as code|
 |Drone CI|Push button to receive PDF, archived forever|
 
+
+::: notes
+
+These are the tools we used then and mostly still use today.
+We've now switched wholesale to Vela, a CI system inspired by Drone.
+
+:::
+
 ---
 
 ### Flow of data
@@ -1000,6 +1041,16 @@ and some are yet unresolved.
 
 <small><em>˚as of Pandoc 2.9.x</em></small>
 
+::: notes
+
+Getting team members ready to go was challenging at first, but a few iterations
+in our Makefile proved dependency installation to be entirely automatable.
+
+There were some other things we needed to learn, but we're talking a couple of
+hours, tops.
+
+:::
+
 ---
 
 ## Productivity Pain points
@@ -1011,6 +1062,14 @@ and some are yet unresolved.
   * Separate renderer (LaTeXiT, MathJax.com)
   * Just render it
 
+::: notes
+
+The experience had some drawbacks, notably around some team members'
+acclimation to using text only and needing to find some tools like LaTeXiT to
+spot check or develop formulae.
+
+:::
+
 ---
 
 ## Accomodating objections
@@ -1020,6 +1079,13 @@ and some are yet unresolved.
     * only if you'll own that file!
   * "But I want to write my section in X and export it to Pandoc Markdown"
     * only if you can effect changes suggested in the PR
+
+::: notes
+
+I found it important to bestow ownership of deviations to the deviants who
+created them.
+
+:::
 
 ---
 
@@ -1130,9 +1196,10 @@ _You don't have to take my word for it!_
 
 ## Growing adoption
 
-* Two large papers (~50 pgs and 176 pgs)
+* Five large papers
+    * page counts ~50, ~100, ~100, ~150, ~210
 * Several smaller papers
-* Nearly two dozen authors
+* More than two dozen authors
 
 ::: notes
 
@@ -1149,6 +1216,10 @@ At least one person working on a book has inquired about
 using it. That's awesome, because the basis of my system
 was what was used to write the first edition of
 A Friendly Introduction to Software Testing by Bill Laboon.
+
+I've used it myself to produce a 60 page workshop as well as the
+2020 Code & Supply Compensation Survey report.
+The 2022 repo will use this system, as well.
 
 :::
 
@@ -1239,10 +1310,17 @@ profile.
 
 # FIN
 
-![\@colindean](colindean_devopsdays_hatscarf.webp)
+![\@colindean](colindean_bust_hat_codemash2020_circle.webp){width=10em}
 
 ::: notes
 
 That's all folks! Thank you for watching!
 
 :::
+
+---
+
+# {background-color=#b22d00}
+
+![](https://codeandsupply.co/assets/compsurvey_banner-optimized-d1735d2e3d98c33de785c44920e19d53078f0fcbeb89e525a844a6e82e8e3fc4.svg)
+

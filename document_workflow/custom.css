@@ -1,4 +1,4 @@
-@import "deps/font-awesome/fontawesome-free-5.13.0-web/css/all.min.css";
+@import "deps/font-awesome/fontawesome-free-6.0.0-web/css/all.min.css";
 @import "node_modules/nicollet-tokens/lib/colors.css";
 @import "node_modules/nicollet-tokens/lib/font.css";
 
@@ -49,4 +49,8 @@
 }
 .wordcloud .librsvg, .wordcloud .proselint, .wordcloud .tectonic, .wordcloud .docker, .wordcloud .pandocker {
   font-size: 80%;
+}
+
+.reveal .bigquote {
+  font-size: 0.5em;
 }

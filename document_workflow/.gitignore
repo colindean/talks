@@ -5,3 +5,7 @@ Brewfile.lock.json
 *html
 *pdf
 deps
+node_modules
+package.json
+package-lock.json
+
