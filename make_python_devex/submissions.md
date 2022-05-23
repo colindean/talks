@@ -1,5 +1,23 @@
 # `make python devex` Submissions
 
+## PyOhio 2022 - [Accepted](https://pretalx.com/pyohio-2022/talk/review/XKXJTXE9TV7NSSU7MFYHRNXAPZPEEDQC)
+
+### Title
+
+`make python deps check test build`: Towards Clone to Red-Green-Refactor in One Command
+
+### Description
+
+Getting productive with a Python codebase, especially when you're unfamiliar with the ecosystem, can be daunting. Building a cohesive strategy with widely-available tooling shortens the time-to-productivity for new contributors to projects internal and open-source, demonstrating that the maintainers care about onboarding and the developer experience. I'll give an introduction to how my team solved this problem using a 46-year-old program and push the audience in a direction toward better developer experiences starting at the greatest common denominator of tooling.
+
+### Notes
+
+This talk will be a condensation of a ~25 minute talk I gave internally that covers how we set up Make and Homebrew to configure a Python development environment with pyenv and poetry. I'll omit much of the in-depth coverage of Make and probably focus on the intent and outcomes more than the actual tech used.
+
+### Talk Objective
+
+By the end of the 10 minutes, the most important takeaway will be the idea that all projects should have a Makefile with five tasks: deps, check, test, build, and help.
+
 ## Techbash 2022 - Submitted
 
 ### Title
