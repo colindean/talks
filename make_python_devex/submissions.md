@@ -1,6 +1,6 @@
 # `make python devex` Submissions
 
-## PyOhio 2022 - [Accepted](https://pretalx.com/pyohio-2022/talk/review/XKXJTXE9TV7NSSU7MFYHRNXAPZPEEDQC)
+## PyOhio 2022 - [Accepted](https://pretalx.com/pyohio-2022/talk/review/XKXJTXE9TV7NSSU7MFYHRNXAPZPEEDQC) & [Listed](https://www.pyohio.org/2022/program/talks/make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command)
 
 ### Title
 
