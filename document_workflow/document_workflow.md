@@ -921,6 +921,7 @@ Note how changes move around the system.
   * [PanWriter](https://github.com/mb21/panwriter), [MacDown](https://github.com/MacDownApp/macdown)
   * `vim` + `entr` + PDF viewer
 * Writing one sentence per line makes review suggestions easier.
+  * https://sembr.org 
 
 
 ::: notes
@@ -932,6 +933,8 @@ with a few plugins for easily editing Markdown.
 
 One sentence per line makes it easier to suggest small changes to documents
 during the review process.
+This is called Semantic Line Breaks, and it's glorious.
+See Sem Bee Arr dot org for more on why this is great.
 
 :::
 
