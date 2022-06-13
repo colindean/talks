@@ -1021,6 +1021,7 @@ Python projects.
 * Cookie Cutter template (WIP!)
 * More Make documentation in Makefile
 * Streamline one-time setup experience
+* Environment debugging
 
 ::: notes
 
@@ -1035,6 +1036,13 @@ the one-time setup that's required to tell package managers like Homebrew, Pyenv
 and more where to look for executables.
 Some of it can be automated but such often frustrates those manage their dotfiles carefully,
 including myself.
+
+We've seen some troubleshooting complexity for folks with old setups.
+We don't want to mess up working setups, so we move more and more toward a stricter
+environment setup as time goes on.
+That is, we're more opinionated on where something gets installed so we can easily
+reference from our shiny setup while minimizing the work that a developer needs to do
+for one time setup, e.g. putting things into their shell configuration files.
 
 :::
 
