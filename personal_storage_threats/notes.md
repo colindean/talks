@@ -39,7 +39,7 @@ graph LR
 
 ## See Also
 
-* [I've locked myself out of my digital life](https://lobste.rs/s/tqull2/i_ve_locked_myself_out_my_digital_life) by Terence Eden, 2022-06-07.
+* [I've locked myself out of my digital life](https://shkspr.mobi/blog/2022/06/ive-locked-myself-out-of-my-digital-life/) by Terence Eden, 2022-06-07. [🦞](https://lobste.rs/s/tqull2/i_ve_locked_myself_out_my_digital_life).
     > Last night, lightning struck our house and burned it down. I escaped wearing only my nightclothes.
     > In an instant, everything was vaporised. Laptop? Cinders. Phone? Ashes. Home server? A smouldering wreck. Yubikey? A charred chunk of gristle.
     > This presents something of a problem.
