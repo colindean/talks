@@ -1,10 +1,12 @@
 # `make python devex` Submissions
 
-## PyOhio 2022 - [Accepted](https://pretalx.com/pyohio-2022/talk/review/XKXJTXE9TV7NSSU7MFYHRNXAPZPEEDQC) & [Listed](https://www.pyohio.org/2022/program/talks/make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command)
+## PyOhio 2022 - [Presented]([https://www.pyohio.org/2022/program/talks/make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command](https://web.archive.org/web/20220729205659/https://www.pyohio.org/2022/program/talks/make-python-devex-towards-clone-to-red-green-refactor-in-one-command-with-a-45-year-old-tool)) [:movie_camera:](https://www.youtube.com/watch?v=WTsiO3brQwE)
 
 ### Title
 
-`make python deps check test build`: Towards Clone to Red-Green-Refactor in One Command
+`make python devex`: Towards Clone to Red-Green-Refactor in One Command with a 45+-Year-Old Tool
+
+(Submitted as "`make python deps check test build`: Towards Clone to Red-Green-Refactor in One Command" but changed in production)
 
 ### Description
 
@@ -18,7 +20,7 @@ This talk will be a condensation of a ~25 minute talk I gave internally that cov
 
 By the end of the 10 minutes, the most important takeaway will be the idea that all projects should have a Makefile with five tasks: deps, check, test, build, and help.
 
-## Techbash 2022 - Submitted
+## Techbash 2022 - Not Accepted
 
 ### Title
 
