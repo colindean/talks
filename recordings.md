@@ -3,6 +3,7 @@ Recordings of My Talks
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2022 July 30 | [make python devex](https://www.youtube.com/watch?v=WTsiO3brQwE) | [make python devex](make_python_devex) | [PyOhio](https://www.pyohio.org/2022) | Officially representing Target Corp. |
 | 2021 December 20 | [SEI Issue Classification](https://www.youtube.com/watch?v=1UtklNrB8XA&t=1042s) | [SEI Issue Classification](lightning/sei_issue_classification) | [Code & Supply](https://codeandsupply.co) | |
 | 2021 February 7 | [An documentation workflow loved by both Data Scientists and Engineers: Using Pandoc with VCS and CI/CD](https://fosdem.org/2021/schedule/event/ttddatascience/ "webm and mp4 available") | [Document Workflow](document_workflow) | [FOSDEM 2021](https://archive.fosdem.org/2021/schedule/event/ttddatascience/) | Officially representing Target Corp. |
 | 2020 November 7 | [An open-source documentation workflow loved by both data scientists and engineers](https://www.youtube.com/watch?v=gSjEQ49GDdc "official cut") ([livestream](https://youtu.be/79yTKqYXn8o?t=3110 "livestream")) |  [Document Workflow](document_workflow) | [Open Libre Free Conference](https://olfconference.org/) (a.k.a. Ohio LinuxFest) | Officially representing Target Corp.
