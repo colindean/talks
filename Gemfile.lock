@@ -49,7 +49,7 @@ GEM
     matrix (0.4.2)
     mini_portile2 (2.8.0)
     native-package-installer (1.1.5)
-    nokogiri (1.13.9)
+    nokogiri (1.13.10)
       mini_portile2 (~> 2.8.0)
       racc (~> 1.4)
     pango (4.0.3)
@@ -76,7 +76,7 @@ GEM
       rouge
       rsvg2 (>= 3.1.4)
       rttool
-    racc (1.6.0)
+    racc (1.6.1)
     rdtool (0.6.38)
     red-colors (0.3.0)
       matrix
