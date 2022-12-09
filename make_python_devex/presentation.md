@@ -34,10 +34,10 @@ Software engineer and community builder since 2002
 I'm Colin Dean and I'm [[current position and team]].
 
 I've been a developer for more than 20 years.
-I started out in PHP before moving to Ruby, Java, and proprietary language for
+I started out in PHP before moving to Ruby, Java, and a proprietary language for
 work, then spent many years working in Scala before picking up some Rust and
 Groovy. I came back to Scala for a while then now find myself working in
-Python.
+Python since January 2021.
 
 :::
 
@@ -66,10 +66,11 @@ I believe that good tools and good practices enable building good software.
 
 I'm a huge fan of addressing problems through a problem-diagnosis-remedy
 approach consistent with medical and other scientific approaches to problem
-solving. If you search for "Colin Dean Problem Diagnosis Remedy" on the
+solving. If you search for "Colin Dean Problem Diagnosis Remedy" on the web,
+you'll find my writings on it.
 
 At a high-level, I'll be talking about the pains I experienced and have
-observed in the last approximately 18 months as an experienced developer
+observed in the last approximately two years as an experienced developer
 working in Python for the first time since 2005.
 I'll talk about barriers to productivity in a Python codebase and how I've
 overcome them using a venerable tool: Make.
@@ -110,8 +111,8 @@ problem with the presentation occurs.
 * What Python version should I use for development?
 * What Python version will be used for production?
 * How do I install Python at a specific version?
-* How do I ensure that my project works on a diverse development and production
-    installation base?
+* How do I ensure that my project works on a diverse development
+  _and_ production installation base?
 * How do I install dependencies?
 
 ::: notes
@@ -124,6 +125,16 @@ problems. [[READ LIST]]
 If you're getting a tingling feeling that all of this could be written down
 somewhere, you're getting the same feeling I felt within the first week of
 working in Python for the first time in more than 15 years.
+
+:::
+
+---
+
+## Which Python?
+
+::: notes
+
+This largely boils down to this particular question.
 
 :::
 
@@ -200,23 +211,27 @@ across teams.
 ### Inconsistent Python versions
 
 * Tech Debt Risk: dependencies stop supporting older versions
-  * Python [3.6][py36] EOL
-  * Python [3.7][py37] & [3.8][py38] in security-only phase
-    * EOLs June 2023, October 2024
-  * Python [3.9][py39] final non-security release May 16, 2022
-    * EOL October 2025
+  * Python [3.6][py36] and older, EOL
+  * Python [3.7][py37], [3.8][py38], [3.9][py39] in security-only phase
+    * EOLs June 2023, Oct. 2024, Oct. 2025
+  * Python [3.10][py310], [3.11][py311] supported
+    * Final non-security release in April: 2023 & 2024
+    * EOL October: 2026 & 2027
 
 [py36]: https://www.python.org/dev/peps/pep-0494/
 [py37]: https://www.python.org/dev/peps/pep-0537/
 [py38]: https://www.python.org/dev/peps/pep-0569/
 [py39]: https://www.python.org/dev/peps/pep-0596/
+[py310]: https://peps.python.org/pep-0619/
+[py311]: https://peps.python.org/pep-0664/
+[py312]: https://peps.python.org/pep-0693/
 
 ::: notes
 
 COLIN:
 
-We don't have clear single-source installation of our Pythons
-and we don't use versions consistently.
+We didn't have clear single-source installation of our Pythons
+and we didn't use versions consistently.
 
 While many of our projects are tied to a particular version because of a hard
 requirement on our cluster, we still had unexercised freedom to choose updated
@@ -274,8 +289,9 @@ installed.
 Unfortunately, Apple's transition from Intel processors to its own
 processors, switching from the x86_64 architecture to ARM64 in the process, is
 complicating installing Python dependencies.
-Nearly two years in, many projects still have not released macOS ARM64 binary
-packages.
+Nearly three years in, many projects still have not released macOS ARM64 binary
+packages, although it's *FAR* better than it was in 2021 and a lot better than
+summer 2022.
 There are many variables and barriers to this, notably the slim availability of
 macOS ARM64 continuous integration system runners capable of building the
 binaries.
@@ -403,6 +419,19 @@ For our team, Homebrew or Conda were the go-tos, for the most part.
 :::
 
 [brewpy]: https://docs.brew.sh/Homebrew-and-Python#python-3y
+
+---
+
+## Again: Which Python?
+
+"This one, and you need not care."
+
+::: notes
+
+So, we return to this question with a clear way forward: explicitly say which
+and provide a mindless way to install it.
+
+:::
 
 ---
 
@@ -775,7 +804,6 @@ I've got strong opinions weakly held.
 
 ---
 
-<!--
 snap back to reality
 
 <small>
@@ -783,7 +811,6 @@ _(ope, there goes gravity)_
 </small>
 
 ---
--->
 
 # Our Particular Setup
 
@@ -908,7 +935,7 @@ _Apple Silicon == M1 == arm64_
 
 COLIN:
 
-As M1 Macs roll out to developers, there's a small but necessary
+As the second generation of ARM Macs roll out to developers, there's still a small but necessary
 challenge to support both Intel and ARM architectures.
 I'd hoped that enough time had passed for the Python ecosystem to
 have fully shipped binaries for ARM Macs, but that's simply not yet
@@ -916,6 +943,8 @@ come to pass. I've found that as of Python 3.10 in mid 2022,
 I have to compile some dependencies from source,
 because, in a lot of cases, Python is merely a nice wrapper around
 a library written in a compiled language like C, C++, or Rust.
+Things are better in Python 3.11 so far but the ecosystem hasn't fully
+caught up yet for the recent release.
 
 :::
 
@@ -1007,7 +1036,7 @@ your Python team, or any team struggling to quickly onboard developers to new
 codebases, or codebases they've not touched in many months.
 
 I have no doubt this system will improve over time, but on its second major
-iteration in a year and openly talking about it inside and outside of [[my
+iteration in a two years and openly talking about it inside and outside of [[my
 company]], and contributing to several Python open source projects in that
 time, it's clear that something like this is needed in some form for nearly all
 Python projects.
@@ -1028,7 +1057,7 @@ Python projects.
 COLIN:
 
 We're working on some other improvements, especially as my current team adopts
-this setup for all of its repos. We've adopted it for about 20% and others
+this setup for all of its repos. We've adopted it for about 80% and others
 will onboard in the coming weeks.
 
 The greatest challenge we've encountered so far in rolling this out is some of
@@ -1055,7 +1084,7 @@ background-position="50% 100%" }
 
 COLIN:
 
-That's it for our presentation.
+That's it for this presentation.
 If you're interested in learning more, ask me and I'll be happy to share the
 most current iteration of this setup.
 
@@ -1073,9 +1102,11 @@ most current iteration of this setup.
 
 COLIN:
 
+<!--
 A quick slide on how the presentation was made,
 big shouts to Asciinema on this particular project
 for enabling us to show CLI activity at high speed!
+-->
 
 :::
 
