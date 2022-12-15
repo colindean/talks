@@ -3,6 +3,7 @@ Recordings of My Talks
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2022 December 30 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=JWjcWQz5g3U&t=176s) | [Code Review](code_review) | [Chicago JavaScript December 2022 Meetup](https://www.meetup.com/js-chi/events/288515415/) | Revised for 2022! |
 | 2022 July 30 | [make python devex](https://www.youtube.com/watch?v=WTsiO3brQwE) | [make python devex](make_python_devex) | [PyOhio](https://www.pyohio.org/2022) | Officially representing Target Corp. |
 | 2021 December 20 | [SEI Issue Classification](https://www.youtube.com/watch?v=1UtklNrB8XA&t=1042s) | [SEI Issue Classification](lightning/sei_issue_classification) | [Code & Supply](https://codeandsupply.co) | |
 | 2021 February 7 | [An documentation workflow loved by both Data Scientists and Engineers: Using Pandoc with VCS and CI/CD](https://fosdem.org/2021/schedule/event/ttddatascience/ "webm and mp4 available") | [Document Workflow](document_workflow) | [FOSDEM 2021](https://archive.fosdem.org/2021/schedule/event/ttddatascience/) | Officially representing Target Corp. |
