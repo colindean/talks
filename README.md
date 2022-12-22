@@ -37,6 +37,19 @@ For older presentations, I've used
 syntax](http://rabbit-shocker.org/en/sample/markdown/rabbit.html)
 * [Marp](https://github.com/yhatt/marp) or [Marp Next](https://marp.app),
   a batteries-included tool for Markdown-formatted presentations
+  
+### CLI Demonstrations
+
+When necessary, some tools are available to facilitate this:
+
+* [asciinema](https://github.com/asciinema/asciinema) - produces asciicast files for character-perfect playback
+* [svg-term-cli](https://github.com/marionebl/svg-term-cli) - convert asciicast to SVG, for gorgeos web-based playback
+* [asciinema gif generator (agg)](https://github.com/asciinema/agg) - convert asciicast to GIF, reduce filesize with [gifsicle](https://github.com/kohler/gifsicle)
+
+Always prefer asciinema to a screen recorder for presentation capture.
+Embed the gif or a video version of it ([gif2mp4?](https://github.com/colindean/hejmo/blob/master/scripts/gif2mp4)) in fancier slides apps that don't have asciicast integration.
+
+See also [How to share terminal demos as razor-sharp animated SVG](https://wasimlorgat.com/tils/how-to-share-terminal-demos-as-razor-sharp-animated-svg.html).
 
 Principles of Authorship and Delivery
 -------------------------------------
@@ -72,10 +85,19 @@ Principles of Authorship and Delivery
     or a different font, i.e a serif and a sans-serif font together.
 
 ### Audience Management
+
 * *Do not* take questions *during* the talk
 * Do not take questions *after* the talk, unless there are more than five minutes remaining in the session.
   * Take no more than one question per two minutes available.
   * Do not be afraid to respond with "That's a great question, but I cannot answer it succinctly in the time available."
+
+### Demonstrations
+
+* Avoid live or replayed CLI demos because it is too easy for the audience to
+  miss some key detail or lose the signal amid the noise of log output.
+  * Live demos can go horribly wrong out of human error or remote service unavailability.
+  * Playback of recorded demos must nearly always be accelerated because— let's be honest— watching CLI is often like watching paint dry.
+* Pre-record _always_ when demonstrating something. There's no shame in producing a pre-baked cake when all you're saving the audience is time for chemistry and physics to do their thing.
 
 Choice Quotes for Inspiration
 -----------------------------
@@ -127,4 +149,5 @@ Special Note
 ------------
 
 The opinions and recommendations presented in these talks are my own, and do not
-necessarily reflect the beliefs or recommendations of my employer(s).
+necessarily reflect the beliefs or recommendations of my employer(s)
+past, future, or present.
