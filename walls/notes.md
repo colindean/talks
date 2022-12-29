@@ -14,7 +14,7 @@ I've seen the terror on my dog's face when she's surprised me -- and herself -- 
 
 ![Picture of Andrew WK's album cover referenced](#)
 
-We build silos, fiefdoms of responsibility withour organizations.
+We build silos, fiefdoms of responsibility with our organizations.
 These walls do not exist.
 We are praised for spanning teams and "thinking outside the box".
 The box doesn't exist. It is a construct that was introduced for some reason that is no longer true.
@@ -51,6 +51,10 @@ Consider what walls do not stop.
 This wall is a safety device.
 It allows light through it.
 Sound flows around it, albiet at a lower volume.
+
+---------
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">every border implies the violence of its maintenance</p>&mdash; Ayesha A. Siddiqi (@AyeshaASiddiqi) <a href="https://twitter.com/AyeshaASiddiqi/status/639054385797038080?ref_src=twsrc%5Etfw">September 2, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
 ---------
 
