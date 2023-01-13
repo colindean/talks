@@ -1,0 +1,12 @@
+.wordcloud ul li {
+  display: inline;
+}
+
+.wordcloud ul li:nth-child(n+2)::before {
+  content:'\00a0\00a0';
+}
+
+.wordcloud ul li:nth-child(2n) {
+  color: gray;
+}
+
