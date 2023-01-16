@@ -1,6 +1,12 @@
 Talks by Colin Dean
 ===================
 
+Quick Links
+-----------
+
+|[![SpeakerDeck](https://img.shields.io/static/v1?label=Speaker%20Deck&logo=speakerdeck&message=Slides&style=flat&color=009287&logoColor=009287)](https://speakerdeck.com/colindean)|[![Sessionize](https://img.shields.io/static/v1?label=Sessionize&logo=Sessionize&message=Proposals&style=flat&color=1AB394)](https://sessionize.com/colin-dean/)|[![Papercall](https://img.shields.io/static/v1?label=Papercall&message=Proposals&color=FC611F)](https://www.papercall.io/speakers/colindean)|[![YouTube playlist](https://img.shields.io/static/v1?label=YouTube&message=Videos&color=FF0000&logo=youtube&logoColor=FF0000)](https://www.youtube.com/playlist?list=PLd9Sormn4MEL-dTa_2kEHaRqG11zuhQms)
+|---|---|---|---|
+
 Introduction
 ------------
 
