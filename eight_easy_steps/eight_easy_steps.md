@@ -13,9 +13,9 @@ These are things that I have done or experienced that I wish I had not.
 
 # How to stay paralyzed by fear of abandonment
 
-1. You will face layoffs. You will get fired. 
+1. You will face layoffs. You will get fired.
    Prepare for the worst, mentally and financially.
-1. You will not want to leave a job because of your loyalty to your 
+1. You will not want to leave a job because of your loyalty to your
    friends and coworkers.
 1. You will hate yourself for leaving a great job for a better one.
 1. You will miss your coworkers, even when your new coworkers are great.
@@ -27,7 +27,7 @@ These are things that I have done or experienced that I wish I had not.
 
 # How to defer to men in solvable predicaments
 
-1. You will word things so as not to be commital, and this will be 
+1. You will word things so as not to be commital, and this will be
    mistaken for a lack of confidence.
 1. You will look to the veterans for guidance and accept their advice
    without understanding their motives or agenda.
@@ -42,7 +42,7 @@ These are things that I have done or experienced that I wish I had not.
 
 1. Your employer will hire people like you who are not like you.
 1. Your employer will use you as model, putting you on a pedestal. You
-   become a target and people will celebrate your failures, sometimes 
+   become a target and people will celebrate your failures, sometimes
    to your face. This is unprofessional but there is not much to be
    done about it.
 
@@ -73,7 +73,7 @@ These are things that I have done or experienced that I wish I had not.
 1. Someone will undermine your authority on a matter and you will have to
    spend a lot of time explaining nuances and inaccuracies of what they said.
 1. You will speak out of turn and without a full understanding of a situation.
-1. You will speculate in a meeting for hours instead of walking 15 meters to ask 
+1. You will speculate in a meeting for hours instead of walking 15 meters to ask
    someone who would enlighten those congregated in 30 seconds.
 
 --
@@ -81,17 +81,17 @@ These are things that I have done or experienced that I wish I had not.
 # How to pretend you're fine and don't need help from anyone
 
 1. You will scoff at mentoring programs.
-1. You will hold in all of your stressors because you think you can 
+1. You will hold in all of your stressors because you think you can
    manage them.
-1. You will break down from the stress and want to disappear for a 
+1. You will break down from the stress and want to disappear for a
    while in a [Heroic B.S.O.D.](http://tvtropes.org/pmwiki/pmwiki.php/Main/HeroicBSOD).
 1. You will work long hours because you have impossible deadlines and
    insufficient staffing or focus to meet the deadlines.
 1. You will not take any vacation and end up losing it because of
-   outdated corporate policies. 
+   outdated corporate policies.
    1. Your good manager will not look twice when you're gone for a
-      few days after shipping. 
-   1. Your bad manager will expect you at 9:00 a.m. sharp the next 
+      few days after shipping.
+   1. Your bad manager will expect you at 9:00 a.m. sharp the next
       morning ready for the next challenge.
 
 --
@@ -100,7 +100,7 @@ These are things that I have done or experienced that I wish I had not.
 
 1. You will put others needs and promotions ahead of your own in a way
    that enables you to neglect your own advancement.
-1. You will get more of a thrill of solving other peoples' problems, 
+1. You will get more of a thrill of solving other peoples' problems,
    hating yourself for not addressing your own problems.
 1. You will say yes to everything and then burn out trying to fulfill
    obligations, only to realize that you cannot.
@@ -118,7 +118,7 @@ I'll show you how leadership looks when taught by the best
 
 # How to hate women when you're supposed to be a feminist
 
-1. You will be paralyzed by the fear of misspeaking when you 
+1. You will be paralyzed by the fear of misspeaking when you
    do not have the capacity to do so.
 2. You will tell a manager that a woman is going to leave
    when she finds out that she is paid less than a man with

@@ -73,7 +73,7 @@ Use JSON Schema?
 
 ---
 
-## Speed 
+## Speed
 
 - YAML is least worst when used with syntax checking tools
 - "You shouldn't be caring about speed of reading and parsing, you should do that once per execution!"
@@ -218,7 +218,7 @@ Consensus: If everyone is on the same page, it's easier to communicate.
 
 ---
 
-## Must-haves 
+## Must-haves
 
 - Team working agreement
 - Automation
@@ -259,7 +259,7 @@ Examples:
 
 ## Main ideas
 
-- Identify minimal number of people to influence 
+- Identify minimal number of people to influence
 	- < 2000 ppl could have changed 2017 UK general election outcome
 - Behavioral psychology
 	- Broken Window effect - "break it just a little more for me"
@@ -378,7 +378,7 @@ Tommy Graves @ Root Insurance
 You must consider the other side of a disagreement.
 
 We are often not in a good enough position to independently determine who is correct.
- 
+
 Upon realization that you are in a disagreement, you _should_ become _less_ confident in your belief.
 
 ---

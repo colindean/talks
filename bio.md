@@ -28,7 +28,7 @@ I am a software engineer, community builder, and non-profit leader. I've built s
 
 ### Third Person
 
-Colin Dean is a software engineer, community builder, and non-profit leader. He's built software for IBM Watson, Target, Vivísimo, and Arcadia.io, plus some open source software used by a many developers, especially Mac devs. 
+Colin Dean is a software engineer, community builder, and non-profit leader. He's built software for IBM Watson, Target, Vivísimo, and Arcadia.io, plus some open source software used by a many developers, especially Mac devs.
 
 Colin has spoken at SATURN, GitHub Universe, FOSDEM, Write the Docs, Ohio Linuxfest, and other conferences. He's organized tech conferences in Pittsburgh such as Abstractions, Heartifacts, devopsdays, and Steel City Ruby.
 

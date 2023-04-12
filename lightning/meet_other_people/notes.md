@@ -2,7 +2,7 @@
 
 ---
 
-( Coworkers [ <3 ) Friends ] 
+( Coworkers [ <3 ) Friends ]
 
 * Coworkers are great
 * So are Friends
@@ -53,7 +53,7 @@ You can continue to hang out with your old coworkers regularly without breaking 
 
 Isolation leads to monoculture.
 
-Consuming social media and blogs and books are insufficient 
+Consuming social media and blogs and books are insufficient
 
 ---
 

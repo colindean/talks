@@ -54,7 +54,7 @@ Sound flows around it, albiet at a lower volume.
 
 ---------
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">every border implies the violence of its maintenance</p>&mdash; Ayesha A. Siddiqi (@AyeshaASiddiqi) <a href="https://twitter.com/AyeshaASiddiqi/status/639054385797038080?ref_src=twsrc%5Etfw">September 2, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">every border implies the violence of its maintenance</p>&mdash; Ayesha A. Siddiqi (@AyeshaASiddiqi) <a href="https://twitter.com/AyeshaASiddiqi/status/639054385797038080?ref_src=twsrc%5Etfw">September 2, 2015</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ---------
 

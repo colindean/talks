@@ -11,7 +11,7 @@ void change_color(ColorInt color) {
 }
 
 change_color(red);
-change_color(blue); 
+change_color(blue);
 
 int port = 8080;
 int secret_code = 0x3425deadb33f;
@@ -25,7 +25,7 @@ OOP could handle a type-checked way of establishing a hierarchy through inherita
 ```python
 class ColorInt:
   def as_int() -> int:
-   
+
 class Red(ColorInt):
   def init():
     self.int = 2
@@ -68,7 +68,7 @@ from enum import Enum
 class Color(Enum):
   RED = 0xff0000  # manually assign a value
   BLUE = 0x00ff00
-  
+
 class ModelMode(Enum):
   MULTI_LABEL = auto() # automatically assign a value
   MULTI_CLASS = auto()

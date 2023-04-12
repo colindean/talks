@@ -5,5 +5,5 @@ if [ -z "`which rabbit`" ]; then
   exit 1
 fi
 
-rabbit bitcoin-technical.md 2>&1 & 
+rabbit bitcoin-technical.md 2>&1 &
 rabbiter --filter "#ytaets" 2>&1 &

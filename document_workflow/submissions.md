@@ -15,14 +15,14 @@
   <summary>TechBash 2022</summary>
 
 ## TechBash 2022
-  
+
 See [FOSDEM 2021 submission](#fosdem-2021), used verbatim.
 
 </details>
 
 <details>
   <summary>FOSDEM 2021</summary>
-  
+
 ## FOSDEM 2021
 
 [Accepted :white_check_mark:](https://fosdem.org/2021/schedule/event/ttddatascience/)

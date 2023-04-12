@@ -5,5 +5,5 @@ if [ -z "`which rabbit`" ]; then
   exit 1
 fi
 
-rabbit rubocop.md 2>&1 & 
+rabbit rubocop.md 2>&1 &
 #rabbiter --filter "#rubocop" 2>&1 &

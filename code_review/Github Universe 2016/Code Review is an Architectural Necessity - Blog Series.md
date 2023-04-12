@@ -6,7 +6,7 @@
 
 > This content is licensed [CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/).  If would like to license this content in some way, contact me directly.
 
-> I'd love to speak at your event! 
+> I'd love to speak at your event!
 
 ## My experience with review
 
@@ -18,7 +18,7 @@ My first experience with review was with the student newspaper [Westminster Coll
 
 That review process saved us a few times. Sometimes a student writer would just completely wreck a piece and a copyeditor was too chicken to reject it outright.  We on the layout team would have to rewrite it on the spot, hours before our print deadline. Just like versioning commit logs, we’d add our name to the byline or sometimes even replace it entirely.
 
-When constructing our layout, we would use lots of `X` characters as easily-spotted placeholders and it wasn’t until final review before sending to pre-press that we’d catch them. One time, a headline “WHAT THE FUCK IS THIS SHIT” made it to pre-press. My prepress operator was an amazing woman with an incredible eye for errors. She was nearing retirement and probably had been working in production longer than I've been alive. She calls me up and says, “Colin, look at A-8. You owe me a beer,” and hung up. 
+When constructing our layout, we would use lots of `X` characters as easily-spotted placeholders and it wasn’t until final review before sending to pre-press that we’d catch them. One time, a headline “WHAT THE FUCK IS THIS SHIT” made it to pre-press. My prepress operator was an amazing woman with an incredible eye for errors. She was nearing retirement and probably had been working in production longer than I've been alive. She calls me up and says, “Colin, look at A-8. You owe me a beer,” and hung up.
 
 ## What is code review?
 
@@ -38,7 +38,7 @@ You may be familiar with the term "peer review", popularized by Karl Wiegers in 
 
 Moreover, everything is code these days. Architecture and design documents can be expressed in code. You set up your systems with configuration management software, right? **Infrastructure is code** with things like Chef and AWS. A typo could be an immediate tenfold cost increase.
 
-Throughout this series, I’ll use these five words: 
+Throughout this series, I’ll use these five words:
 
 * **Change** - an individual unit of work altering what exists
 * **Submission** - a collection of changes
@@ -54,7 +54,7 @@ Karl Wiegers describes this peer review formality spectrum in “Peer Reviews in
 
 ![Wiegers' peer review formality spectrum chart, in order from most formal to least formal: inspection, team review, walkthrough, pair programming, peer desk check or passaround, ad-hoc review.](blog_slides/wiegers_spectrum.png)
 
-My concept of code review, and my team's practice of code review, falls somewhere between “team review” and “pair programming”. 
+My concept of code review, and my team's practice of code review, falls somewhere between “team review” and “pair programming”.
 
 ![Peer Reviews Formality Spectrum chart with arrow pointing between walkthrough and pair programming, with inspection and team review crossed out.](blog_slides/colins_team_on_spectrum.png)
 
@@ -92,11 +92,11 @@ A part of this is something called **architecture oral history**.
 
 "Architecture oral history collapses without a team to keep the culture alive," says Keeling, a friend and fellow IBMer via Vivísimo.
 
-Code Review, or, more specifically, code review *systems*, enable a major part of that oral history to be written down, serving as a reference point or even a starting point for documenting the change of the architecture and implementation over time. 
+Code Review, or, more specifically, code review *systems*, enable a major part of that oral history to be written down, serving as a reference point or even a starting point for documenting the change of the architecture and implementation over time.
 
 The most useful review systems will make comments searchable for posterity, and encourage reviewers to extract actionable items from comments into issue or work tracking systems for future consideration.
 
-Code review doesn’t just help build knowledge of application code anymore. Code review can enable developers to continuously review changes to the infrastructure, and have an audit trail with logic and discussion around the changes. Code review can enable architects, then, to continuously review changes to the architecture, and have an audit trail with logic and discussion around those changes, too. 
+Code review doesn’t just help build knowledge of application code anymore. Code review can enable developers to continuously review changes to the infrastructure, and have an audit trail with logic and discussion around the changes. Code review can enable architects, then, to continuously review changes to the architecture, and have an audit trail with logic and discussion around those changes, too.
 
 Developers are included in this conversation, too, because the architecture documents should live in the same repository as the code it describes. This builds knowledge of how things changed over time and how things came to be this way.
 
@@ -114,11 +114,11 @@ To me, valuing maintainability in an architecture necessitates that engineers wr
 
 #### Learnability
 
-The best way to get someone acquainted with code is to throw them into it, not from the “go make this change” point of view, but, rather, “take a look at this real code with me”. 
+The best way to get someone acquainted with code is to throw them into it, not from the “go make this change” point of view, but, rather, “take a look at this real code with me”.
 
-We want them to learn the conventions and patterns of the codebase’s use of the language(s) and frameworks of the project. 
+We want them to learn the conventions and patterns of the codebase’s use of the language(s) and frameworks of the project.
 
-We want both the initial developers and the maintenance mode crew to understand the goals of the architecture, and the risks present in the code as is exists today. 
+We want both the initial developers and the maintenance mode crew to understand the goals of the architecture, and the risks present in the code as is exists today.
 
 With this knowledge, they can deal with problems on their terms. We want them to use the same terminology, too: establishing that vocabulary is necessary to make the project learnable. Code review enables and encourages teaching moments, time when someone's understanding or views are challenged and possibly changed.
 
@@ -130,7 +130,7 @@ The next generation is not only younger engineers, but also sucker taking over f
 
 #### Understandability
 
-It’s vital to ensure that the developers on a project understand the architecture and the implementation decisions alike. 
+It’s vital to ensure that the developers on a project understand the architecture and the implementation decisions alike.
 
 While they may not be involved in construction of each decision, code review enables them to be aware of changes and ask questions about those changes as the project evolves. In doing so, they better understand architecture and implementation, and are better equipped to identify undesirable and desirable deviations from established plan and best practice. They keep their mental model in synchronization with each other and forge forward with confidence.
 
@@ -138,7 +138,7 @@ This builds tribal knowledge ripe for passing to others, including to executives
 
 #### Serviceability
 
-Serviceability focuses on the ability of a technical support team to provide that support. 
+Serviceability focuses on the ability of a technical support team to provide that support.
 
 By exposing new configuration, hiding unnecessary or debugging configuration, and agreeing on use cases that may fall outside of primary architectural goals, code review drives a consensus on what the people supporting the project will be expected to know and do. This also drives documentation.
 
@@ -158,7 +158,7 @@ My first programming job out of school was at a business to business imprinting 
 
 I didn’t have to deal with production bugs because the company didn’t want us to work outside of business hours. Rare outages were the responsibility of the tech lead, but because he wasn’t reviewing any of the code changes, outages would take a very long time to resolve because he had to learn and understand the code in order to service it.
 
-The lack of code review in this company was a clear problem. Those outages were rare, but were caused by generally entirely avoidable, obvious errors spotted after hours of reviewing code and changes. 
+The lack of code review in this company was a clear problem. Those outages were rare, but were caused by generally entirely avoidable, obvious errors spotted after hours of reviewing code and changes.
 
 A few months after I left, one guy cost the company thousands of dollars in lost sales because he’d left his own email address hardcoded for a new subsystem instead of using the proscribed environment variable. This was mistake was in place for four months. He was fired, despite this being his first and only mistake - one that could have easily been prevented by code review.
 
@@ -178,7 +178,7 @@ The lack of control and review cost us considerable time and effort. From custom
 
 ![Stick figures in a meeting looking at a funny code diff on a projected screen](blog_slides/projector.png)
 
-My first professional code review experience was a group meeting, a formal inspection, on subcontract for a contractor with a government client. These sessions were painful. I was the subject-matter expert in the room, trying to get my own work done while teaching the other contractors and subcontractors in the room about my product. I’d developed the tool that exported the product’s configuration file so we could even do these reviews for my part of the project. 
+My first professional code review experience was a group meeting, a formal inspection, on subcontract for a contractor with a government client. These sessions were painful. I was the subject-matter expert in the room, trying to get my own work done while teaching the other contractors and subcontractors in the room about my product. I’d developed the tool that exported the product’s configuration file so we could even do these reviews for my part of the project.
 
 This team had a weekly merge window informed by a round robin inspection meeting. A _three to four hour weekly meeting_. The environment was hostile and prone to defensive stances the moment anyone lobbed criticism into the thick air. "Merge it next week" meant that you failed, and failure meant a delayed project and one more nail in the coffin for your subcontract.
 
@@ -190,7 +190,7 @@ Both of these folks could have been enabled to perform their reviews asynchronou
 
 ### Security
 
-We want to spot vulnerabilities before they ship and teach defensive posture. Linus’s Law, "Given enough eyes, all bugs are shallow" applies here, too. 
+We want to spot vulnerabilities before they ship and teach defensive posture. Linus’s Law, "Given enough eyes, all bugs are shallow" applies here, too.
 
 But the best way to keep out bugs and vulnerabilities in code? Simply minimize unnecessary features. YAGNI: You Ain’t Gonna Need It.
 
@@ -209,8 +209,8 @@ This is in line with a growing movement among software architects who believe th
 According to “[Best Kept Secrets of Code Review](https://books.google.com/books/about/Best_Kept_Secrets_of_Peer_Code_Review.html?id=b9ywHanWN5kC)”, a case study at Cisco Systems found that there was negligible difference in the number of defects found when reviewing in a formal setting versus informally, for example via the individual review methods I described earlier, while informal reviews were faster and more cost-efficient. The ideal review size should not exceed 400 changed lines of code.
 
 * **Devote time to reviews.** Code review should occupy units of work. That is, if your team is using story points or some other system to estimate effort necessary to complete a task, estimate the time necessary to conduct reviews. My team uses a Fibonacci story point system. Most of our reviews are one or two points. If it’s a big change or potentially controversial change with a lot of input to create and process, it might be a three or five.
-* **Accept debt** by accepting that not everything is perfect. A good code review system will enable reviewers or submitters to create new work items quickly and easily. 
-* **Identify churn** in areas that see a lot of changes and understand why that is. There’s a whole field of study related to that, so don’t get too deep in it within the scope of reviews. 
+* **Accept debt** by accepting that not everything is perfect. A good code review system will enable reviewers or submitters to create new work items quickly and easily.
+* **Identify churn** in areas that see a lot of changes and understand why that is. There’s a whole field of study related to that, so don’t get too deep in it within the scope of reviews.
 * **Minimize pedantry** by discouraging petty annotations: keep them professional and learn when to speak. Continuing to bicker electronically is waste of time most of the time.
 * Most of all, **make progress**. Don’t let reviews slow down development unnecessarily. Dogpile reviews if they get backed up.
 
@@ -251,7 +251,7 @@ A counter to this specific problem? Ensure that no one reviewer is a bottleneck,
 
 ## [You don't have to take my word for it!](https://www.youtube.com/watch?v=c1WzS_k0qQ8)
 
-Are you not sold yet on code review, and only research can sate your thirst for knowledge? 
+Are you not sold yet on code review, and only research can sate your thirst for knowledge?
 
 Microsoft Research published a paper in 2013, “[Expectations, Outcomes, and Challenges Of Modern Code Review](https://www.microsoft.com/en-us/research/publication/expectations-outcomes-and-challenges-of-modern-code-review/)”, a part of which asked developers for their motivations for performing code review, the definition of which matches very closely with what I established at the beginning of this talk.
 
@@ -276,5 +276,5 @@ Code review
 * Bass, Len; Paul Clements, and Rick Kazman. Software Architecture in Practice. Addison Wesley, 2013.
 * Wiegers, Karl E. Peer Reviews in Software. Addison Wesley, 2012.
 * Cohen, Jason, Steven Teleki, and Eric Brown. Best Kept Secrets of Peer Code Review. Smart Bear Software, 2006.
-* Wilhelm, Alex and Alexia Tsotsis. Julie Ann Horvath Describes Sexism and Intimidation behind Her Github Exit. TechCruch, 2014 March 15. Retrieved 2016 April 26. http://techcrunch.com/2014/03/15/julie-ann-horvath-describes-sexism-and-intimidation-behind-her-github-exit/ 
+* Wilhelm, Alex and Alexia Tsotsis. Julie Ann Horvath Describes Sexism and Intimidation behind Her Github Exit. TechCruch, 2014 March 15. Retrieved 2016 April 26. http://techcrunch.com/2014/03/15/julie-ann-horvath-describes-sexism-and-intimidation-behind-her-github-exit/
 * Baccehlli, Alberto and Christian Bird. Expectations, Outcomes, and Challenges Of Modern Code Review. Proceedings of the International Conference on Software Engineering, Proceedings of the International Conference on Software Engineering, May 2013.

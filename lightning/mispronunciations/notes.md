@@ -15,8 +15,8 @@
 * Linux: Lynn-icks, Line-uhcks, Lee-nooks
 * Python: Py-THON (US), PY-thin (UK and the canonical naming reference of Monty Python, which used the latter)
 * LaTeX:
-    > _[Quanta](https://www.quantamagazine.org/computing-expert-says-programmers-need-more-math-20220517/)_: One last thing, about another side project of yours with a sizable impact: LaTeX. I’d like to finally clear something up with the creator. Is it pronounced LAH-tekh or LAY-tekh? 
-    > 
+    > _[Quanta](https://www.quantamagazine.org/computing-expert-says-programmers-need-more-math-20220517/)_: One last thing, about another side project of yours with a sizable impact: LaTeX. I’d like to finally clear something up with the creator. Is it pronounced LAH-tekh or LAY-tekh?
+    >
     > _Leslie Lamport_: Any way you want. I don’t advise spending very much time thinking about it.
 
 ## Missteps

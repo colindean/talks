@@ -29,7 +29,7 @@ Colophon
 --------
 
 I generally use either [Apple Keynote](https://www.apple.com/mac/keynote/)
-or [Pandoc](https://pandoc.org) + [Reveal.js](https://revealjs.com/) for my presentations. 
+or [Pandoc](https://pandoc.org) + [Reveal.js](https://revealjs.com/) for my presentations.
 Sometimes, I'll use Google Slides if I need something fast or I start it on a mobile device.
 
 For exporting PDFs, I generally use the built-in functionality of Keynote but I've heard that
@@ -38,12 +38,12 @@ For browser-based systems, I'll simply print from the browser or use a headless 
 
 For older presentations, I've used
 
-* [Rabbit](http://rabbit-shocker.org/en/), presentations written in Markdown 
+* [Rabbit](http://rabbit-shocker.org/en/), presentations written in Markdown
   using Rabbit's [special
 syntax](http://rabbit-shocker.org/en/sample/markdown/rabbit.html)
 * [Marp](https://github.com/yhatt/marp) or [Marp Next](https://marp.app),
   a batteries-included tool for Markdown-formatted presentations
-  
+
 ### CLI Demonstrations
 
 When necessary, some tools are available to facilitate this:

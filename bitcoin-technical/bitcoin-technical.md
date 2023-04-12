@@ -55,7 +55,7 @@ Digital cryptocurrency.
 
 * Satoshi Nakamoto
   * Anonymous author, absent
-* Began in 2008 or earlier 
+* Began in 2008 or earlier
   * bitcoin.org registered Aug 2008
 * [Genesis block](https://en.bitcoin.it/wiki/Genesis_block): 3 Jan 2009
 
@@ -63,8 +63,8 @@ Digital cryptocurrency.
 
 We do.
 
-* Not a company. 
-* Not a security. 
+* Not a company.
+* Not a security.
 * Not a product.
 
 Beware of misrepresentation.
@@ -133,12 +133,12 @@ November 2012
 August 2016?
 :   12.5 BTC per block - 1800/day
 
-# Adjusting biweekly for advances 
+# Adjusting biweekly for advances
 
 * Difficulty aids consistency
-  * Up to quarters in a bust 
+  * Up to quarters in a bust
     * 16 decreases so far
-  * Up to quadruples in a boom 
+  * Up to quadruples in a boom
     * +3,000% since 2012
 * Compared against hash output
 
@@ -147,7 +147,7 @@ August 2016?
 * Continues 32 halvings
 * Stop at **21,000,000 BTC**
 
-# When? 
+# When?
 
 * circa 2140
 
@@ -167,7 +167,7 @@ Much sooner?
 
 # Comparison
 
-* 10.5 trillion USD in M2: Federal Reserve 
+* 10.5 trillion USD in M2: Federal Reserve
   * M2 = money markets + savings + CDs < $100k PLUS
   * M1 = checking accounts PLUS
   * M0 = currency in circulation
@@ -272,7 +272,7 @@ Block reward + transaction fees
 
 # Where to spend
 
-* [Wiki/Trade](https://en.bitcoin.it/wiki/Trade) - huge list 
+* [Wiki/Trade](https://en.bitcoin.it/wiki/Trade) - huge list
 * [BitcoinStore](https://www.bitcoinstore.com/) - online CE store
 * In Pittsburgh
   * [Oh Yeah!](http://www.theohyeah.com/) - Highland Ave, Shadyside
@@ -298,9 +298,9 @@ Multibit to Android
 
 This is beta technology.
 
-It can break. 
+It can break.
 
-You can lose money. 
+You can lose money.
 
 No one can save you from yourself.
 

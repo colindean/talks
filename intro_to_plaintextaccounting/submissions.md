@@ -30,7 +30,7 @@ Plain Text Accounting is the practice of maintaining a ledger in a format that v
 
 I have been using plain text accounting tools for more than four years. I run the fledgling /r/plaintextaccounting reddit and have contributed to the ledger-like ecosystem.
 
-≤other parts redacted≥  
+≤other parts redacted≥
 
 ### Past Presentations
 
@@ -57,7 +57,7 @@ registers, balance sheets, profit and loss statements, track
 billable time and paid time off, and lots of other reports. In this
 presentation, you’ll learn some basic accounting principals, ledger
 tool usage, and why you might choose plain text accounting over
-Quicken, QuickBooks, Mint.com, or You Need a Budget. 
+Quicken, QuickBooks, Mint.com, or You Need a Budget.
 
 Colin Dean has
 been using plain text accounting tools for more than four years. He
@@ -140,7 +140,7 @@ Steps in the workshop:
 ### Fit
 > Why are you the right person to conduct this workshop? This is less about expertise (which is not a requirement), and more about the relationship between the topic and the workshop conductor, and finding a good fit. Feel free to include your passion, past experience, previous roles, etc.
 
-I've been using plain text accounting tools for more than six years for his work time tracking, personal finance, and business finance, including one of the non-profit organizations I administer. 
+I've been using plain text accounting tools for more than six years for his work time tracking, personal finance, and business finance, including one of the non-profit organizations I administer.
 
 ## Pittsburgh Techfest 2020
 

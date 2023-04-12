@@ -17,7 +17,7 @@ stateDiagram-v2
     classDef endedBadly fill:darkred,color:white,font-weight:bold,stroke-width:2px,stroke:firebrick
     classDef endedMeh fill:darkgoldenrod,color:white,font-weight:bold,stroke-width:2px,stroke:yellow
     classDef endedGreat fill:green,color:white,font-weight:bold,stroke-width:2px,stroke:lightgreen
-    
+
     [*] --> WantToApply
     WantToApply --> AwaitingResponse : applied
     AwaitingResponse --> TimedOut : never responded
