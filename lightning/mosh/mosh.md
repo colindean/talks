@@ -21,14 +21,14 @@ mosh.org
 
 # Verbosely
 
-## Mosh is a replacement for SSH. 
+## Mosh is a replacement for SSH.
 
 It's more robust and responsive, especially over Wi-Fi, cellular, and long-distance links.
 
-## Remote `terminal` application that 
+## Remote `terminal` application that
 
-* allows **roaming**, 
-* supports **intermittent connectivity**, and 
+* allows **roaming**,
+* supports **intermittent connectivity**, and
 * provides intelligent **local echo** and line editing of user keystrokes.
 
 ---
@@ -189,7 +189,7 @@ IPv6
     sudo apt-get install mosh
 
     brew install mobile-shell
-    
+
 or get it from mosh.org
 
 ---

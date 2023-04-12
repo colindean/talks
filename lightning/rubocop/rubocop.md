@@ -186,7 +186,7 @@ Code may *execute more efficiently* because of **refactoring** necessary to sati
 
 # gem install rubocop
 
-# Thank you for your cooperation. Good night.         
+# Thank you for your cooperation. Good night.
 
 ![](logo.png){:relative_width="100"}
 

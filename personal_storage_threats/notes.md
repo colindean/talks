@@ -25,7 +25,7 @@ graph LR
     Dropbox{Dropbox}
     S3{AWS S3}
   end
-  
+
   subgraph "My Computer"
     Dbx(Dropbox)
     Comp(Full System Backup)

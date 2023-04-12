@@ -79,7 +79,7 @@ A wild development environment appears!
     ==> default: Booting VM...
     ==> default: Waiting for machine to boot. This may take a few minutes...
     ==> default: Machine booted and ready!
-    
+
 That's it.
 ==========
 * No more "works on my machine"
@@ -95,7 +95,7 @@ Under the hood
   * Virtualbox
   * VMware, if you pay
   * Many others via plugins
-    
+
 Installing Vagrant
 ==================
 
@@ -146,7 +146,7 @@ Box identity
 Caching
 =======
 
-Boxes are 
+Boxes are
 
 * cached
 * copied on use
@@ -156,7 +156,7 @@ Network settings
 
     config.vm.network :forwarded_port, guest: 80, host: 8080
     config.vm.network :forwarded_port, guest: 3306, host: 3307
-    
+
     # Default for :linux
     config.vm.network :forwarded_port, guest: 22, host: 2222
 {: lang="ruby"}
@@ -175,7 +175,7 @@ Any Ruby is valid in config
     $script = <<SCRIPT
       if [ ! -f "$HOME/.provisioned" ]; then
         # Bind MySQL to all of the box's NICs to enable external access
-        sed -i 's/bind-address/;bind-address/g' /etc/mysql/my.cnf 
+        sed -i 's/bind-address/;bind-address/g' /etc/mysql/my.cnf
         sudo service mysql restart
       fi
     SCRIPT
@@ -201,7 +201,7 @@ Multiple machines, too!
       end
     end
 {: lang="ruby"}
-    
+
 Provisioning
 ============
 
@@ -211,7 +211,7 @@ Base installation -> Everything
 
     config.vm.provision :shell, :inline => $script
 {: lang="ruby"}
-	
+
 # Config Management with Chef or Puppet
 
 	config.vm.provision "chef_solo" do |chef|
@@ -227,7 +227,7 @@ Base installation -> Everything
                 }}}}}}
 	end
 {: lang="ruby"}
-	
+
 Plugins
 =======
 

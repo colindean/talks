@@ -5,4 +5,4 @@ if [ -z "`which rabbit`" ]; then
   exit 1
 fi
 
-rabbit mosh.md 2>&1 & 
+rabbit mosh.md 2>&1 &

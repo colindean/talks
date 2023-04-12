@@ -5,5 +5,5 @@ if [ -z "`which rabbit`" ]; then
   exit 1
 fi
 
-rabbit --full-screen vagrant.md 2>&1 & 
+rabbit --full-screen vagrant.md 2>&1 &
 #rabbiter --filter "#ytaets" 2>&1 &

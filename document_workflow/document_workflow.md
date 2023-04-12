@@ -921,7 +921,7 @@ Note how changes move around the system.
   * [PanWriter](https://github.com/mb21/panwriter), [MacDown](https://github.com/MacDownApp/macdown)
   * `vim` + `entr` + PDF viewer
 * Writing one sentence per line makes review suggestions easier.
-  * https://sembr.org 
+  * https://sembr.org
 
 
 ::: notes

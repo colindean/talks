@@ -24,7 +24,7 @@ People die of exposure!
 
 ## Exits (equity)
 
-The other side of exposure – promising fame for associating with the company – is the company promising money later in the form of an exit when their equity is finally worth something. You may be offered *incentive stock options* or *restricted stock units*, depending on the ownership structure, public trading status, or a variety of other factors. Ultimately, unless you are a stockholder, you will have no control when it comes time to evaluate IPO paperwork or an acquisition agreement. 
+The other side of exposure – promising fame for associating with the company – is the company promising money later in the form of an exit when their equity is finally worth something. You may be offered *incentive stock options* or *restricted stock units*, depending on the ownership structure, public trading status, or a variety of other factors. Ultimately, unless you are a stockholder, you will have no control when it comes time to evaluate IPO paperwork or an acquisition agreement.
 
 You could be promised hundreds of thousands or even millions of dollars when the company exits. Until then, as the phrase goes, "toilet paper is worth more than their equity."
 
