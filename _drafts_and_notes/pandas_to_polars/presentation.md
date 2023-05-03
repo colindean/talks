@@ -1,4 +1,27 @@
-# Methods and patterns for migrating from Pandas to Polars
+---
+title: "Migration Patterns for Pandas and Polars"
+subtitle: "Move your data wrangling from the bamboo forest to the north pole"
+author:
+  - Colin Dean
+theme: white
+css: custom.css
+slideNumber: true
+hash: true
+history: true
+transition: none
+transitionSpeed: "fast"
+# totalTime: 900
+# include-after: |
+#     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
+#     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
+# title-slide-attributes:
+#     data-background-image: "bg.png"
+#     data-background-size: "10%"
+#     data-background-position: "50% 100%"
+
+---
+
+## Central idea
 
 Faster data wrangling with a friendlier API
 
