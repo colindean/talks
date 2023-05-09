@@ -99,17 +99,23 @@ Please save your questions until the end.
 
 <small>Grab a piece of paper so you can write them down.</small>
 
-_This system matures frequently despite being in development for more than
-a year._
+_This system matures frequently despite being in development for nearly two
+years._
 
 ::: notes
 
 COLIN:
 
+This solution is in active development, so some things might have changed
+since I last revised these remarks.
+I'd love feedback and suggested improvements.
+
+<!--
 Please save your questions until the end.
 We have a lot to cover and need to keep pace to include all of it.
 Please do shout out if you can't see something, though, or another technical
 problem with the presentation occurs.
+-->
 
 :::
 
@@ -516,6 +522,8 @@ developer when running updates.
 
 I allowed for the user to have Conda or Homebrew-managed Pythons active because
 I didn't want to break existing setups without a clear need to do so.
+
+Homebrew as a base requirement is safe for us as we're all on Macs or Linux.
 
 :::
 
