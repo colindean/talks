@@ -108,3 +108,9 @@ https://pola-rs.github.io/polars-book/user-guide/misc/alternatives/
 <!--
 Demo: show naive Pandas impl, then Py Polars impl, then Rust, then pyo3/maturin Rust-Py example
 -->
+
+---
+
+# See also
+
+* [Cheatsheet for Pandas to Polars](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
