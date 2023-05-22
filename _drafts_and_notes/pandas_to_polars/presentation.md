@@ -257,3 +257,4 @@ wilkinsburg_active_party_voters = all_voters
 
 * [Cheatsheet for Pandas to Polars](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
 * [Polars Crash Course: Python's Library of Big Data Analytics](https://www.youtube.com/watch?v=aiHSMYvoqYE)
+* [Allegheny County Voter Registration Analysis](https://github.com/colindean/allegheny_voter_reg_analysis)
