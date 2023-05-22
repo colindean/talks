@@ -4,7 +4,7 @@ subtitle: "Move your data wrangling from the bamboo forest to the north pole"
 author:
   - Colin Dean
 theme: white
-css: custom.css
+#css: custom.css
 slideNumber: true
 hash: true
 history: true
@@ -105,9 +105,151 @@ https://pola-rs.github.io/polars-book/user-guide/misc/alternatives/
 
 ---
 
+# DEMO
+
+(but not really right now)
 <!--
 Demo: show naive Pandas impl, then Py Polars impl, then Rust, then pyo3/maturin Rust-Py example
 -->
+
+
+---
+
+# Comparisons
+
+---
+
+### Reduce multiple values
+
+```python
+# pandas
+df['z'].mean()
+# polars
+df['z'].mean()
+```
+
+---
+
+### Another method
+
+```python
+# pandas
+df[['z']].agg(['mean'])
+#polars
+df.select(pl.col("z").mean())
+```
+
+---
+
+### Add new column
+
+```python
+# pandas
+df.assign(z1 = df['z'] + 1)
+#polars
+df.with_column((pl.col("z") + 1).alias("z1"))`
+```
+
+---
+
+### Rename columns
+
+```python
+# pandas
+df.rename(columns = {'x': 'x_new'})
+# polars
+df.rename({"x": "x_new"})
+```
+
+---
+
+### Drop columns
+
+```python
+# pandas
+df.drop(columns = ['x','y'])
+#polars
+df.drop(['x','y'])
+```
+
+---
+
+### Sort rows
+
+```python
+# pandas
+df.sort_values(by = 'x')
+# polars
+df.sort("x")
+```
+
+---
+
+### Drop missing rows
+
+```python
+# pandas
+df.dropna()
+#polars
+df.drop_nulls()
+```
+---
+
+### Select unique rows
+
+```python
+# pandas
+df.drop_duplicates()
+# polars
+df.unique()
+```
+
+---
+
+### Add a new column
+
+```python
+# pandas
+df["z1"] = df["z"] + 1
+# polars
+df = df.with_column((pl.col("z") + 1).alias("z1"))
+df = df.with_columns(
+    [
+        (pl.col("x") + 1).alias("x1"),
+        (pl.col("z") + 1).alias("z1"),
+    ]
+)
+```
+
+---
+
+# Real world examples
+
+---
+
+```python
+#pandas
+df = pd.read_csv(voter_data_path, sep="\t", header=0)
+df = df[df.MuniCode == WILKINSBURG_MUNICODE]
+df = df[pandas.to_datetime(df["Last_Date_Voted"]) >
+     pandas.to_datetime(start_of_active)]
+wilkinsburg_active_party_voters = df[df["Political_Party"]
+     == party_shortcode.value]
+```
+
+---
+
+```python
+# polars
+all_voters = pl.scan_csv(
+    voter_data_path, has_header=True, sep="\t", parse_dates=False)
+wilkinsburg_active_party_voters = all_voters
+  .filter(pl.col("MuniCode") == WILKINSBURG_MUNICODE)
+  .filter(pl.col("Last_Date_Voted") > start_of_active)
+  .filter(pl.col("Political_Party") == party_shortcode.value)
+  .select(["Name","StreetAddress"])
+  .collect()
+```
 
 ---
 
