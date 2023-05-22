@@ -114,3 +114,4 @@ Demo: show naive Pandas impl, then Py Polars impl, then Rust, then pyo3/maturin 
 # See also
 
 * [Cheatsheet for Pandas to Polars](https://www.rhosignal.com/posts/polars-pandas-cheatsheet/)
+* [Polars Crash Course: Python's Library of Big Data Analytics](https://www.youtube.com/watch?v=aiHSMYvoqYE)
