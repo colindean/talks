@@ -17,4 +17,4 @@
 ### Great articles
 
 * [How to Deal with an Insufferable Code Reviewer](https://daedtech.com/insufferable-code-reviewer/) [:file_cabinet:](https://web.archive.org/web/20221219071159/https://daedtech.com/insufferable-code-reviewer/ "Archive.org link")
-*
+* [The Art of Code Review](https://redd.one/blog/the-art-of-code-review)
