@@ -435,6 +435,16 @@ and provide a mindless way to install it.
 
 ---
 
+![XKCD 1987](https://imgs.xkcd.com/comics/python_environment.png)
+
+::: notes
+
+This is such a problem that XKCD made a comic about it. Almost a decade ago.
+
+:::
+
+---
+
 ## Homebrew + Pyenv
 
 ```{.graphviz caption="Out Python installation method"}
