@@ -31,3 +31,11 @@
 
 * [From iOS to SQL: The world’s most incorrectly pronounced tech terms](https://arstechnica.com/gadgets/2020/05/eye-oss-vs-eye-oh-ess-judging-the-fiercest-tech-pronunciation-debates/)
 * Long reply threads from [Bryan Cantrill](https://twitter.com/bcantrill/status/1536394205622243328)'s tweet about learning a word wrong
+
+## Outcome
+
+Do they know what you mean, without ambiguity?
+
+Yes? Great.
+
+No? Shift pronunciation.
