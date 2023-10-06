@@ -4,6 +4,8 @@
 
 :cry: Last Strangeloop ever
 
+[:camera:](https://photos.app.goo.gl/8VEahtPja5P9nnYK8 "Pictures")
+
 ---
 
 ## St. Louis
@@ -14,7 +16,8 @@
 
 ---
 
-## Keynote: Taylor Poindexter and Scott Hanselman
+## How to Build a Meaningful Career
+_Taylor Poindexter and Scott Hanselman_ [:video_camera:](https://www.youtube.com/watch?v=_egQrM13qyM)
 
 * it's ok to make money
 * set long-term goals and short-term plans but embrace changes of plan or failure
@@ -23,7 +26,7 @@
 ---
 
 ## Playing with Engineering
-_AnnMarie Thomas_
+_AnnMarie Thomas_ [:video_camera:](https://www.youtube.com/watch?v=6Ao8GS488hA)
 
 * Worked with OKGO on using their music videos to teach physics
 * play is about process, not outcomes
@@ -53,7 +56,7 @@ _Mae Milano_
 ---
 
 ## IPVM: Seamless Services for an Open World
-_Brooklyn Zelenka_
+_Brooklyn Zelenka_ [:video_camera:](https://www.youtube.com/watch?v=Z5U8JQZXABs)
 
 * What we have now was designed for the 90s
 * the speed of light is too slow, limits responsivity, and increases latency
@@ -95,8 +98,15 @@ _Marianne Bellotti_
 
 ---
 
+## Making Hard Things Easy
+_Julia Evans_ [:video_camera:](https://www.youtube.com/watch?v=30YWsGDr8mA)
+
+* find entertaining ways to explain
+
+---
+
 ## A Long Strange Loop
-_Alex Miller_
+_Alex Miller_ [:video_camera:](https://www.youtube.com/watch?v=suv76aL0NrA)
 
 * Oct 22 2009 first conf
 * Uncle spent his whole life connecting people through their passions
