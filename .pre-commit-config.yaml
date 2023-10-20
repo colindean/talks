@@ -1,8 +1,18 @@
 repos:
   - repo: https://github.com/markdownlint/markdownlint
-    rev: v0.12.0
+    rev: v0.13.0
     hooks:
       - id: markdownlint
+        # rubocop has too much stuff wrong with it to bother, I need to move it 
+        # to another presenter format and will redo it then.
+        exclude: |
+            (?x)^(
+              _lightning/rubocop/rubocop.md
+            )$
+
+        args:
+          - --style
+          - cadcx_markdownlint_style.rb
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v4.4.0
     hooks:
