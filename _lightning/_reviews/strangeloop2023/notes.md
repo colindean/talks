@@ -61,7 +61,7 @@ _Brooklyn Zelenka_ [:video_camera:](https://www.youtube.com/watch?v=Z5U8JQZXABs)
 * What we have now was designed for the 90s
 * the speed of light is too slow, limits responsivity, and increases latency
 * we have to move toward a world where there's not a single, centralized place for things
-* preserve user agency 
+* preserve user agency
 * checkpoints with receipts to speed up computation across distributed workers
 * verifiable computation
 
@@ -71,7 +71,7 @@ _Brooklyn Zelenka_ [:video_camera:](https://www.youtube.com/watch?v=Z5U8JQZXABs)
 _Leemay Nassery_
 
 * a/v testing is hard
-* interleaving - control and treatment 
+* interleaving - control and treatment
 * overlapping - consider interaction effects, must embrace simultaneous tests as tests scale
 
 ---
@@ -90,7 +90,7 @@ _Devine Lu Linvega_
 ---
 
 ## Can a Programming Language Reason About Systems?
-_Marianne Bellotti_			
+_Marianne Bellotti_
 
 * reasoning about systems
 * how do people build mental models
@@ -112,9 +112,9 @@ _Alex Miller_ [:video_camera:](https://www.youtube.com/watch?v=suv76aL0NrA)
 * Uncle spent his whole life connecting people through their passions
 * name came from Doug Hofstader novel
 * "my Twitter feed came and hung out"
-* More than 5000 cfp subs in 13 years 
+* More than 5000 cfp subs in 13 years
 * every talk is a favorite talk
-* speaker: match expectations set in submission 
+* speaker: match expectations set in submission
 * "I had to buy aerialist insurance"
 * moved 2020 hotel contract to 2023
-* if you open ticket sales earlier, you probably sell more tickets 
+* if you open ticket sales earlier, you probably sell more tickets
