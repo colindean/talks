@@ -7,7 +7,8 @@ repos:
         # to another presenter format and will redo it then.
         exclude: |
             (?x)^(
-              _lightning/rubocop/rubocop.md
+              _lightning/rubocop/rubocop.md|
+              _lightning/_reviews
             )$
 
         args:
