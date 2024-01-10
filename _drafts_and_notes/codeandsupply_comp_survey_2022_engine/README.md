@@ -28,3 +28,5 @@ It's a [reveal.js](https://revealjs.com) presentation under the hood, compiled w
 
 Always make sure that it builds before committing!
 
+:warning: **Always prefix commits with `[codeandsupply_comp_survey_2022_engine]`**
+so that I know what commits touch what presentation when looking at the logs.
