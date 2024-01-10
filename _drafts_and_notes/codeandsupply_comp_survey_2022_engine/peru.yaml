@@ -9,11 +9,11 @@ curl module revealjs:
   unpack: zip
 
 curl module fontawesome:
-  url: https://github.com/FortAwesome/Font-Awesome/releases/download/6.0.0/fontawesome-free-6.5.1-web.zip
+  url: https://github.com/FortAwesome/Font-Awesome/releases/download/6.5.1/fontawesome-free-6.5.1-web.zip
   unpack: zip
 
 curl module asciinema-player-css:
   url: https://github.com/asciinema/asciinema-player/releases/download/v3.6.3/asciinema-player.css
 
 curl module asciinema-player-js:
-  url: https://github.com/asciinema/asciinema-player/releases/download/v3.6.3/asciinema-player.js
+  url: https://github.com/asciinema/asciinema-player/releases/download/v3.6.3/asciinema-player.min.js

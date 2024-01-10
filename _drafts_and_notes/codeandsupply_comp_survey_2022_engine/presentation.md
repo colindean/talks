@@ -4,7 +4,7 @@ subtitle: "Python, Polars, Plotly, Jupyter notebooks, GitLab, and more"
 author:
   - Colin Dean
   # - Alex Zharichenko # Alex: uncomment yourself if you contribute!
-theme: red
+theme: white
 #css: custom.css
 slideNumber: true
 hash: true
@@ -286,7 +286,7 @@ Given Alex's desire to learn something new and mine to use a friendlier API, we 
 
 It wasn't a wholesale switch.
 Alex rejiggered some new base methods in our analysis framework to return Polars Dataframes
-and we set about building all new graphics on top of that module. 
+and we set about building all new graphics on top of that module.
 
 :::
 
