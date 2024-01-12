@@ -25,9 +25,26 @@ totalTime: 2700
 
 # Who are we?
 
+::: notes
+
+COLIN: I'm Colin, the managing director of Code & Supply.
+
+ALEX: and I'm Alex, the lead engineer of the Code & Supply Compensation Survey project.
+
+COLIN: We're going to talk about the data engineering effort that went into building the compensation survey for the 2022--2023 cycle.
+       But first, I'm going to tell you some history of Code & Supply and the compensation survey.
+
+:::
+
 ---
 
 ![<https://codeandsupply.co>](https://raw.githubusercontent.com/codeandsupply/assets/master/logos/imprint/bruteforce/build/autogen%20imprint/cs_imprint_basic_red-bg_red-border_white-lettering.svg)
+
+::: notes
+
+COLIN: You've probably seen this logo around, it's ours! It's inspired by some of the railroad logos of the industrial revolution.
+
+:::
 
 ---
 
@@ -40,7 +57,9 @@ totalTime: 2700
 ::: notes
 
 We do a lot of stuff, mostly Meetups and our Online Communities on Slack and YouTube these days.
-Maybe we'll do another 1,500 person conference in a few years.
+Maybe we'll do another 1,500-person conference in a few years.
+
+The compensation survey is our primary knowledge-sharing project.
 
 :::
 
@@ -61,9 +80,13 @@ tech worker compensation, work-life balance, job satisfaction, commutes, and mor
 
 ::: notes
 
+COLIN:
+
 The goal is to help C&S members and friends share information so they can make better decisions about their careers.
 To date, dozens of people have told us how our report has helped them get pay bumps or negotiate better pay when changing jobs.
-I myself have cited it in negotiation twice.
+I myself have cited it in negotiation twice,
+one time netting a 35% increase in base salary,
+and the other time, netting almost 100,000 dollars in short and long-term incentives.
 
 :::
 
@@ -80,15 +103,25 @@ I myself have cited it in negotiation twice.
 
 ::: notes
 
-It came out of a Build Night idea in 2016 and I launched the first iteration in 2017 with 256 respondents and about 500 lines of Ruby to produce a series of tables that helped me and Justin Reese, Code & Supply's founder and owner, write two blog posts. The table generation was repeateable, but I made all of the graphics in Apple Numbers.
+The Compensation Survey grew out of a Build Night idea in 2016,
+and I launched the first iteration in 2017 with 256 respondents and
+about 500 lines of Ruby to produce a series of tables that
+helped me and Justin Reese, Code & Supply's founder and owner, write two blog posts.
+The table generation was repeatable, but I made all of the graphics in Apple Numbers.
 
-In 2020, we kicked off a "Compensation Survey Working Group," recruited almost a dozen volunteers to help... and then the pandemic hit and volunteers were in the wind. We still managed to get it out, though. We had around 750 responses.
+In 2020, we kicked off a "Compensation Survey Working Group" and recruited almost a dozen volunteers to help...
+and then the pandemic hit, and most volunteers were in the wind.
+We still managed to get it out, though. We had around 750 responses.
 Our process wasn't repeatable: one person did the graphs in their own Tableau account and became a bottleneck.
-We asked a lot of questions and our abandonment rate was higher than we'd like.
-However, we automated builds of the report, which we wrote in Markdown and compiled to a PDF with Pandoc.
+We asked a lot of questions, and our abandonment rate was higher than we'd like.
+However, we automated builds of the report, which we wrote in Markdown and compiled into a PDF with Pandoc.
 
-In 2022, we started again, slimming down the question set from 72 to 48 and engaged in real software development to build a framework for analysis.
-It took a lot longer than we planned -- more than a year when we'd planned about four months -- but life got in the way for all of the volunteers, so we did the best we could for that all volunteer team.
+In 2022, we started again, slimming down the question set from 72 to 48
+and engaged in real software development to build a framework for analysis.
+It took a lot longer than we planned -- 
+more than a year when we'd planned about four months -- 
+but life got in the way for all of the volunteers,
+so we did the best we could for that all-volunteer team.
 
 :::
 
@@ -106,6 +139,14 @@ Go download the report now!
 It's more than 100 pages but it's a lot of graphs.
 
 We're proud of the work we did with the scant resources we had -- $1,200 from sponsors and countless nights and weekends together and apart.
+
+:::
+
+---
+
+## $
+
+::: notes
 
 If you're interested in funding a serious sponsorship to make this happen in 2024, please talk to me as soon as possible.
 One of our core team members is currently looking for work and I'd love to hire them full-time to work on the survey but
@@ -144,7 +185,7 @@ The rest of this talk is going to be about the data engineering aspects of produ
 I'll talk about how we collected and cleaned the data,
 how we built software to analyze the data and produce tables and graphics for inclusion in the report,
 how we helped ourselves write the report with tools,
-how we automated not only generating the report but testing our software,
+how we automated not only generating the report but also testing our software,
 and where we want to go with it in the future.
 
 :::
@@ -159,6 +200,8 @@ and where we want to go with it in the future.
 
 
 ::: notes
+
+ALEX:
 
 We asked around 48 questions via Typeform, our survey tool of choice for longer surveys.
 Typeform also captures all response data, enabling keeping data if a user abandons.
@@ -178,6 +221,8 @@ We saw very little abandonment in the 2022 survey, something around 1% whereas i
 
 ::: notes
 
+ALEX:
+
 The only question that required an answer was the first one after the consent form, What is your base salary?
 
 Many other questions dealt with compensation, where people live, their titles, roles, and so on.
@@ -186,9 +231,11 @@ Many other questions dealt with compensation, where people live, their titles, r
 
 ---
 
-CSV
+## CSV
 
 ::: notes
+
+ALEX:
 
 Typeform gave us a huge CSV dump that was one column per question for most questions but questions that allowed multiple answers were effectively one-hot encoded.
 This felt complicated but eventually we understood it and worked it into our data cleaning and preparation steps.
@@ -202,6 +249,8 @@ We continue to hate CSV like everyone else and dreadfully wish Typeform et al. w
 # One-time data cleaning
 
 ::: notes
+
+ALEX:
 
 We engaged in very little one-time cleaning, where we modified the stored version of our data.
 We chose instead to have a data preparation step that filtered out invalid records,
@@ -221,6 +270,8 @@ This data preparation step started out in pandas but eventually moved to Polars 
 
 ::: notes
 
+COLIN:
+
 We chose Jupyter notebooks as our development and runtime tool of choice.
 It was my first time "using notebooks in production" ever and I think I recall Alex saying he's allowing it out of expedition only.
 I found developing directly in Jupyter to be cumbersome.
@@ -232,11 +283,28 @@ It wasn't until I used VS Code's notebook mode that I became far more productive
 
 * Programming with Python
 * Dataframes with pandas
-* Graphs with Plotly
+* Visualizations with Plotly
+
+::: notes
+
+COLIN:
+
+We wrote our code in Python using pandas for data manipulation and filtration
+and plotly express for visualizations.
+
+:::
 
 ---
 
 ## DataFrame programming
+
+::: notes
+
+COLIN: 
+
+A not-so-quick aside on dataframe programming.
+
+:::
 
 ---
 
@@ -244,9 +312,13 @@ It wasn't until I used VS Code's notebook mode that I became far more productive
 
 ::: notes
 
-We started on pandas, because we had to start somewhere so we started with something familiar.
+COLIN:
+
+We started on pandas because we had to start somewhere,
+so we started with something familiar to someone.
 Alex stubbed out much of the first pass.
-I found myself fighting the pandas API in my lack of experience with it despite plenty of familiarity with Spark.
+I found myself fighting the pandas API because of my lack of experience with it
+despite plenty of familiarity with Spark.
 
 :::
 
@@ -255,6 +327,8 @@ I found myself fighting the pandas API in my lack of experience with it despite 
 ### Switch
 
 ::: notes
+
+COLIN:
 
 That Spark familiarity had me briefly considering moving to Spark,
 but then Alex heard of Polars about the same time that I did and he decided to switch with my full support.
@@ -273,6 +347,8 @@ but then Alex heard of Polars about the same time that I did and he decided to s
 
 ::: notes
 
+COLIN:
+
 I don't have any stats saved, but I recall that our pandas implementation with only about 20 graphics was taking on the order of minutes to run the graph generation code.
 This was rougher on my laptop, which is not the high-end gaming rig I have at home or that Alex carried with him as a laptop.
 Given Alex's desire to learn something new and mine to use a friendlier API, we switched.
@@ -285,8 +361,10 @@ Given Alex's desire to learn something new and mine to use a friendlier API, we 
 
 ::: notes
 
+ALEX:
+
 It wasn't a wholesale switch.
-Alex rejiggered some new base methods in our analysis framework to return Polars Dataframes
+I rejiggered some new base methods in our analysis framework to return Polars Dataframes
 and we set about building all new graphics on top of that module.
 
 :::
@@ -301,6 +379,14 @@ and we set about building all new graphics on top of that module.
 * Easy migration path to Rust reimplementation
 * Type hints and docs for all methods
 
+::: notes
+
+ALEX:
+
+<!-- TODO: write notes -->
+
+:::
+
 ---
 
 ## Polars Cons
@@ -309,9 +395,25 @@ and we set about building all new graphics on top of that module.
 * Completely different API from Pandas
 * New to us
 
+::: notes
+
+ALEX:
+
+<!-- TODO: write notes -->
+
+:::
+
 ---
 
 ## So let's learn
+
+::: notes
+
+ALEX:
+
+So let's learn this just a little in a sub sub tangent.
+
+:::
 
 ---
 
@@ -321,9 +423,26 @@ TL;DR Best tool for single-machine data
 
 https://pola-rs.github.io/polars-book/user-guide/misc/alternatives/
 
+::: notes
+
+ALEX:
+
+Polars aims to be and _is_ the best tool for single-machine data.
+
+:::
+
 ---
 
 # Real world examples
+
+::: notes
+
+COLIN:
+
+Here's a real-world example that's a little simpler than our comp survey use case.
+I played around with Polars initially myself using voter registration data.
+
+:::
 
 ---
 
@@ -334,9 +453,22 @@ def wilkinsburg_active_party_voters() -> pd.DataFrame:
   df = df[df["MuniCode"] == WILKINSBURG_MUNICODE]
   df = df[pandas.to_datetime(df["Last_Date_Voted"]) >
     pandas.to_datetime(start_of_active)]
-  return df[df["Political_Party"]
-      == party_shortcode.value]
+  df = (df[df["Political_Party"]
+        == party_shortcode.value])
+  return df[["Name", "StreetAddress"]]
 ```
+
+::: notes
+COLIN:
+
+This reads a CSV file then filters to Wilkinsburg's municipal code,
+further filtering by date last voted and then political party.
+
+My biggest problem with pandas is the array reference structure.
+
+SPOT THE BUG
+
+:::
 
 ---
 
@@ -345,13 +477,44 @@ def wilkinsburg_active_party_voters() -> pd.DataFrame:
 def wilkinsburg_active_party_voters() -> pl.DataFrame
   all_voters = pl.scan_csv(
     voter_data_path, has_header=True, sep="\t", parse_dates=False)
-  return all_voters
+  df = all_voters
     .filter(pl.col("MuniCode") == WILKINSBURG_MUNICODE)
     .filter(pl.col("Last_Date_Voted") > start_of_active)
     .filter(pl.col("Political_Party") == party_shortcode.value)
     .select(["Name","StreetAddress"])
     .collect()
 ```
+
+::: notes
+COLIN:
+
+This is the same method, effectively, in Polars.
+
+:::
+
+---
+
+```python
+# polars
+def wilkinsburg_active_party_voters() -> pl.DataFrame
+  all_voters = pl.scan_csv(
+    voter_data_path, has_header=True, sep="\t", parse_dates=False)
+  df = all_voters
+    .filter(Cols.muni == Data.munis.WILKINSBURG)
+    .filter(Cols.last_date_voted > start_of_active)
+    .filter(Cols.party == party_shortcode.value)
+    .select([Cols.name, Cols.street_address])
+    .collect()
+  return df
+```
+
+::: notes
+
+COLIN:
+
+This is the same Polars, but refactored using abstraction methods that we used in the comp survey.
+
+:::
 
 ---
 
@@ -371,6 +534,7 @@ digraph G {
 ```
 
 ::: notes
+ALEX:
 
 The structure of our notebooks' cells enabled us to call Polars methods and then call `to_pandas()` when needed,
 which was generally when we handed a dataframe to Plotly -- it didn't yet understand Polars objects.
