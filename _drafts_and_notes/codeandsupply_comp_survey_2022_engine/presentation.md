@@ -11,7 +11,8 @@ hash: true
 history: true
 transition: none
 transitionSpeed: "fast"
-# totalTime: 900
+# 2700 = 45 minutes
+totalTime: 2700 
 # include-after: |
 #     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
 #     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
