@@ -12,9 +12,9 @@ transition: none
 transitionSpeed: "fast"
 # 2700 = 45 minutes
 totalTime: 2700
-# include-after: |
-#     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
-#     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
+include-after: |
+     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
+     <script src="deps/asciinema-player/asciinema-player.min.js" type="application/javascript"></script>
 # title-slide-attributes:
 #     data-background-image: "bg.png"
 #     data-background-size: "10%"
@@ -911,6 +911,38 @@ Code & Supply can barely keep the lights on at our co-working space let alone fu
 ---
 
 FIN
+
+---
+
+<!--
+<div id="player"></div>
+<script type="application/javascript">
+function showPlayerIfPlayerSlide(event){
+  console.log(event.currentSlide);
+  thisSlide = event.currentSlide.children.player != undefined;
+  if(thisSlide) {
+    player = document.getElementById('player');
+    if(player.children) {
+      Array.from(player.children).forEach((c) => {player.removeChild(c);});
+    }
+    console.log("creating the ascii player");
+    AsciinemaPlayer.create(
+      '/assets/631698.cast',
+      player,
+      { cols: 137, rows: 20 }
+    );
+  }
+}
+window.addEventListener("load", (e) => {
+  console.log("load fired");
+  Reveal.on( 'ready', (event) => showPlayerIfPlayerSlide(event));
+  Reveal.on('slidechanged', (event) => showPlayerIfPlayerSlide(event));
+
+});
+</script>
+-->
+
+<script async id="asciicast-raHvx5Ll12BzPDVsmgbQxDsez" src="https://asciinema.org/a/raHvx5Ll12BzPDVsmgbQxDsez.js" data-autoplay="true"></script>
 
 ---
 
