@@ -253,9 +253,15 @@ We continue to hate CSV like everyone else and dreadfully wish Typeform et al. w
 ALEX:
 
 We engaged in very little one-time cleaning, where we modified the stored version of our data.
+Only really one of the questions in Typeform had a big cleaning issue due to the question being
+freeform text, requiring just some direct cleaning (total compensantion is the question).
+
 We chose instead to have a data preparation step that filtered out invalid records,
 handled pivoting one-hot encoded columns to lists,
 and spat out a parquet file for the data analysis code to consume.
+A proper data format that now has a schema to work with, stores the data more uniformally, and that 
+our tooling can also easily load.
+
 This data preparation step started out in pandas but eventually moved to Polars -- more on that later.
 
 :::
@@ -367,13 +373,16 @@ It wasn't a wholesale switch.
 I rejiggered some new base methods in our analysis framework to return Polars Dataframes
 and we set about building all new graphics on top of that module.
 
+The developer experience of using polars was very quick and apparent.
+
 :::
 
 ---
 
 ## Polars Pros
 
-* Lazy evaluation by default
+* Expression based API
+* Lazy evaluation
 * Optimized for embarassingly parallel selection and manipulation
 * Few dependencies
 * Easy migration path to Rust reimplementation
@@ -383,7 +392,14 @@ and we set about building all new graphics on top of that module.
 
 ALEX:
 
-<!-- TODO: write notes -->
+Polars presents a combination both friendlier and more performant experience when working with dataframes.
+For one this can include an expression based API (pretty much the builder pattern), that leads to doing
+things in one way. 
+
+It benefited us also because of lazy execution that can better optimize our steps. It can full do all the fun
+vectorized calls and spread the work out onto every core making it embarrsingly parallelized.
+
+With, of course in a way, the benefits all coming from Rust being binded over to Python.
 
 :::
 
@@ -399,7 +415,13 @@ ALEX:
 
 ALEX:
 
-<!-- TODO: write notes -->
+Probably most major concern is, Pandas as really had a decade of work at it, while this is just a few years 
+brand new without a full stable release yet. Though a stable 1.0 of Polars is on the horizon and their 
+breaking changes have slowed down.
+
+The other side is the learning curve, since it's a new API for us to work with entirely. But, this 
+in some ways isn't that high of a concern as Pandas in a way also has a decently large learning
+curve to it too.
 
 :::
 
@@ -419,7 +441,7 @@ So let's learn this just a little in a sub sub tangent.
 
 ## Polars vs `X`
 
-TL;DR Best tool for single-machine data
+TL;DR Best tool for single-machine data (and it's only getting better)
 
 https://pola-rs.github.io/polars-book/user-guide/misc/alternatives/
 
@@ -538,6 +560,8 @@ ALEX:
 
 The structure of our notebooks' cells enabled us to call Polars methods and then call `to_pandas()` when needed,
 which was generally when we handed a dataframe to Plotly -- it didn't yet understand Polars objects.
+
+Though this has change today, thanks to the Dataframe Interchange Protocol, plotly should understand how to handle the polars dataframe object.
 
 :::
 
