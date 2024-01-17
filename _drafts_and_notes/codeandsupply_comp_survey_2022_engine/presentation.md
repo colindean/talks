@@ -12,7 +12,7 @@ history: true
 transition: none
 transitionSpeed: "fast"
 # 2700 = 45 minutes
-totalTime: 2700 
+totalTime: 2700
 # include-after: |
 #     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
 #     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
@@ -118,8 +118,8 @@ However, we automated builds of the report, which we wrote in Markdown and compi
 
 In 2022, we started again, slimming down the question set from 72 to 48
 and engaged in real software development to build a framework for analysis.
-It took a lot longer than we planned -- 
-more than a year when we'd planned about four months -- 
+It took a lot longer than we planned --
+more than a year when we'd planned about four months --
 but life got in the way for all of the volunteers,
 so we did the best we could for that all-volunteer team.
 
@@ -259,7 +259,7 @@ freeform text, requiring just some direct cleaning (total compensantion is the q
 We chose instead to have a data preparation step that filtered out invalid records,
 handled pivoting one-hot encoded columns to lists,
 and spat out a parquet file for the data analysis code to consume.
-A proper data format that now has a schema to work with, stores the data more uniformally, and that 
+A proper data format that now has a schema to work with, stores the data more uniformally, and that
 our tooling can also easily load.
 
 This data preparation step started out in pandas but eventually moved to Polars -- more on that later.
@@ -306,7 +306,7 @@ and plotly express for visualizations.
 
 ::: notes
 
-COLIN: 
+COLIN:
 
 A not-so-quick aside on dataframe programming.
 
@@ -394,7 +394,7 @@ ALEX:
 
 Polars presents a combination both friendlier and more performant experience when working with dataframes.
 For one this can include an expression based API (pretty much the builder pattern), that leads to doing
-things in one way. 
+things in one way.
 
 It benefited us also because of lazy execution that can better optimize our steps. It can full do all the fun
 vectorized calls and spread the work out onto every core making it embarrsingly parallelized.
@@ -415,11 +415,11 @@ With, of course in a way, the benefits all coming from Rust being binded over to
 
 ALEX:
 
-Probably most major concern is, Pandas as really had a decade of work at it, while this is just a few years 
-brand new without a full stable release yet. Though a stable 1.0 of Polars is on the horizon and their 
+Probably most major concern is, Pandas as really had a decade of work at it, while this is just a few years
+brand new without a full stable release yet. Though a stable 1.0 of Polars is on the horizon and their
 breaking changes have slowed down.
 
-The other side is the learning curve, since it's a new API for us to work with entirely. But, this 
+The other side is the learning curve, since it's a new API for us to work with entirely. But, this
 in some ways isn't that high of a concern as Pandas in a way also has a decently large learning
 curve to it too.
 
