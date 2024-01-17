@@ -415,7 +415,7 @@ With, of course in a way, the benefits all coming from Rust being binded over to
 
 ALEX:
 
-Probably most major concern is, Pandas as really had a decade of work at it, while this is just a few years
+Probably most major concern is, Pandas has really had a decade of work at it, while this is just a few years
 brand new without a full stable release yet. Though a stable 1.0 of Polars is on the horizon and their
 breaking changes have slowed down.
 
@@ -563,7 +563,8 @@ ALEX:
 The structure of our notebooks' cells enabled us to call Polars methods and then call `to_pandas()` when needed,
 which was generally when we handed a dataframe to Plotly -- it didn't yet understand Polars objects.
 
-Though this has change today, thanks to the Dataframe Interchange Protocol, plotly should understand how to handle the polars dataframe object.
+Though this has changed today, thanks to the Dataframe Interchange Protocol.
+In a project started today, plotly should understand how to handle the polars dataframe object.
 
 :::
 
