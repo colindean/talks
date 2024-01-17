@@ -2,8 +2,7 @@
 title: "Data engineering the Code & Supply Compensation Survey Report"
 subtitle: "Python, Polars, Plotly, Jupyter notebooks, GitLab, and more"
 author:
-  - Colin Dean
-  # - Alex Zharichenko # Alex: uncomment yourself if you contribute!
+  - Colin Dean & Alex Zharichenko
 theme: white
 #css: custom.css
 slideNumber: true
@@ -24,6 +23,11 @@ totalTime: 2700
 ---
 
 # Who are we?
+
+![Colin](https://avatars.githubusercontent.com/u/197224?v=4){width=25%}
+![Alex](https://avatars.githubusercontent.com/u/4131575?v=4){width=25%}
+
+Colin | Alex
 
 ::: notes
 
@@ -56,6 +60,8 @@ COLIN: You've probably seen this logo around, it's ours! It's inspired by some o
 
 ::: notes
 
+COLIN:
+
 We do a lot of stuff, mostly Meetups and our Online Communities on Slack and YouTube these days.
 Maybe we'll do another 1,500-person conference in a few years.
 
@@ -68,6 +74,8 @@ The compensation survey is our primary knowledge-sharing project.
 # Compensation Survey
 
 ::: notes
+
+COLIN:
 
 Our compensation survey is a multi-iteration effort to capture a snapshot of
 tech worker compensation, work-life balance, job satisfaction, commutes, and more.
@@ -129,7 +137,15 @@ so we did the best we could for that all-volunteer team.
 
 _not full time engineering, lol_
 
+::: notes
+
+COLIN DRINK WATER
+
+:::
+
 ---
+
+<!-- TODO: QRCode? -->
 
 [`codeandsupply.co/survey`](https://codeandsupply.co/survey)
 
@@ -145,6 +161,8 @@ We're proud of the work we did with the scant resources we had -- $1,200 from sp
 ---
 
 ## $
+
+Sponsor us to make it happen
 
 ::: notes
 
@@ -181,6 +199,8 @@ But now onto the meat of the talk: data engineering!
 
 ::: notes
 
+COLIN:
+
 The rest of this talk is going to be about the data engineering aspects of producing the report.
 I'll talk about how we collected and cleaned the data,
 how we built software to analyze the data and produce tables and graphics for inclusion in the report,
@@ -196,7 +216,7 @@ and where we want to go with it in the future.
 
 ---
 
-![Typeform logo](https://upload.wikimedia.org/wikipedia/commons/6/67/Typeform_Logo.svg)
+![](https://upload.wikimedia.org/wikipedia/commons/6/67/Typeform_Logo.svg)
 
 
 ::: notes
@@ -212,12 +232,14 @@ We saw very little abandonment in the 2022 survey, something around 1% whereas i
 
 ---
 
-### Questions
+### Questions, e.g.
 
 * **"What is your base salary?"**
 * "What is your expected total compensation?"
 * "How satisfied are you with your compensation?"
 * "In what postal code do you live?"
+
+_48 questions_
 
 ::: notes
 
@@ -231,7 +253,7 @@ Many other questions dealt with compensation, where people live, their titles, r
 
 ---
 
-## CSV
+## C,S,V
 
 ::: notes
 
@@ -256,9 +278,11 @@ We engaged in very little one-time cleaning, where we modified the stored versio
 Only really one of the questions in Typeform had a big cleaning issue due to the question being
 freeform text, requiring just some direct cleaning (total compensantion is the question).
 
+(Expand: Talk about total comp column if you have time)
+
 We chose instead to have a data preparation step that filtered out invalid records,
 handled pivoting one-hot encoded columns to lists,
-and spat out a parquet file for the data analysis code to consume.
+and spat out a Parquet file for the data analysis code to consume.
 A proper data format that now has a schema to work with, stores the data more uniformally, and that
 our tooling can also easily load.
 
@@ -272,20 +296,24 @@ This data preparation step started out in pandas but eventually moved to Polars 
 
 ---
 
-![Jupyter logo](https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg)
+![](https://upload.wikimedia.org/wikipedia/commons/3/38/Jupyter_logo.svg){width=35%}
 
 ::: notes
 
 COLIN:
 
 We chose Jupyter notebooks as our development and runtime tool of choice.
-It was my first time "using notebooks in production" ever and I think I recall Alex saying he's allowing it out of expedition only.
+It was my first time "using notebooks in production" ever and I think I recall Alex saying he's allowing it out of expedition and anger only.
 I found developing directly in Jupyter to be cumbersome.
 It wasn't until I used VS Code's notebook mode that I became far more productive, even as a daily IntelliJ user.
+
+Having done some more outside of this with notebooks, notebooks in production was a bad idea.
 
 :::
 
 ---
+
+## Typical data exploration stack
 
 * Programming with Python
 * Dataframes with pandas
@@ -296,7 +324,10 @@ It wasn't until I used VS Code's notebook mode that I became far more productive
 COLIN:
 
 We wrote our code in Python using pandas for data manipulation and filtration
-and plotly express for visualizations.
+and Plotly Express for visualizations.
+
+No one is getting fired ever for chosing these tools.
+They're a safe bet in the modern data science toolkit.
 
 :::
 
@@ -314,7 +345,7 @@ A not-so-quick aside on dataframe programming.
 
 ---
 
-![pandas logo](https://pandas.pydata.org/static/img/pandas.svg)
+![](https://pandas.pydata.org/static/img/pandas.svg)
 
 ::: notes
 
@@ -347,15 +378,20 @@ but then Alex heard of Polars about the same time that I did and he decided to s
 
 ---
 
-* Eager evaluation by default
-* Slow evaulation in general
-* Pythonic syntax obtuse for non-Pythonistas
+#### Pandas
+
+* Eager evaluation **by default**
+* Slow evaluation in general
+* API obtuse for non-Pythonistas
 
 ::: notes
 
 COLIN:
 
-I don't have any stats saved, but I recall that our pandas implementation with only about 20 graphics was taking on the order of minutes to run the graph generation code.
+Pandas may shift operations to NumPy, but far too often,
+it doesn't and you're stuck in the land of the single threaded GIL and sadness.
+
+I don't have any stats saved, but I recall that our Pandas implementation with only about 20 graphics was taking on the order of minutes to run the graph generation code.
 This was rougher on my laptop, which is not the high-end gaming rig I have at home or that Alex carried with him as a laptop.
 Given Alex's desire to learn something new and mine to use a friendlier API, we switched.
 
@@ -363,7 +399,7 @@ Given Alex's desire to learn something new and mine to use a friendlier API, we 
 
 ---
 
-![Polars logo](https://raw.githubusercontent.com/pola-rs/polars-static/master/logos/polars-logo-dark.svg)
+![](https://raw.githubusercontent.com/pola-rs/polars-static/master/logos/polars-logo-dark.svg)
 
 ::: notes
 
@@ -373,7 +409,8 @@ It wasn't a wholesale switch.
 I rejiggered some new base methods in our analysis framework to return Polars Dataframes
 and we set about building all new graphics on top of that module.
 
-The developer experience of using polars was very quick and apparent.
+The improved developer experience of using polars was very quick and apparent.
+It was… (CHEF'S KISS).
 
 :::
 
@@ -381,7 +418,7 @@ The developer experience of using polars was very quick and apparent.
 
 ## Polars Pros
 
-* Expression based API
+* Expression-based API
 * Lazy evaluation
 * Optimized for embarassingly parallel selection and manipulation
 * Few dependencies
@@ -392,12 +429,17 @@ The developer experience of using polars was very quick and apparent.
 
 ALEX:
 
-Polars presents a combination both friendlier and more performant experience when working with dataframes.
-For one this can include an expression based API (pretty much the builder pattern), that leads to doing
-things in one way.
+Polars presents a combination both friendlier and
+more performant experience when working with dataframes.
+For one this can include an expression-based API
+(pretty much the builder pattern),
+that leads to doing things in one way.
+Add in a formatter like ruff — format on save if you can —
+and your code is an order of magnitude more readable.
 
-It benefited us also because of lazy execution that can better optimize our steps. It can full do all the fun
-vectorized calls and spread the work out onto every core making it embarrsingly parallelized.
+It benefited us also because of lazy execution that can better optimize our steps.
+It can full do all the fun vectorized calls and
+spread the work out onto every core making it embarrsingly parallelized.
 
 With, of course in a way, the benefits all coming from Rust being binded over to Python.
 
@@ -415,13 +457,14 @@ With, of course in a way, the benefits all coming from Rust being binded over to
 
 ALEX:
 
-Probably most major concern is, Pandas has really had a decade of work at it, while this is just a few years
-brand new without a full stable release yet. Though a stable 1.0 of Polars is on the horizon and their
-breaking changes have slowed down.
+Probably most major concern is, Pandas has really had a decade of work at it,
+while this is just a few years brand new without a full stable release yet.
+Though a stable 1.0 of Polars is on the horizon
+and their breaking changes have slowed down.
 
-The other side is the learning curve, since it's a new API for us to work with entirely. But, this
-in some ways isn't that high of a concern as Pandas in a way also has a decently large learning
-curve to it too.
+The other side is the learning curve, since it's a new API for us to work with entirely.
+But, this in some ways isn't that high of a concern as
+Pandas in a way also has a decently large learning curve to it too.
 
 :::
 
@@ -441,9 +484,11 @@ So let's learn this just a little in a sub sub tangent.
 
 ## Polars vs `X`
 
-TL;DR Best tool for single-machine data (and it's only getting better)
+TL;DR Best tool for single-machine data
 
-https://pola-rs.github.io/polars-book/user-guide/misc/alternatives/
+_(and it's only getting better)_
+
+<https://pola-rs.github.io/polars-book/user-guide/misc/alternatives>
 
 ::: notes
 
@@ -458,6 +503,8 @@ more data than you have memory for.
 ---
 
 # Real world examples
+
+_(warning: code may have been broken when being shortened to fit the slides)_
 
 ::: notes
 
@@ -499,14 +546,15 @@ SPOT THE BUG
 ```python
 # polars
 def wilkinsburg_active_party_voters() -> pl.DataFrame
-  all_voters = pl.scan_csv(
-    voter_data_path, has_header=True, sep="\t", parse_dates=False)
-  df = all_voters
-    .filter(pl.col("MuniCode") == WILKINSBURG_MUNICODE)
-    .filter(pl.col("Last_Date_Voted") > start_of_active)
-    .filter(pl.col("Political_Party") == party_shortcode.value)
-    .select(["Name","StreetAddress"])
-    .collect()
+  all_voters = (pl.scan_csv(
+    voter_data_path, has_header=True,
+    sep="\t", parse_dates=False))
+  return (all_voters
+      .filter(pl.col.MuniCode == WILKINSBURG_MUNICODE)
+      .filter(pl.col.Last_Date_Voted > start_of_active)
+      .filter(pl.col.Political_Party == party_shortcode.value)
+      .select(["Name","StreetAddress"])
+      .collect())
 ```
 
 ::: notes
@@ -521,15 +569,15 @@ This is the same method, effectively, in Polars.
 ```python
 # polars
 def wilkinsburg_active_party_voters() -> pl.DataFrame
-  all_voters = pl.scan_csv(
-    voter_data_path, has_header=True, sep="\t", parse_dates=False)
-  df = all_voters
+  all_voters = (pl.scan_csv(
+    voter_data_path, has_header=True,
+    sep="\t", parse_dates=False))
+  return (all_voters
     .filter(Cols.muni == Data.munis.WILKINSBURG)
     .filter(Cols.last_date_voted > start_of_active)
     .filter(Cols.party == party_shortcode.value)
     .select([Cols.name, Cols.street_address])
-    .collect()
-  return df
+    .collect())
 ```
 
 ::: notes
@@ -537,6 +585,9 @@ def wilkinsburg_active_party_voters() -> pl.DataFrame
 COLIN:
 
 This is the same Polars, but refactored using abstraction methods that we used in the comp survey.
+
+Note the Cols and Data classes, each with a series of constants.
+This enabled us to take advantage of autocomplete for developers to remember column names.
 
 :::
 
@@ -564,13 +615,9 @@ The structure of our notebooks' cells enabled us to call Polars methods and then
 which was generally when we handed a dataframe to Plotly -- it didn't yet understand Polars objects.
 
 Though this has changed today, thanks to the Dataframe Interchange Protocol.
-In a project started today, plotly should understand how to handle the polars dataframe object.
+In a project started today, Plotly should understand how to handle the polars dataframe object.
 
 :::
-
----
-
-## CODE TOUR
 
 ---
 
@@ -580,6 +627,19 @@ In a project started today, plotly should understand how to handle the polars da
 * Graphic locator
 * Graphic use checker
 
+::: notes
+
+COLIN:
+
+As Yvette and I did most of the writing,
+we needed a way to ensure that we were using the graphs
+that we were generating and to drop graphs that weren't useful.
+
+This also helped us ensure that we made all the graphs we wanted
+and track what we had left to do.
+
+:::
+
 ---
 
 # CI/CD
@@ -587,7 +647,27 @@ In a project started today, plotly should understand how to handle the polars da
 * Gitlab CI
 * papermill for running notebooks
 * parallel execution
-* pandoc for building PDF
+* pandoc + lualatex for building PDF
+
+::: notes
+
+COLIN:
+
+Code & Supply uses Gitlab, so we use Gitlab CI as our runner for this.
+
+We used papermill for executing the notebooks, and found it to be less than desirable.
+It worked but it'll be one of the first things we eject from the pipeline tooling when we can.
+We used a thread pool to execute the notebooks with papermill in parallel and that helped a lot.
+We started with a process pool but had problems in CI.
+
+Lastly, we used pandoc to build the final PDF.
+I've given a talk in the past about pandoc — A Documentation Workflow Loved by Engineers and Data Scientists Alike — so go find that on YouTube or FOSDEM's website for your consumption.
+
+Frankly, Make really facilitated this.
+We'd able to have a gaggle of Markdown files that pandoc concatenates
+and then figures out how to massage into a PDF via lualatex.
+
+:::
 
 ---
 
@@ -599,6 +679,218 @@ In a project started today, plotly should understand how to handle the polars da
 * Completely eliminate pandas
 * More graphs
    * Library of graphs given data inputs
+
+::: notes
+
+COLIN:
+
+We intend to reuse this software for the next Compensation Survey.
+We'll iterate and continue creating more convenience for developers.
+
+
+ALEX: A lot of the work is creating more graphs and completely ejecting Pandas from the pipeline.
+
+:::
+
+---
+
+## CODE TOUR
+
+<!-- TODO: asciienma? -->
+
+---
+
+```python
+class Columns:
+    user_uuid = pl.col("user_uuid")
+    base_annual_salary = pl.col("base_annual_salary")
+    worker_classification = pl.col("worker_classification")
+    equity_stock_option_grant = pl.col("equity_stock_option_grant")
+    equity_rsu_grant = pl.col("equity_rsu_grant")
+```
+
+::: notes
+
+ALEX:
+
+This was probably one of the most useful patterns we surfaced in this effort.
+Colin wanted autocomplete because he couldn't remember the question column names, so we came up with this.
+This code could even be generated.
+
+:::
+
+---
+
+```python
+class Selects:
+    career_is_manager_as_mgr_or_ic = (
+        pl.when(Columns.career_is_manager == True)
+        .then(pl.lit("Manager"))
+        .otherwise(pl.lit("IC"))
+        .alias("career_is_manager")
+    )
+```
+
+::: notes
+
+COLIN:
+
+Based on the success of the Columns class as a collection of constants,
+I built this similar class of select statements.
+These are all testable, too: pull out a select, check it in a test.
+
+ALEX:
+
+Note here the "when" and "then" methods here.
+This is a textbook way to build dead simple in-query manipulation like SQL.
+This enables using lambda statements in a way that slows down pandas
+and slows down the pandas-using dev.
+
+:::
+
+---
+
+```python
+@deprecated(reason="Use polars")
+def load_csv_pd(filename: str) -> pd.DataFrame:
+    logger.warning(f"Reading eagerly with pandas {filename}")
+    return pd.read_csv(DATA_DIRECTORY / filename)
+```
+
+::: notes
+
+COLIN:
+
+While moving to Polars, we wanted primarily to get away from Pandas _reading_ any data.
+We had a lot of Pandas manipulation code that we were too lazy to revise.
+The read performance of Polars was just so much better that the Pandas code was made tolerable
+by loading data with Polars.
+
+We used deprecated extensively to find any outdated callers.
+It's an incredibly useful tool that I've used extensively in Scala projects,
+where it's built into the language.
+I wish it was a part of the Python standard library.
+
+:::
+
+---
+
+```python
+def with_count_passing_filter(
+    cls, df: pl.DataFrame,
+    count_filter: Callable[[pl.Expr], pl.Expr]
+) -> pl.DataFrame:
+  assert Columns.user_job_title.meta.output_name() in df.columns
+  return (
+    df.select(Columns.user_job_title)
+    .group_by(Columns.user_job_title)
+    .count()
+    .filter(count_filter(pl.col("count")))
+    .sort(pl.col("count"))
+    .reverse()
+    .collect()
+    .get_column("user_job_title"))
+```
+
+::: notes
+
+COLIN:
+
+This is a longer example of query.
+We're checking that a column is in the dataframe,
+and pulling that column name from the Columns constant's actual column name.
+
+Then, we're getting the user job titles, counting them,
+ordering by the count, reversing, and getting the titles.
+We used this to order the labels passed to Plotly.
+
+:::
+
+---
+
+```python
+def execute_viz_notebook(notebook: Path) -> None:
+  threading.current_thread().name = notebook.name
+  output_notebook = f"{OUT_NB_DIR}/output_{notebook.stem}.ipynb"
+  logger.info(f"START {notebook.name}")
+  pm.execute_notebook(
+    notebook, output_notebook,
+    parameters={
+        "artifact_dir": str(OUTPUT_IMAGE_DIRECTORY),
+        "write_image_artifacts": True,
+    },
+    progress_bar=False, log_output=True,
+  )
+  logger.info(f"DONE {notebook.name}")
+```
+
+::: notes
+
+ALEX:
+
+This is our code that executes papermill,
+passing parameters and not using the progressbar
+because we're handling that at the top level on a per-notebook method above this.
+
+:::
+
+---
+
+```python
+X = 8
+etc_with_yoe_lte_X = (
+  only_full_time_within_range()
+  .select(
+    Columns.expected_total_compensation,
+    Columns.career_years_of_experience)
+  .filter(Columns.career_years_of_experience <= X)
+  .collect()
+)
+```
+
+::: notes
+
+COLIN:
+
+Here's an extract of a refinement on the salary data to graph just
+expected total compensation and years of experience below a certain, configurable level.
+
+The `collect()` call exists here because it's still a lazy-loaded dataframe until that moment.
+
+:::
+
+---
+
+
+```python
+fig = px.box(
+    etc_with_yoe_lte_X,
+    x="expected_total_comp",
+    title=mk_title(
+        f"Expected Total Compensation, <= {X} years of experience",
+        limitations=only_full_time_within_range_text(),
+        count=len(etc_with_yoe_lte_X)),
+    labels={
+      "expected_total_comp": "Expected Total Compensation"},
+    points="all"
+)
+submit_figure(figure=fig, figure_name=f"etc_with_yoe_lte_{X}")
+```
+
+::: notes
+
+ALEX:
+
+And this is how we draw it.
+The really cool part of this is the `submit_figure` method.
+It will output the visualization to Jupyter _and_ write to disk for the report to consume.
+It centralizes the file format and size for consistency.
+
+:::
+
+---
+
+![Down the rabbit hole, Alice?](https://vignette3.wikia.nocookie.net/aliceinwonderland/images/6/6a/Alice-disneyscreencaps.com-1338.jpg/revision/latest?cb=20120703235036)
 
 ---
 
