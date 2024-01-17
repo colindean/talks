@@ -450,6 +450,8 @@ https://pola-rs.github.io/polars-book/user-guide/misc/alternatives/
 ALEX:
 
 Polars aims to be and _is_ the best tool for single-machine data.
+With more out-of-core features in development to allow processing
+more data than you have memory for.
 
 :::
 
