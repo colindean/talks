@@ -1,8 +1,11 @@
 Recordings of My Talks
 ======================
 
+While I try to capture recordings of every public presentation I deliver, not all are recorded _and_ publicly available.
+
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2024 January 17 | [Data Engineering: The Code & Supply Compensation Survey Report](https://www.youtube.com/watch?v=bbjMVXs-nQc)|[C&S Comp Survey 2023 Engine](codeandsupply_comp_survey_2022_engine)|[PyData Pittsburgh](https://www.meetup.com/pydata-pittsburgh/events/298352661)/[Code & Supply](https://www.meetup.com/pittsburgh-code-supply/events/298399851/)| With [Alex Zharichenko](https://github.com/azharichenko/)|
 | 2022 December 30 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=JWjcWQz5g3U&t=176s) | [Code Review](code_review) | [Chicago JavaScript December 2022 Meetup](https://www.meetup.com/js-chi/events/288515415/) | Revised for 2022! |
 | 2022 July 30 | [make python devex](https://www.youtube.com/watch?v=WTsiO3brQwE) | [make python devex](make_python_devex) | [PyOhio](https://www.pyohio.org/2022) | Officially representing Target Corp. |
 | 2021 December 20 | [SEI Issue Classification](https://www.youtube.com/watch?v=1UtklNrB8XA&t=1042s) | [SEI Issue Classification](lightning/sei_issue_classification) | [Code & Supply](https://codeandsupply.co) | |
