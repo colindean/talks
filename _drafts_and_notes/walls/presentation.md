@@ -72,6 +72,19 @@ Great Firewall of China. Kazakh Firewall.
 
 ---------
 
+## Naysayers
+
+> Monica Crowley standing in front if one if the few remaining sections if the Berlin Wall, sometime in the mid-2020s, her caption says, "At the Berlin Wall last week. Walls work."
+> https://beige.party/@RickiTarr/111851221976986164
+
+Some people will deny that the wall should fall.
+It's important to see how they benefit from the wall remaining.
+It's also important to understand their perspective and where they lack information about how that wall impedes progress and will.
+Documenting things in a way that people will actually read them and remember them is a lot easier in small organizations than it is across a population.
+Always account for memory loss as well as insufficient will or information to empathize.
+
+---------
+
 ## ???
 
 ![optimus prime?](#)
