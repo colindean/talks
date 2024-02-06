@@ -1,6 +1,10 @@
 # `make python devex` Submissions
 
-## Codemash 2024
+## PyCon US 2024 :no_entry:
+
+_Same text as [PyOhio 2022](#pyohio-2022)_
+
+## Codemash 2024 :no_entry:
 
 _Same text as [PyOhio 2022](#pyohio-2022)_
 
