@@ -8,7 +8,7 @@ _Same text as [PyOhio 2022](#pyohio-2022)_
 
 _Same text as [PyOhio 2022](#pyohio-2022)_
 
-## PyOhio 2022
+## PyOhio 2022 :medal_sports:
 
 [Presented]([https://www.pyohio.org/2022/program/talks/make-python-deps-check-test-build-towards-clone-to-red-green-refactor-in-one-command](https://web.archive.org/web/20220729205659/https://www.pyohio.org/2022/program/talks/make-python-devex-towards-clone-to-red-green-refactor-in-one-command-with-a-45-year-old-tool)) [:movie_camera:](https://www.youtube.com/watch?v=WTsiO3brQwE)
 
