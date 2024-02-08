@@ -5,7 +5,7 @@
 > Its initial version was a collection of thoughts from a lower morale point in my life and career.
 > I occasionally update it with new observations and experiences, generally as a way of documenting failures and frustrations.
 > It may not be representative of my current outlook or experience in the meantime.
- 
+
 ---
 
 With apologies to Alanis, whose music I adore
