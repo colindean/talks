@@ -97,7 +97,7 @@ Forces good habits
 
 ### {background-color="#669a2b"}
 
-![Computer Reach logo](computer_reach.png)
+![Computer Reach logo](computer_reach.webp)
 
 ::: notes
 
