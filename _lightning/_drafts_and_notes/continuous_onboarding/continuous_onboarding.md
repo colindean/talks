@@ -59,7 +59,7 @@ This practice is meant to encourage teams to hone
 their new-to-the-codebase developer experience to be so slick that
 someone who loses their laptop or needs to just help out for a week or so on a project
 can become productive in minutes, not hours or days.
-It also encourages backups of important documents and 
+It also encourages backups of important documents and
 creates a way that jewel code or company secrets _maybe_ don't live on mobile devices very long.
 
 :::
@@ -193,7 +193,7 @@ optimize parameters for a **semi-annual experience** for each team member
 ### Extenuating circumstances
 
 > “This person has to present today but didn’t mark it on their calendar.”
-> 
+>
 > “This workstation has 50 GB of data needed for work, and the person is working remotely on 5 Mbps DSL.”
 
 ---
@@ -214,7 +214,7 @@ Discourages using the escape hatch _while not blocking important work_.
 
 # People > Process
 
---- 
+---
 
 # See Also
 
