@@ -10,15 +10,15 @@ Building an LTE router with a $60 (new!) laptop and a single file
 
 ## Abstract for your talk
 
-Having bought a new house but not intending to move in until completing extensive renovations,
-I needed Internet for some home security systems.
-I don't have an LTE modem and didn't want to wait for one to ship or sign up for some expensive plan in a cellular store.
-Needing it nearly immediately and wanting to spend as little as possible,
-I grabbed an LTE SIM off the shelf at a retail store
-when I remembered I had an unused $60 LTE-enabled laptop bought in a fire sale during the pandemic.
-Expecting this laptop not to last, I wanted a durable configuration that I could save and never think about again.
-I decided to explore the promise of NixOS.
-I was up and running in a few hours.
+I took an unused $60 LTE-enabled laptop bought in a fire sale during the pandemic
+and an LTE SIM card
+and with zero experience with NixOS, built a router for my newly purchased home
+so I could have the minimal Internet necessary for its security system and home automation
+without having to record what I did in case the laptop died.
+
+I did this in a few hours with less than 100 lines of Nix.
+I did not think that it would be this easy.
+
 This talk will cover some hijinks of NixOS,
 using LTE for home internet somewhere you don't yet live,
 and the joy of things that Just Work... when they work.
