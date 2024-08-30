@@ -8,6 +8,34 @@
 
 [^jerome]: Homage to Jerome Pesenti.
 
+## General thoughts
+
+LLMs are good at text generation, brainstorming ideas, and simple analysis.
+
+Millennials will assuredly remember being advised by high school and college teachers never to trust Wikipedia,
+and always search for other sources.
+That is, it was OK to start there but never rely solely on it.
+
+_Never rely solely on an LLM._
+Always check else, and don't expect the LLM to give you its sources.
+_Retrieval Augmented Generation_ is a developing field that combines traditional search with generative AI.
+
+<!-- 
+  @misc{ enwiki:1241186708,
+    author = "{Wikipedia contributors}",
+    title = "Stochastic parrot --- {Wikipedia}{,} The Free Encyclopedia",
+    year = "2024",
+    url = "https://en.wikipedia.org/w/index.php?title=Stochastic_parrot&oldid=1241186708",
+    note = "[Online; accessed 30-August-2024]"
+  }
+-->
+
+> The term **stochastic parrot** is a metaphor to describe the theory that large language models, though able to generate plausible language, do not understand the meaning of the language they process.
+
+**Stochastic Parrot** coined in _On the Dangers of Stochastic Parrots: Can Language Models Be Too Big?_ by Emily M. Bender, Timnit Gebru, Angelina McMillan-Major, and Margaret Mitchell.
+
+**Hallucination**: LLMs will occasionally synthesize information that matches some pattern, but not reality. (from the same paper!)
+
 ## Good projects
 
 ### [Fight Health Insurance](https://fighthealthinsurance.com/)
