@@ -48,7 +48,17 @@ Using LLMs to write insurance denial appeals.
 
 * [‘Make your health insurance company cry’: One woman’s fight to turn the tables on insurers ](https://sfstandard.com/2024/08/23/holden-karau-fight-health-insurance-appeal-claims-denials/)
 
-## Good posts
+## Good posts and podcasts
+
+### AI is more than GenAI - Practical AI
+
+https://pca.st/episode/97efa108-d43b-4d6a-b8ac-064792ab3c43
+
+this episode was a great overview of the modern eras of AI
+in about the last 14 years, and covers the advancements in
+natural language processing, computer vision and such
+before getting into high level overview of what generative AI does
+then explores some of the subfields within generative AI.
 
 ### Existential Risks - Dana Fried
 
