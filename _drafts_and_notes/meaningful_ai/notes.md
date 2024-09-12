@@ -36,6 +36,10 @@ _Retrieval Augmented Generation_ is a developing field that combines traditional
 
 **Hallucination**: LLMs will occasionally synthesize information that matches some pattern, but not reality. (from the same paper!)
 
+> A computer can never be held accountable, therefore a computer must never make a management decision"
+>
+> — IBM 
+
 ## Good projects
 
 ### [Fight Health Insurance](https://fighthealthinsurance.com/)
@@ -87,3 +91,9 @@ then explores some of the subfields within generative AI.
 [2024-08-29 18:27 PM ET](https://mastodon.social/@tess/113047665053440692)
 [2nd in series](https://mastodon.social/@tess/113047677790105168),
 [3rd in series](https://mastodon.social/@tess/113047693906163761)
+
+## Scary things
+
+https://blog.apaonline.org/2023/04/13/responsibility-and-automated-decision-making-draft/
+
+https://gizmodo.com/googles-ai-will-help-decide-whether-unemployed-workers-get-benefits-2000496215
