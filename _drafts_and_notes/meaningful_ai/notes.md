@@ -92,6 +92,10 @@ then explores some of the subfields within generative AI.
 [2nd in series](https://mastodon.social/@tess/113047677790105168),
 [3rd in series](https://mastodon.social/@tess/113047693906163761)
 
+### Model autophagy 
+
+https://mastodon.social/@jensorensen/113136950728170129
+
 ## Scary things
 
 https://blog.apaonline.org/2023/04/13/responsibility-and-automated-decision-making-draft/
