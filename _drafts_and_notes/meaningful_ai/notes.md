@@ -101,3 +101,7 @@ https://mastodon.social/@jensorensen/113136950728170129
 https://blog.apaonline.org/2023/04/13/responsibility-and-automated-decision-making-draft/
 
 https://gizmodo.com/googles-ai-will-help-decide-whether-unemployed-workers-get-benefits-2000496215
+
+## Fluff
+
+https://hachyderm.io/@molly0xfff/113155131527029562
