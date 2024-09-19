@@ -102,6 +102,8 @@ https://blog.apaonline.org/2023/04/13/responsibility-and-automated-decision-maki
 
 https://gizmodo.com/googles-ai-will-help-decide-whether-unemployed-workers-get-benefits-2000496215
 
+https://www.semafor.com/article/09/17/2024/black-teenagers-twice-as-likely-to-be-falsely-accused-of-using-ai-tools-in-homework
+
 ## Fluff
 
 https://hachyderm.io/@molly0xfff/113155131527029562
