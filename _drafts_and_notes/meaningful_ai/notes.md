@@ -104,6 +104,8 @@ https://gizmodo.com/googles-ai-will-help-decide-whether-unemployed-workers-get-b
 
 https://www.semafor.com/article/09/17/2024/black-teenagers-twice-as-likely-to-be-falsely-accused-of-using-ai-tools-in-homework
 
+https://www.threads.net/@katienotopoulos/post/DAGbXlKunUr
+
 ## Fluff
 
 https://hachyderm.io/@molly0xfff/113155131527029562
