@@ -111,3 +111,5 @@ https://www.facebook.com/blackforager/videos/1187609425902231/
 ## Fluff
 
 https://hachyderm.io/@molly0xfff/113155131527029562
+
+https://fs.blog/douglas-adams-reactions-technology-over-time/
