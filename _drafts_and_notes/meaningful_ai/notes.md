@@ -106,6 +106,8 @@ https://www.semafor.com/article/09/17/2024/black-teenagers-twice-as-likely-to-be
 
 https://www.threads.net/@katienotopoulos/post/DAGbXlKunUr
 
+https://www.facebook.com/blackforager/videos/1187609425902231/
+
 ## Fluff
 
 https://hachyderm.io/@molly0xfff/113155131527029562
