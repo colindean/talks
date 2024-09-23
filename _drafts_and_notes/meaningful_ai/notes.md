@@ -48,6 +48,10 @@ Using LLMs to write insurance denial appeals.
 
 <img width="1334" alt="Screenshot of Fight Health Insurance, 2024-08-30" src="https://github.com/user-attachments/assets/01887b3b-b558-49fd-970a-e1e5ec6faf11">
 
+### Legal analysis
+
+https://technical.ly/software-development/legal-ai-tools-pittsburgh-law-firm-artifex/
+
 #### Coverage 
 
 * [‘Make your health insurance company cry’: One woman’s fight to turn the tables on insurers ](https://sfstandard.com/2024/08/23/holden-karau-fight-health-insurance-appeal-claims-denials/)
