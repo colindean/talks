@@ -592,13 +592,15 @@ Consumers' judgement of the quality of the work done solely by AI is an open que
 
 ---
 
-## spreadsheets
+## spreadsheets & sewing machines
 
 ::: notes
 
+Sewing machines didn't obsolete sewing by hand.
 Spreadsheets didn't obsolete accountants.
 They made them faster.
-Those who didn't want to use the technology faded away.
+Those who didn't want to use the technology faded away,
+or relegated them to specialized situations.
 Now, it's the norm.
 
 :::
@@ -879,6 +881,52 @@ I recall saying something along the lines of, "Yes, it may use a lot, but it's c
 
 :::
 
+--
+
+# listen & learn
+
+::: notes
+
+I recently listened to a couple of podcast episodes that were particularly
+relevant.
+
+:::
+
+---
+
+## AI is more than GenAI - Practical AI
+
+https://changelog.com/practicalai/285
+
+::: notes
+
+this episode was a great overview of the modern eras of AI
+in about the last 14 years, and covers the advancements in
+natural language processing, computer vision and such
+before getting into high level overview of what generative AI does
+then explores some of the subfields within generative AI.
+
+:::
+
+---
+
+## AI Storytelling with Michael Washington
+
+https://hanselminutes.com/961
+
+::: notes
+
+This was an enlightening setting of expectations that I enjoyed
+on my drive up today. Michael Washington is a Microsoft engineer in the AI
+space who believes as I do that AI is a tool in the toolbox, not a Golden Goose.
+He talks a lot about using Retrieval Augmented Generation techniques with
+ChatGPT as a tool for writing fiction. With an AI able to remember details,
+but not necessarily able to track plot twists or logic holes, he's able to
+focus on those very human elements of the story while letting the AI generate
+the connective tissue between key passages.
+
+:::
+
 ---
 
 # humor
@@ -919,6 +967,8 @@ Retain your humanity.
 ![boy meets world](https://i.pinimg.com/originals/98/97/c1/9897c133c4d716818add9d8cff255c2c.jpg)
 
 ---
+
+TOUCH GRASS
 
 DRINK WATER
 
