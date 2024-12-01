@@ -1,5 +1,9 @@
 # Code & Supply Compensation Survey Report 2022-2023 Engine Review Submissions
 
+## FOSDEM 2025
+
+_Same as Stir Trek submission_
+
 ## [Winterhack 5](https://web.archive.org/web/20240225025854/http://www.winterhack.space/) (Feb 2024) :white_check_mark:
 
 _Invited speaker_
