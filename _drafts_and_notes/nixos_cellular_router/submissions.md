@@ -2,9 +2,23 @@
 
 > Because I used nixOS on a really crappy laptop to build an LTE router
 
-## !!Con 2024
+## FOSDEM 2024
 
-## Talk title
+### Title
+
+Building an LTE router with a $60 (new!) laptop and a single file
+
+### Abstract
+
+With zero experience with NixOS, I grabbed an unused $60 LTE-enabled laptop bought in a fire sale during the pandemic and an LTE SIM card to build a router for my newly purchased home so I could have the minimal Internet necessary for its security system and home automation without having to record what I did in case the laptop died.
+
+I did this in a few hours with less than 100 lines of Nix. I did not think that it would be this easy. It served my Internet needs for several months without failure.
+
+This talk will cover some hijinks of NixOS, using LTE for home internet somewhere you don't yet live, and the joy of things that Just Work... when they work.
+
+## !!Con 2024 :no_entry:
+
+### Talk title
 
 Building an LTE router with a $60 (new!) laptop and a single file
 
