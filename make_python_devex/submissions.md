@@ -1,6 +1,42 @@
 # `make python devex` Submissions
 
-## GitHub Universe 2024
+## PyCon US 2025
+
+### Title
+
+make python devex: Towards Red-Green-Refactor in 1 Command with an Old Tool
+
+### Description
+
+Getting productive with a Python codebase, especially when unfamiliar with the ecosystem or setting up a new workstation for the first time, can be daunting. Building a cohesive strategy with widely available tooling shortens the time-to-productivity for new contributors to projects internal and open-source, demonstrating that the maintainers care about onboarding and the developer experience. I'll introduce how my team solved this problem using a nearly 50-year-old program and push the audience toward better developer experiences, starting at the greatest common denominator of tooling. Some newer tooling makes some of this easier, but corporate Python projects and open source projects alike benefit from this approach.
+
+### Notes
+
+This presentation will have code snippets on slides, and a complete working example is already available at https://github.com/target/make-python-devex with a companion article at https://tech.target.com/blog/make-python-devex. The slides are available at https://github.com/colindean/talks/tree/master/make_python_devex (or, really, the source for them – if accepted, there will be a significant revision to bring it up to date with what's transpired since I last gave the talk).
+
+### Outline
+
+* Intro - 3 minutes
+* Which Python? - 8 minutes
+* Wrapping build tools with Make - 13 minutes [Poetry as of Nov 2024, may be uv by spring 2025)
+* Overview of current state - 3 minutes
+* Open sourcing at a large company - 3 minutes
+
+At a high level, I'll discuss the pains I've experienced and observed in the last approximately four years as an experienced developer working in Python for the first time since 2005. I'll also discuss barriers to productivity in a Python codebase and how I've overcome them using a venerable tool: Make.
+
+When I moved onto an AI/ML team using Python, I found dramatic inconsistencies in how our developers approached the codebases and configured their working environment. The developer experience was Wild West, and the codebase quality reflected misaligned values and siloed thoughts of How It Should Be Done.
+
+This pattern is growing in popularity inside our company as more teams realize how streamlined the Python developer experience can be with some opinionated, automated developer experience tooling. I don't have case studies of these experiences, only anecdotes and multiple requests per week for how a new team can use the pattern.
+
+Ultimately, the audience will walk away with a newfound appreciation for Make, a solid understanding of why a Makefile with at least five everyday tasks ought to be in every code repo, why installing Python is not straightforward, why choosing particular tooling eliminates work, and entropy, and even if the user still (illogically) hates Make, they'll come away with a new framework for thinking about how to expedite onboarding so contributors can be productive quickly with as little environment setup as possible while maximizing the utility of their workstation hardware.
+
+Key Takeaway 1: Grok why all codebases, regardless of language or build tool, should have a Makefile with at least five tasks: deps, check, test, build, and help.
+
+Key Takeaway 2: Understand why installing Python can be so difficult and why choosing a uniform way accelerates development.
+
+Key Takeaway 3: Come away with immediately actionable ways to improve onboarding for internal and open-source projects dramatically
+
+## GitHub Universe 2024 :no_entry:
 
 ### Title
 
@@ -21,7 +57,6 @@ This presentation will have code snippets on slides, and a full working example 
 This pattern is growing in popularity inside our company as more teams realize how streamlined the Python developer experience can be with some opinionated, automated developer experience tooling. I don't have case studies of these experiences, only anecdotes and multiple requests per week for how a new team can use the pattern.
 
 Ultimately, the audience will walk away with a newfound appreciation for Make, a solid understanding of why a Makefile with at least five common tasks ought to be in every code repo, why installing Python is not straightforward, why choosing particular tooling eliminates work and entropy, and even if the user still (illogically) hates Make, they'll come away with a new framework for thinking about how to expedite onboarding so contributors can be productive quickly with as little environment setup as possible while maximizing the utility of their workstation hardware.
-
 
 **Key Takeaway 1:**
 Grok why all codebases should have a Makefile with at least five tasks: deps, check, test, build, and help.
