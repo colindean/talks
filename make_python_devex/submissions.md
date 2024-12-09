@@ -1,6 +1,6 @@
 # `make python devex` Submissions
 
-## FOSDEM 2025
+## FOSDEM 2025 :no_entry:
 
 _Used info from PyCon US 2025_
 
