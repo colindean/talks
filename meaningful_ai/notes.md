@@ -20,7 +20,7 @@ _Never rely solely on an LLM._
 Always check else, and don't expect the LLM to give you its sources.
 _Retrieval Augmented Generation_ is a developing field that combines traditional search with generative AI.
 
-<!-- 
+<!--
   @misc{ enwiki:1241186708,
     author = "{Wikipedia contributors}",
     title = "Stochastic parrot --- {Wikipedia}{,} The Free Encyclopedia",
@@ -38,7 +38,7 @@ _Retrieval Augmented Generation_ is a developing field that combines traditional
 
 > A computer can never be held accountable, therefore a computer must never make a management decision"
 >
-> — IBM 
+> — IBM
 
 ## Good projects
 
@@ -52,7 +52,7 @@ Using LLMs to write insurance denial appeals.
 
 https://technical.ly/software-development/legal-ai-tools-pittsburgh-law-firm-artifex/
 
-#### Coverage 
+#### Coverage
 
 * [‘Make your health insurance company cry’: One woman’s fight to turn the tables on insurers ](https://sfstandard.com/2024/08/23/holden-karau-fight-health-insurance-appeal-claims-denials/)
 
@@ -96,7 +96,7 @@ then explores some of the subfields within generative AI.
 [2nd in series](https://mastodon.social/@tess/113047677790105168),
 [3rd in series](https://mastodon.social/@tess/113047693906163761)
 
-### Model autophagy 
+### Model autophagy
 
 https://mastodon.social/@jensorensen/113136950728170129
 
