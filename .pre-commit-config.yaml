@@ -1,3 +1,4 @@
+exclude: '^_retired'
 repos:
   - repo: https://github.com/markdownlint/markdownlint
     rev: v0.12.0
