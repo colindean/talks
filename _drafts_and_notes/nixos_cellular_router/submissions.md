@@ -2,7 +2,7 @@
 
 > Because I used nixOS on a really crappy laptop to build an LTE router
 
-## FOSDEM 2024
+## [FOSDEM 2025](https://fosdem.org/2025/schedule/event/fosdem-2025-6437-building-an-lte-router-with-a-60-new-laptop-and-a-single-file/) :white_check_mark:
 
 ### Title
 
