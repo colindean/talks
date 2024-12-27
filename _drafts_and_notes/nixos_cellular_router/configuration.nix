@@ -98,7 +98,7 @@
      vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
      wget
      curl
-     htop     
+     htop
 	ethtool             # manage NIC settings (offload, NIC feeatures, ...)
 	  tcpdump             # view network traffic
 	  conntrack-tools     # view network connection states
@@ -190,7 +190,7 @@
       #       iifname {
       #         "enp0s21f0u5",
       #       } counter accept
-  
+
       #       # Allow returning traffic from ppp0 and drop everthing else
       #       iifname "wwp0s21f0u3i4" ct state { established, related } counter accept
       #       iifname "wwp0s21f0u3i4" drop
@@ -198,10 +198,10 @@
 
       #     chain forward {
       #       type filter hook forward priority filter; policy drop;
-  
+
       #       # enable flow offloading for better throughput
       #       # ip protocol { tcp, udp } flow offload @f
-  
+
       #       # Allow trusted network WAN access
       #       iifname {
       #               "enp0s21f0u5",
