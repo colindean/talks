@@ -1,0 +1,2 @@
+serve: miniserve .
+watch: make automatic-regen
