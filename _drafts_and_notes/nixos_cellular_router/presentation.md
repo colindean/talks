@@ -782,6 +782,16 @@ But things still took a lot of searching and experimentation.
 Some of my reference material was out of date by only a year or so
 and some things had changed.
 
+What were my biggest mistakes?
+
+1. Underestimating how much a speedtest transfers.
+   I ran a few and ate a gigabyte pretty quickly,
+   because it only takes about six minutes to download a gigabyte at
+   the approximately 20 megabit throughput I experienced.
+2. Early on, I'd not enables automatic updates.
+   I don't know what updated, but that ate a couple of gigabytes
+   in the first month.
+
 :::
 
 ---
