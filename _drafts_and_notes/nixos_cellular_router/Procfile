@@ -1,2 +1,3 @@
 serve: miniserve .
+ws: make livereload-ws
 watch: make automatic-regen

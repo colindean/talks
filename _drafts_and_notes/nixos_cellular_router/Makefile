@@ -7,6 +7,8 @@ DEPS_DIR = deps
 
 REVEALJS_VERSION = $(shell basename -s .zip $(shell yaml2json peru.yaml | jq -r '.["curl module revealjs"].url'))
 
+WS_WATCHED_FILE = .$(HTML).ws
+
 ##@ Utility
 
 .PHONY: help
@@ -33,15 +35,18 @@ open-and-serve: $(HTML) ## Start a server and open the presentation in a browser
 ##@ Development
 
 automatic-regen: ## Use entr to automatically remake the file
-	echo $(MARKDOWN) | entr -acpr make $(HTML)
+	echo $(MARKDOWN) | entr -acpr $(SHELL) -c "make $(HTML) && echo reload >> $(WS_WATCHED_FILE)"
 
 watch: Procfile ## Use hivemind for constant building, run open first
 	hivemind Procfile
 
+livereload-ws: ## Run a websocket server listening for reloads
+	tail -f $(WS_WATCHED_FILE) | websocat -s 56789
+
 ##@ Cleanup
 
 clean:
-	rm -f $(HTML) $(PDF) $(PDF_SERVER_PIDFILE)
+	rm -f $(HTML) $(PDF) $(PDF_SERVER_PIDFILE) $(WS_WATCHED_FILE)
 
 %.html: %.md Makefile
 	pandoc -t revealjs -s $< -o $@ \

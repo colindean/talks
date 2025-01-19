@@ -18,7 +18,16 @@ totalTime: 1200
 #     data-background-image: "targettech.png"
 #     data-background-size: "10%"
 #     data-background-position: "50% 100%"
-
+header-includes: |
+    <script>
+        function connect() {
+        const ws = new WebSocket("ws://localhost:56789");
+        ws.onopen = () => setTimeout(() => ws.send("keepalive"), 30000);
+        ws.onclose = () => setTimeout(connect, 1000);
+        ws.onmessage = () => {console.log("reload from save!"); location.reload(); }
+        }
+        connect();
+    </script>
 ---
 
 # Who is this guy?
@@ -452,7 +461,9 @@ I avoided the need for a whole new uninterruptible power supply unit.
 
 ## `configuration.nix`
 
+_(the good parts)_
 
+sdf
 
 ---
 
