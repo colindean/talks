@@ -21,10 +21,10 @@ totalTime: 1200
 header-includes: |
     <script>
         function connect() {
-        const ws = new WebSocket("ws://localhost:56789");
-        ws.onopen = () => setTimeout(() => ws.send("keepalive"), 30000);
-        ws.onclose = () => setTimeout(connect, 1000);
-        ws.onmessage = () => {console.log("reload from save!"); location.reload(); }
+            const ws = new WebSocket("ws://localhost:56789");
+            ws.onopen = () => setTimeout(() => ws.send("keepalive"), 30000);
+            ws.onclose = () => setTimeout(connect, 1000);
+            ws.onmessage = () => {console.log("reload from save!"); location.reload(); }
         }
         connect();
     </script>
@@ -457,13 +457,250 @@ I avoided the need for a whole new uninterruptible power supply unit.
 ```
 <small>…nothing special. Autodetect &#x1F44D;&#x1F3FB; <!-- thumbsup --></small>
 
+::: note
+
+So yeah, the installer's autodetect handled this bit just fine for this laptop.
+
+Note that for this and the rest of the slides showing Nix code,
+I've optimized the formatting for skimmability on the slides,
+not for what a formatter would output.
+There may also be orphan opening or closing curly brackets missing
+to keep the slides readable.
+
+:::
+
 ---
 
 ## `configuration.nix`
 
 _(the good parts)_
 
-sdf
+```nix
+networking.hostName = "evolve3nix1";
+
+# Enable networking
+networking.networkmanager.enable = true;
+
+# Enable the X11 windowing system.
+services.xserver.enable = true;
+
+# Enable the GNOME Desktop Environment.
+services.xserver.displayManager.gdm.enable = true;
+services.xserver.desktopManager.gnome.enable = true;
+```
+
+::: notes
+
+I found I needed to enable NetworkManager to best play with the LTE modem while setting it up.
+One gap in the Nix config — or at least the documentation, if it feature existed—
+was something how to tell NetworkManager information about the LTE connection.
+For example, the network Access Point Name to use.
+
+I also wanted a desktop environment.
+Once the LTE modem was working, I had Internet on the device,
+so I could troubleshoot and build this configuration in place.
+This avoids having to tether to my phone.
+
+My user wasn't interesting.
+It just had membership in the networkmanager group and installed Firefox.
+:::
+
+---
+
+```nix
+environment.systemPackages = with pkgs; [
+    vim
+    wget
+    curl
+    htop
+    ethtool             # manage NIC settings
+    tcpdump             # view network traffic
+    conntrack-tools     # view network connection states
+];
+services.openssh.enable = true;
+system.autoUpgrade.enable = false;
+system.autoUpgrade.allowReboot = false;
+```
+
+::: notes
+
+There are the packages I found I needed along the way
+in addition to what packages were automatically selected
+when I enabled DHCP, DNS, and other services.
+
+I wanted SSH in case I wanted to manage it remotely.
+With very limited paydirt on this home network with
+nothing more than a doorbell camera, thermostat, gateway, and access point,
+I felt it OK not to go further than the out of the box settings.
+
+Lastly, I wanted to explicitly upgrade manually.
+Functioning was more important than security for this scope.
+:::
+
+---
+
+```nix
+# router bullshit
+boot.kernel.sysctl = {
+    "net.ipv4.conf.all.forwarding" = true;
+    "net.ipv6.conf.all.forwarding" = true;
+
+    # By default, not automatically configure any IPv6 addresses.
+    "net.ipv6.conf.all.accept_ra" = 0;
+    "net.ipv6.conf.all.autoconf" = 0;
+    "net.ipv6.conf.all.use_tempaddr" = 0;
+
+    # On WAN, allow IPv6 autoconfiguration and temporary address use.
+    "net.ipv6.conf.wwp0s21f0u3i4.accept_ra" = 2;
+    "net.ipv6.conf.wwp0s21f0u3i4.autoconf" = 1;
+};
+```
+
+::: notes
+
+Set some syscontrols, most importantly enabling forwarding.
+
+You'll start to see some of the interface names at this point.
+I couldn't at the time figure out how best to abbreviate or rename them.
+If I refactor this configuration, I'll figure that out quickly instead of
+typing cryptic names constantly.
+
+:::
+
+---
+
+
+```nix
+networking = {
+    interfaces = {
+      enp0s21f0u5 = {
+        useDHCP = false;
+        ipv4.addresses = [{
+            address = "10.201.1.1"; prefixLength = 24; }];
+      };
+      wwp0s21f0u3i4.useDHCP = true;
+    };
+    nat = {
+      enable = true;
+      internalInterfaces = [ "enp0s21f0u5" ];
+      externalInterface = "wwp0s21f0u3i4";
+      enableIPv6 = true;
+```
+
+::: notes
+
+Now we're getting to the serious stuff.
+
+This sets a static IP address on the wired network adapter
+and sets the LTE modem adapter to use DHCP.
+
+:::
+
+---
+
+```nix
+    # nixos iptables firewall
+    firewall.enable = true;
+    # use netfilter firewall
+    nftables = {
+      enable = true;
+    };
+  };
+```
+
+::: notes
+
+I tried more complicated nfttables rules, but couldn't get them working quickly.
+So I gave up, prioritizing getting something working for this temporary solution
+than having a perfectly secure castle.
+
+:::
+
+---
+
+```nix
+services.dnsmasq = {
+    enable = true;
+    alwaysKeepRunning = true;
+    settings = {
+      domain-needed = true;
+      bind-dynamic = true;
+      interface = [ "enp0s21f0u5" ];
+      dhcp-range = [ "10.201.1.2,10.201.1.253,255.255.255.0,24h" ];
+    };
+  };
+```
+
+::: notes
+
+Next, let's give the LAN some DNS and DHCP with dnsmasq.
+
+I struggled a bit with DHCP.
+I started with dnsmasq and for some reason, it wasn't working.
+Neither my other laptop nor the access point — a Ubiquiti UAP-AC-Pro– could get an IP address.
+
+:::
+
+---
+
+```nix
+services.kea.dhcp4 = {
+    enable = false;
+    settings = {
+      interfaces-config = { interfaces = ["enp0s21f0u5"]; };
+      lease-database = {
+        name = "/var/lib/kea/dhcp4.leases";
+        persist = true;
+        type = "memfile";
+      };
+      rebind-timer=2000; renew-timer=1000; valid-lifetime=4000;
+      subnet4 = [
+        {
+          pools = [ { pool = "10.201.1.2 - 10.201.1.253"; }];
+          subnet = "10.201.1.0/24";
+
+```
+
+::: notes
+
+So I tried using a few different services, notably this attempt with Kea.
+I don't know _why_ this doesn't work as written, but I know I disabled it eventually
+and dnsmasq just, well, worked.
+
+I suspect there were some colliding services but the config didn't warn me about that visibly.
+
+:::
+
+---
+
+```nix
+networking.firewall.interfaces.enp0s21f0u5 = {
+    allowedTCPPorts = [
+      # ssh
+      22
+      # dnsmasq; dns-over-http
+      53
+    ];
+    allowedUDPPorts = [
+      # dnsmasq; dns dhcp
+      53 67
+    ];
+  };
+```
+
+::: notes
+
+And to complete it, this firewall configuration seemed to work sufficiently.
+This worked, unlike setting a ruleset manually using an example
+I found in some searches online.
+
+While I don't remember the specific incantations to make the firewall work
+while building that router distro for my college graduation project,
+I remember how it made me feel: sad and confused.
+
+Nix made this little bit nice.
+
+:::
 
 ---
 
@@ -499,6 +736,154 @@ Sufficient.
 
 <small>_The American Heritage® Dictionary of the English Language, 5th Edition_</small>
 
+::: notes
+
+I'm impressed by how little work I had to do to get this working,
+esp. compared to the _first_ time I set up a server to run as a router,
+and even compared to the process I followed when setting up routers manually
+in my LAN party days before the rise of configuration management tools
+like Chef and Ansible.
+
+:::
+
+---
+
+```bash
+$ rg -v "^\s*\#.*" configuration.nix | rg -v "^\s*$" | wc -l
+142
+```
+
+\- 27 (Kea)
+
+\- 10 (locale)
+
+\- 10 (audio)
+
+= 95 SLOC
+
+::: notes
+
+142 lines of meaningful configuration, minus the approximately 27 lines
+for the disabled Kea DHCP configuration, is 115 lines.
+Remove 10 lines for extra locale settings that are probably unnecessary
+as well as around 10 lines for unused audio settings for PulseAudio and Pipewire,
+and this whole configuration is less than 100 lines.
+
+:::
+
+---
+
+## F@#k around and find out
+
+::: notes
+
+I remember some guardrails keeping me from completely messing up.
+But things still took a lot of searching and experimentation.
+Some of my reference material was out of date by only a year or so
+and some things had changed.
+
+:::
+
+---
+
+## Document(ation)
+
+::: notes
+
+What found I really wanted was more documentation of options and more examples.
+NixOS isn't old but it's not that young, either.
+I'm sure someone's working on it somewhere, and if not, well, maybe someone will:
+I'd love to see a configuration.nix editor available out of the box that
+offers complete documentation for every option built into the editor.
+
+As a complete newbie to Nix and NixOS, this would have probably saved me a lot of time.
+Also, using my other laptop, with a larger screen and regular-size keyboard would have
+saved me some time.
+I underutilized the SSH server I had set up correctly early on in building this configuration.
+
+:::
+
+---
+
+## Approximate time to build
+
+<span style="font-size:4em">
+<!-- hourglass -->
+&#x231B;
+&#x231B;
+&#x231B;
+&#x231B;
+&#x231B;
+&#x231B;
+</span>
+
+
+::: notes
+
+It took about six hours total to build this, including reading documentation
+and sourcing some examples.
+
+:::
+
+---
+
+## Ongoing maintenance
+
+<span style="font-size:4em">
+<!-- hourglass -->
+&#x231B;
+&#x231B;
+&#x231B;
+</span>
+
+<span style="font-size:2em">
+<!-- date -->
+&#x1F4C5;
+&#x1F4C5;
+&#x1F4C5;
+&#x1F4C5;
+&#x1F4C5;
+&#x1F4C5;
+</span>
+
+::: notes
+
+I'd estimate my investment in upkeep at around three hours in the six months
+this was active from March 2024 until September when I had Verizon's fiber service
+installed ahead of anticipated move-in later that month.
+
+Mint Mobile's introductory plan expired after three months, but I was able to find another deal
+extending it for two months for $20 per month. I had to pay $45 for the final month, though.
+
+We ended up not moving in until mid-December but having fiber there enabled me to work from the house
+during the many contractor visits and to use my breaks from work as a developer to
+put a coat of paint on something, rewrite some outlets, or run some of the more than 1,000 feet of Ethernet
+cable I installed.
+
+:::
+
+---
+
+
+
+---
+
+# FIN
+
+Thanks, yinz!
+
+|   |   |
+|---|---|
+|**fediverse**|`@colindean@mastodon.social`|
+|**bsky**|`@cad.cx`|
+
+::: notes
+
+Thanks, yinz.
+There some Pittsburghese for you all.
+
+:::
+
 ---
 
 # Attributions {.nocaptions}
@@ -525,3 +910,4 @@ Sufficient.
 
 * [Evolve III Maestro 11.6" Laptop Computer - Dark Grey](https://www.microcenter.com/product/683082/evolve-iii-maestro-116-laptop-computer-dark-grey?rd=1), Micro Center website.
 * [Review: Evolve III Maestro E-Book 11.6"](https://www.reddit.com/r/linuxhardware/comments/tk6hdp/evolve_iii_maestro_ebook_116/) by `see_spot_ruminate` on /r/linuxhardware, March 2022.
+* [mdlayher's homelab `routnerr-2`](https://github.com/mdlayher/homelab/blob/14968b1744367982d10d3803d58b1fe40a4c351d/nixos/routnerr-2/configuration.nix)
