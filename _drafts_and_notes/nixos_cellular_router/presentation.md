@@ -866,9 +866,17 @@ cable I installed.
 
 # What's next?
 
+* Old house: Verizon -> LTE
+* Matt Layher's [routnerr-3](https://github.com/mdlayher/homelab/tree/main/nixos/routnerr-3)
+
 ::: notes
 
 BRIEFLY, OLD HOUSE
+
+I'll probably redo it, and base it on the latest revision of the config example
+from which I go the most inspiration.
+Big thanks to Matt Layher for sharing this, and for updating at the end of 2024,
+which I discovered while building this presentation.
 
 :::
 
