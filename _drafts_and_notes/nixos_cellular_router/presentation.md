@@ -864,7 +864,13 @@ cable I installed.
 
 ---
 
+# What's next?
 
+::: notes
+
+BRIEFLY, OLD HOUSE
+
+:::
 
 ---
 
