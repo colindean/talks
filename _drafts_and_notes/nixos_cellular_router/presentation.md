@@ -457,7 +457,7 @@ I avoided the need for a whole new uninterruptible power supply unit.
 ```
 <small>…nothing special. Autodetect &#x1F44D;&#x1F3FB; <!-- thumbsup --></small>
 
-::: note
+::: notes
 
 So yeah, the installer's autodetect handled this bit just fine for this laptop.
 
