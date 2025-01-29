@@ -1,8 +1,10 @@
 # `make python devex` Submissions
 
-## FOSDEM 2025 :no_entry:
+## [FOSDEM 2025](https://fosdem.org/2025/schedule/event/fosdem-2025-6426-make-python-devex-towards-red-green-refactor-in-1-command-with-an-old-tool/) :medal_sports:
 
 _Used info from PyCon US 2025_
+
+(accepted as alternate and scheduled)
 
 ## PyCon US 2025
 
