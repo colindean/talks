@@ -1122,6 +1122,8 @@ most current iteration of this setup.
 
 * Pandoc rendering
 * Reveal.js presentation
+
+Slides source: https://github.com/colindean/talks
 <!--* Asciinema CLI playback-->
 
 ::: notes
