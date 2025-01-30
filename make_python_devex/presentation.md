@@ -4,7 +4,7 @@ subtitle: "How a 45+ year old tool can MAKE Python developer experience easier"
 author:
   - _Colin Dean, Lead AI Engineer_
 theme: white
-css: custom.css
+css: target.css
 slideNumber: true
 hash: true
 history: true
@@ -1123,6 +1123,7 @@ for one time setup, e.g. putting things into their shell configuration files.
 ---
 
 # FIN {.r-fit-text background-image="" background-size="10%" background-position="50% 100%" }
+<!-- # FIN {.r-fit-text background-image="targettech.png" background-size="10%" background-position="50% 100%" } -->
 
 ::: notes
 

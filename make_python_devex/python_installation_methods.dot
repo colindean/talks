@@ -1,0 +1,40 @@
+digraph python_installation_methods {
+  rankdir=LR;
+  rank=source;
+  size="9,9"
+
+  graph [fontname = "helvetica"];
+  node [fontname = "helvetica", shape = square, margin = 0.1];
+  edge [fontname = "helvetica"];
+
+  node [label = "System\npython"]; system
+  node [label = "Homebrew\n(brew)"]; brew
+  node [label = "Homebrew\npython"]; brewpy
+  node [label = "Homebrew\npython@3.x"]; brewpyx
+  node [label = "Anaconda\n(conda)"]; conda
+  node [label = "conda\npython"]; condapy
+  node [label = "pyenv"]; pyenv
+  node [label = "pyenv\npython"]; pyenvpy
+  node [label = "asdf"]; asdf
+  node [label = "asdf-python\nplugin"]; asdfpyplugin
+  node [label = "asdf\npython"]; asdfpy
+  node [label = "nix"]; nix
+  node [label = "nix\npython"]; nixpy
+  node [label = "macports"]; macports;
+  node [label = "macports\npython"]; macportspy;
+
+  system;
+
+  brew -> brewpy;
+  brewpy -> brewpyx;
+  brew -> brewpyx;
+  brew -> conda;
+  conda -> condapy;
+  brew -> pyenv;
+  pyenv -> pyenvpy;
+  brew -> asdf;
+  asdf -> asdfpyplugin;
+  asdfpyplugin -> asdfpy;
+  nix -> nixpy;
+  macports -> macportspy;
+}

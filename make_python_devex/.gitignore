@@ -1,4 +1,11 @@
 .peru
 deps
+build
+node_modules
 presentation.html
 presentation.pdf
+presentation.docx
+article.html
+article.pdf
+article.docx
+article_media

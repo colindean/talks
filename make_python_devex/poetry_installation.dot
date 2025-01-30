@@ -1,0 +1,35 @@
+digraph poetry_installation {
+  rankdir=LR;
+  rank=source;
+  size="8,4";
+  compound=true;
+
+  graph [fontname = "helvetica"];
+  node [fontname = "courier", shape = rectangle]
+  edge [fontname = "helvetica"];
+
+  node [label = "brew install pipx", color=black]; pipx
+  node [label = "pipx install poetry"]; pipxpoetry
+  node [label = "brew install poetry", color=red]; brewpoetry
+  node [label = "conda install poetry"]; condapoetry
+  node [label = "asdf plugin asdf-poetry"]; asdf
+  node [label = "asdf install poetry"]; asdfpoetry
+  node [label = "curl https://install.python-poetry.org | python3 -", fontname="courier", color=green, penwidth=3]; official
+
+  subgraph cluster1 {
+    label = "Unsupported";
+    rank=same;
+    size=10;
+    brewpoetry;
+    condapoetry;
+    asdf -> asdfpoetry;
+  }
+  subgraph cluster0 {
+    label = "Supported";
+    rank=same;
+    size=10;
+    official;
+    pipx -> pipxpoetry;
+  }
+
+}
