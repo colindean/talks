@@ -325,12 +325,11 @@ amid the other ambitions.
 
 ## Remedy
 
-Use a **low-cost LTE cellular provider** with an introductory rate of only $15/mo.
+**low-cost LTE cellular provider**
 
-Use a **laptop with an LTE modem** purchased _new_ for $60.
+**low-end laptop with an LTE modem** _new_ $60
 
-Use **NixOS** `configuration.nix` to define the system,
-_and nothing else_.
+Edit _only_ **NixOS** `configuration.nix`
 
 ::: notes
 
@@ -347,7 +346,7 @@ The pledge was a single configuration file, and I wanted to see what the prestig
 
 ---
 
-# Can I build a router in _one_ config file?
+# Can I define a router in _one_ config file?
 
 ::: notes
 
@@ -427,7 +426,7 @@ I avoided the need for a whole new uninterruptible power supply unit.
 
 { config, lib, pkgs, modulesPath, ... }:
 {
-  imports = [ (modulesPath + "/installer/scan/not-detected.nix")];
+  imports=[(modulesPath+"/installer/scan/not-detected.nix")];
   boot.initrd.availableKernelModules = [
     "ahci" "xhci_pci" "usb_storage" "sd_mod"
     "sdhci_pci" "rtsx_usb_sdmmc" ];
@@ -545,12 +544,12 @@ boot.kernel.sysctl = {
     "net.ipv4.conf.all.forwarding" = true;
     "net.ipv6.conf.all.forwarding" = true;
 
-    # By default, not automatically configure any IPv6 addresses.
+    # No IPv6 addresses for now.
     "net.ipv6.conf.all.accept_ra" = 0;
     "net.ipv6.conf.all.autoconf" = 0;
     "net.ipv6.conf.all.use_tempaddr" = 0;
 
-    # On WAN, allow IPv6 autoconfiguration and temporary address use.
+    # WAN: Allow IPv6 autoconfig
     "net.ipv6.conf.wwp0s21f0u3i4.accept_ra" = 2;
     "net.ipv6.conf.wwp0s21f0u3i4.autoconf" = 1;
 };
@@ -626,7 +625,8 @@ services.dnsmasq = {
       domain-needed = true;
       bind-dynamic = true;
       interface = [ "enp0s21f0u5" ];
-      dhcp-range = [ "10.201.1.2,10.201.1.253,255.255.255.0,24h" ];
+      dhcp-range =
+            [ "10.201.1.2,10.201.1.253,255.255.255.0,24h" ];
     };
   };
 ```
@@ -653,7 +653,7 @@ services.kea.dhcp4 = {
         persist = true;
         type = "memfile";
       };
-      rebind-timer=2000; renew-timer=1000; valid-lifetime=4000;
+      rebind-timer=2000;renew-timer=1000;valid-lifetime=4000;
       subnet4 = [
         {
           pools = [ { pool = "10.201.1.2 - 10.201.1.253"; }];
