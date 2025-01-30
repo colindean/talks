@@ -104,6 +104,22 @@ problem with the presentation occurs.
 
 ---
 
+https://tech.target.com/blog/make-python-devex
+
+https://github.com/target/make-python-devex
+
+::: notes
+
+This talk inspired the LONGEST POST EVER on the blog of my employer,
+the 37th largest company in the US and the 8th largest retailer.
+
+It also earned a coveted open source release, so please,
+I thank Target for doing open source stuff.
+
+:::
+
+---
+
 # Problems
 
 ---
