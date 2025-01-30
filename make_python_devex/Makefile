@@ -45,6 +45,7 @@ clean:
 
 %.html: %.md Makefile
 	pandoc -t revealjs -s $< -o $@ \
+	--section-divs \
 	-L .filters/embedded_graphviz.lua \
 	-M revealjs-url=$(DEPS_DIR)/reveal.js/reveal.js-$(REVEALJS_VERSION)
 

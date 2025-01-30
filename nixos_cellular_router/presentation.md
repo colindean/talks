@@ -11,13 +11,6 @@ history: true
 # transition: none
 transitionSpeed: "fast"
 totalTime: 1200
-# include-after: |
-#     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
-#     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
-# title-slide-attributes:
-#     data-background-image: "targettech.png"
-#     data-background-size: "10%"
-#     data-background-position: "50% 100%"
 header-includes: |
     <script>
         function connect() {
@@ -900,6 +893,7 @@ Thanks, yinz!
 |---|---|
 |**fediverse**|`@colindean@mastodon.social`|
 |**bsky**|`@cad.cx`|
+|**slides**|https://github.com/colindean/talks|
 
 ::: notes
 

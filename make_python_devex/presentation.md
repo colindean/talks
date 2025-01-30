@@ -10,7 +10,7 @@ hash: true
 history: true
 transition: none
 transitionSpeed: "fast"
-totalTime: 900
+totalTime: 1800
 include-after: |
     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
@@ -38,6 +38,17 @@ I started out in PHP before moving to Ruby, Java, and a proprietary language for
 work, then spent many years working in Scala before picking up some Rust and
 Groovy. I came back to Scala for a while then now find myself working in
 Python since January 2021.
+
+:::
+
+---
+
+## {background-image="pittsburgh_on_a_map.svg" background-size="contain" background-color="#6699ff"}
+
+::: notes
+
+I'm here from Pittsburgh, a metropolitan area of around two and a half million people
+in northern Appalachia in an area of the United States we call the Rust Belt.
 
 :::
 
@@ -1103,8 +1114,7 @@ for one time setup, e.g. putting things into their shell configuration files.
 
 ---
 
-# FIN {.r-fit-text background-image="" background-size="10%"
-background-position="50% 100%" }
+# FIN {.r-fit-text background-image="" background-size="10%" background-position="50% 100%" }
 
 ::: notes
 
