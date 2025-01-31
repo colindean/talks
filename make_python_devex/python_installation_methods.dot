@@ -22,6 +22,8 @@ digraph python_installation_methods {
   node [label = "nix\npython"]; nixpy
   node [label = "macports"]; macports;
   node [label = "macports\npython"]; macportspy;
+  node [label = "uv"]; uv;
+  node [label = "uv\npython"]; uvpy;
 
   system;
 
@@ -37,4 +39,6 @@ digraph python_installation_methods {
   asdfpyplugin -> asdfpy;
   nix -> nixpy;
   macports -> macportspy;
+  brew -> uv;
+  uv -> uvpy;
 }
