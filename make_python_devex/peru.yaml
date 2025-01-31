@@ -3,7 +3,8 @@ imports:
   fontawesome: deps/font-awesome
   asciinema-player-css: deps/asciinema-player
   asciinema-player-js: deps/asciinema-player
-  pandoc-lua-filters: deps/pandoc/lua-filters
+    #  pandoc-lua-filters: deps/pandoc/lua-filters
+  colindean-tophat: deps/colindean-tophat.jpg
 
 curl module revealjs:
   url: https://github.com/hakimel/reveal.js/archive/4.3.0.zip
@@ -19,6 +20,9 @@ curl module asciinema-player-css:
 curl module asciinema-player-js:
   url: https://github.com/asciinema/asciinema-player/releases/download/v2.6.1/asciinema-player.js
 
-git module pandoc-lua-filters:
-  url: https://github.com/pandoc/lua-filters.git
-  rev: v2021-11-05
+#git module pandoc-lua-filters:
+#  url: https://github.com/pandoc/lua-filters.git
+#  rev: v2021-11-05
+
+curl module colindean-tophat:
+  url: https://avatars.githubusercontent.com/u/197224?s=300

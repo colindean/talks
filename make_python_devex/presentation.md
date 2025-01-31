@@ -14,17 +14,17 @@ totalTime: 1800
 include-after: |
     <link href="deps/asciinema-player/asciinema-player.css" type="text/css" rel="stylesheet"/>
     <script src="deps/asciinema-player/asciinema-player.js" type="application/javascript"></script>
-title-slide-attributes:
-    data-background-image: "targettech.png"
-    data-background-size: "10%"
-    data-background-position: "50% 100%"
+# title-slide-attributes:
+#    data-background-image: "targettech.png"
+#    data-background-size: "10%"
+#    data-background-position: "50% 100%"
 
 ---
 
 # Who is this guy?
 
 ::: biopic
-![Colin Dean, who wears many hats](https://avatars.githubusercontent.com/u/197224?s=300)
+![Colin Dean, who wears many hats](deps/colindean-tophat.jpg/197224)
 :::
 
 Software engineer and community builder since 2002
@@ -81,7 +81,7 @@ solving. If you search for "Colin Dean Problem Diagnosis Remedy" on the web,
 you'll find my writings on it.
 
 At a high-level, I'll be talking about the pains I experienced and have
-observed in the last approximately two years as an experienced developer
+observed in the last approximately four years as an experienced developer
 working in Python for the first time since 2005.
 I'll talk about barriers to productivity in a Python codebase and how I've
 overcome them using a venerable tool: Make.
@@ -193,15 +193,20 @@ Python 3.8.9
 
 COLIN:
 
-My team uses macOS for development.
+My team uses macOS for development and deploys to Linux.
 Apple tends to keep its Python 3.x installation within
 Python EOL dates but it's always a little out of date.
+Apple removed system Python in macOS 12.3, as warned in 10.15 release notes.
+It's still included with XCode, though.
 Apple says not to rely on this and that it's for internal use only, a policy
-similar to Homebrew's but at least Homebrew's Python won't just disappear
-someday.
+similar to but stricter than Homebrew's,
+but at least Homebrew's Python won't just disappear someday in a new XCode release.
+
+That is, management of the system Python is
+out of the user's control because it is coupled with OS and core development tool updates.
 
 This one is a bit of a given; nearly all Python developers with a project in
-production learn quickly not to use a macOS-provided Python.
+production learned quickly not to use a macOS-provided Python.
 
 :::
 
@@ -222,12 +227,17 @@ There are a ton of ways to install and use Python.
 My team was consistently bringing their own Python, installing it however they
 felt was most appropriate.
 
-Using system-provided Python is just wrong, it'll change and it'll go away
+Using system-provided Python is unreliable, because it'll change and it'll go away
 eventually.
-Using Homebrew Python is hitting a moving target, and is inadvisable.
+Using Homebrew Python is hitting a moving target, and is inadvisable,
+although this problem is lessened when using formulae for specific minor
+versions.
 Using PyEnv is probably as correct as choosing Anaconda,
-which [PythonSpeed reports is the most performant][faster-python],
+which [PythonSpeed reports is the most performant][faster-python]
+for some older versions of Python,
 but both require knowledge of the tool and some setup.
+Using Anaconda's repositories is also not free, while conda-forge is.
+Learning this can be an expensive lesson.
 I'm sure there are still MacPorts holdouts in the audience
 and the rumblings of the Nix horde can be heard in the
 distance.
@@ -244,13 +254,14 @@ across teams.
 ### Inconsistent Python versions
 
 * Tech Debt Risk: dependencies stop supporting older versions
-  * Python [3.6][py36] and older, EOL
-  * Python [3.7][py37], [3.8][py38], [3.9][py39] in security-only phase
-    * EOLs June 2023, Oct. 2024, Oct. 2025
-  * Python [3.10][py310], [3.11][py311] supported
-    * Final non-security release in April: 2023 & 2024
-    * EOL October: 2026 & 2027
+    * Python [3.8][py37] and older, EOL
+    * Python [3.9][py39] and [3.10][py310] in security-only phase
+        * EOL October 2025 & 2026
+    * Python [3.11][py311], [3.12][py312], 3.13 supported
+        * Final non-security release in April: 2025-2027
+        * EOL October: 2027-2029
 
+[eoldate]: https://endoflife.date/python
 [py36]: https://www.python.org/dev/peps/pep-0494/
 [py37]: https://www.python.org/dev/peps/pep-0537/
 [py38]: https://www.python.org/dev/peps/pep-0569/
@@ -258,6 +269,7 @@ across teams.
 [py310]: https://peps.python.org/pep-0619/
 [py311]: https://peps.python.org/pep-0664/
 [py312]: https://peps.python.org/pep-0693/
+
 
 ::: notes
 
@@ -270,29 +282,33 @@ While many of our projects are tied to a particular version because of a hard
 requirement on our cluster, we still had unexercised freedom to choose updated
 versions in other contexts, including containerized services and pipelines.
 
+We've since moved to containerized deployments,
+even for our Spark jobs.
+It's lovely no longer to be stuck on Python 3.7
+as we were until last year.
 :::
 
 [faster-python]: https://pythonspeed.com/articles/faster-python/
 
 ---
 
-### No one can remember `pip`/`poetry` commands
+### No one can remember commands
 
 * …or wants to type them
 * …or wants to use the correct, full-length command
     * `poetry run pytest`
 * Neither enables build actions outside of their domain
 
-<small>_(Pipenv is no better)_</small>
-
 ::: notes
 
 COLIN:
 
-pip is a venerable tool and, under the hood, even poetry uses pip
+pip is a venerable tool and, under the hood, even poetry used to use pip
 but pip was built in a time outside of configuration file conventions.
 The new PEP standard pyproject.toml really helps a lot but it takes
 some steps to get to development cycle usability.
+Even newer tools like hatch, pdm, and uv have
+different invocations.
 
 All of those steps are automatable. If a repo is not using poetry, or
 needs to use pip in an intermediary step, then it's best to script
@@ -306,7 +322,7 @@ README.
 ### Python ecosystem may necessitate compiling with options
 
 * Apple M1 processor, ARM64 m-arch., ca. June 2020
-* `macos_{11,12}` `arm64` binary avail. growing
+* `macos_{11...15}` `arm64` binary avail. growing
 * Passing compiler flags is not ergonomic:
 
 ```
@@ -322,13 +338,23 @@ installed.
 Unfortunately, Apple's transition from Intel processors to its own
 processors, switching from the x86_64 architecture to ARM64 in the process, is
 complicating installing Python dependencies.
-Nearly three years in, many projects still have not released macOS ARM64 binary
-packages, although it's *FAR* better than it was in 2021 and a lot better than
-summer 2022.
-There are many variables and barriers to this, notably the slim availability of
-macOS ARM64 continuous integration system runners capable of building the
-binaries.
-Nevertheless, it necessitates building some packages from the source
+Approaching five years in, most projects actively developed
+have released macOS ARM64 binary packages.
+It's *FAR* better than it was in 2021 and a lot better than summer 2022.
+With newer versions of dependencies, I rarely see
+compilation.
+But what I'm starting to see now as I've adopted some
+legacy codebases is newer OS and Python versions
+necessitating compilation because there weren't
+binaries published for this now-ancient version of
+a package, because the triplet didn't exist back then.
+ARM64 runners are available on most CI providers now,
+but that doesn't mean a project is going to publish
+a point release primarily to provide binaries
+for an old Python version.
+
+As a safeguard, we have to plan for it.
+A project may eventually require building some packages from the source
 distribution and that requires passing arguments or environment variables to
 Python packaging tools.
 This is scriptable but…
@@ -376,14 +402,17 @@ We need a **task runner** for onboarding _and_ resync instead of _just_ better d
 
 1. whatever installs Python
 2. Python
+4. whatever installs Python dependencies' dependencies
 3. whatever installs Python dependencies
-4. everything else needed somewhere in there
+5. Python dependencies' dependencies
+4. Python dependencies
+5. everything else needed somewhere in there
 
 ::: notes
 
 COLIN:
 
-So, let's install it from something else so we're not bound to Apple's whim
+So, let's install it from something else so we're not bound to the OS vendor's whim
 and we're all using the same versions, the same tooling, with the possibility
 for the same experience to build a common vocabulary and common procedures for
 developing and debugging our code.
@@ -419,6 +448,8 @@ digraph python_installation_methods {
   node [label = "nix\npython"]; nixpy
   node [label = "macports"]; macports;
   node [label = "macports\npython"]; macportspy;
+  node [label = "uv"]; uv;
+  node [label = "uv\npython"; uvpy;
 
   system;
 
@@ -434,6 +465,8 @@ digraph python_installation_methods {
   asdfpyplugin -> asdfpy;
   nix -> nixpy;
   macports -> macportspy;
+  brew -> uv;
+  uv -> uvpy;
 
 }
 ```
@@ -447,6 +480,8 @@ Use the system-provided Python,
 install a minor version packages from Homebrew directly (with [caveats about rolling updates][brewpy]; and don't forget that a version switch is system-wide),
 install from Homebrew a version manager such as pyenv or asdf that can install specific minor or patch version and easily switch per-directory,
 or install from Homebrew another, specialized package manager such as Anaconda that can install optimized Python builds in an environment activated per-project or per-directory.
+Some newer tools such as uv can install it, too,
+even building it if needed.
 For our team, Homebrew or Conda were the go-tos, for the most part.
 
 :::
@@ -540,8 +575,10 @@ Homebrew as a base requirement is safe for us as we're all on Macs or Linux.
 
 COLIN:
 
-I quickly settled on Poetry, as most new Python projects seem to be gravitating
-toward it or Pipenv. Nearly all Python tooling has committed to supporting the
+I quickly settled on Poetry, as most new Python projects then seemed to be gravitating
+toward it or Pipenv.
+It's still a great choice.
+Nearly all Python tooling has committed to supporting the
 now standardized pyproject dot TOML format.
 
 Poetry's own installer smartly manages a separate virtualenv, avoiding a pesky
@@ -550,6 +587,8 @@ Poetry or other similar tools.
 
 And, of course, Poetry combines dependency management and packaging into one
 smart tool. It's nearly a no-brainer.
+
+I am keeping a very close eye on uv, though.
 
 :::
 
@@ -640,6 +679,11 @@ COLIN:
 I rejected a few commonly suggested solutions out of productivity concerns.
 The ideal solution would keep development iterations as quick as possible
 and encourage test-driven development to produce high quality software.
+
+While we deploy to containers, running our
+data science workloads inside of a container,
+which is really just running on a virtual machine
+on macOS, is just too slow.
 
 :::
 
@@ -941,13 +985,14 @@ and publish them to our internal PyPI repository.
 Code Quality
   check            Runs linters and other important tools
   check-py         Checks only Python files
+  check-py-ruff    Runs ruff linter
   check-py-flake8  Runs flake8 linter
   check-py-black   Runs black in check mode (no changes)
   check-py-mypy    Runs mypy
   check-sh         Run shellcheck on shell scripts
-  fix-sh           Runs shellcheck and applies suggestions
-  format-py        Runs black, makes changes where necessary
-  format-shell     Runs shfmt on all shell scripts and tests
+  fix-sh           Runs shellcheck & applies suggestions
+  format-py        Runs black||ruff, may make changes
+  format-shell     Runs shfmt on shell scripts & tests
 ```
 
 ::: notes
@@ -955,7 +1000,7 @@ Code Quality
 COLIN:
 
 And we have plenty of code quality checks.
-We love flake8, black, mypy, and more that enable us to write maintainable code
+We love flake8, black, ruff, mypy, and more that enable us to write maintainable code
 that captures our intent.
 
 :::
@@ -980,16 +1025,14 @@ _Apple Silicon == M1 == arm64_
 
 COLIN:
 
-As the second generation of ARM Macs roll out to developers, there's still a small but necessary
+As the fourth generation of ARM Macs roll out to developers, there's still a tiny but necessary
 challenge to support both Intel and ARM architectures.
-I'd hoped that enough time had passed for the Python ecosystem to
-have fully shipped binaries for ARM Macs, but that's simply not yet
-come to pass. I've found that as of Python 3.10 in mid 2022,
+As I said earlier, I'm having to compile new stuff far less often, but it's now
+the older stuff we're having to compile sometimes
 I have to compile some dependencies from source,
 because, in a lot of cases, Python is merely a nice wrapper around
 a library written in a compiled language like C, C++, or Rust.
-Things are better in Python 3.11 so far but the ecosystem hasn't fully
-caught up yet for the recent release.
+
 
 :::
 
@@ -1025,8 +1068,10 @@ that `uname -s` outputs the system name, which is Darwin, the actual
 system name for macOS.
 The rest of the commands inside this block run Homebrew and a
 standard tool called `pkg-config` to get the location of the libraries
-that Homebrew installed. It'd be great if hdf5 followed `pkg-config`
-conventions, but it doesn't so here we are.
+that Homebrew installed. In 2023, hdf5 didn't follow `pkg-config`
+conventions.
+Maybe it does now.
+I've not used it in a long time.
 
 :::
 
@@ -1092,27 +1137,30 @@ Python projects.
 
 ## Improvements
 
-* Cookie Cutter template (WIP!)
 * More Make documentation in Makefile
 * Streamline one-time setup experience
 * Environment debugging
+* uv version
 
 ::: notes
 
 COLIN:
 
-We're working on some other improvements, especially as my current team adopts
-this setup for all of its repos. We've adopted it for about 80% and others
-will onboard in the coming weeks.
+The teams were I developed this have since disbanded,
+unfortunately.
+But, like a beautiful flower waving in the wind,
+we're spreading the seeds of this method throughout
+our company.
 
-The greatest challenge we've encountered so far in rolling this out is some of
-the one-time setup that's required to tell package managers like Homebrew, Pyenv, Poetry,
-and more where to look for executables.
-Some of it can be automated but such often frustrates those manage their dotfiles carefully,
+The greatest challenge we encountered while rolling
+this out is some of the one-time setup required to tell IDEs and tools where to look for executables
+installed from Poetry and pyenv.
+We automated most it but such often frustrates those manage their dotfiles carefully,
 including myself.
+We honed it to a drop-in copypaste block that generally just worked.
 
-We've seen some troubleshooting complexity for folks with old setups.
-We don't want to mess up working setups, so we move more and more toward a stricter
+We saw some troubleshooting complexity for folks with old setups.
+We didn't want to mess up working setups, so we move more and more toward a stricter
 environment setup as time goes on.
 That is, we're more opinionated on where something gets installed so we can easily
 reference from our shiny setup while minimizing the work that a developer needs to do
@@ -1160,6 +1208,10 @@ for enabling us to show CLI activity at high speed!
 ---
 
 # THANK YOU
+
+https://tech.target.com/blog/make-python-devex
+
+https://github.com/target/make-python-devex
 
 <!-- # Questions? -->
 
