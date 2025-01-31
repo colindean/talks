@@ -2,7 +2,8 @@
 title: "make python devex"
 subtitle: "How a 45+ year old tool can MAKE Python developer experience easier"
 author:
-  - _Colin Dean, Lead AI Engineer_
+  - _Colin Dean, Lead Engineer_
+  - "`@colindean@mastodon.social`"
 theme: white
 css: target.css
 slideNumber: true
@@ -99,9 +100,6 @@ Please save your questions until the end.
 
 <small>Grab a piece of paper so you can write them down.</small>
 
-_This system matures frequently despite being in development for nearly two
-years._
-
 ::: notes
 
 COLIN:
@@ -109,6 +107,9 @@ COLIN:
 This solution is in active development, so some things might have changed
 since I last revised these remarks.
 I'd love feedback and suggested improvements.
+
+I'm filling in for someone who was unable to make it today,
+so some of these slides or my notes may have some outdated information.
 
 <!--
 Please save your questions until the end.
@@ -121,17 +122,30 @@ problem with the presentation occurs.
 
 ---
 
-https://tech.target.com/blog/make-python-devex
+# Open thoughts
 
-https://github.com/target/make-python-devex
+![`tech.target.com/blog/make-python-devex`](ttblog_qrcode.svg){width=35%}
 
 ::: notes
 
 This talk inspired the LONGEST POST EVER on the blog of my employer,
 the 37th largest company in the US and the 8th largest retailer.
 
-It also earned a coveted open source release, so please,
-I thank Target for doing open source stuff.
+:::
+
+
+---
+
+# Open source
+
+![`github.com/target/make-python-devex`](gh_mpd_qrcode.svg){width=35%}
+
+::: notes
+
+It also earned a coveted open source release
+so I thank Target for doing open source stuff,
+including its Open Source Fund, now in its second
+year of funding open source projects.
 
 :::
 
@@ -375,8 +389,8 @@ COLIN:
 
 We can write a bunch of scripts for this automation, but
 eventually, any sufficiently advanced system of one-off scripts
-eventually reimplements proper DAG — directed acyclic graph — build
-tool, so let's just use one from the start!
+eventually reimplements proper DAG build tool — a directed acyclic graph--
+so let's just use one from the start!
 
 :::
 
@@ -427,7 +441,7 @@ developing and debugging our code.
 digraph python_installation_methods {
   rankdir=LR;
   rank=source;
-  size="9,9"
+  size="6,6"
 
   graph [fontname = "helvetica"];
   node [fontname = "helvetica", shape = square, margin = 0];
@@ -449,7 +463,7 @@ digraph python_installation_methods {
   node [label = "macports"]; macports;
   node [label = "macports\npython"]; macportspy;
   node [label = "uv"]; uv;
-  node [label = "uv\npython"; uvpy;
+  node [label = "uv\npython"]; uvpy;
 
   system;
 
@@ -480,9 +494,8 @@ Use the system-provided Python,
 install a minor version packages from Homebrew directly (with [caveats about rolling updates][brewpy]; and don't forget that a version switch is system-wide),
 install from Homebrew a version manager such as pyenv or asdf that can install specific minor or patch version and easily switch per-directory,
 or install from Homebrew another, specialized package manager such as Anaconda that can install optimized Python builds in an environment activated per-project or per-directory.
-Some newer tools such as uv can install it, too,
-even building it if needed.
-For our team, Homebrew or Conda were the go-tos, for the most part.
+Some newer tools such as uv can install it, too.
+For my teams 2021 through 2024, Homebrew or Conda were the go-tos, for the most part.
 
 :::
 
@@ -507,7 +520,7 @@ and provide a mindless way to install it.
 
 ::: notes
 
-This is such a problem that XKCD made a comic about it. Almost a decade ago.
+This is such a problem that XKCD made a comic about it in 2018.
 
 :::
 
@@ -551,7 +564,7 @@ digraph our_method {
 
 COLIN:
 
-I chose Pyenv because it seemed to be the lowest barrier to entry to get the
+I chose Pyenv at the onset because it seemed to be the lowest barrier to entry to get the
 exact version of Python we needed and avoid it changing from underneath the
 developer when running updates.
 
@@ -560,6 +573,7 @@ I didn't want to break existing setups without a clear need to do so.
 
 Homebrew as a base requirement is safe for us as we're all on Macs or Linux.
 
+Advancements in build tools feature to install Python automatically may alter this pattern in the future.
 :::
 
 ---
@@ -575,7 +589,7 @@ Homebrew as a base requirement is safe for us as we're all on Macs or Linux.
 
 COLIN:
 
-I quickly settled on Poetry, as most new Python projects then seemed to be gravitating
+I quickly settled on Poetry, as most new Python projects at the time seemed to be gravitating
 toward it or Pipenv.
 It's still a great choice.
 Nearly all Python tooling has committed to supporting the
@@ -588,7 +602,7 @@ Poetry or other similar tools.
 And, of course, Poetry combines dependency management and packaging into one
 smart tool. It's nearly a no-brainer.
 
-I am keeping a very close eye on uv, though.
+And, of course, I am keeping a very close eye on uv.
 
 :::
 
@@ -791,13 +805,14 @@ the output and input, respectively.
 
 <https://github.com/colindean/plaintextaccounting_workshop>
 
+<https://makefiletutorial.com>
+
 ::: notes
 
 COLIN:
 
-A full Make tutorial is out of scope for this presentation
-If yinz are interested in such, I can do up something on it,
-but Make is more than 45 years old so I think you can find
+A full Make tutorial is out of scope for this presentation.
+Make is more than 45 years old so I think you can find
 some useful content on it.
 
 One such work is the automation chapter of a self-guided workshop
@@ -911,7 +926,7 @@ _(ope, there goes gravity)_
 $ make help
 
 Usage:
-  make
+  make <task>
 
 Utility
   help             Display this help
@@ -1030,7 +1045,7 @@ challenge to support both Intel and ARM architectures.
 As I said earlier, I'm having to compile new stuff far less often, but it's now
 the older stuff we're having to compile sometimes
 I have to compile some dependencies from source,
-because, in a lot of cases, Python is merely a nice wrapper around
+because, in a lot of cases in data science, Python is merely a nice wrapper around
 a library written in a compiled language like C, C++, or Rust.
 
 
@@ -1060,8 +1075,8 @@ COLIN:
 This is an example of that. You'll probably see this in just about
 every Makefile that necessitates setting compliation flags for
 poetry to use. Here, I'm referencing dependencies needed by
-pyodbc and hdf5, which for the foreseeable future necessitate
-compilation from source to install on an ARM64 Mac.
+pyodbc and hdf5, which needed compilation
+from source to install on an ARM64 Mac for a while.
 
 Note that `uname -m` outputs the microarchiture, which is arm64 and
 that `uname -s` outputs the system name, which is Darwin, the actual
@@ -1129,7 +1144,7 @@ I have no doubt this system will improve over time, but on its second major
 iteration in a two years and openly talking about it inside and outside of [[my
 company]], and contributing to several Python open source projects in that
 time, it's clear that something like this is needed in some form for nearly all
-Python projects.
+software projects, Python projects included.
 
 :::
 
@@ -1165,6 +1180,13 @@ environment setup as time goes on.
 That is, we're more opinionated on where something gets installed so we can easily
 reference from our shiny setup while minimizing the work that a developer needs to do
 for one time setup, e.g. putting things into their shell configuration files.
+
+And then there's UV.
+I heard a fact yesterday that more than a third of
+PyPI download traffic is to clients using uv,
+and this is growing significantly with each new release.
+I can't ignore it much longer,
+but I really want a 1.0.
 
 :::
 
