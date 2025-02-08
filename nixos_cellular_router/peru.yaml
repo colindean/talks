@@ -3,6 +3,7 @@ imports:
   fontawesome: deps/font-awesome
   asciinema-player-css: deps/asciinema-player
   asciinema-player-js: deps/asciinema-player
+  colindean-tophat: deps/colindean-tophat.jpg
 
 curl module revealjs:
   url: https://github.com/hakimel/reveal.js/archive/5.1.0.zip
@@ -17,3 +18,6 @@ curl module asciinema-player-css:
 
 curl module asciinema-player-js:
   url: https://github.com/asciinema/asciinema-player/releases/download/v2.6.1/asciinema-player.js
+
+curl module colindean-tophat:
+  url: https://avatars.githubusercontent.com/u/197224?s=300

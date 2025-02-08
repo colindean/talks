@@ -3,6 +3,7 @@ title: "NixOS + $60 laptop = cellular router"
 subtitle: "Building an LTE router with a $60 (new!) laptop and a single file"
 author:
   - _Colin Dean_
+  - "`@colindean@mastodon.social`"
 theme: white
 css: custom.css
 slideNumber: true
@@ -26,7 +27,7 @@ header-includes: |
 # Who is this guy?
 
 ::: biopic
-![Colin Dean, who wears many hats](https://avatars.githubusercontent.com/u/197224?s=300)
+![Colin Dean, who wears many hats](deps/colindean-tophat.jpg/197224)
 :::
 
 Software engineer and community builder
@@ -85,8 +86,7 @@ Please save your questions until the end.
 
 <small>Grab a piece of paper so you can write them down.</small>
 
-_This system matures frequently despite being in development for more than
-a year._
+I'm a Nix newbie.
 
 ::: notes
 
@@ -270,8 +270,8 @@ The cheapest reasonable Internet service available to me cost around $50 per mon
 At that price, I could choose between T-Mobile 5G with a 10 gigabyte data cap
 or Verizon fiber at 300 Mbps with no cap.
 T-Mobile's data cap wasn't sufficient for the doorbell camera's lowest quality setting.
-Verizon's option was overkill when I really only needed around 31 kilobits per second
-for the camera plus the thermostat's maybe half a kilobit per second averaged out over a month.
+Verizon's option was overkill when I really only needed around 31 kilobytes per second
+for the camera plus the thermostat's maybe half a kilobyte per second averaged out over a month.
 
 I didn't have a mobile hotspot device and most of what I saw was lackluster and frankly throw-away
 quality for what I wanted to spend.
@@ -292,9 +292,9 @@ I also had some extra unused Raspberry Pis laying around, but no extra systems w
 &#x1F4BB;
 </span>
 
-![$10 bill front and back](https://designhistorylab.com/sp2010dhl/kashani/pictures/10dollarbill.jpg){width=25%}
-![$10 bill front and back](https://designhistorylab.com/sp2010dhl/kashani/pictures/10dollarbill.jpg){width=25%}
-![$10 bill front and back](https://designhistorylab.com/sp2010dhl/kashani/pictures/10dollarbill.jpg){width=25%}
+![$10 bill front and back](10dollarbill.jpg){width=25%}
+![$10 bill front and back](10dollarbill.jpg){width=25%}
+![$10 bill front and back](10dollarbill.jpg){width=25%}
 
 ::: notes
 
@@ -400,12 +400,29 @@ I avoided the need for a whole new uninterruptible power supply unit.
 * Minimize administration
 * Short-lived: 3–4 months
 
+::: notes
+
+So these are the values I decided: inexpensive hardware with two backup devices
+available, a reproducible configuration, with minimal maintainance meant to
+last a few months.
+
+:::
+
 ---
 
 ## Can my partner make this work if I am unavailable?
 
 * Linux or Nix? No.
 * Power cycle? Yes.
+
+::: notes
+
+Importantly, it had to reboot cleanly and work on reboot.
+Turning it off and on again was the best fix for when something went wrong
+or when its limited battery was exhausted because we left the electricity off
+too long.
+
+:::
 
 ---
 
