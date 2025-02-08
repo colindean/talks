@@ -1,0 +1,46 @@
+section.nocaptions figure figcaption {
+  display:none;
+}
+
+.image-borders img {
+  border: 0.05em solid #ccc;
+  border-radius: 0.5em;
+  padding: 0.4em;
+  background-color: white;
+}
+
+:root {
+  /** from brew.sh **/
+  --hb-color_peach_orange_approx: #f9d094;
+  --hb-color_rangitoto_approx: #2e2a24;
+  --hb-font_all: "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Roboto", sans-serif;
+  --hb-font_code: "Monaco", "Menlo", monospace;
+
+
+  --r-background-color: var(--hb-color_rangitoto_approx);
+  --r-main-color: var(--hb-color_peach_orange_approx);
+  --r-heading-color: var(--hb-color_peach_orange_approx);
+  --r-heading-font: var(--hb-font_all);
+  --r-main-font: var(--hb-font_all);
+  --r-code-font: var(--hb-font_code);
+}
+
+@counter-style nope {
+  system: cyclic;
+  symbols: "\274C"; /* red X */
+  suffix: " ";
+}
+
+@counter-style hourglass {
+  system: cyclic;
+  symbols: "\23F3"; /* hourglass with flowing sand */
+  suffix: " ";
+}
+
+.list-nope li {
+  list-style-type: nope;
+}
+
+.list-wip li {
+  list-style-type: hourglass;
+}

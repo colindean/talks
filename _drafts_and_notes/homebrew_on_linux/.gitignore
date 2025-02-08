@@ -1,0 +1,8 @@
+.peru
+deps
+build
+node_modules
+presentation.html
+presentation.pdf
+presentation.docx
+.presentation.html.ws

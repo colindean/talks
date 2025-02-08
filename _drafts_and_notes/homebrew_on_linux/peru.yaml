@@ -1,0 +1,34 @@
+imports:
+  revealjs: deps/reveal.js
+  fontawesome: deps/font-awesome
+  asciinema-player-css: deps/asciinema-player
+  asciinema-player-js: deps/asciinema-player
+  colindean-github-avatar: deps/colindean-github-avatar
+  brewsh: deps/brew.sh
+  chromebrew-logo: deps/chromebrew
+
+curl module revealjs:
+  url: https://github.com/hakimel/reveal.js/archive/5.1.0.zip
+  unpack: zip
+
+curl module fontawesome:
+  url: https://github.com/FortAwesome/Font-Awesome/releases/download/6.0.0/fontawesome-free-6.0.0-web.zip
+  unpack: zip
+
+curl module asciinema-player-css:
+  url: https://github.com/asciinema/asciinema-player/releases/download/v2.6.1/asciinema-player.css
+
+curl module asciinema-player-js:
+  url: https://github.com/asciinema/asciinema-player/releases/download/v2.6.1/asciinema-player.js
+
+curl module colindean-github-avatar:
+  url: https://avatars.githubusercontent.com/u/197224?s=300
+  filename: colindean-github-avatar.jpg
+
+git module brewsh:
+  url: https://github.com/Homebrew/brew.sh.git
+  pick: assets/img/*.svg
+
+curl module chromebrew-logo:
+  url: https://raw.githubusercontent.com/chromebrew/chromebrew/refs/heads/master/images/brew.png
+  filename: chromebrew-logo.png
