@@ -323,6 +323,22 @@ another computer.
 
 :::
 
+::: notes
+
+Homebrew does not officially support ARM Linux as of February 2025,
+but this is maturing and the organization may decide to commit to it in the
+future.
+Currently, Homebrew technically does _work_ on ARM Linux, but requires building
+all packages from source.
+What's not yet in place is the infrastructure and volunteers to keep up with
+any oddities of building more than 90% of our packages on ARM Linux.
+
+Then there's also some exploration of supporting C standard libraries beyond
+glibc, such as musl.
+That's in the far future.
+
+:::
+
 ---
 
 # What's _not_ next?
@@ -332,6 +348,12 @@ another computer.
 * HomebrewOS
 
 :::
+
+---
+
+# Get involved
+
+https://brew.sh
 
 ---
 
