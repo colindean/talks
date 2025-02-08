@@ -1,4 +1,4 @@
-## Continuous Onboarding
+# Continuous Onboarding
 
 I had this idea in 2014 at IBM Watson during a time when we were hiring often.
 We found problems with our onboarding process every time someone started,
@@ -16,3 +16,15 @@ Consider the quality attributes of this proposal before ever considering it seri
 
 …And if you ever do, come find me.
 You're my kind of crazy.
+
+## See Also
+
+### Writings
+
+* [Erase your darlings](https://grahamc.com/blog/erase-your-darlings/) by Graham Christensen, 2020.
+* [Three Years of Ephemeral NixOS: My Experience Resetting Root on Every Boot](https://b.tuxes.uk/three-years-of-ephemeral-nixos.html), 2025.
+
+### Projects
+
+* [Impermanence](https://github.com/nix-community/impermanence), Nix Community, ongoing.
+* [GUIX: Allow mounting root on tmpfs for impersistence](https://issues.guix.gnu.org/65335)
