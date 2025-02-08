@@ -1,6 +1,7 @@
 PRESENTATION = presentation
 ARTICLE = article
 MARKDOWN = $(PRESENTATION).md $(ARTICLE).md
+PRESENTATION_HTML = $(PRESENTATION).html
 HTML = $(MARKDOWN:md=html)
 PDF = $(MARKDOWN:md=pdf)
 DOCX = $(MARKDOWN:md=docx)
@@ -90,11 +91,17 @@ PDF_SERVER_PIDFILE=.miniserve.pdf.pid
 $(PDF_SERVER_PIDFILE):
 	miniserve -p 20871 . & echo $$! > .miniserve.pdf.pid
 
-$(PDF): $(HTML) $(PDF_SERVER_PIDFILE)
-	docker run --platform=linux/amd64 --rm -t --net=host \
+
+DECKTAPE_CMD = docker run --platform=linux/amd64 --rm -t --net=host \
 		-v "$(shell pwd):/slides" \
 		-v "$(FONTS):/home/node/.local/share/fonts" \
-	  astefanutti/decktape --size 1920x1080 http://$(HOST_INSIDE_DOCKER):20871/$(HTML) $@
+	  astefanutti/decktape
+
+DECKTAPE_CMD = npm exec -- decktape
+DECKTAPE_HOST = 127.0.0.1
+
+%.pdf: $(PRESENTATION_HTML) $(PDF_SERVER_PIDFILE)
+	$(DECKTAPE_CMD) --size 1920x1080 http://$(DECKTAPE_HOST):20871/$(@:.pdf=.html) $@
 
 	kill `cat $(PDF_SERVER_PIDFILE)` && rm -rf $(PDF_SERVER_PIDFILE)
 
