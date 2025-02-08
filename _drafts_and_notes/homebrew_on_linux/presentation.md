@@ -273,8 +273,8 @@ it's just another Debian or Ubuntu system.
 
 ::: notes
 
-Chromebrew exists and is not a Homebrew-related project beyond Chromebrew
-having forked from Homebrew many years ago.
+Chromebrew exists and is not a project of the Homebrew team.
+Its name and package definition DSL are similar, but it's not a fork.
 ChromeOS 117 effectively killed the Chromebrew installer, but the project
 remains active and loved by those who prefer not to use "Linux mode,"
 the VM of which has some performance implications and requires some system
