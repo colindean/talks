@@ -239,6 +239,18 @@ PATH.
 
 ---
 
+## Consistency
+
+::: notes
+
+If you're working across multiple different distros,
+you can rely on Homebrew to provide a consistent definition
+of what constitutes the "latest" package version.
+
+:::
+
+---
+
 ## Managed Linux
 
 ---
