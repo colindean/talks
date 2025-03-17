@@ -5,6 +5,8 @@ While I try to capture recordings of every public presentation I deliver, not al
 
 | Date | Title | Topic | Event | Comments |
 |------|-------|-------|-------|----------|
+| 2025 February 2 | [make python devex: Towards Red-Green-Refactor in 1 Command with an Old Tool](https://fosdem.org/2025/schedule/event/fosdem-2025-6426-make-python-devex-towards-red-green-refactor-in-1-command-with-an-old-tool/)|[make python devex](https://github.com/colindean/talks/tree/master/make_python_devex)|[FOSDEM 2025](https://fosdem.org/2025/)||
+| 2025 February 1 | [Building an LTE router with a $60 (new!) laptop and a single file](https://fosdem.org/2025/schedule/event/fosdem-2025-6437-building-an-lte-router-with-a-60-new-laptop-and-a-single-file/)|[nixos cellular router](https://github.com/colindean/talks/tree/master/nixos_cellular_router)|[FOSDEM 2025](https://fosdem.org/2025/)||
 | 2024 January 17 | [Data Engineering: The Code & Supply Compensation Survey Report](https://www.youtube.com/watch?v=bbjMVXs-nQc)|[C&S Comp Survey 2023 Engine](codeandsupply_comp_survey_2022_engine)|[PyData Pittsburgh](https://www.meetup.com/pydata-pittsburgh/events/298352661)/[Code & Supply](https://www.meetup.com/pittsburgh-code-supply/events/298399851/)| With [Alex Zharichenko](https://github.com/azharichenko/)|
 | 2022 December 30 | [Code Review is an Architectural Necessity](https://www.youtube.com/watch?v=JWjcWQz5g3U&t=176s) | [Code Review](code_review) | [Chicago JavaScript December 2022 Meetup](https://www.meetup.com/js-chi/events/288515415/) | Revised for 2022! |
 | 2022 July 30 | [make python devex](https://www.youtube.com/watch?v=WTsiO3brQwE) | [make python devex](make_python_devex) | [PyOhio](https://www.pyohio.org/2022) | Officially representing Target Corp. |
