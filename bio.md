@@ -18,11 +18,11 @@ I am a software engineer, community builder, and non-profit leader from Pittsbur
 
 ### Third Person
 
-Colin Dean is a software engineer, community builder, and non-profit leader. He's built software for IBM Watson, Target, Vivísimo, and Arcadia.io, plus some open source software used by most Mac-using developers. He's served on boards of five nonprofits, founding two, and advising other nonprofits on leadership and technical topics. He spends most of his time managing Meetups and conferences for Code & Supply, Pittsburgh's largest community of software professionals. He loves cuddling with his dogs, cat, and partner.
+Colin Dean is a software engineer, community builder, and non-profit leader. He's built software for IBM Watson, Target, Vivísimo, and Arcadia.io, plus some open source software, such as Homebrew, used by most Mac-using developers. He's served on boards of five nonprofits, founding two, and advising other nonprofits on leadership and technical topics. He spends most of his time managing Meetups and conferences for Code & Supply, Pittsburgh's largest community of software professionals. He loves cuddling with his dogs, cat, and partner.
 
 ### First person
 
-I am a software engineer, community builder, and non-profit leader. I've built software for IBM Watson, Target, Vivísimo, and Arcadia.io, plus some open source software used by most Mac-using developers. I've served on boards of five nonprofits, founding two, and advised other nonprofits on leadership and technical topics. I spend most of my time managing Meetups and conferences for Code & Supply, Pittsburgh's largest community of software professionals. I love cuddling with my dogs, cat, and partner.
+I am a software engineer, community builder, and non-profit leader. I've built software for IBM Watson, Target, Vivísimo, and Arcadia.io, plus some open source software, such as Homebrew, used by most Mac-using developers. I've served on boards of five nonprofits, founding two, and advised other nonprofits on leadership and technical topics. I spend most of my time managing Meetups and conferences for Code & Supply, Pittsburgh's largest community of software professionals. I love cuddling with my dogs, cat, and partner.
 
 ## Long bio
 
