@@ -320,6 +320,30 @@ another computer.
 
 :::
 
+--
+
+## Baked in!
+
+* Bazzite
+* Bluefin
+
+::: notes
+
+Newer distros using Fedora's Universal Blue have it baked in,
+as the preferred package manager for the system.
+
+:::
+
+---
+
+> It's nice that the packages are maintained by both MacOS and Linux people,
+> it's a much larger community, and you have the same toys as your Mac friends.
+> They have just about everything.
+
+Jorge Castro
+
+<https://www.ypsidanger.com/homebrew-is-great-on-linux/>
+
 ---
 
 # Takeaways
