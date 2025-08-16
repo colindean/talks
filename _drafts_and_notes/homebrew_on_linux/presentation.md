@@ -326,11 +326,14 @@ another computer.
 
 * Bazzite
 * Bluefin
+* Caligra Workbench
 
 ::: notes
 
 Newer distros using Fedora's Universal Blue have it baked in,
 as the preferred package manager for the system.
+
+https://caligra.com/workbench/
 
 :::
 
