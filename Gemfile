@@ -1,4 +1,4 @@
 source "https://rubygems.org"
 
-gem 'rabbit', '>= 3.0.4'
+gem 'rabbit', '>= 4.0.0'
 #gem 'rabbiter'
