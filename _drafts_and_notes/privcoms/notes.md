@@ -19,3 +19,5 @@ TL;DR In 2025, use Signal.
 * Don't use encrypted email, it's become an anti-pattern.
   https://securitycryptographywhatever.com/2025/08/22/stop-using-encrypted-email-with-william-woodruff/
 
+* _Through the Web, Darkly_ by William von Hagen
+  <https://web.archive.org/web/20210929233853/http://www.vonhagen.org/darkweb.html>
