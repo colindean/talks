@@ -1,3 +1,10 @@
+---
+title: Privacy, because you have nothing to share 
+audience: undergrad college students
+
+---
+
+
 # Private communications
 
 ![Anon poster](https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@.jpg)
@@ -13,6 +20,12 @@
 * Think about weak points: other people; use forward secrecy
 
 TL;DR In 2025, use Signal.
+
+## Forward secrecy
+
+It really means _backward_, previous comms, are secure from future communication errors, and vice versa.
+
+Key expiration is important.
 
 ## TODO
 
