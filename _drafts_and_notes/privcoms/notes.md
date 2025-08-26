@@ -1,0 +1,21 @@
+# Private communications
+
+![Anon poster](https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@.jpg)
+
+> The Girl: You invade my privacy, it's nothing. I try to get it back, it's a crime.
+> 
+> The Girl: It's not that I have something to hide. I have nothing I want you to see.
+
+## If nothing else, remember these
+
+* Decide on your **threat model**
+* Think about how your contacts are stored and discoverable
+* Think about weak points: other people; use forward secrecy
+
+TL;DR In 2025, use Signal.
+
+## TODO
+
+* Don't use encrypted email, it's become an anti-pattern.
+  https://securitycryptographywhatever.com/2025/08/22/stop-using-encrypted-email-with-william-woodruff/
+
