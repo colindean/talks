@@ -27,6 +27,8 @@ It really means _backward_, previous comms, are secure from future communication
 
 Key expiration is important.
 
+Some threat actors are able to store encrypted messages for decryption when the technology exists.
+
 ## TODO
 
 * Don't use encrypted email, it's become an anti-pattern.
