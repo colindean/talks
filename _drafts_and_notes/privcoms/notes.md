@@ -29,6 +29,10 @@ Key expiration is important.
 
 Some threat actors are able to store encrypted messages for decryption when the technology exists.
 
+## Legal Threats from Nation-State Actors
+
+EU "Chat control": <https://fightchatcontrol.eu>
+
 ## TODO
 
 * Don't use encrypted email, it's become an anti-pattern.
