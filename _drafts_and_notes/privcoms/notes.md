@@ -40,3 +40,6 @@ EU "Chat control": <https://fightchatcontrol.eu>
 
 * _Through the Web, Darkly_ by William von Hagen
   <https://web.archive.org/web/20210929233853/http://www.vonhagen.org/darkweb.html>
+
+* history of Signal Foundation;
+  verify and cite https://www.instagram.com/share/p/BAJulTQvrH
