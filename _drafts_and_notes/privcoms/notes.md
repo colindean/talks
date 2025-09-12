@@ -29,6 +29,31 @@ Key expiration is important.
 
 Some threat actors are able to store encrypted messages for decryption when the technology exists.
 
+## Threats from third parties and (AI) assistant technology
+
+### The Lethal Trifecta
+
+![](https://static.simonwillison.net/static/2025/lethaltrifecta.jpg)
+
+* Access to your private data
+* Exposure to untrusted content
+* The ability to externally communicate (exfiltration)
+
+Source: <https://simonwillison.net/2025/Jun/16/the-lethal-trifecta/>
+
+### Sharing may not be caring
+
+> So there’s a profound issue with security and privacy that is haunting this hype around agents,
+> and that is ultimately threatening to break the blood-brain barrier
+> between the application layer and the OS layer
+> by conjoining all of these separate services [and] muddying their data
+>
+> – Signal President Meredith Whittaker
+
+<https://youtu.be/AyH7zoP-JOg?t=2856>
+
+Source: <https://techcrunch.com/2025/03/07/signal-president-meredith-whittaker-calls-out-agentic-ai-as-having-profound-security-and-privacy-issues/>
+
 ## Legal Threats from Nation-State Actors
 
 EU "Chat control": <https://fightchatcontrol.eu>
