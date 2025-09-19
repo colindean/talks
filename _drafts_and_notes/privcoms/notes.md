@@ -21,6 +21,15 @@ audience: undergrad college students
 
 TL;DR In 2025, use Signal.
 
+## "Nothing to hide? Nothing to fear"
+
+> … a logical fallacy which states that individuals have no reason to fear or oppose surveillance programs
+> unless they are afraid it will uncover their own illicit activities.
+> An individual using this argument may claim that an average person
+> should not worry about government surveillance, as they would have "nothing to hide".
+
+<https://en.wikipedia.org/wiki/Nothing_to_hide_argument>
+
 ## Forward secrecy
 
 It really means _backward_, previous comms, are secure from future communication errors, and vice versa.
