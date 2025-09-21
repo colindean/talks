@@ -30,6 +30,12 @@ TL;DR In 2025, use Signal.
 
 <https://en.wikipedia.org/wiki/Nothing_to_hide_argument>
 
+## Tinfoil hats
+
+![Tinfoil hat joke](tinfoilhat.png)
+
+[Nick Trawick, comedian](https://m.facebook.com/story.php?story_fbid=24882926974636672&id=100000381397282)
+
 ## Forward secrecy
 
 It really means _backward_, previous comms, are secure from future communication errors, and vice versa.
