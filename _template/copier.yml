@@ -1,0 +1,34 @@
+# questions for form; declared variables
+talkname:
+  type: str
+  help: What could be a name for the talk? Used in placeholders.
+
+talkname_short:
+  type: str
+  help: Provide a short name for the talk, used for directory name and git commit prefix shortcode.
+
+subtitle:
+  type: str
+  help: What's a good subtitle? Think of something catchy.
+  default: ""
+
+include_pittsburgh_slide:
+  type: bool
+  help: Should the standard slide about Pittsburgh be included?
+  default: false
+
+license_cc_by_sa:
+  type: bool
+  help: Should this talk be explictly licensed CC-BY-SA?
+  default: false
+
+include_fediverse:
+  type: bool
+  help: Should fediverse links be included?
+  default: true
+
+include_bsky:
+  type: bool
+  help: Should Bluesky links be included?
+  default: true
+
