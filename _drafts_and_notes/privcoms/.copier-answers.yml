@@ -1,0 +1,9 @@
+# Changes here will be overwritten by Copier on updates
+_src_path: _template
+include_bsky: true
+include_fediverse: true
+include_pittsburgh_slide: false
+license_cc_by_sa: true
+subtitle: ''
+talkname: Privacy, because you have nothing to share
+talkname_short: privcoms

@@ -1,0 +1,10 @@
+section.nocaptions figcaption {
+  display:none;
+}
+
+.image-borders img {
+  border: 0.05em solid #ccc;
+  border-radius: 0.5em;
+  padding: 0.4em;
+  background-color: white;
+}
