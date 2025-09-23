@@ -1,10 +1,20 @@
+# dependency retrieval, images, etc.
 brew 'peru'
+# run a command when a file changes
 brew 'entr'
+# universal document converter
 brew 'pandoc'
+# task runner and more
 brew 'make'
+# really fast, tiny webserver
 brew 'miniserve'
+# multi-process server runner
 brew 'hivemind'
+# graphic generator
 brew 'graphviz'
+# node packages for some reason
 brew 'npm'
+# terminal screen recorder
 brew 'asciinema'
+# read from websockets
 brew 'websocat'
