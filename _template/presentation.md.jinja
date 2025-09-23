@@ -3,9 +3,9 @@ title: "{{talkname}}"
 subtitle: "{{subtitle}}"
 author:
   - _Colin Dean_
-{% if include_fediverse %}
+{% if include_fediverse -%}
   - "`@colindean@mastodon.social`"
-{% endif %}
+{% endif -%}
 theme: white
 css: custom.css
 slideNumber: true
@@ -13,7 +13,7 @@ hash: true
 history: true
 # transition: none
 transitionSpeed: "fast"
-totalTime: 1200
+totalTime: 1800
 header-includes: |
     <script>
         function connect() {
@@ -42,7 +42,7 @@ I'm Colin Dean.
 
 ---
 
-{% if include_pittsburgh_slide %}
+{% if include_pittsburgh_slide -%}
 ## {background-image="pittsburgh_on_a_map.svg" background-size="contain" background-color="#6699ff"}
 
 ::: notes
@@ -53,7 +53,7 @@ in northern Appalachia in an area of the United States we call the Rust Belt.
 :::
 
 ---
-{% endif %}
+{% endif -%}
 
 <!--
 Please send me your questions!
@@ -86,12 +86,12 @@ Thanks, yinz!
 
 |   |   |
 |---|---|
-{% if include_fediverse %}
+{% if include_fediverse -%}
 |**fediverse**|`@colindean@mastodon.social`|
-{% endif %}
-{% if include_bsky %}
+{% endif -%}
+{% if include_bsky -%}
 |**bsky**|`@cad.cx`|
-{% endif %}
+{% endif -%}
 |**slides**|https://github.com/colindean/talks|
 
 ::: notes
@@ -105,16 +105,16 @@ There some Pittsburghese for you all.
 
 # Attributions {.nocaptions}
 
-{% if include_pittsburgh_slide %}
+{% if include_pittsburgh_slide -%}
 * [Relief location map of the USA (without Hawaii and Alaska)](https://commons.wikimedia.org/wiki/File:Usa_edcp_relief_location_map.png), Uwe Dedering, 2010.
-{% endif %}
-{% if license_cc_by_sa %}
+{% endif -%}
+{% if license_cc_by_sa -%}
 * [Creative Commons "Attribution-Share Alike" license icon](https://commons.wikimedia.org/wiki/File:CC_BY-SA_icon.svg), Creative Commons, 2008.
-{% endif %}
+{% endif -%}
 
-{% if license_cc_by_sa %}
+{% if license_cc_by_sa -%}
 ![CC-BY-SA logo](deps/cc_by_sa/CC_BY-SA_icon.svg)
-{% endif %}
+{% endif -%}
 
 ---
 
