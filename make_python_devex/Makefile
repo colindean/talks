@@ -24,7 +24,7 @@ help:  ## Display this help
 
 .PHONY: deps
 deps: peru.yaml Brewfile ## Install dependencies
-	brew bundle --verbose --no-lock
+	brew bundle --verbose
 	peru sync
 
 ##@ Presenting
