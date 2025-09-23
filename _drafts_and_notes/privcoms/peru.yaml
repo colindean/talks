@@ -4,9 +4,7 @@ imports:
   asciinema-player-css: deps/asciinema-player
   asciinema-player-js: deps/asciinema-player
   colindean-tophat: deps/colindean-tophat.jpg
-  {% if license_cc_by_sa %}
   cc_by_sa: deps/cc_by_sa
-  {% endif %}
 
 curl module revealjs:
   url: https://github.com/hakimel/reveal.js/archive/5.2.1.zip
@@ -25,7 +23,5 @@ curl module asciinema-player-js:
 curl module colindean-tophat:
   url: https://avatars.githubusercontent.com/u/197224?s=300
 
-{% if license_cc_by_sa %}
 curl module cc_by_sa:
   url: https://upload.wikimedia.org/wikipedia/commons/e/e5/CC_BY-SA_icon.svg
-{% endif %}
