@@ -1,11 +1,9 @@
 ---
-title: "Privacy, because you have nothing to share"
-subtitle: ""
+title: "Privacy,"
+subtitle: "because you have nothing to share"
 author:
   - _Colin Dean_
-
   - "`@colindean@mastodon.social`"
-
 theme: white
 css: custom.css
 slideNumber: true
@@ -13,7 +11,7 @@ hash: true
 history: true
 # transition: none
 transitionSpeed: "fast"
-totalTime: 1200
+totalTime: 1800
 header-includes: |
     <script>
         function connect() {
@@ -37,16 +35,17 @@ Software engineer and community builder
 ::: notes
 
 I'm Colin Dean.
+I'm a 2007 graduate of mother fair.
+I was a Computer Science major with a minor in Creative Writing.
+Which was mostly journalism.
 
+Last year, I gave a much more flourishing establishment of my history at
+Westminster, but in the spirit of sharing less, I'll keep that to a minimum.
+
+I used to run The Holcad!
 :::
 
 ---
-
-
-
-<!--
-Please send me your questions!
--->
 
 Please save your questions until the end.
 
@@ -75,12 +74,8 @@ Thanks, yinz!
 
 |   |   |
 |---|---|
-
 |**fediverse**|`@colindean@mastodon.social`|
-
-
 |**bsky**|`@cad.cx`|
-
 |**slides**|https://github.com/colindean/talks|
 
 ::: notes

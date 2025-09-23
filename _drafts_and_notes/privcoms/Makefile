@@ -5,7 +5,7 @@ PDF = $(MARKDOWN:md=pdf)
 
 DEPS_DIR = deps
 
-REVEALJS_VERSION = $(shell basename -s .zip $(shell yaml2json peru.yaml | jq -r '.["curl module revealjs"].url'))
+REVEALJS_VERSION = $(shell basename -s .zip $(shell yq '.["curl module revealjs"].url' peru.yaml))
 
 WS_WATCHED_FILE = .$(HTML).ws
 
