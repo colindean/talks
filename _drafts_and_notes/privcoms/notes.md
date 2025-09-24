@@ -1,5 +1,5 @@
 ---
-title: Privacy, because you have nothing to share 
+title: Privacy, because you have nothing to share
 audience: undergrad college students
 
 ---
@@ -10,7 +10,7 @@ audience: undergrad college students
 ![Anon poster](https://m.media-amazon.com/images/M/MV5BMjE0MjIwMDE2MV5BMl5BanBnXkFtZTgwMzM5MDQzNTM@.jpg)
 
 > The Girl: You invade my privacy, it's nothing. I try to get it back, it's a crime.
-> 
+>
 > The Girl: It's not that I have something to hide. I have nothing I want you to see.
 
 ## If nothing else, remember these
