@@ -68,6 +68,18 @@ TODO: WRITE THE TALK
 
 ---
 
+## outlaw math
+
+---
+
+### {.nocaptions}
+
+![We must break with the totally erroneous perception that it is technically feasible to outlaw encryption. - Ondřej Pokorný](ondura_chatcontrol.png)
+
+<https://social.unextro.net/@ondra/115204461144155511>
+
+---
+
 # FIN
 
 Thanks, yinz!
