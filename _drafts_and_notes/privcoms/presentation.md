@@ -64,9 +64,153 @@ problem with the presentation occurs.
 
 ---
 
-TODO: WRITE THE TALK
+## TL;DR {background-image=https://signal.org/assets/images/header/logo.png background-size="35%" background-position="center 85%"}
+
+In 2025, use **Signal** Messenger.
+
+<https://signal.org>
+
+::: notes
+
+Signal is a non-profit with an endowment
+that will probably outlast most of the people
+in this room.
+
+People far more interesting than most of us will ever
+be have an interest in keeping this service running,
+and ideally, free in perpetutity.
+
+:::
 
 ---
+
+<!-- warning emoji -->
+<span style="font-size: 5em;">&#9888;</span>
+
+::: notes
+
+I want to stress the nature of _personal_ here.
+I think my personal infosec (information security)
+and opsec (operational security) are pretty decent.
+I am not perfect, but I follow the recommendations of
+security professionals and of some people whose freedom
+depends on their ability to control their communications and data at rest and inflight.
+
+:::
+
+---
+
+## If you remember nothing else, remember these.
+
+
+Ask your ~~stochastic parrot~~ generative AI chat assistant about them later.
+
+::: notes
+
+One slide and a warning doesn't make for
+much of a symposium talk,
+so let's expand into some basics of
+_personal_ information security.
+
+:::
+
+---
+
+### Threat model
+
+What activities do you do?
+
+What data do you have?
+
+Who is the bad actor?
+
+What resources do they have available?
+
+**What can they do if they _got_ you?**
+
+::: notes
+
+(read slide)
+
+I tend to separate actors into two kingdoms:
+nation-state and everyone else.
+
+If your threat actors, people who would act against you,
+includes nation-states, like the United States,
+your needs exceed what advice I'm comfortable giving
+to you in this short presentation.
+You should seek the advice of a certified security professional
+or someone else with a similar threat model.
+
+:::
+
+---
+
+### Trust boundaries
+
+Is your data safe…
+
+* in your own hands?
+* in the hands of others?
+
+::: notes
+
+This talk is focusing on private communications.
+
+Messages are typically stored for a while,
+but if you're using Signal's disappearing messages
+or Snapchat or Instagram stories,
+those messages may be _ephemeral_,
+meaning succinctly that they disappear eventually.
+
+However, it's just data with an honesty timer:
+once a message leaves your head, it's _said_.
+Once a message leaves your device, your control,
+you have to trust someone else with the message.
+Even if the message is encrypted at rest and in transit,
+it still has to be decrypted for your recipient to
+understand it.
+
+This expands your trust boundary: the systems and people
+you can control and the same that you can _trust_,
+even if you don't have direct control yourself.
+
+:::
+
+---
+
+### Inherited risks
+
+What risks do others pose to you?
+
+::: notes
+
+That control is not absolute.
+I trust Mamma's Meatballs to get my pizza to me
+within 45 minutes,
+
+and they trust PennDOT to keep the roads clear,
+but we all inherit the risks that weather
+and bad drivers pose to me getting my food as ordered.
+
+:::
+
+---
+
+### {background-image=https://img.nbc.com/sites/nbcunbc/files/images/2022/2/28/weakestLink_S2-Logo-1920x1080.jpg}
+
+
+::: notes
+
+Who's the weakest link?
+
+:::
+
+
+---
+
+* **Contacts storage and service discovery.**
+To whom do you give your contact list?
 
 ## outlaw math
 
