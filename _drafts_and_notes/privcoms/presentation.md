@@ -634,3 +634,5 @@ There some Pittsburghese for you all.
 ---
 
 # See also
+
+* [_Digital threat modeling under authoritarianism_ by Bruce Schneier](https://www.schneier.com/blog/archives/2025/09/digital-threat-modeling-under-authoritarianism.html)
