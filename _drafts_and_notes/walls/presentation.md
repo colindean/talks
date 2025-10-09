@@ -33,6 +33,14 @@ We change the structures slightly, as in from QA to SWET and software reliabilit
 
 ---------
 
+## Ugly walls
+
+![I've been to a few places where they do have a wall. Few things are uglier in the entire world, of all the places I've seen. Few things have been more an indication of an utter failure of otherwise smart people to figure shit out." - Anthony Bourdain (Parts Unknown: Far West Texas)](bourdain_walls.jpg)
+
+Walls are an admission that we haven't figured out something better 
+
+---------
+
 ## Guards and guides
 
 ![NOLA levees and guard rails on a road with precipitous drop](#)
