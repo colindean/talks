@@ -5,7 +5,8 @@ author:
   - _Colin Dean, Lead Engineer_
   - "`@colindean@mastodon.social`"
 theme: white
-css: target.css
+css: custom.css
+# css: target.css
 slideNumber: true
 hash: true
 history: true
@@ -19,7 +20,16 @@ include-after: |
 #    data-background-image: "targettech.png"
 #    data-background-size: "10%"
 #    data-background-position: "50% 100%"
-
+header-includes: |
+    <script>
+        function connect() {
+            const ws = new WebSocket("ws://localhost:56789");
+            ws.onopen = () => setTimeout(() => ws.send("keepalive"), 30000);
+            ws.onclose = () => setTimeout(connect, 1000);
+            ws.onmessage = () => {console.log("reload from save!"); location.reload(); }
+        }
+        connect();
+    </script>
 ---
 
 # Who is this guy?

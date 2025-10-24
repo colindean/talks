@@ -1,2 +1,3 @@
 serve: miniserve .
-watch: echo presentation.md | entr -apr make presentation.html
+ws: make livereload-ws
+watch: make automatic-regen

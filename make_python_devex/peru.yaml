@@ -7,7 +7,7 @@ imports:
   colindean-tophat: deps/colindean-tophat.jpg
 
 curl module revealjs:
-  url: https://github.com/hakimel/reveal.js/archive/4.3.0.zip
+  url: https://github.com/hakimel/reveal.js/archive/5.1.0.zip
   unpack: zip
 
 curl module fontawesome:

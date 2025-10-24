@@ -1,5 +1,9 @@
 # `make python devex` Submissions
 
+## [Pittsburgh TechFest 2025](https://pitttechcounciltechfest2025.sched.com/event/27HZR/make-python-devex-towards-red-green-refactor-in-1-command-with-an-old-tool) :medal_sports:
+
+_Used info from PyCon US 2025_
+
 ## [FOSDEM 2025](https://fosdem.org/2025/schedule/event/fosdem-2025-6426-make-python-devex-towards-red-green-refactor-in-1-command-with-an-old-tool/) :medal_sports:
 
 _Used info from PyCon US 2025_
