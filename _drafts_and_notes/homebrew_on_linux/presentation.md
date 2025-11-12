@@ -357,24 +357,24 @@ Jorge Castro
 
 ::: list-wip
 
-* Pre-compiled ARM Linux "bottles"
 * Beyond glibc
+* RISC-V?
 
 :::
 
 ::: notes
 
-Homebrew does not officially support ARM Linux as of February 2025,
-but this is maturing and the organization may decide to commit to it in the
-future.
-Currently, Homebrew technically does _work_ on ARM Linux, but requires building
-all packages from source.
-What's not yet in place is the infrastructure and volunteers to keep up with
-any oddities of building more than 90% of our packages on ARM Linux.
+Homebrew officially supports ARM Linux as of v5.0.0 released in November 2025.
 
-Then there's also some exploration of supporting C standard libraries beyond
-glibc, such as musl.
-That's in the far future.
+Then there's some exploration of supporting C standard libraries beyond
+glibc, such as musl, for running Homebrew on Alpine Linux and others.
+
+Having just completed ARM64 or AARCH64 support a few months ago,
+some folks may want RISC-V support but I can say with some education that
+what needs to happen outside of Homebrew for that to be possible are numerous
+and outside of Homebrew's control for now.
+
+Both of these in the far future.
 
 :::
 
@@ -385,6 +385,14 @@ That's in the far future.
 ::: list-nope
 
 * HomebrewOS
+
+:::
+
+::: notes
+
+Homebrew has no plans to create its own desktop distro.
+Bluefin is charging in that direction and is actively engaged.
+Heck, I'm using it right now to present this!
 
 :::
 
