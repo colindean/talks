@@ -1,5 +1,9 @@
 # `make python devex` Submissions
 
+## Open Source North 2026 :hourglass: 
+
+_Used info from PyCon US 2025_
+
 ## [Pittsburgh TechFest 2025](https://pitttechcounciltechfest2025.sched.com/event/27HZR/make-python-devex-towards-red-green-refactor-in-1-command-with-an-old-tool) :medal_sports:
 
 _Used info from PyCon US 2025_
