@@ -324,16 +324,15 @@ another computer.
 
 ## Baked in!
 
-* Bazzite
-* Bluefin
-* Caligra Workbench
+* [Bazzite](https://docs.bazzite.gg/Installing_and_Managing_Software/Homebrew/?h=homebrew)
+* [Bluefin](https://docs.projectbluefin.io/FAQ/#whats-the-deal-with-homebrew)
+* [SecureBlue](https://secureblue.dev/faq#brew)
+* [Caligra Workbench](https://caligra.com/workbench/)
 
 ::: notes
 
 Newer distros using Fedora's Universal Blue have it baked in,
 as the preferred package manager for the system.
-
-https://caligra.com/workbench/
 
 :::
 
