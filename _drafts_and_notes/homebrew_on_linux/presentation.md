@@ -348,6 +348,20 @@ Jorge Castro
 
 ---
 
+## Value added
+
+* `brew bundle` can manage a list of Flatpaks (Thanks, Bluefin!)
+
+::: notes
+
+In a Homebrew release in early December 2025,
+a Bluefin maintainer added Flatpak support to `brew bundle`.
+No other tool, not even Flatpak, offers this easy integration across packaging ecosystems.
+
+:::
+
+---
+
 # Takeaways
 
 ---
