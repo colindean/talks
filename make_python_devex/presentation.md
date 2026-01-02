@@ -256,6 +256,12 @@ eventually.
 Using Homebrew Python is hitting a moving target, and is inadvisable,
 although this problem is lessened when using formulae for specific minor
 versions.
+There's an article from 2021 called [Homebrew Python is Not For You][hb-py]
+which summarizes the problem: upgrades may break virtualenvs.
+
+[hb-py]: https://justinmayer.com/posts/homebrew-python-is-not-for-you/
+
+
 Using PyEnv is probably as correct as choosing Anaconda,
 which [PythonSpeed reports is the most performant][faster-python]
 for some older versions of Python,
