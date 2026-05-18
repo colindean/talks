@@ -114,12 +114,11 @@ Please save your questions until the end.
 
 COLIN:
 
-This solution is in active development, so some things might have changed
-since I last revised these remarks.
+This solution is in ongoing maintenance,
+so some things might have changed since I last revised these remarks.
 I'd love feedback and suggested improvements.
 
-I'm filling in for someone who was unable to make it today,
-so some of these slides or my notes may have some outdated information.
+Some of these slides or my notes may have some outdated information.
 
 <!--
 Please save your questions until the end.
@@ -139,7 +138,7 @@ problem with the presentation occurs.
 ::: notes
 
 This talk inspired the LONGEST POST EVER on the blog of my employer,
-the 37th largest company in the US and the 8th largest retailer.
+the 41st largest company in the US and the 3rd largest general merchandiser.
 
 :::
 
@@ -154,8 +153,36 @@ the 37th largest company in the US and the 8th largest retailer.
 
 It also earned a coveted open source release
 so I thank Target for doing open source stuff,
+including its once and future Open Source Fund program.
+
+<!--
 including its Open Source Fund, now in its second
 year of funding open source projects.
+-->
+
+:::
+
+---
+
+# OSPO
+
+'n'at
+
+<small>
+<b>'n'at</b>.
+<em>Pittsburghese</em>.
+And other things, et cetera.
+<em>Lit.</em> and that.
+</small>
+
+::: notes
+
+I'm a new member of Target's Open Source Programs Office,
+but I'm not new to open source.
+
+My first contribution was to a project that ran on many home routers
+in the late 2000s and early 2010s
+and I recently rolled off the project leadership committee of Homebrew.
 
 :::
 
@@ -204,13 +231,13 @@ This largely boils down to this particular question.
 ### System Python unreliable, inflexible
 
 ```bash
-$ date && sw_vers && uname -sm && /usr/bin/python3 --version
-Fri May  6 12:39:51 EDT 2022
-ProductName:	macOS
-ProductVersion:	12.3.1
-BuildVersion:	21E258
+date && sw_vers && uname -sm && /usr/bin/python3 --version
+Mon May 18 13:11:28 EDT 2026
+ProductName:            macOS
+ProductVersion:         26.3
+BuildVersion:           25D125
 Darwin arm64
-Python 3.8.9
+Python 3.9.6
 ```
 
 ::: notes
@@ -220,6 +247,7 @@ COLIN:
 My team uses macOS for development and deploys to Linux.
 Apple tends to keep its Python 3.x installation within
 Python EOL dates but it's always a little out of date.
+
 Apple removed system Python in macOS 12.3, as warned in 10.15 release notes.
 It's still included with XCode, though.
 Apple says not to rely on this and that it's for internal use only, a policy
@@ -239,8 +267,10 @@ production learned quickly not to use a macOS-provided Python.
 ### Inconsistent Installation Methods and Source
 
 * ~~Operating System-provided packaging?~~
+* Python.org?
 * Homebrew?
 * **Pyenv? Anaconda?**
+* uv? poetry?
 * …MacPorts? …Nix?
 
 ::: notes
@@ -263,8 +293,8 @@ which summarizes the problem: upgrades may break virtualenvs.
 
 
 Using PyEnv is probably as correct as choosing Anaconda,
-which [PythonSpeed reports is the most performant][faster-python]
-for some older versions of Python,
+which [PythonSpeed reported _was_ the most performant][faster-python]
+for older versions of Python,
 but both require knowledge of the tool and some setup.
 Using Anaconda's repositories is also not free, while conda-forge is.
 Learning this can be an expensive lesson.
@@ -284,12 +314,18 @@ across teams.
 ### Inconsistent Python versions
 
 * Tech Debt Risk: dependencies stop supporting older versions
-    * Python [3.8][py37] and older, EOL
-    * Python [3.9][py39] and [3.10][py310] in security-only phase
-        * EOL October 2025 & 2026
-    * Python [3.11][py311], [3.12][py312], 3.13 supported
-        * Final non-security release in April: 2025-2027
-        * EOL October: 2027-2029
+    * [3.9][py39] and older, EOL
+    * [3.10][py310], [3.11][py311], [3.12][py312] in security-only phase
+        * EOL October 2026 & 2027 & 2028
+    * [3.13][py313], [3.14][py314] supported
+        * Final non-security release in April: 2027-2028
+        * EOL October: 2029-2030
+
+<small>
+April: Current - 2 final non-security release
+<br/>
+October: Current - 4 EOL
+</small>
 
 [eoldate]: https://endoflife.date/python
 [py36]: https://www.python.org/dev/peps/pep-0494/
@@ -299,6 +335,10 @@ across teams.
 [py310]: https://peps.python.org/pep-0619/
 [py311]: https://peps.python.org/pep-0664/
 [py312]: https://peps.python.org/pep-0693/
+[py313]: https://peps.python.org/pep-0719/
+[py314]: https://peps.python.org/pep-0745/
+[py315]: https://peps.python.org/pep-0790/
+[py316]: https://peps.python.org/pep-0826/
 
 
 ::: notes
@@ -314,8 +354,9 @@ versions in other contexts, including containerized services and pipelines.
 
 We've since moved to containerized deployments,
 even for our Spark jobs.
-It's lovely no longer to be stuck on Python 3.7
-as we were until last year.
+It's lovely no longer to be stuck on an early 3.7 patch
+as we were until 2024.
+Now, we'll be racing to get off of 3.10 this year.
 :::
 
 [faster-python]: https://pythonspeed.com/articles/faster-python/
@@ -325,8 +366,11 @@ as we were until last year.
 ### No one can remember commands
 
 * …or wants to type them
-* …or wants to use the correct, full-length command
-    * `poetry run pytest`
+* …or wants to use the correct, full-length command `poetry run pytest`
+* …or wants to ask their agent
+
+    > "You're absolutely right, I ran tests the wrong way…"
+
 * Neither enables build actions outside of their domain
 
 ::: notes
@@ -335,7 +379,7 @@ COLIN:
 
 pip is a venerable tool and, under the hood, even poetry used to use pip
 but pip was built in a time outside of configuration file conventions.
-The new PEP standard pyproject.toml really helps a lot but it takes
+The PEP standard pyproject.toml is pretty normal now and helps a lot but it takes
 some steps to get to development cycle usability.
 Even newer tools like hatch, pdm, and uv have
 different invocations.
@@ -352,7 +396,7 @@ README.
 ### Python ecosystem may necessitate compiling with options
 
 * Apple M1 processor, ARM64 m-arch., ca. June 2020
-* `macos_{11...15}` `arm64` binary avail. growing
+* `macos_{11...26}` `arm64` binaries available
 * Passing compiler flags is not ergonomic:
 
 ```
@@ -361,27 +405,27 @@ $ LDFLAGS="-L/opt/homebrew/Cellar/unixodbc/2.3.9_1/lib -lodbc -liodbc -liodbcins
 
 ::: notes
 
-COLIN:
-
 Pythonistas seem pretty accustomed to having packages "just work" when
 installed.
 Unfortunately, Apple's transition from Intel processors to its own
 processors, switching from the x86_64 architecture to ARM64 in the process, is
 complicating installing Python dependencies.
-Approaching five years in, most projects actively developed
-have released macOS ARM64 binary packages.
-It's *FAR* better than it was in 2021 and a lot better than summer 2022.
-With newer versions of dependencies, I rarely see
-compilation.
-But what I'm starting to see now as I've adopted some
-legacy codebases is newer OS and Python versions
+Six years in, actively developed projects release macOS ARM64 binary packages.
+In 2021, when I initially developed the system at the focus of this talk,
+few projects shipped ARM binaries.
+It improved in 2022.
+By late 2024, it was nearly normal.
+With newer versions of dependencies, I rarely see compilation.
+
+But what I see now as I've adopted some
+legacy codebases is newer arch, OS, and Python combinations
 necessitating compilation because there weren't
 binaries published for this now-ancient version of
 a package, because the triplet didn't exist back then.
+
 ARM64 runners are available on most CI providers now,
-but that doesn't mean a project is going to publish
-a point release primarily to provide binaries
-for an old Python version.
+but no project is going to publish binaries for old version,
+unless they strangely already have done so.
 
 As a safeguard, we have to plan for it.
 A project may eventually require building some packages from the source
@@ -407,6 +451,27 @@ We can write a bunch of scripts for this automation, but
 eventually, any sufficiently advanced system of one-off scripts
 eventually reimplements proper DAG build tool — a directed acyclic graph--
 so let's just use one from the start!
+
+:::
+
+---
+
+### Emerging: Agents and SKILLS.md
+
+Predictable
+
+vs
+
+unpredictable
+
+::: notes
+
+Agentic development is rising meteorically.
+Corporate software engineering is taking huge bites of the apple.
+An agent can certain ease some pains in this process,
+but we would do better to craft an experience that works for humans and agents,
+optimizes for resource efficiency,
+and enables a human to continue when the agent's inference is unavailable for any reason.
 
 :::
 
@@ -479,7 +544,8 @@ digraph python_installation_methods {
   node [label = "macports"]; macports;
   node [label = "macports\npython"]; macportspy;
   node [label = "uv"]; uv;
-  node [label = "uv\npython"]; uvpy;
+  node [label = "python-build\nstandalone"]; pybuildstd;
+  node [label = "poetry"]; poetry;
 
   system;
 
@@ -496,7 +562,8 @@ digraph python_installation_methods {
   nix -> nixpy;
   macports -> macportspy;
   brew -> uv;
-  uv -> uvpy;
+  uv -> pybuildstd;
+  poetry -> pybuildstd;
 
 }
 ```
@@ -597,9 +664,10 @@ Advancements in build tools feature to install Python automatically may alter th
 ### Poetry for Python dependencies and packaging
 
 * `pyproject.toml` standardization
-* Separately-managed virtualenv
+* Separately managed virtualenv
 * Modern dependency mgmt with locking
 * Builds packages
+* Experimental: Python installation
 
 ::: notes
 
@@ -618,7 +686,13 @@ Poetry or other similar tools.
 And, of course, Poetry combines dependency management and packaging into one
 smart tool. It's nearly a no-brainer.
 
-And, of course, I am keeping a very close eye on uv.
+Our team is heavily invested in Poetry, so we're looking forward to its
+python-build-standalone support coming out of experimental use.
+
+I am keeping a close eye on uv,
+but a migration effort is likely out of scope
+unless we have a massive benefit.
+Maybe AI can _(wave hands)_ do this for us across hundreds of repos one day.
 
 :::
 
@@ -715,6 +789,10 @@ data science workloads inside of a container,
 which is really just running on a virtual machine
 on macOS, is just too slow.
 
+If you've used Apple Containers for Python development,
+please come talk to me afterward so I can hear to tell me
+that it's fast as heck.
+
 :::
 
 ---
@@ -725,7 +803,7 @@ on macOS, is just too slow.
 
 COLIN:
 
-But I needed some glue to make all of this automated from some common tooling.
+I needed some glue to make all of this automated from some common tooling.
 I need the greatest common denominator.
 :::
 
@@ -733,9 +811,10 @@ I need the greatest common denominator.
 
 ### Standardized `Makefile` for Python + Shell dev
 
-* Use Make, which is widely available.
-* Minimize project-specific customizations in order to enable copy-paste to new projects.
-* Use `make` tasks in CI builds to mirror dev environment.
+* **Use `make`**, which is widely available.
+* **Minimize project-specific customizations**,
+  enabling templatization or copy-paste to new projects.
+* Use `make` tasks in CI builds to **mirror dev environment**.
 
 ::: notes
 
@@ -904,6 +983,11 @@ development cycle with tooling virtually guaranteed to work.
 
 This inclusivity is a key part of a healthy engineering culture.
 
+I've found that healthy engineering culture is _the_ foundation
+for long-term software projects.
+New contributors need adequate context and need to build that knowledge quickly,
+whether they are new employees, new contractors, or new LLM agents.
+
 :::
 
 ---
@@ -959,6 +1043,9 @@ just about everywhere.
 This enables a self-documenting Makefile with a helpful output: no reading of
 a Makefile required to understand what the tasks do while keeping the task
 names typeable.
+
+A human or agent is able to read this task list, understand what's what, and
+get to work.
 
 :::
 
@@ -1017,12 +1104,10 @@ Code Quality
   check            Runs linters and other important tools
   check-py         Checks only Python files
   check-py-ruff    Runs ruff linter
-  check-py-flake8  Runs flake8 linter
-  check-py-black   Runs black in check mode (no changes)
   check-py-mypy    Runs mypy
   check-sh         Run shellcheck on shell scripts
   fix-sh           Runs shellcheck & applies suggestions
-  format-py        Runs black||ruff, may make changes
+  format-py        Runs ruff, may make changes
   format-shell     Runs shfmt on shell scripts & tests
 ```
 
@@ -1031,7 +1116,7 @@ Code Quality
 COLIN:
 
 And we have plenty of code quality checks.
-We love flake8, black, ruff, mypy, and more that enable us to write maintainable code
+We love tools enable us to write maintainable code
 that captures our intent.
 
 :::
@@ -1044,26 +1129,27 @@ that captures our intent.
 
 ### Supporting multiarchitecture
 
-* macOS x86_64 **&** arm64 for dev
-* Linux x86_64 for prod
-* Python ecosystem mixed readiness
+* macOS arm64 for local dev
+* Linux x86_64 for staging and prod
+* Python ecosystem generally OK in 2026
+  for _maintained_ libraries
 
 <small>
-_Apple Silicon == M1 == arm64_
+_Apple Silicon == M-series == arm64_
 </small>
 
 ::: notes
 
 COLIN:
 
-As the fourth generation of ARM Macs roll out to developers, there's still a tiny but necessary
-challenge to support both Intel and ARM architectures.
+All developers on my team are on ARM Macs now, but we still have to support
+Intel on Linux.
+
 As I said earlier, I'm having to compile new stuff far less often, but it's now
 the older stuff we're having to compile sometimes
 I have to compile some dependencies from source,
 because, in a lot of cases in data science, Python is merely a nice wrapper around
 a library written in a compiled language like C, C++, or Rust.
-
 
 :::
 
@@ -1129,6 +1215,9 @@ COLIN:
 
 This is what the poetry command will look like in various scenarios.
 
+As Intel Macs quietly go into the night in the corporate world,
+in the open source world, they may still be used for a while.
+
 :::
 
 <!--
@@ -1156,11 +1245,53 @@ This was hopefully enough to catch your interest and spark conversation for
 your Python team, or any team struggling to quickly onboard developers to new
 codebases, or codebases they've not touched in many months.
 
-I have no doubt this system will improve over time, but on its second major
-iteration in a two years and openly talking about it inside and outside of [[my
+I have no doubt this system will improve over time, but on its third major
+iteration in a five years and openly talking about it inside and outside of [[my
 company]], and contributing to several Python open source projects in that
 time, it's clear that something like this is needed in some form for nearly all
 software projects, Python projects included.
+
+Some new innovations may simplify it, but prioritizing predictable behavior
+is still the reason for software.
+
+:::
+
+---
+
+## Scaling {background-image="targettech.svg" background-size="10%" background-position="50% 100%" }
+
+Internal usage on my _primary_ team
+
+|Version|Year|Team size|Repos|
+|---|---|---|---|
+|v1.0|2021| 5 | 3 |
+|v2.0|2023| 11 | 24 |
+|v3.0|2025| 50+ | ~120 |
+|v4.0|2026| 50+ | More |
+
+<small>_Hundreds of others using this pattern in their hundreds of
+codebases_</small>
+
+::: notes
+
+This had humble beginnings when I was just trying to get productive
+in Python for the first time in a decade and a half.
+Then I moved to a new team newer codebases with a real need for standard tooling.
+
+Then I moved to an established team the size of a small startup.
+This system facilitated the migration of more than 100 repos,
+most of which didn't have more than a README and maybe a requirements.txt.
+We executed this alongside replatforming to a new way of executing our pipelines.
+Satisfaction was high and only one person was blocked for more than 3 days
+as we sorted out esoteric workstation dotfiles configurations.
+
+Our next big iteration is coming this year,
+moving to a multiproject "monorepo" as we've been troubled by
+conflicts for packages installed in different contexts,
+for example when building the pipeline artifact as a CI release process,
+and when building separate containers for modules of the applications that
+run only on Spark or only on a GPU cluster.
+However, the principles remain the same: **put tasks in a Makefile.**
 
 :::
 
@@ -1177,12 +1308,6 @@ software projects, Python projects included.
 
 COLIN:
 
-The teams were I developed this have since disbanded,
-unfortunately.
-But, like a beautiful flower waving in the wind,
-we're spreading the seeds of this method throughout
-our company.
-
 The greatest challenge we encountered while rolling
 this out is some of the one-time setup required to tell IDEs and tools where to look for executables
 installed from Poetry and pyenv.
@@ -1198,11 +1323,11 @@ reference from our shiny setup while minimizing the work that a developer needs 
 for one time setup, e.g. putting things into their shell configuration files.
 
 And then there's UV.
-I heard a fact yesterday that more than a third of
+I heard in _early 2025_ — a year and change ago— that more than a third of
 PyPI download traffic is to clients using uv,
 and this is growing significantly with each new release.
 I can't ignore it much longer,
-but I really want a 1.0.
+but I still really want a 1.0.
 
 :::
 
@@ -1218,6 +1343,8 @@ COLIN:
 That's it for this presentation.
 If you're interested in learning more, ask me and I'll be happy to share the
 most current iteration of this setup.
+Our internal fork used specifically for my team is a little ahead of the public
+open source release, so hopefully I'll be able to update it this summer.
 
 :::
 
